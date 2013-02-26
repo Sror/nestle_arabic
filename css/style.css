@@ -805,7 +805,7 @@ p.red_btn a {
 .pregna_box ul.third_box li a {
     background: url("../images/small_arrow.png") no-repeat scroll left 5px transparent;
     display: block;
-    padding: 0 0 0 20px;
+    padding: 0 20px 0 0;
 }
 
 .faq_red_btn {
@@ -845,4 +845,59 @@ p.red_btn a {
     line-height: 20px;
     margin-top: 50px;
     padding: 3px 20px 3px 5px;
+}
+
+.inner_content .preganany_cont_top .infant_right {
+    float: right;
+    width: 510px;
+}
+
+.inner_content .preganany_cont_top .infant_right p {
+    color: #8E8E8E;
+    margin-right: 130px;
+    margin-top: 80px;
+}
+
+.bottom_box .midlft1_box {
+    float: right;
+    width: 225px;
+}
+
+.faq_yello_btn {
+    background: none repeat scroll 0 0 #EB7940;
+    border-radius: 30px 30px 30px 30px;
+    display: inline-block;
+    float: right;
+    font-weight: bold;
+    line-height: 20px;
+    margin-top: 50px;
+    padding: 3px 20px 3px 20px;
+}
+
+.feeding_yello_btn {
+    background: none repeat scroll 0 0 #FF9900;
+    border-radius: 30px 30px 30px 30px;
+    display: inline-block;
+    float: right;
+    font-weight: bold;
+    line-height: 20px;
+    margin-top: 50px;
+    padding: 3px 20px 3px 5px;
+}
+
+.growing_yello_btn {
+    background: none repeat scroll 0 0 #FFCC33;
+    border-radius: 30px 30px 30px 30px;
+    display: inline-block;
+    float: right;
+    font-weight: bold;
+    line-height: 20px;
+    margin-top: 50px;
+    padding: 3px 20px 3px 5px;
+}
+
+.growing_yello_btn a, .feeding_yello_btn a, .faq_yello_btn a {
+    background: url("../images/btn_arrow.png") no-repeat scroll left center transparent;
+    color: #FFFFFF;
+    padding: 2px 0 2px 40px;
 }
