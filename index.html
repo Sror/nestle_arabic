@@ -4,6 +4,25 @@
 <meta charset="utf-8">
 <title>التغذية نستله</title>
 <link href="css/style.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" language="javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#foo2').carouFredSel({
+		circular: false,
+		infinite: false,
+		auto: false,
+		prev: '#prev2',
+		next: '#next2',
+		pagination: false,
+		mousewheel: true,
+		swipe: {
+			onMouse: true,
+			onTouch: true
+		}
+	});
+});
+</script>
 </head>
 <body>
 
@@ -48,7 +67,7 @@
   <div class="wrapper">
     <div class="banner_right"><img src="images/nestle_bott.png" width="152" height="139" alt="nestle" /></div>
     <div class="banner_middle">
-      <h3>طtttفلك </h3>
+      <h3>طفلك </h3>
       <h2>بحاجة</h2>
       <h4>لحمايتك</h4>
       <p>الأشياء من حوله مما يعرّضه للكثير من الجراثيم. لهذا السبب أنه يحتاج إلى التغذية الصحيحة للمساعدة في حمايته والحفاظ على صحته حيث يثابر في التعلم والاستكشاف</p>
@@ -60,133 +79,216 @@
 
 <!-- infants boxes start here -->
 <div class="infants_boxes clear">
-<div class="box_shadow">
-  <div class="boxes box_01">
-    <h5>الحمل</h5>
-    <div class="plus_btn" onclick="prgfn()"><img src="images/plus_pl.png" width="17" height="17" alt="plus"/></div>
-    <div class="spacer"></div>
-    <div class="inf_images"> <img src="images/infant-01.png" width="166" height="175" alt="infant"  onmouseover="showcontent1()" onmouseout="hidcontent1()" /> </div>
-    <div class="bottom_txt" id="bottom_txt1" style="display:none"> Time to pamper yourself
-      with the best of care. And
-      you're welcome! </div>
-    <div class="inf_cont_wrap">
-      <div class="inf_cont">
-        <ul>
-          <li><a href="feeding.html">Nutrition & Feeding</a></li>
-          <li><a href="growing.html">Growth & Development</a></li>
-          <li><a href="faq.html">Faq's</a></li>
-        </ul>
-      </div>
-      <div class="bottom_txt"> Time to pamper yourself
+  <div class="box_shadow">
+    <div class="boxes box_01">
+      <h5>الحمل</h5>
+      <div class="plus_btn" onclick="prgfn()"><img src="images/plus_pl.png" width="17" height="17" alt="plus"/></div>
+      <div class="spacer"></div>
+      <div class="inf_images"> <img src="images/infant-01.png" width="166" height="175" alt="infant"  onmouseover="showcontent1()" onmouseout="hidcontent1()" /> </div>
+      <div class="bottom_txt" id="bottom_txt1" style="display:none"> Time to pamper yourself
         with the best of care. And
         you're welcome! </div>
-    </div>
-    <div> </div>
-  </div>
-</div>
-<div class="box_shadow">
-  <div class="boxes box_02">
-    <h5>الأشهر الأولى</h5>
-    <div class="plus_btn"><img src="images/plus_pl.png" width="17" height="17" alt="plus" /></div>
-    <div class="spacer"></div>
-    <div class="inf_images"> <img src="images/infant_02.png" width="166" height="175" alt="infant"  onmouseover="showcontent2()" onmouseout="hidcontent2()" /> </div>
-    <div class="bottom_txt" id="bottom_txt2" style="display:none"> Time to pamper yourself
-      with the best of care. And
-      you're welcome! </div>
-    <div class="inf_cont_wrap">
-      <div class="inf_cont">
-        <ul>
-          <li><a href="feeding_infant_0-6.html">Nutrition & Feeding</a></li>
-          <li><a href="growing_infant_0-6.html">Growth & Development</a></li>
-          <li><a href="faq_infant_0-6.html">FAQ's</a></li>
-        </ul>
+      <div class="inf_cont_wrap">
+        <div class="inf_cont">
+          <ul>
+            <li><a href="feeding.html">Nutrition & Feeding</a></li>
+            <li><a href="growing.html">Growth & Development</a></li>
+            <li><a href="faq.html">Faq's</a></li>
+          </ul>
+        </div>
+        <div class="bottom_txt"> Time to pamper yourself
+          with the best of care. And
+          you're welcome! </div>
       </div>
-      <div class="bottom_txt"> Time to pamper yourself
+      <div> </div>
+    </div>
+  </div>
+  <div class="box_shadow">
+    <div class="boxes box_02">
+      <h5>الأشهر الأولى</h5>
+      <div class="plus_btn"><img src="images/plus_pl.png" width="17" height="17" alt="plus" /></div>
+      <div class="spacer"></div>
+      <div class="inf_images"> <img src="images/infant_02.png" width="166" height="175" alt="infant"  onmouseover="showcontent2()" onmouseout="hidcontent2()" /> </div>
+      <div class="bottom_txt" id="bottom_txt2" style="display:none"> Time to pamper yourself
         with the best of care. And
         you're welcome! </div>
-    </div>
-    <div> </div>
-  </div>
-</div>
-<div class="box_shadow">
-  <div class="boxes box_03">
-    <h5>من ٦‎ إلى ١‎٢‎ شهر</h5>
-    <div class="plus_btn"><img src="images/plus_pl.png" width="17" height="17" alt="plus" /></div>
-    <div class="spacer"></div>
-    <div class="inf_images"> <img src="images/infant-03.png" width="166" height="175" alt="infant"  onmouseover="showcontent3()" onmouseout="hidcontent3()" /> </div>
-    <div class="bottom_txt" id="bottom_txt3" style="display:none"> Eat, play, crawl, talk, walk
-      understand and a whole lot
-      more! </div>
-    <div class="inf_cont_wrap">
-      <div class="inf_cont">
-        <ul>
-          <li><a href="featured_products_infant_6-12.html">Featured Products</a></li>
-          <li><a href="feeding_infant_6-12.html">Nutrition & Feeding</a></li>
-          <li><a href="growing_infant_6-12.html">Growth & Development</a></li>
-          <li><a href="products_infant_6-12.html">Products for 6-12 m</a></li>
-          <li><a href="faq_infant_6-12.html">Faq's</a></li>
-        </ul>
+      <div class="inf_cont_wrap">
+        <div class="inf_cont">
+          <ul>
+            <li><a href="feeding_infant_0-6.html">Nutrition & Feeding</a></li>
+            <li><a href="growing_infant_0-6.html">Growth & Development</a></li>
+            <li><a href="faq_infant_0-6.html">FAQ's</a></li>
+          </ul>
+        </div>
+        <div class="bottom_txt"> Time to pamper yourself
+          with the best of care. And
+          you're welcome! </div>
       </div>
-      <div class="bottom_txt"> Eat, play, crawl, talk, walk
+      <div> </div>
+    </div>
+  </div>
+  <div class="box_shadow">
+    <div class="boxes box_03">
+      <h5>من ٦‎ إلى ١‎٢‎ شهر</h5>
+      <div class="plus_btn"><img src="images/plus_pl.png" width="17" height="17" alt="plus" /></div>
+      <div class="spacer"></div>
+      <div class="inf_images"> <img src="images/infant-03.png" width="166" height="175" alt="infant"  onmouseover="showcontent3()" onmouseout="hidcontent3()" /> </div>
+      <div class="bottom_txt" id="bottom_txt3" style="display:none"> Eat, play, crawl, talk, walk
         understand and a whole lot
         more! </div>
-    </div>
-    <div> </div>
-  </div>
-</div>
-<div class="box_shadow">
-  <div class="boxes box_04">
-    <h5>الأطفال من ١‎ إلى ٣‎ سنوات</h5>
-    <div class="plus_btn"><img src="images/plus_pl.png" width="17" height="17" alt="plus" /></div>
-    <div class="spacer"></div>
-    <div class="inf_images"> <img src="images/infant-06.png" width="166" height="175" alt="infant"  onmouseover="showcontent4()" onmouseout="hidcontent4()" /> </div>
-    <div class="bottom_txt" id="bottom_txt4" style="display:none"> Time to pamper yourself
-      with the best of care. And
-      you're welcome! </div>
-    <div class="inf_cont_wrap">
-      <div class="inf_cont">
-        <ul>
-          <li><a href="featured_products_toddler.html">Featured Products</a></li>
-          <li><a href="feeding_toddler.html">Nutrition & Feeding</a></li>
-          <li><a href="growing_toddler.html">Growth & Development</a></li>
-          <li><a href="products_toddler.html">Products for 1-3yrs</a></li>
-          <li><a href="faq_toddler.html">Faq's</a></li>
-        </ul>
+      <div class="inf_cont_wrap">
+        <div class="inf_cont">
+          <ul>
+            <li><a href="featured_products_infant_6-12.html">Featured Products</a></li>
+            <li><a href="feeding_infant_6-12.html">Nutrition & Feeding</a></li>
+            <li><a href="growing_infant_6-12.html">Growth & Development</a></li>
+            <li><a href="products_infant_6-12.html">Products for 6-12 m</a></li>
+            <li><a href="faq_infant_6-12.html">Faq's</a></li>
+          </ul>
+        </div>
+        <div class="bottom_txt"> Eat, play, crawl, talk, walk
+          understand and a whole lot
+          more! </div>
       </div>
-      <div class="bottom_txt"> Time to pamper yourself
+      <div> </div>
+    </div>
+  </div>
+  <div class="box_shadow">
+    <div class="boxes box_04">
+      <h5>الأطفال من ١‎ إلى ٣‎ سنوات</h5>
+      <div class="plus_btn"><img src="images/plus_pl.png" width="17" height="17" alt="plus" /></div>
+      <div class="spacer"></div>
+      <div class="inf_images"> <img src="images/infant-06.png" width="166" height="175" alt="infant"  onmouseover="showcontent4()" onmouseout="hidcontent4()" /> </div>
+      <div class="bottom_txt" id="bottom_txt4" style="display:none"> Time to pamper yourself
         with the best of care. And
         you're welcome! </div>
+      <div class="inf_cont_wrap">
+        <div class="inf_cont">
+          <ul>
+            <li><a href="featured_products_toddler.html">Featured Products</a></li>
+            <li><a href="feeding_toddler.html">Nutrition & Feeding</a></li>
+            <li><a href="growing_toddler.html">Growth & Development</a></li>
+            <li><a href="products_toddler.html">Products for 1-3yrs</a></li>
+            <li><a href="faq_toddler.html">Faq's</a></li>
+          </ul>
+        </div>
+        <div class="bottom_txt"> Time to pamper yourself
+          with the best of care. And
+          you're welcome! </div>
+      </div>
     </div>
   </div>
-</div>
-<div class="box_shadow">
-  <div class="boxes box_05">
-    <h5>مرحلة ما قبل المدرسة:٣‎ إلى ٥‎ سنوات</h5>
-    <div class="plus_btn"><img src="images/plus_pl.png" width="17" height="17" alt="plus" /></div>
-    <div class="spacer"></div>
-    <div class="inf_images"> <img src="images/infant-04.png" width="166" height="175" alt="infant" onmouseover="showcontent5()" onmouseout="hidcontent5()" /> </div>
-    <div class="bottom_txt" id="bottom_txt5" style="display:none"> Time to pamper yourself
-      with the best of care. And
-      you're welcome! </div>
-    <div class="inf_cont_wrap">
-      <div class="inf_cont">
-        <ul>
-          <li><a href="featured_products_preschooler.html">Featured Products</a></li>
-          <li><a href="feeding_preschooler.html">Nutrition & Feeding</a></li>
-          <li><a href="growing_preschooler.html">Growth & Development</a></li>
-          <li><a href="products_preschooler.html">Products for 3-5yrs</a></li>
-          <li><a href="faq_preschooler.html">Faq's</a></li>
-        </ul>
-      </div>
-      <div class="bottom_txt"> Time to pamper yourself
+  <div class="box_shadow">
+    <div class="boxes box_05">
+      <h5>مرحلة ما قبل المدرسة:٣‎ إلى ٥‎ سنوات</h5>
+      <div class="plus_btn"><img src="images/plus_pl.png" width="17" height="17" alt="plus" /></div>
+      <div class="spacer"></div>
+      <div class="inf_images"> <img src="images/infant-04.png" width="166" height="175" alt="infant" onmouseover="showcontent5()" onmouseout="hidcontent5()" /> </div>
+      <div class="bottom_txt" id="bottom_txt5" style="display:none"> Time to pamper yourself
         with the best of care. And
         you're welcome! </div>
+      <div class="inf_cont_wrap">
+        <div class="inf_cont">
+          <ul>
+            <li><a href="featured_products_preschooler.html">Featured Products</a></li>
+            <li><a href="feeding_preschooler.html">Nutrition & Feeding</a></li>
+            <li><a href="growing_preschooler.html">Growth & Development</a></li>
+            <li><a href="products_preschooler.html">Products for 3-5yrs</a></li>
+            <li><a href="faq_preschooler.html">Faq's</a></li>
+          </ul>
+        </div>
+        <div class="bottom_txt"> Time to pamper yourself
+          with the best of care. And
+          you're welcome! </div>
+      </div>
+      <div> </div>
     </div>
-    <div> </div>
   </div>
-</div>
 </div>
 <!-- infants boxes end here --> 
+
+<!-- Home content starts here -->
+
+<div class="home_content clear">
+  <div class="cont_boxes">
+    <h3>إلتزام شركة نستله</h3>
+    <p><strong>Quality and Safety: be reassured with Nestlé</strong><br />
+      Now that you are pregnant, maintaining a balanced diet will become a major preoccupation. But this isn't a reason to worry. To eat healthily, all you have to do is to rem7ember these few tips.Now that you are pregnant, maintaining a balanced diet will become a major preoccupation. </p>
+    <p class="gray_btn"><a href="our_commitment.html">نظام الجودة لدى شركة نستله</a></p>
+    <br />
+    <br />
+    <img src="images/140_img.png" width="131" height="95" alt="140" />
+    <p><strong>Quality and Safety: be reassured with Nestlé</strong><br />
+      To eat healthily, all you have to do is to remember these few tips.Now that you are pregnant, maintaining a balanced diet will become a major preoccupation. But this isn't a reason to worry. </p>
+    <p class="gray_btn"><a href="our_commitment.html">اكتشف المزيد</a></p>
+  </div>
+  <div class="cont_boxes">
+    <h3>مراحل الأبوة و الأمومة</h3>
+    <p>Becoming a parent can take a little time to get used to. Now you are part of a new family as well as part of a couple! In order to achieve a happy balance, it is important to integrate parenting with your other important roles in life as a woman, a partner, and a professional.</p>
+    <br />
+    <br />
+    <br />
+    <p><strong>Parenting tips for</strong></p>
+    <ul class="second_box">
+      <li><a href="parenting.html">0-6 months</a></li>
+      <li><a href="parenting.html">6-12 months</a></li>
+      <li><a href="parenting.html">1-3 years</a></li>
+      <li><a href="parenting.html">3-5 years</a></li>
+    </ul>
+    <br class="spacer"/>
+    <br />
+    <br />
+    <br />
+    <img src="images/cont_img_02.png" width="264" height="72" alt="toys" /></div>
+  <div class="cont_boxes">
+    <h3>الأسئلة المتداولة</h3>
+    <ul class="third_box">
+      <li><a href="faq.html">Why am I worried about giving birth?</a></li>
+      <li><a href="faq_infant_0-6.html">What changes will occur when I change from breastmilk to formula?</a></li>
+      <li><a href="faq_toddler.html">My child doesn't eat much, what should I do?</a></li>
+      <li><a href="faq_toddler.html">My toddler doesn't like to drink milk, what should I do?</a></li>
+    </ul>
+    <p class="red_btn"><a href="faq.html">أسئلة أكثر</a></p>
+    <img src="images/cont_img_3.jpg" width="104" height="98" alt="nestle" class="right_img"/></div>
+</div>
+<div class="spacer" style="height:80px"></div>
+
+<!-- Home content ends here --> 
+
+<!--  -->
+
+<div class="products_gal">
+  <h3>مجموعات منتجاتنا</h3>
+  <div class="right_name_pro">
+    <ul class="names">
+      <li>الأشهر الأولى :</li>
+      <li class="list_02"><a href="javascript:void(0);" onclick="showCarousel('i');">الحمل</a></li>
+      <li class="list_03"><a href="javascript:void(0);" onclick="showCarousel('t');">من 6 إلى 12 شهر </a></li>
+      <li class="list_04"><a href="javascript:void(0);" onclick="showCarousel('p');">الأطفال من 1  إلى 3 سنوات</a></li>
+    </ul>
+  </div>
+  <div class="spacer"></div>
+  <div class="list_carousel">
+    <ul id="foo2">
+      <li><a href="products_infant_6-12.html"><img src="images/carousel/i1.png" width="86" height="100" alt="pro" /></a></li>
+      <li><a href="products_infant_6-12.html"><img src="images/carousel/i2.png" width="86" height="100" alt="pro" /></a></li>
+      <li><a href="products_infant_6-12.html"><img src="images/carousel/i3.png" width="86" height="100" alt="pro" /></a></li>
+      <li><a href="products_infant_6-12.html"><img src="images/carousel/i4.png" width="86" height="100" alt="pro" /></a></li>
+      <li><a href="products_infant_6-12.html"><img src="images/carousel/i5.png" width="86" height="100" alt="pro" /></a></li>
+      <li><a href="products_infant_6-12.html"><img src="images/carousel/i6.png" width="86" height="100" alt="pro" /></a></li>
+      <li><a href="products_infant_6-12.html"><img src="images/carousel/i7.png" width="86" height="100" alt="pro" /></a></li>
+      <li><a href="products_toddler.html"><img src="images/carousel/t1.png" width="86" height="100" alt="pro" /></a></li>
+      <li><a href="products_toddler.html"><img src="images/carousel/t2.png" width="86" height="100" alt="pro" /></a></li>
+      <li><a href="products_toddler.html"><img src="images/carousel/t3.png" width="86" height="100" alt="pro" /></a></li>
+      <li><a href="products_preschooler.html"><img src="images/carousel/p1.png" width="86" height="100" alt="pro" /></a></li>
+    </ul>
+    <div class="clearfix"></div>
+    <a id="prev2" class="prev" href="#"><img src="images/arrow_left.png" width="43" height="33" /></a> <a id="next2" class="next" href="#"><img src="images/arrow_right.png" width="43" height="33" /></a>
+    <div id="pager2" class="pager"></div>
+  </div>
+</div>
+<div class="spacer" style="height:60px"></div>
+<!--  --> 
 
 <!-- Footer Starts Here -->
 <div class="footer clear">
@@ -263,7 +365,35 @@
     </div>
   </div>
 </div>
-<!-- Footer Ends Here -->
+<!-- Footer Ends Here --> 
 
+<script type="text/javascript">
+function showCarousel(ftag){
+switch(ftag){
+case 'i':
+var data = '<li><a href="products_infant_6-12.html"><img src="images/carousel/i1.png" width="86" height="100" alt="pro" /></a></li><li><a href="products_infant_6-12.html"><img src="images/carousel/i2.png" width="86" height="100" alt="pro" /></a></li><li><a href="products_infant_6-12.html"><img src="images/carousel/i3.png" width="86" height="100" alt="pro" /></li></a><li><a href="products_infant_6-12.html"><img src="images/carousel/i4.png" width="86" height="100" alt="pro" /></li></a><li><a href="products_infant_6-12.html"><img src="images/carousel/i5.png" width="86" height="100" alt="pro" /></li><li><img src="images/carousel/i6.png" width="86" height="100" alt="pro" /></li></a><li><a href="products_infant_6-12.html"><img src="images/carousel/i7.png" width="86" height="100" alt="pro" /></a></li>';
+$('#foo2').html(data);
+$('#prev2').show();
+$('#next2').show();
+$('#foo2').css('left','0px');
+break;
+case 't':
+var data = '<li><a href="products_toddler.html"><img src="images/carousel/t1.png" width="86" height="100" alt="pro" /></a></li><li><a href="products_toddler.html"><img src="images/carousel/t2.png" width="86" height="100" alt="pro" /></a></li><li><a href="products_toddler.html"><img src="images/carousel/t3.png" width="86" height="100" alt="pro" /></a></li>';
+$('#foo2').html(data);
+$('#prev2').hide();
+$('#next2').hide();
+$('#foo2').css('left','190px');
+break;
+case 'p':
+var data = '<li style="border:none;"><a href="products_preschooler.html"><img src="images/carousel/p1.png" width="86" height="100" alt="pro" /></a></li>';
+$('#foo2').html(data);
+$('#prev2').hide();
+$('#next2').hide();
+$('#foo2').css('left','330px');
+break;
+
+}
+}
+</script>
 </body>
 </html>

@@ -9,7 +9,7 @@ body {
 	margin:0px;
 	font-family: Arial, Helvetica, sans-serif;
 	height:100%;
-	font-size:15px;
+	font-size:13px;
 	background:#edf2fe url(../images/body_bg.jpg) repeat-x;
 }
 a img {
@@ -409,6 +409,10 @@ ul {
     color: #5E7222;
 }
 
+.infants_boxes .boxes.box_01 .inf_images, .infants_boxes .boxes.box_02 .inf_images, .infants_boxes .boxes.box_03 .inf_images  {
+	margin-top: 26px;
+}
+
 .infants_boxes .boxes {
     border-radius: 10px 10px 10px 10px;
     color: #FFFFFF;
@@ -422,6 +426,7 @@ ul {
     float: right;
     font-family: 'ge_sslight';
     font-size: 15px;
+	line-height:16px;
     font-weight: normal;
     margin: 0 20px 0 0;
     padding: 0;
@@ -478,3 +483,187 @@ ul {
     margin: 10px auto 0;
     width: 160px;
 }
+
+/*------- Home Content ---------*/
+.home_content {
+    margin: 20px auto;
+    width: 1000px;
+}
+.home_content .cont_boxes {
+    border-right: 1px dotted #8CA8CF;
+    color: #988F81;
+    float: right;
+    height: 380px;
+    padding: 0 20px;
+    width: 285px;
+}
+
+.home_content .cont_boxes h3 {
+    color: #CC3333;
+    font-family: 'ge_sslight';
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.home_content .cont_boxes p.gray_btn {
+    background: none repeat scroll 0 0 #BAB7B3;
+    border-radius: 30px 30px 30px 30px;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 20px;
+    margin-top: 10px;
+    padding: 3px 20px 3px 5px;
+}
+
+.home_content .cont_boxes p.gray_btn a {
+    background: url("../images/btn_arrow.png") no-repeat scroll right center transparent;
+    color: #FFFFFF;
+    padding: 2px 0 2px 40px;
+}
+
+.home_content .cont_boxes img {
+    float: left;
+    margin: 10px;
+}
+.home_content .cont_boxes p.gray_btn {
+    background: none repeat scroll 0 0 #BAB7B3;
+    border-radius: 30px 30px 30px 30px;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 20px;
+    margin-top: 10px;
+    padding: 3px 20px 3px 5px;
+}
+
+.home_content .cont_boxes ul.third_box {
+    line-height: 20px;
+}
+
+.home_content .cont_boxes ul.third_box li {
+    background: url("../images/boder_img.jpg") repeat-x scroll right bottom transparent;
+    padding: 7px 0;
+}
+
+.home_content .cont_boxes ul.third_box li a {
+    background: url("../images/small_arrow.png") no-repeat scroll left 5px transparent;
+    display: block;
+    padding: 0 0 0 20px;
+}
+
+.home_content .cont_boxes ul.second_box {
+    line-height: 25px;
+    list-style: disc inside none;
+}
+
+.home_content .cont_boxes ul.second_box li {
+    color: #D35C44;
+    float: left;
+    width: 48%;
+}
+
+p.red_btn {
+    background: none repeat scroll 0 0 #E5B1B4;
+    border-radius: 30px 30px 30px 30px;
+    display: inline-block;
+    float: right;
+    font-weight: bold;
+    line-height: 20px;
+    margin-top: 50px;
+    padding: 3px 20px 3px 5px;
+}
+
+p.red_btn a {
+    background: url("../images/btn_arrow.png") no-repeat scroll left center transparent;
+    color: #FFFFFF;
+    padding: 2px 0 2px 40px;
+}
+
+.home_content .cont_boxes p.gray_btn {
+    background: none repeat scroll 0 0 #BAB7B3;
+    border-radius: 30px 30px 30px 30px;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 20px;
+    margin-top: 10px;
+    padding: 3px 20px 3px 5px;
+}
+
+.home_content .cont_boxes p.gray_btn a {
+    background: url("../images/btn_arrow.png") no-repeat scroll left center transparent;
+    color: #FFFFFF;
+    padding: 2px 0 2px 40px;
+}
+
+.products_gal {
+    height: 145px;
+    margin: 0 auto;
+    width: 960px;
+}
+
+.products_gal h3 {
+    color: #006699;
+    float: right;
+    font-family: 'ge_sslight';
+    font-size: 22px;
+    font-weight: normal;
+    width: 300px;
+}
+
+.right_name_pro {
+    float: left;
+    width: 48.5%;
+}
+
+.products_gal ul.names {
+    line-height: 20px;
+    list-style: disc outside none;
+}
+
+.products_gal ul.names li:first-child {
+    list-style: none outside none;
+}
+.products_gal ul.names li {
+    color: #A2998B;
+    float: right;
+    margin-left: 30px;
+}
+
+.products_gal ul li.list_02 {
+    color: #5C6F84;
+}
+
+.list_carousel {
+    background: url("../images/galler_bg.png") no-repeat scroll 0 0 transparent;
+    position: relative;
+}
+.list_carousel li {
+	margin-left:-5px !important;
+}
+.list_carousel li {
+    border-right: 1px solid #CCCCCC;
+    display: block;
+    float: left;
+    height: 100px;
+    margin: 25px 0;
+    padding: 0 10px;
+    text-align: center;
+    width: 120px;
+}
+
+.prev {
+    height: 33px;
+    left: -2px;
+    position: absolute;
+    top: 50px;
+    width: 43px;
+}
+
+.next {
+    height: 33px;
+    position: absolute;
+    right: -2px;
+    top: 60px;
+    width: 43px;
+}
+
