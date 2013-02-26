@@ -667,3 +667,182 @@ p.red_btn a {
     width: 43px;
 }
 
+/*-------Pregnancy ---------*/
+.inner_content {
+    margin: 0 auto;
+    padding: 15px 0;
+    width: 960px;
+}
+
+.inner_content h2 {
+    color: #CC3333;
+    font-family: 'ge_ssmedium';
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.inner_content .preganany_cont_top {
+    border-bottom: 1px solid #DFE4EF;
+    clear: both;
+    margin: 20px auto 15px;
+    padding-bottom: 15px;
+    position: relative;
+    width: 100%;
+}
+
+.inner_content .preganany_cont_top .pregn_right {
+    float: right;
+    width: 510px;
+}
+
+.inner_content .preganany_cont_top h3 {
+    color: #58AAE0;
+    font-family: 'webfontregular';
+    font-size: 35px;
+    margin-right: 130px;
+}
+
+.inner_content .preganany_cont_top h1 {
+    color: #DE5792;
+    font-family: 'webfontregular';
+    font-size: 60px;
+    right: 0;
+    position: absolute;
+    top: 30px;
+    transform: rotate(3deg);
+}
+
+.inner_content .preganany_cont_top .pregn_right p {
+    color: #8E8E8E;
+    margin-right: 130px;
+    margin-top: 80px;
+}
+
+.inner_content .preganany_cont_top .foots_img {
+    bottom: 50px;
+    height: 149px;
+    right: 530px;
+    position: absolute;
+    width: 119px;
+}
+
+.inner_content .preganany_cont_top .pregn_left {
+    float: left;
+    width: 400px;
+}
+
+.inner_content .preganany_cont_top .pregn_left .preg_txt {
+    color: #DE5792;
+    float: left;
+    font-size: 16px;
+    margin-top: 20px;
+    width: 245px;
+}
+
+.bottom_box {
+    clear: both;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.bottom_box .fst_box {
+    float: right;
+    margin-left: 10px;
+    width: 240px;
+}
+
+.bottom_box .mid_box {
+    float: right;
+    margin-left: 10px;
+    width: 455px;
+}
+
+.bottom_box .midlft_box {
+    float: right;
+    width: 200px;
+}
+
+.bottom_box .rght_box {
+    float: left;
+    width: 700px;
+}
+
+.bottom_box .faqbox_box {
+    float: right;
+    width: 235px;
+}
+
+.bottom_box .pregna_box h3 {
+    color: #F73389;
+    font-family: 'ge_sslight';
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.bottom_box .pregna_box h5 {
+    color: #8E8E8E;
+    font-family: 'ge_sslight';
+    font-size: 16px;
+    font-weight: normal;
+    margin: 5px 0;
+}
+
+.bottom_box .pregna_box p {
+    color: #8E8E8E;
+}
+
+.pregna_box ul.third_box {
+    line-height: 20px;
+}
+
+.pregna_box ul.third_box li {
+    background: url("../images/boder_img.jpg") repeat-x scroll right bottom transparent;
+    color: #F06CA6;
+    padding: 7px 0;
+}
+
+.pregna_box ul.third_box li a {
+    background: url("../images/small_arrow.png") no-repeat scroll left 5px transparent;
+    display: block;
+    padding: 0 0 0 20px;
+}
+
+.faq_red_btn {
+    background: none repeat scroll 0 0 #F8ABD1;
+    border-radius: 30px 30px 30px 30px;
+    display: inline-block;
+    float: right;
+    font-weight: bold;
+    line-height: 20px;
+    margin-top: 50px;
+    padding: 3px 20px 3px 5px;
+}
+
+.growing_red_btn a, .feeding_red_btn a, .faq_red_btn a {
+    background: url("../images/btn_arrow.png") no-repeat scroll left center transparent;
+    color: #FFFFFF;
+    padding: 2px 0 2px 40px;
+}
+
+.feeding_red_btn {
+    background: none repeat scroll 0 0 #F73389;
+    border-radius: 30px 30px 30px 30px;
+    display: inline-block;
+    float: right;
+    font-weight: bold;
+    line-height: 20px;
+    margin-top: 50px;
+    padding: 3px 20px 3px 5px;
+}
+
+.growing_red_btn {
+    background: none repeat scroll 0 0 #C83B79;
+    border-radius: 30px 30px 30px 30px;
+    display: inline-block;
+    float: right;
+    font-weight: bold;
+    line-height: 20px;
+    margin-top: 50px;
+    padding: 3px 20px 3px 5px;
+}
