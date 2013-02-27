@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>التغذية نستله</title>
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" language="javascript" src="js/jquery-1.8.2.min.js"></script>
+
+<script src="js/jquery.anythingslider.js"></script>
+	<script>
+	$(function() {
+		$('#slider2').anythingSlider({
+			expand       : true,
+			showMultiple : 1,
+			changeBy     : 1
+		});
+	});
+	
+	$(document).ready(function(){
+		$(".more_btn").toggle(function(){
+		$(this).text("Less");
+		$(this).next(".acc_cont").slideDown(300);
+		$(this).toggleClass("less");
+		},
+		function(){
+		$(this).text("More");
+		$(this).next(".acc_cont").slideUp(300);	
+		$(this).toggleClass("less")
+		});
+	});
+	$(document).ready(function () {
+		$('.accordion a.item').click(function () {
+			//slideup or hide all the Submenu
+			if($($(this)).hasClass($(this).attr('rel') + 'Over')){
+				$(this).siblings('ul').slideUp('fast');	
+				$(this).removeClass($(this).attr('rel') + 'Over');
+			}else{
+				$('html,body').animate({scrollTop: $(this).offset().top}, 1000);
+				$(this).siblings('ul').slideDown('fast');
+				$(this).addClass($(this).attr('rel') + 'Over');   
+			}
+			return false;
+		});
+	});
+	$(document).ready(function () {
+		$('.accordion-2 a.item').click(function () {
+			//slideup or hide all the Submenu
+			$('.accordion-2 li').children('ul').slideUp('fast');if($($(this)).hasClass($(this).attr('rel') + 'Over')){
+            $(this).removeClass($(this).attr('rel') + 'Over');
+            }else{
+            $(this).siblings('ul').slideDown('fast');
+            $(this).addClass($(this).attr('rel') + 'Over');       
+            }
+			return false;
+		});
+	});	</script>
+
+</head>
+<body>
+
+<!-- Header Starts Here -->
+<div class="header">
+  <div class="wrapper">
+    <div class="logo"> <img src="images/nestle_logo.png" width="147" height="99" alt="نستله"> </div>
+    <div class="header_left">
+      <div class="header_left_top">
+        <ul>
+          <li> <a href="/"  class="active">الصفحة الرئيسية</a> </li>
+          <li> <a href="our_commitment.html">التزاماتنا</a> </li>
+          <li> <a href="#">نادي طفل نستله</a> </li>
+          <li> <a href="parenting.html">الأمومة</a> </li>
+          <li> <a href="">اتصل بنا</a> </li>
+          <li> <a href="#">خريطة الموقع</a> </li>
+          <li> <a href="#">الحمل</a> </li>
+          <li> <a href="/eng" style="font-family: 'VAGRoundedStd-Light';" dir="ltr">English</a> </li>
+        </ul>
+        <div class="search_wrap">
+          <input name="" type="text" placeholder="البحث">
+          <input name="" type="submit">
+        </div>
+      </div>
+      <div class="nav">
+        <ul>
+          <li id="preg"> <a href="pregnancy.html">الحمل</a> </li>
+          <li id="inf_0_6"> <a href="infant_0-6.html">الأشهر الأولى</a> </li>
+          <li id="inf_6_12"> <a href="infant_6-12.html">من ٦‎ إلى ١‎٢‎ شهر</a> </li>
+          <li id="inf_1_3"> <a href="toddler.html">الأطفال من ١‎ إلى ٣‎ سنوات</a> </li>
+          <li id="inf_3_5"> <a href="preschooler.html">مرحلة ما قبل المدرسة:٣‎ إلى ٥‎ سنوات</a> </li>
+          <li id="for_ur_baby"> <a href="for_your_baby.html">لأجل طفلك</a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Header Ends Here -->
+<div class="inner_content clear">
+
+<div class="infant_left_0_6">
+<h4>infant: 0-6 months</h4>
+<div class="left_inner">
+  <ul class="header_ul">
+    <li>Faq's</li>
+  </ul>
+  <ul class="accordion-2">
+  <li><a href="feeding_infant_0-6.html" style="background:none !important;">
+Nutrition & Feeding</a>
+  <ul>
+  <li>
+  
+  	<ol>
+    	<li style="border:none !important"><a href="feeding_infant_0-6.html#feeding_infant_0-6">Your baby's nutrition in the first 6 months  </a></li>
+    
+    </ol>
+  
+  </li>
+  </ul></li>
+  <li><a href="growing_infant_0-6.html" style="background:none !important;">Baby growth and Development</a>
+  <ul>
+  <li>
+  
+  	<ol>
+    	<li style="border:none !important"><a href="growing_infant_0-6.html#growing_infant_0-6">My First Months </a></li>
+    
+    </ol>
+  
+  </li>
+  </ul>
+  </li>
+  </ul>
+</div>
+
+</div>
+<style>
+.anythingSlider-default.activeSlider .anythingControls a {
+	/* background image = top shadow */
+	background-color: #ffc832;
+}
+.anythingSlider-default .anythingControls a.start-stop:hover,
+.anythingSlider-default .anythingControls a.start-stop.hover,
+.anythingSlider-default .anythingControls a.start-stop .anythingControls ul a:hover {
+	background-image: none;
+	color: #ffc832;
+}
+
+</style>
+
+<div class="infantfaq_right faq_right">
+<h2>Frequently Asking Questions</h2>
+<br />
+<div class="quest" id="faq_infant_0-6">
+    <div style="width:80%;"><p>What is the difference between breastmilk and cows’ milk?
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont"><span>There are many differences between breastmilk and cows’ milk. Some of these differences are that breastmilk, unlike cows’ milk, contains the antibodies your baby needs to strengthen their immune system. It also contains more fat than cows’ milk and in a form which is easily absorbed by your baby. Cows’ milk contains much higher levels of protein than breastmilk, which can overload a baby’s developing kidneys. Furthermore, your breasts naturally adapt the milk they produce to your baby’s needs and age, unlike cows’ milk.</span>
+</div>
+</div>
+<hr />
+<div class="quest">
+    <div style="width:80%;"><p>What does breastmilk contain? 
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont"><span>Your breastmilk composition changes as your baby grows. For the first few days after birth, breastmilk consists of colostrum, a thin, watery, clear-to-yellowish fluid that is full of protective antibodies and protein. After a few days, this milk changes to the normal milk your body produces. Within a feed your milk composition will also change, with the Foremilk (or first milk), being more watery and therefore thirst quenching, and the Hind milk, which is the last milk from your breast, has a greater percentage of fat, which is why your baby should finish one breast completely before moving on to the other. Additionally, the fat, protein and carbohydrate content in your breastmilk will change through the course of the day, with the greatest fat or energy content present in the morning and the least amount of fat present at night. If given in sufficient quantities over 24 hours, breastmilk contains all the nutrients that a baby (aged 0-6 months) needs.</span>
+</div>
+</div>
+<hr />
+<div class="quest">
+    <div style="width:80%;"><p>Does my breastmilk contain iron?
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont"><span>Yes, breastmilk contains iron but at a relatively low level. However as iron is very important for the formation of blood cells, the iron found in breastmilk is in a form which is very easy for your baby to absorb and therefore high levels are not needed in breastmilk to ensure an adequate supply of iron to meet your baby’s requirements.</span>
+</div>
+</div>
+<hr />
+<div class="quest">
+    <div style="width:80%;"><p>What changes will occur when I change from breastmilk to formula?
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont"><span>One change you will notice in your baby is her stools. Since breastmilk so closely matches the needs of your baby, more of the nutrients are digested and absorbed so the stools will be less odorous in breastfed babies and the colour and consistency will change. Also, feeding intervals will be a little longer, because it will take your baby longer to digest formula than breastmilk.</span>
+</div>
+</div>
+<hr />
+<div class="quest">
+    <div style="width:80%;"><p>Can what I eat affect the taste of my milk for baby?
+
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont"><span>Yes, and you may find that when you try certain spicy foods that your baby is less enthusiastic about suckling. Babies can taste flavours very strongly from an early age, so they are particularly susceptible to small changes in your diet. However, unless your baby takes a strong aversion to you eating something, this should not be something for you to worry about.</span>
+</div>
+</div>
+<hr />
+<div class="quest">
+    <div style="width:80%;"><p>Will my baby need water or formula in addition to my breastmilk?
+
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont"><span>It's not necessary to supplement breastmilk with water or formula unless your doctor tells you there's a medical reason to do so. If your baby is in the nursery at the hospital, insist that she does not receive any water, formula, or sugar (glucose) water, but be brought to you instead to be breastfed. This ensures that baby's primary source of nutrition is breastmilk. And hold off on using dummies until after your milk supply is well established. (This may take two to four weeks.) Your milk supply increases to match the level of your baby's sucking, so make sure all the sucking is done at your breast. In your baby's first four to six months, water, juice, and other foods are not necessary. Baby will get all the nutrition she needs from your breastmilk. And even as you introduce solid foods, breastmilk or iron-fortified infant formula should still be the primary sources of nutrition for your baby. </span>
+</div>
+</div>
+<hr />
+<div class="quest">
+    <div style="width:80%;"><p>What's the best way to heat a bottle of breastmilk or formula? In the microwave?
+
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont"><span>Many new mums have questions about preparing a bottle. First, be sure to never heat a bottle of breastmilk or formula in the microwave. It creates hot spots in the liquid that can burn baby’s mouth, and it destroys breastmilk’s delicate nutrients. Safely warm a bottle with these steps: Stand it in a bowl of warm water for a few minutes or hold under running water. Gently shake the bottle to distribute the warmed milk. Test warmed breastmilk or formula by shaking a few drops onto your wrist. If the liquid feels just barely warm, it’s a safe temperature for your little one.</span>
+
+</div>
+</div>
+<hr />
+
+  <div class="quest">
+    <div style="width:80%;"><p>How much breastmilk or formula should my baby consume each day?
+
+
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont"><span>The answer varies according to your baby's age. In the first months from birth to 6 Months, nurse on demand or feed up to 950 ml of milk product daily (breastmilk or formulas). From 6-7months, nurse on demand or feed around 700 ml of milk product daily (breastmilk or formulas). From 8-9 months, nurse on demand or feed around 500-600ml of milk product daily (breastmilk or formulas). From 9 months – 1 year, nurse on demand or feed around 500 ml of milk product daily. From 12 months, nurse on demand or feed around 500 ml of milk product. In general, young babies have small tummies and need small feeds throughout the day and night to make sure they get all the nutrients they need. When they’re full, babies often turn their heads or pull away. Although every baby follows a slightly different feeding pattern, you can expect your newborn to feed about every two to three hours.</span>
+
+</div>
+</div>
+<hr />
+<div class="quest">
+    <div style="width:80%;"><p>How far in advance can I prepare my baby's bottles?
+
+
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont"><span>If you’re breastfeeding, use sealed and refrigerated breastmilk within 48 hours. If you’re formula-feeding use formula within 1 hour of preparation at room temperature. After feeding begins, discard any remaining formula left in the bottle within 1 hour. The reason for this is that, once a baby has fed from a bottle, microorganisms from her mouth are introduced into the formula. Neither refrigeration nor reheating completely prevents these microorganisms from growing.</span>
+
+</div>
+</div>
+<hr />
+<div class="quest">
+    <div style="width:80%;"><p> How long can I keep formula at room temperature?
+
+
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont"><span>In general, you should try to feed prepared formula immediately, within 1 hour at room temperature. Discard any remaining formula left in the bottle within 1 hour after feeding begins, because once a baby has fed from a bottle, microorganisms from the baby's mouth are introduced into the formula. Neither refrigeration nor reheating completely prevents these microorganisms from growing.</span>
+
+</div>
+</div>
+<hr />
+<div class="quest">
+    <div style="width:80%;"><p> How should I measure the right amount of powdered formula?
+
+
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont"><span> It is important to follow the manufacturer’s instructions for the preparation procedure and number of scoops you need for the quantity of formula you are preparing. In addition, making use of these general instructions below, will also help ensure your quantities are accurate. Dip the scoop provided into the dry formula and loosely fill the scoop. Scrape off any excess against the inner edge of the tin and add to the water in the bottle. Do not get the scoop wet. Don’t pack the formula into the scoop. You may notice some air pockets—that's okay. Your baby receives the full nutritional benefits with every unpacked scoop. Packing the scoop can provide a too-concentrated source of calories and nutrients. Giving too-concentrated formula over an extended period may create the need for additional fluids. 
+</span>
+</div>
+</div>
+<hr />
+  
+<div class="quest">
+    <div style="width:80%;"><p>  How long can I safely store unopened tins of formula?
+
+
+
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont"><span> Look for the best before date on the top or bottom of each tin of formula. You can feel confident about storing unopened tins at room temperature and using the formula up to the best before date.
+</span>
+
+</div>
+</div>
+<hr />
+<div class="quest">
+    <div style="width:80%;"><p>  Can I use bottled water to prepare formula, or do I need to boil it? 
+
+
+
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont"><span>Bottled water isn’t the same as sterilised water, and bottled water often doesn’t contain fluoride. Whether the water needs to be sterilized is a decision you make with your baby’s doctor, based on your baby’s health, your living conditions, and your water source. 
+</span>
+
+</div>
+</div>
+<hr />
+<div class="quest">
+    <div style="width:80%;"><p>My breastfeeding baby always seems hungry. How do I know if she's getting enough?
+
+
+
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont"><span> Weight gain is the best sign that your baby is getting enough breastmilk. However, during the first days at home, keeping a written record of your baby’s feedings, urine, and bowel movements will also help you gauge your baby’s progress. Generally, your baby should have a minimum of one wet nappy per day of life until the sixth day. (Example: by day three babies should have three to four wet nappies and a minimum of two bowel movements per 24 hours.) By day six your baby should have six to eight wet nappies and four to six bowel movements per 24 hours. Once baby has reached this amount, her intake is probably adequate. Remember, it’s very common for a newborn to feed frequently, sometimes every hour and a half. Such frequent feedings are necessary because breastmilk is easily digested, and because your baby’s tummy is very small. In fact, it’s only about the size of an apricot. Breastfeeding as often as your baby wants will keep her content and you comfortable. What’s more, frequent nursing will build up your breastmilk production and provide your baby the warmth and comfort of being in your arms.</span>
+
+</div>
+</div>
+<hr />
+<div class="quest">
+    <div style="width:80%;"><p>  I'm returning to work soon and want to continue giving my baby breastmilk. How can I prepare for this?
+
+
+
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont"><span>The key to continuing to breastfeed after you return to work is planning ahead. To ease the transition back to work, start pumping 3 to 4 weeks prior to returning to work. Many mothers are able to express extra breastmilk that can be frozen for later. The ideal time to collect extra breastmilk is halfway between regular feeding times. Breastfeed baby and then wait about 45 minutes before pumping. Pump two to four times a day. The first day of pumping may produce only a small amount of milk. Within 48 hours, however, you should notice an increase in your breastmilk production. Mums usually find that they have the most milk in the morning hours. Early evening is not the best time to collect milk. Having extra breastmilk on hand will help you get through the days when you temporarily have less breastmilk because of fatigue, stress, and maternal or infant illness.</span>
+
+
+</div>
+</div>
+<hr />
+<div class="quest">
+    <div style="width:80%;"><p>  How should I store breastmilk?
+
+
+
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont"><span> After you express breastmilk, it’s important that it is properly stored, as proper storage prevents contamination and spoilage. Antioxidant levels are not stable and will decline over time, however, because of its many benefits, breastmilk remains the gold standard. Your options for storing breastmilk include disposable bags designed specifically for breastmilk, opaque plastic bottles, or plastic freezer bags. Wash and sterilise bottles before each use. Breastmilk may be stored in the refrigerator for up to 48 hours or in the rear of the freezer compartment (in a plastic bottle or freezer bag) for 3 to 6 months. Whether fresh or frozen, it’s best to use the breastmilk as soon as possible.</span>
+
+</div>
+</div>
+<hr />
+<div class="quest">
+    <div style="width:80%;"><p> How can I be sure my breastmilk is nutritionally adequate?
+
+
+
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont"><span> Every bite counts when you’re breastfeeding your baby, so be prepared. Stock your kitchen with healthy foods including fruits, vegetables, whole grains, lean meats, and dairy products. Remember, your baby eats what you eat.  
+</span>
+</div>
+</div>
+<hr />
+
+<div class="quest">
+    <div style="width:80%;"><p> My baby won't eat cereal even though she's 6 months old. Help!
+
+
+
+
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont"><span> Each infant has its own individual time clock for developmental readiness. At this age your baby may not be ready for solid foods, and healthcare professionals generally recommend that you focus baby’s nutrition on breast milk or iron-fortified infant formula. Wait several weeks before trying cereal again. Iron-fortified rice cereal is a good place to start, because it’s easy to digest and not likely to cause an allergic reaction. After a month, if your baby still isn’t interested in cereal, try feeding her cooked, pureed vegetables or mashed fruit. Some babies are just slow to warm up to cereals and other solid foods! </span>
+
+
+</div>
+</div>
+<hr />
+
+
+<div class="quest">
+    <div style="width:80%;"><p> How can I keep my baby healthy at day care?</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont"><span>It’s natural to be concerned about protecting baby as she’s exposed to new environments and people. Maintaining a healthy immune system is baby’s best natural defence. During your baby’s first 12 months, she develops immunities and strengthens her resistance. However, the immune system doesn’t fully develop until children are teenagers. That’s why babies need extra care to keep them healthy. <br />
+	To help keep baby healthy, try these tips: <br /><br />
+	<strong>1.</strong> Breastfeed your baby throughout the first year of life. Breastmilk is the ideal source of nutrition and protection for baby throughout the first year of life, because it contains antibodies that help protect your baby. Breastfeeding also fosters an infection-fighting environment in your baby’s digestive tract that appears to help reduce the incidence of ear infections, allergies, and diarrhoea. <br /><br />
+	<strong>2.</strong> Keep baby’s immunisations up to date. Take your baby for regular checkups, and make sure her immunisations stay on schedule. Talk to your health care professional about the best immunisation schedule for your baby. <br /><br />
+	<strong>3.</strong> Allow for plenty of rest. Ask your day care provider about when and where baby will nap. Babies and young children generally get their sleep from a combination of night time sleep and day time naps. Without adequate sleep, the immune system weakens, and baby becomes more vulnerable. Newborn babies need about 16 hours of sleep per day. After 6 months of age and until your child is 3 years old, the sleep requirement decreases slightly to between 10 to 14 hours per day. <br /><br />
+	<strong>4.</strong> Keep baby’s environment clean. Many day care providers successfully limit the spread of colds and flu by frequently washing their hands, as well as the childrens’ hands, faces, toys, and changing surfaces. Ask about your provider’s policies, and adopt their routines.</span></div>
+</div>
+<hr />
+
+<div class="quest">
+    <div style="width:80%;"><p> Can using a dummy ruin my baby's future teeth? When should I wean my baby from her dummy? 
+
+
+
+
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont"><span> Early on, a dummy is not a problem. A dummy can serve as a temporary measure to allow your infant to fulfill strong sucking needs. Most children will readily abandon this sucking device during or shortly after the toddler period, often when they realise that it's socially unacceptable for “big girls and boys” to have one. However, should your child refuse to give up a dummy or begin sucking a thumb instead, there could be trouble. Prolonged use of a dummy or thumb sucking beyond the toddler period can contribute to misalignment of a child’s primary teeth. Often it's persistent thumb sucking, rather than use of a dummy, that is a common cause for orthodontic problems.
+If your baby has been using the dummy frequently, start using it only to satisfy your baby’s sucking needs, but not to quiet her every time she cries. Once baby is 6 months, further limit the use of the dummy and comfort your baby in other ways such as holding or cuddling her. To avoid prolonged use, you may want to set a goal of getting rid of the dummy by 12 months.
+</span>
+
+
+</div>
+</div>
+<hr />
+<div class="quest">
+    <div style="width:80%;"><p>Which product should you choose when a child can't tolerate the proteins in cow's milk?
+
+
+
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont"><span> Consulting your child’s paediatrician is crucial the moment you feel that for any reason, he or she is having a reaction to the milk. Remember, Breastmilk is the ideal source of nutrition for your baby throughout the first year of life and keeps your child away and safe from allergies especially if your child is susceptible to having cow’s protein allergy. If one child in the family or the parents have already manifested this type of allergy, try to prevent it by consulting with your child’s paediatrician who will prescribe a hypoallergenic baby milk suitable for your child’s condition, if for any reason you decide not to breastfeed your child. If the child has shown he is allergic to proteins in cow's milk, there are products intended to treat this type of allergies. On that count, rest assured that the labelling on baby food clearly shows all the ingredients used in it. There are no hidden ingredients. So consulting the paediatrician and checking the list of ingredients on baby foods to find out whether or not a product contains any cow's milk is key to preventing this type of allergy.
+</span>
+
+</div>
+</div>
+<hr />
+<div class="quest">
+    <div style="width:80%;"><p> If the baby suffers from colic, stomach-ache or vomiting, should you reduce the amount of milk systematically or change it?
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont"> <span>It is always sensible to consult the paediatrician whenever the baby is for any reason uncomfortable either suffering from colics, aches or more seriously vomiting. After careful screening of your baby’s symptoms, the doctor will advise you whether you should change the milk or wait as far as possible. A crying child is adapting to life. Children are initially in a very restricted space which is very nice to live in, then they move into another environment and so they cry. Parents are inclined to want to change the milk and sometimes that works, but in most cases it's a mere coincidence between changing the milk and stopping crying. It is advised is to avoid frequent changes of milk, unless the paediatrician sees a valid cause for it.  Be patient, and don't forget that colic, like babies' crying, is never serious and always gets better. </span>
+
+</div>
+</div>
+<hr />
+<div class="quest">
+    <div style="width:80%;"><p> Until when do babies suffer from colic? 
+
+
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont"><span> Colic will eventually clear up at around the 3-month mark. Sometimes it can last a bit longer. You should always consult a doctor to make sure that there is not some other reason why your baby is crying, but above all, be patient. Avoid changing milk frequently, which is almost always pointless, unless the doctor advises the same.
+</span>
+
+</div>
+</div>
+<hr />
+
+<div class="quest">
+    <div style="width:80%;"><p> What should I do when my baby is vomiting? Should I note how frequent the vomiting is?
+
+
+
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont"><span> Most children do throw up, so you shouldn't worry too much about it. But if you find that the vomiting is too frequent, if there is any doubt about the abnormal nature of your child's vomiting or if there are other symptoms, then you should ask your doctor's opinion. Sometimes vomiting can be more of a problem when it is part of a condition called gastro-oesophageal reflux. Only the pediatrician should decide whether switching milk is required, whether the baby needs a special milk or some other treatment. But above all, never, ever change the baby's milk without consulting your doctor.
+
+</span>
+
+</div>
+</div>
+<hr />
+
+
+
+
+
+
+
+</div>
+</div>
+<!-- Footer Starts Here -->
+<div class="footer clear">
+  <div class="wrapper clear">
+    <div class="footer_boxes clear">
+      <div class="footboxes footbox_01">
+        <h3>الحمل</h3>
+        <ul>
+        <li><a href="featured.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding.html">التغذية</a></li>
+          <li><a href="growing.html">النمو و التطور</a></li>
+                    <li><a href="products.html">المنتجات الخاصة للحامل</a></li>
+          <li><a href="faq.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_02">
+        <h3>الأشهر الأولى</h3>
+        <ul>
+          <li><a href="feeding_infant_0-6.html">التغذية</a></li>
+          <li><a href="growing_infant_0-6.html">النمو و التطور</a></li>
+          <li><a href="faq_infant_0-6.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_03">
+        <h3>من ٦‎ إلى ١‎٢‎ شهر</h3>
+        <ul>
+          <li><a href="featured_products_infant_6-12.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding_infant_6-12.html">التغذية</a></li>
+          <li><a href="growing_infant_6-12.html">النمو و التطور</a></li>
+          <li><a href="products_infant_6-12.html">المنتجات الخاصة لعمر ٦-١٢ شهراً</a></li>
+          <li><a href="faq_infant_6-12.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_04">
+        <h3>الأطفال من ١‎ إلى ٣‎ سنوات</h3>
+        <ul>
+          <li><a href="featured_products_toddler.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding_toddler.html">التغذية</a></li>
+          <li><a href="growing_toddler.html">النمو و التطور</a></li>
+          <li><a href="products_toddler.html">المنتجات الخاصة لعمر ١ إلى ٣ سنوات</a></li>
+          <li><a href="faq_toddler.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_05">
+        <h3>مرحلة ما قبل المدرسة:٣‎ إلى ٥‎ سنوات</h3>
+        <ul>
+          <li><a href="featured_products_preschooler.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding_preschooler.html">التغذية</a></li>
+          <li><a href="growing_preschooler.html">النمو و التطور</a></li>
+          <li><a href="products_preschooler.html">المنتجات الخاصة لعمر٣ إلى ٥ سنوات</a></li>
+          <li><a href="faq_preschooler.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer_menu">
+      <ul>
+        <li><a href="index.html">الصفحة الرئيسية</a></li>
+        <li><a href="parenting.html">الأمومة</a></li>
+        <li><a href="#">الوصفات</a></li>
+        <li><a href="our_commitment.html">التزاماتنا</a></li>
+        <li><a href="#">نادي طفل نستله</a></li>
+        <li><a href="#">اتصل بنا</a></li>
+        <li><a href="faq.html">الأسئلة و الأجوبة</a></li>
+        <li><a href="#">خريطة الموقع</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer_rule">
+    <div class="wrapper">
+      <div class="copy_right_right">علامات "بداية صحية لحياة صحية" هي علامات تجارية لشركة سوسيتيه دي برودوي نستله إس. إيه. فيفي – سويسرا<br />كل العلامات التجارية هي من ملك لشركة سوسيتيه دي برودوي نستله إس. إيه. فيفي – سويسرا</div>
+      <div class="copy_right_left">نستله نيوترشن<span dir="ltr">&nbsp;2013&nbsp;</span>جميع الحقوق محفوظة<br />
+        <a href="privacy_policy.html" class="active">الشروط و الأحكام  .  سياسة الخصوصية</a> </div>
+    </div>
+  </div>
+</div>
+<!-- Footer Ends Here -->
+
+</body>
+</html>

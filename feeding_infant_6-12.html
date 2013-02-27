@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>التغذية نستله</title>
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" language="javascript" src="js/jquery-1.8.2.min.js"></script>
+
+<script src="js/jquery.anythingslider.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#foo2').carouFredSel({
+		circular: false,
+		infinite: false,
+		auto: false,
+		prev: '#prev2',
+		next: '#next2',
+		pagination: false,
+		mousewheel: true,
+		swipe: {
+			onMouse: true,
+			onTouch: true
+		}
+	});
+});
+	
+	$(document).ready(function(){
+		$(".more_btn").toggle(function(){
+		$(this).text("Less");
+		$(this).next(".acc_cont").slideDown(300);
+		$(this).toggleClass("less");
+		},
+		function(){
+		$(this).text("More");
+		$(this).next(".acc_cont").slideUp(300);	
+		$(this).toggleClass("less")
+		});
+	});
+	$(document).ready(function () {
+		$('.accordion a.item').click(function () {
+			//slideup or hide all the Submenu
+			if($($(this)).hasClass($(this).attr('rel') + 'Over')){
+				$(this).siblings('ul').slideUp('fast');	
+				$(this).removeClass($(this).attr('rel') + 'Over');
+			}else{
+				$('html,body').animate({scrollTop: $(this).offset().top}, 1000);
+				$(this).siblings('ul').slideDown('fast');
+				$(this).addClass($(this).attr('rel') + 'Over');   
+			}
+			return false;
+		});
+	});
+	$(document).ready(function () {
+		$('.accordion-2 a.item').click(function () {
+			//slideup or hide all the Submenu
+			$('.accordion-2 li').children('ul').slideUp('fast');	
+			if($($(this)).hasClass($(this).attr('rel') + 'Over')){
+            $(this).removeClass($(this).attr('rel') + 'Over');
+            }else{
+            $(this).siblings('ul').slideDown('fast');
+            $(this).addClass($(this).attr('rel') + 'Over');       
+            }
+			return false;
+		});
+	});	</script>
+<style>
+.feed_infan6_12 .acc_cont
+{
+	padding-right:0px !important;
+	}
+</style>
+</head>
+<body>
+
+<!-- Header Starts Here -->
+<div class="header">
+  <div class="wrapper">
+    <div class="logo"> <img src="images/nestle_logo.png" width="147" height="99" alt="نستله"> </div>
+    <div class="header_left">
+      <div class="header_left_top">
+        <ul>
+          <li> <a href="/"  class="active">الصفحة الرئيسية</a> </li>
+          <li> <a href="our_commitment.html">التزاماتنا</a> </li>
+          <li> <a href="#">نادي طفل نستله</a> </li>
+          <li> <a href="parenting.html">الأمومة</a> </li>
+          <li> <a href="">اتصل بنا</a> </li>
+          <li> <a href="#">خريطة الموقع</a> </li>
+          <li> <a href="#">الحمل</a> </li>
+          <li> <a href="/eng" style="font-family: 'VAGRoundedStd-Light';" dir="ltr">English</a> </li>
+        </ul>
+        <div class="search_wrap">
+          <input name="" type="text" placeholder="البحث">
+          <input name="" type="submit">
+        </div>
+      </div>
+      <div class="nav">
+        <ul>
+          <li id="preg"> <a href="pregnancy.html">الحمل</a> </li>
+          <li id="inf_0_6"> <a href="infant_0-6.html">الأشهر الأولى</a> </li>
+          <li id="inf_6_12"> <a href="infant_6-12.html">من ٦‎ إلى ١‎٢‎ شهر</a> </li>
+          <li id="inf_1_3"> <a href="toddler.html">الأطفال من ١‎ إلى ٣‎ سنوات</a> </li>
+          <li id="inf_3_5"> <a href="preschooler.html">مرحلة ما قبل المدرسة:٣‎ إلى ٥‎ سنوات</a> </li>
+          <li id="for_ur_baby"> <a href="for_your_baby.html">لأجل طفلك</a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Header Ends Here -->
+
+<div class="inner_content clear">
+<div class="leftbar">
+
+<div class="toddler_1_3">
+<h4>infant: 6-12 months</h4>
+<div class="left_inner">
+  <ul class="header_ul">
+    <li>Nutrition & Feeding</li>
+  </ul>
+  <ul class="accordion-2">
+  <li><a href="featured_products_infant_6-12.html" style="background:none !important;">
+Featured Product</a>
+ <!-- <li><a href="featured_products_infant_6-12.html" class="item popular" rel="popular">
+Featured Product</a>
+  <ul>
+  <li>
+  
+  	<ol>
+    	
+    <li style="border:none !important"><a href="featured_products_infant_6-12.html#featured_products_infant_6-12">Product1 
+ </a></li>
+    
+    </ol>
+  
+ </li>
+  </ul>
+   -->
+  </li>
+  
+  <li><a href="growing_infant_6-12.html" style="background:none !important;">
+Baby Growth & Development</a>
+  <!--<ul>
+  <li>
+  
+  	<ol>
+    	<li style="border:none !important"><a href="growing_infant_6-12.html#growing_infant_6-12">Your baby 6 months to 1 year old </a></li>
+    <li style="border:none !important"><a href="growing_infant_6-12.html#growing_infant_6-12">Psychomotor milestones
+</a></li>
+    <li style="border:none !important"><a href="growing_infant_6-12.html#growing_infant_6-12">Food Related Abillities
+</a></li>
+    </ol>
+  
+  </li>
+  </ul>--></li>
+  <li><a href="products_infant_6-12.html" style="background:none !important;">
+Products for 6-12m</a>
+  <!--<ul>
+  <li>
+  
+  	<ol>
+    	 <li style="border:none !important"><a href="products_infant_6-12.html#products_infant_6-12">Cerelac Rice </a></li>
+    <li style="border:none !important"><a href="products_infant_6-12.html#products_infant_6-12">Cerelac Wheat </a></li>
+     <li style="border:none !important"><a href="products_infant_6-12.html#products_infant_6-12">Cerelac Wheat and Date Pieces</a></li>
+      <li style="border:none !important"><a href="products_infant_6-12.html#products_infant_6-12">Cerelac Wheat and Dates</a></li>
+       <li style="border:none !important"><a href="products_infant_6-12.html#products_infant_6-12">Cerelac Wheat and Fruit Pieces</a></li>
+        <li style="border:none !important"><a href="products_infant_6-12.html#products_infant_6-12">Cerelac Wheat and Honey</a></li>
+          <li style="border:none !important"><a href="products_infant_6-12.html#products_infant_6-12">Cerelac Wheat and Fruit</a></li>
+   
+    </ol>
+  
+  </li>
+  </ul>--></li>
+  <li><a href="faq_infant_6-12.html" style="background:none !important;">Faq’s</a>
+  <!--<ul>
+  <li>
+  
+  	<ol>
+    <li style="border:none !important"><a href="faq_toddler.html#faq_toddler">My child doesn’t eat much, what should I do?
+
+</a></li>
+ <li style="border:none !important"><a href="faq_toddler.html#faq_toddler">How can I get my picky eater to enjoy food more?
+
+
+</a></li>
+<li style="border:none !important"><a href="faq_toddler.html#faq_toddler">My toddler doesn’t like to drink milk, what should I do?
+
+
+</a></li>
+    
+    </ol>
+  
+  </li>
+  </ul>-->
+  </li>
+  </ul>
+</div>
+
+
+
+</div>
+<div class="babyfruit_img">
+<!--<img src="images/baby_fuits.png" />
+--></div>
+</div>
+<style>
+.anythingSlider-default.activeSlider .anythingControls a {
+	/* background image = top shadow */
+	background-color: #889cb0;
+}
+.anythingSlider-default .anythingControls a.start-stop:hover,
+.anythingSlider-default .anythingControls a.start-stop.hover,
+.anythingSlider-default .anythingControls a.start-stop .anythingControls ul a:hover {
+	background-image: none;
+	color: #889cb0;
+}
+
+</style>
+
+
+<div class="feeding_right feed_infan6_12">
+<h2 style="color:#869bae">Nutrition & Feeding</h2>
+<br />
+<div class="inner_banner" style="padding-bottom:30px;width:622px; margin:0 auto;">
+
+
+
+  <ul id="slider2">
+        
+
+        <li>
+    	<div class="infant_banner clear">
+        
+        	<div class="growing_left">
+            	<div style="float:left">      
+      				<h4 style="color:#ce9805">Your</h4>
+      				<h1 style="color:#ce9805">6 month old</h1>
+      				<h6 style="color:#cc6600">New Sensations</h6> 
+              	</div>
+              	<div style="float:left">
+       				<img src="images/kite_01.png" style="margin-top:-50px" align="left"/>
+              		<p>It’s time to try some new tastes… like different kinds of purée foods, and even iron fortified infant cereals without gluten. Your baby can now swallow something more substantial than just milk. The digestive system has developed, the stomach is growing larger and their system is less fragile.</p>
+              	</div>
+			</div>
+            
+            <div class="growing_right">            
+				<img src="images/teddy_02.png" height="230"/></div>
+        </div>
+    </li>
+
+        
+        
+
+  </ul>
+</div>
+
+   
+<div class="quest">
+	<div style="width:100%; float:left">
+		<div style="width:40%; float:left">
+    		<img src="images/bow_01.png" alt="Nestle" />
+        </div>
+	    <div style="width:60%; float:right">
+        	<p style="color:#52799a; padding-left:20px; font-size:25px">What can your</p>
+        	<p style="margin-top:0px; color:#ce9703; font-size:50px">6 month old</p>
+        	<p style="margin-top:0px;color:#52799a; padding-left:70px; font-size:25px">Start to eat?</p>
+		</div>
+    </div>
+            
+    <div class="spacer"></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont acc_cont_margin">
+    <ul class="accordion">
+	<li>
+		<a href="#" class="item popular" rel="popular">What foods can baby eat?
+</a>
+		<ul>
+			<li >
+         <span>
+          Up to 6 months, breast milk or infant formula is still the most important food to supply your child with the nutritional requirements they require. By gradually introducing other foods to your baby, you will train your child to enjoy a variety of foods, which is the basis of a balanced diet and your baby’s future health.
+Here are a few guidelines, but your doctor will be more than happy to answer your questions.
+</span>
+<h5>
+Breastmilk or Baby milk: the key food</h5><span>
+
+Milk is the only food that contains all the elements your child needs for their growth (vitamins, essential fatty acids, calcium, iron, proteins).
+Recommended quantities: breast milk or four 210 ml bottles/day of second-age formula (follow-up milk).</span>
+<h5>Introducing infant cereals</h5><span>
+Your doctor will often recommend iron fortified infant cereals as the first “solids” to introduce into your baby’s diet. They are a good way to familiarise your baby with new flavours and a new consistency. </span>
+
+<h5>Only give your baby gluten-free cereals:</h5><span>
+
+Gluten is a plant protein contained in certain cereals (rye, wheat, barley, oats) and foods containing them (pasta, biscuits, bread). Intolerance to gluten affects around one in every 2,000 infants. 
+That is why, as a precautionary measure, only use gluten-free cereals when you start to vary your baby’s diet. </span>
+
+<h5>The main benefits of cereals:</h5><span>
+A gentle way to develop your baby’s tastes. A new consistency that is thicker than milk. Carbohydrates gradually help to lengthen the time between meals to arrive at the rhythm of four meals a day at six months. Contains numerous nutritional elements: iron and other mineral salts, vitamins and proteins.</span><h5>
+
+How can you incorporate cereals?</h5><span>
+Simply dilute a few teaspoons of iron fortified infant cereal (1-2 at the start) in a bowl and add the required amount of water.
+Gradually increase the dosage according to the recommendations from your doctor.</span>
+<h5>
+Discovering fruit and vegetables</h5><span>
+Fruit and vegetables are the basic food ingredients for a well-balanced diet. At the start, opt for mild flavours, which your child is more likely to appreciate.</span>
+<h5>
+Start your baby off with small quantities:</h5><span>
+For example, dilute 2-3 spoonfuls of smooth fruit or vegetable purée into your baby’s milk in a bowl. Then, try feeding the purée to your child directly by the mouth with a small plastic spoon.</span>
+
+<h5>Only give COOKED fruit and vegetables</h5><span>
+Cooked vegetable:, courgettes, , carrots, green beans, , etc. ideally with no added salt.
+Cooked fruit: apples, bananas, apricots, peaches, pears, , prunes, etc. ideally with no added sugar.</span>
+
+            
+    		</li>
+		</ul>
+	</li>
+	<li>    	
+		<a href="#" class="item popular" rel="popular">The golden rules for introducing solids
+</a>
+		<ul>
+			<li >
+     <span>  Continue feeding your child breastmilk or four 210 ml bottles of infant milk every day until the age of six months, then a minimum of 500 ml of infant milk every day up to the age of three years.
+Introduce new foods when your baby is relaxed.
+Only try out one flavour at a time.
+Never force-feed your child if they reject a type of food.
+Wait a few days before making another attempt.<br />
+Only give your child small quantities: at the start, dilute two to three spoonfuls of fruit or vegetable purée in the usual infant milk, then try spoon-feeding your baby directly. <br />
+Use a flexible plastic spoon: a baby’s gums are very sensitive.<br />
+Never introduce gluten before your baby is six months old.</span>
+
+	</li>
+		</ul>
+	</li>
+	<li>    	
+		<a href="#" class="item popular" rel="popular">Meal Planner
+</a>
+		<ul>
+			<li >
+           <style>
+ tr.border_bottom td {
+  border-bottom:1pt solid #CCC;
+}
+.td1, th {
+  border-left: solid 1px #CCC;
+} 
+.grey_color{
+	background-color:#edf2fe;
+}
+.lightorange_color{
+	background-color:#f0bb3b;
+}
+.lightblue_color{
+	background-color:#66ccff;
+}
+.darkblue_color{
+	background-color:#3f71aa;
+}
+.darkorange_color{
+	background-color:#f47b20;
+}
+.lightgreen_color{
+	background-color:#A0CC76;
+}
+.darkgreen_color{
+	background-color:#88B45C;
+}
+.rose_color{
+	background-color:#ED709E;
+}
+.white{
+	color:#FFF;
+}
+table
+{
+	text-align:left !important;}
+  </style>           
+            <table width="100%" border="0" cellpadding="10px;" style=" border:1px solid #CCC">
+         
+        
+         <tr class="border_bottom">
+           <td class="lightblue_color"> <span class="white">Breakfast</span></td>
+           <td class="lightorange_color"> <span class="white">Lunch</span></td>
+           <td class="darkorange_color"> <span class="white">Afternoon</span></td>
+           <td class="darkblue_color"> <span class="white">Dinner</span></td>
+         </tr>
+         
+         
+         <tr ><td>Breastmilk or One 210 ml bottle of infant milk + optionally one tablespoon* of gluten-free iron fortified infant cereal</td>
+         <td class="td1">Breastmilk or One 210 ml bottle of infant milk + optionally 30g of cooked vegetables</td>
+         <td class="td1">Breastmilk or One 210 ml bottle of infant milk + optionally 20g of cooked fruit</td>
+         <td class="td1">Breastmilk or One 210 ml bottle of infant milk + optionally one tablespoon* of gluten-free iron fortified infant cereal</td>
+         </tr>
+         
+          
+           
+        
+         
+         </table>
+         <br />
+         *1 level tablespoon of cereal =&nbsp;approximately    5g.<br />
+          Theoretical quantities to be adapted to baby’s appetite.<br />
+          Never force your baby if he isn’t hungry and offer water regularly.
+
+         	</li>
+		</ul>
+	</li>
+    <li>    	
+		<a href="#" class="item popular" rel="popular">Meal Table
+</a>
+		<ul>
+			<li >
+                    <table width="100%" border="0" cellpadding="10px;" style=" border:1px solid #CCC">
+  
+  
+  <tr class="border_bottom">
+    <td width="20%" class="lightblue_color"> <span class="white">Dairy Products</span></td>
+    <td width="25%" class="lightorange_color"> <span class="white">Cereals and Starchy foods</span></td>
+    <td width="20%" class="darkorange_color"> <span class="white">Pureed cooked vegetables</span></td>
+    <td width="15%" class="darkblue_color" > <span class="white">Pureed cooked fruit</span></td>
+    <td width="20%" class="rose_color"> <span class="white">Other</td>
+  </tr>
+  <tr class="border_bottom">
+    <td >Milk is the main food up to 6 months</td>
+    <td class="td1" >Gluten-free iron fortified infant cereals and starchy foods</td>
+    <td class="td1">Courgette</td>
+    <td class="td1">Apple</td>
+    <td class="td1">Vanilla Flavour</td>
+  </tr>
+  <tr class="border_bottom">
+    <td >Mother’s milk</td>
+    <td class="td1">Potato    puree </td>
+    <td class="td1">Carrot</td>
+    <td class="td1">Banana</td>
+    <td class="td1">Caramel Flavour</td>
+  </tr>
+  <tr class="border_bottom">
+    <td >210 ml of infant milk</td>
+    <td class="td1">Blended rice</td>
+    <td class="td1">Green    beans</td>
+    <td class="td1">Apricot </td>
+    <td class="td1">&nbsp;</td>
+  </tr>
+  <tr class="border_bottom">
+    <td >Infant dairy foods</td>
+    <td class="td1">&nbsp;</td>
+    <td class="td1">Peas</td>
+    <td class="td1">Peach</td>
+    <td class="td1">&nbsp;</td>
+  </tr>
+  <tr class="border_bottom">
+    <td  >&nbsp;</td>
+    <td class="td1">&nbsp;</td>
+    <td class="td1">&nbsp;</td>
+    <td class="td1">Pear</td>
+    <td class="td1">&nbsp;</td>
+  </tr>
+  <tr class="border_bottom">
+    <td>&nbsp;</td>
+    <td class="td1">&nbsp;</td>
+    <td class="td1">&nbsp;</td>
+    <td class="td1">Quince</td>
+    <td class="td1">&nbsp;</td>
+  </tr>
+  <tr >
+    <td >&nbsp;</td>
+    <td class="td1">&nbsp;</td>
+    <td class="td1">&nbsp;</td>
+    <td class="td1">Prune</td>
+    <td class="td1">&nbsp;</td>
+  </tr>
+</table>
+ 
+ 
+    		</li>
+		</ul>
+	</li>
+	
+	
+	
+	
+	
+</ul>
+    </div>
+</div><div class="quest">
+	<div style="width:100%; float:left">
+		<div style="width:60%; float:left">
+        	<p style="color:#52799a; padding-left:20px; font-size:25px">What can your</p>
+        	<p style="margin-top:0px; color:#89a73f; font-size:50px">7 month old</p>
+        	<p style="margin-top:0px;color:#52799a; padding-left:70px; font-size:25px">Start to eat?</p>
+        </div>
+	    <div style="width:40%; float:right">
+    		<img src="images/bow_02.png" alt="Nestle" />
+		</div>
+    </div>
+    <div class="spacer"></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont acc_cont_margin">
+    <ul class="accordion">
+	<li>
+		<a href="#" class="item popular" rel="popular">What foods can the baby eat?
+</a>
+		<ul>
+			<li >
+    <span> Generally, your baby will be ready to try out more substantial meals and start adjusting to four meals a day at around seven months. Your baby will also be able to wait between meals to satisfy his hunger. But every child will find their own pace!<br />
+
+<h5>Breast milk or infant formula: the essence of your child’s diet</h5><span>
+
+Breast milk or infant formula is absolutely indispensable. It provides your baby with all the nutritional elements they require to grow properly (vitamins, essential fatty acids, calcium, iron and proteins).<br />
+
+It is advisable to breastfeed or give your baby at least 500 ml of infant milk every day until they reach three years old.</span>
+<h5>Introducing baby cereals with gluten</h5><span>
+
+After your first attempts with “gluten-free” cereals at 6 months, and if your doctor has not given any contraindications, you can now introduce iron fortified infant cereals containing gluten into your baby’s diet from the age of six months. </span>
+<span>
+Thanks to the complex carbohydrates they contain, cereals are a real source of energy for your child. They provide the fuel your baby needs during the day as he moves around more and more and helps to ward off hunger. <br />
+
+They also supply your baby with vitamins, mineral salts and iron. <br />
+
+They offer new eating pleasures and a different consistency from those your child will associate with breasmilk or  infant formula.
+</span>
+   
+    		</li>
+		</ul>
+	</li>
+    <li>
+		<a href="#" class="item popular" rel="popular">Meat & Fish all you need to know
+</a>
+		<ul>
+			<li >
+        <span>  A major event in Stage 2, introducing meat and fish is an important phase in starting your baby on solids. </span>
+
+<h5>Why should you introduce them?</h5><span>
+
+The proteins contained in meat and fish are precious for your child’s balanced diet and development: they are used to build up your baby’s body (bones, muscles and organs).
+They offer your baby a chance to become accustomed with new tastes and unknown consistencies. </span><h5>
+
+How much should you give? </h5><span>
+The 500 ml minimum daily allowance of breast milk or infant formula that you give to your child contains the lion’s share of their protein requirements. 
+This is why very small quantities of meat and fish are enough to complete this intake: 10-15g per day (about 2-3 teaspoonfuls).</span>
+
+<h5>A few tips:</h5>
+<span>
+For meat, choose lean varieties: beef, veal, turkey, chicken, , etc. Steam cook the meat, mince the pieces finely and then mix with vegetable purée.  
+For fish, only use very fresh fillets (filleted by the fishmonger before your eyes is also advisable): dab, sole, cod, hake, etc. Cook the fish in a court-bouillon or steam cook it without adding any fat. Mash the fish finely with a fork, making sure you remove all bones, then mix the mashed fish with vegetable purée. 
+Only give your child meat or fish once a day, either for lunch or dinner, whichever is easiest for you.</span>
+
+            
+    		</li>
+		</ul>
+	</li>
+	<li>    	
+		<a href="#" class="item popular" rel="popular">Meal Planner
+</a>
+		<ul>
+			<li >
+         
+  
+   <table width="100%" border="0" cellpadding="10px;" style=" border:1px solid #CCC">  
+  
+ 
+  <tr class="border_bottom">
+           <td width="25%" class="lightblue_color"><span class="white">Breakfast</span></td>
+           <td width="25%" class="lightorange_color"><span class="white">Lunch</span></td>
+           <td width="25%" class="darkorange_color"><span class="white">Afternoon</span></td>
+           <td width="25%" class="darkblue_color"><span class="white">Dinner</span></td>
+  </tr>
+  
+  <tr>
+    <td>Breastmilk or One 210 ml bottle of infant milk +    optionally 2 to 3 tablespoons* of gluten-free cereal</td>
+    <td  class="td1">130 to 150g of vegetables and/or starchy foods<br />
+      2 to 4 teaspoons** of blended meat or fish<br />
+      130g of cooked fruit purée<br /></td>
+    <td  class="td1">Breastmilk or    One 210 ml bottle of infant milk + optionally 3 tablespoons* of baby cereals</td>
+    <td  class="td1">130g of vegetables (soups, purée, etc.) + 150 ml of infant milk +    optionally 130g of cooked fruit purée</td>
+  </tr>
+ 
+</table>  	
+  *1 level tablespoon    of cereal =&nbsp;approximately 5g.<br />
+  **1 teaspoon of    blended meat or fish = approximately 5g.<br />
+  Theoretical    quantities to be adapted to baby’s appetite.<br />
+  Never force your    baby if he isn’t hungry and offer water regularly  		</li>
+		</ul>
+	</li>
+	<li>    	
+		<a href="#" class="item popular" rel="popular">Meal Table
+</a>
+		<ul>
+			<li >
+            
+<table width="100%" border="0" cellpadding="10px;" style=" border:1px solid #CCC">   
+  <tr class="border_bottom">
+    <td width="14%" class="lightblue_color"><span class="white">Dairy    Products</span></td>
+    <td width="19%" class="lightorange_color"><span class="white">Cereals and Starchy    foods</span></td>
+    <td width="17%" class="darkorange_color"><span class="white">Cooked vegetables</span></td>
+    <td width="14%" class="darkblue_color"><span class="white">Cooked fruit</span></td>
+    <td width="12%" class="lightgreen_color"><span class="white">Fish</span></td>
+    <td width="13%" class="rose_color"><span class="white">Meat    ( Once a day max)</span></td>
+    <td class="darkgreen_color"><span class="white">Other</span></td>
+  </tr>
+  <tr class="border_bottom">
+    <td>Mother's milk</td>
+    <td class="td1">wheat ( flour)</td>
+    <td class="td1">Leek</td>
+    <td class="td1">Blackcurrant</td>
+    <td class="td1">Cod</td>
+    <td class="td1">Lamb</td>
+    <td class="td1">Vegetable oil (rapseed , sunflower)</td>
+  </tr>
+  <tr class="border_bottom">
+    <td>210 ml of infant milk</td>
+    <td class="td1">Rye,    barley(flour)</td>
+    <td class="td1">Onion</td>
+    <td class="td1">Orange</td>
+    <td class="td1">Salmon</td>
+    <td class="td1">Beef</td>
+    <td class="td1">baby rusks</td>
+  </tr>
+  <tr class="border_bottom">
+    <td>Infant dairy foods</td>
+    <td class="td1">Semolina( fine and well cooked)</td>
+    <td class="td1">Broccoli</td>
+    <td class="td1">Clementine</td>
+    <td class="td1">Monkfish</td>
+    <td class="td1">Veal</td>
+    <td class="td1">&nbsp;</td>
+  </tr>
+  <tr class="border_bottom">
+    <td>&nbsp;</td>
+    <td class="td1">Blended pasta</td>
+    <td class="td1">Tomato ( peeled and seeded)</td>
+    <td class="td1">&nbsp;</td>
+    <td class="td1">Hake</td>
+    <td class="td1">Chicken</td>
+    <td class="td1">&nbsp;</td>
+  </tr>
+  <tr >
+    <td>&nbsp;</td>
+    <td class="td1">&nbsp;</td>
+    <td class="td1">&nbsp;</td>
+    <td class="td1">&nbsp;</td>
+    <td class="td1">&nbsp;</td>
+    <td class="td1">Turkey</td>
+    <td class="td1">&nbsp;</td>
+  </tr>
+
+</table>
+    		</li>
+		</ul>
+	</li>
+	
+	
+	
+</ul>
+    </div>
+</div>
+    
+    <div class="quest drink fish">
+	<div style="width:100%; float:left">
+		<div style="width:40%; float:left">
+    		<img src="images/bow_03.png" alt="Nestle" />
+        </div>
+	    <div style="width:60%; float:right">
+        	<p style="color:#52799a; padding-left:20px; font-size:25px">What can your</p>
+        	<p style="margin-top:0px; color:#c85134; font-size:50px">8 month old</p>
+        	<p style="margin-top:0px;color:#52799a; padding-left:70px; font-size:25px">Start to eat?</p>
+		</div>
+    </div>
+    
+    <div class="spacer"></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont acc_cont_margin">
+    <ul class="accordion">
+	<li>    	
+		<a href="#" class="item popular" rel="popular">What foods can the baby eat?
+</a>
+		<ul>
+			<li >
+
+           <span>During this period, your baby will delight in discovering unknown savours from the world of exotic fruit and vegetables – not forgetting your baby’s first biscuits!</span>
+
+<h5>Milk: an ever-important ingredient</h5><span>
+A daily intake of 500 ml of breasmilk or infant milk is also indispensable for the proper growth of your child and is essential until your child reaches three years.<br />
+Aside from breast milk, second-age infant formula (follow-up milk) is the most suitable food to meet your baby’s requirements. Its composition is very different from cow’s milk. For example, infant formula provides significant quantities of essential fatty acids, which is not the case with cow’s milk. These essential fatty acids are also vital for the development of your baby’s cerebral and nerve system and are found only in food.
+Introducing small pieces of soft food<br />
+Stage 3 is when you introduce small pieces of food into your baby’s diet. To facilitate this stage, start with small pieces of soft foods to avoid hurting your baby – even if your child hardly chews the food before swallowing.
+This is the time to help your baby discover new types of cereals and starchy foods: small chunks of potato, fruits, small varieties of pasta, rice, corn, semolina, etc.<h5>
+Introducing egg yolks</h5><span>
+After meat and fish, introduced at Stage 2, your baby can now try out egg yolk*, another source of protein. </span>
+<h5>Recommended quantities:</h5><span>
+No more than half an egg yolk, twice a week. </span>
+<h5>How to incorporate egg yolk into food?</h5><span>
+- &nbsp;&nbsp;&nbsp;Take a boiled egg. Mash it finely with a fork and mix with soup or vegetable purée. <br />
+- &nbsp;&nbsp;&nbsp;When you give your baby egg yolk, avoid meat and fish on the same day – your baby’s protein intake will be too high. <br />
+* Unless your child is allergic.<h5>
+New fruit and vegetables</h5><span>
+Over the next few months, your baby is set to discover still unknown savours in the world of exotic fruit and vegetables*. 
+Continue to feed your baby only cooked fruit and vegetables. </span>
+<h5>New fruit and vegetables:</h5>
+- &nbsp;&nbsp;&nbsp;Cooked vegetables:, peppers, asparagus, aubergines, etc.<br />
+- &nbsp;&nbsp;&nbsp;Cooked fruit: pineapple, mango, coconutetc.<br />
+* Unless your child is allergic<br />
+But you can also give the following in small quantities:<br />
+Chocolate: but make sure it is fat free.<br />
+Aromatic herbs:, parsley, basil, thyme, etc.</span>
+ 
+    		</li>
+		</ul>
+	</li>
+	<li>    	
+		<a href="#" class="item popular" rel="popular">baby biscuits, a new treat
+ </a>
+       <ul>
+			<li >
+          Now that your baby knows how to use his thumb and index finger to hold objects, you can now introduce baby biscuits as a treat for your child.<h5>
+Why is there a special biscuit?</h5>
+Unlike traditional biscuits, baby biscuitsare perfectly suited to your child:
+They are the perfect shape for babies to hold in their tiny hands. 
+Their soft texture is well adapted to the eating capabilities of babies. 
+They contain cereals, milk, vitamins, minerals and reduced quantities of carbohydrates*.
+*In compliance with regulations.<h5>
+A few important precautions</h5><span>
+So your baby can enjoy his first biscuitin total safety, your baby must be able to:
+Sit up by himself in a highchair. 
+Eat meals with small pieces of food. 
+Eat a piece of bread.</span>
+
+  
+    		</li>
+		</ul>
+	</li>
+<li>    	
+		<a href="#" class="item popular" rel="popular">Breakfast: the most important meal of the day 
+
+ </a>
+       <ul>
+			<li >
+          The first meal after a good sleep, breakfast is an essential moment for your baby. After eating nothing for several hours, your baby needs nutrients to kick-start their day. And you are never too young to get into the good habit of eating an energy-packed and balanced breakfast!
+
+  
+    		</li>
+		</ul>
+	</li>
+<li>    	
+		<a href="#" class="item popular" rel="popular">Snack time: the third meal of the day 
+
+ </a>
+       <ul>
+			<li >
+        Like breakfast, the snack is an essential component of your child’s balanced diet. After their nap, in the middle of the day, your baby will be rested and relaxed: this is the perfect moment to treat your baby!<h5>
+What goes into a well-balanced snack?</h5><span>
+Breastmilk or Infant formula. The snack should provide your baby with a proportion of the recommended 500 ml of milk your baby needs every day for their iron, vitamins, proteins and calcium requirements. Give your baby a bottle of infant formula or a baby dairy product.  
+Infant Cereals. 3 or 4 soupspoons of baby cereal in their bowl or two small baby biscuits to tide your baby’s hunger over until dinner.  
+Fruit. In the form of purées or fruit-based drinks, fruit is an excellent source of minerals and vitamins, and offers your baby a wide range of tastes and textures to develop your baby’s taste buds!</span>
+
+  
+    		</li>
+		</ul>
+	</li>
+
+
+<li>    	
+		<a href="#" class="item popular" rel="popular">Dinner: to end the day well
+
+
+ </a>
+       <ul>
+			<li >
+      Growing up, your baby will have more and more active days. Come evening, you need to give your baby a meal suited to this change in activity.<br />
+To meet the recommended daily intake of certain elements, your child’s dinner must take the foods already eaten at other times during the day into consideration.
+The secrets of a good dinner<br />
+If your baby has already eaten meat, egg or fish (sources of protein) at midday:<br />
+Give your baby a vegetable soup: a source of vitamins, mineral salts and fibre, vegetables are important for a balanced diet.  <br />
+Consider giving your child a high proportion of complex carbohydrates: small varieties of pasta, rice, potatoes, semolina and the like. They will gradually release their energy to satisfy your baby’s appetite and will help your baby to sleep. <br />
+Depending on how hungry your baby is, finish off their meal with a dairy product and/or fruit purée.<br />
+Don’t forget the evening routine!<br />
+A complete and balanced meal is essential to help your baby develop properly and enjoy a good night’s sleep. But this is not enough: every baby will have a routine that need to be respected.<br /> 
+Read a story, listen to music or a lullaby, put on a soft light, let your baby suck on their blanket – repeated every evening, these little habits will reassure your baby and help them fall asleep.
+
+  
+    		</li>
+		</ul>
+	</li>
+
+	
+    <li>    	
+		<a href="#" class="item popular" rel="popular">Meal Planner
+
+
+ </a>
+       <ul>
+			<li >
+       
+<table width="100%" border="0" cellpadding="10px;" style=" border:1px solid #CCC">   
+  
+  <tr class="border_bottom">
+    <td width="25%" class="lightblue_color"><span class="white">Breakfast</span></td>
+    <td width="25%" class="lightorange_color"><span class="white">Lunch</span></td>
+    <td width="25%" class="darkorange_color"><span class="white">Afternoon</span></td>
+    <td width="25%" class="darkblue_color"><span class="white">Dinner</span></td>
+  </tr>
+  
+  <tr>
+    <td>Breastmilk or One 240 ml bottle of infant milk +    3 to 4 tablespoons* of baby cereals</td>
+    <td class="td1">200g of vegetables or a mix of vegetables/starchy foods<br />
+      3 to 4 teaspoons** of blended meat or fish<br />
+      130g of cooked fruit purée<br /></td>
+    <td class="td1">Breastmilk or One 240 ml bottle of infant milk + 3 tablespoons*    of baby cereals or 2 infant rusks</td>
+    <td class="td1">200    to 250g of vegetables and/or starchy foods + one infant dairy product or    Breastmilk or 150 ml of infant milk (follow-up milk) + one fruit compote</td>
+  </tr>
+  
+</table> 
+  *1 level tablespoon of cereal =&nbsp;approximately 5g.<br />
+  **1 teaspoon of blended meat or fish = approximately 5g.<br />
+    Theoretical quantities to be adapted to baby’s appetite.<br />
+    Never force your baby if he isn’t hungry and offer water regularly
+  
+    	
+    		</li>
+		</ul>
+	</li>
+
+<li>    	
+		<a href="#" class="item popular" rel="popular">Meal Table
+
+
+ </a>
+       <ul>
+			<li >
+      
+  
+<table width="100%" border="0" cellpadding="10px;" style=" border:1px solid #CCC">   
+
+ 
+  <tr class="border_bottom">
+    <td width="16%" class="lightblue_color"><span class="white">Dairy Products</span></td>
+    <td width="21%" class="lightorange_color"><span class="white">Cereals    and Starchy foods with gluten</span></td>
+    <td width="16%" class="darkorange_color"><span class="white">Cooked vegetables</span></td>
+    <td width="16%" class="darkblue_color"><span class="white">cooked fruit</span></td>
+    <td width="16%" class="lightgreen_color"><span class="white">Eggs</span></td>
+    <td class="rose_color"><span class="white">Others</span></td>
+  </tr>
+  <tr class="border_bottom">
+    <td>Mother's milk</td>
+    <td class="td1">soft chunks of potato</td>
+    <td class="td1">Pepper</td>
+    <td class="td1">Pineapple</td>
+    <td class="td1">Egg ylk ( i/2 maximum, twice a week)</td>
+    <td class="td1">Special baby biscuits</td>
+  </tr>
+  <tr class="border_bottom">
+    <td>210 ml of infant milk</td>
+    <td class="td1">small    varieties of well-cooked pasta</td>
+    <td class="td1">Asparagus</td>
+    <td class="td1">Mango</td>
+    <td class="td1">&nbsp;</td>
+    <td class="td1">paarsley, basil</td>
+  </tr>
+  <tr class="border_bottom">
+    <td>Infant dairy foods</td>
+    <td class="td1">well cooked rice</td>
+    <td class="td1">Aubergine</td>
+    <td class="td1">Coconut</td>
+    <td class="td1">&nbsp;</td>
+    <td class="td1">Thyme, chervil</td>
+  </tr>
+  <tr class="border_bottom">
+    <td>&nbsp;</td>
+    <td class="td1">well cooked wheat</td>
+    <td class="td1">&nbsp;</td>
+    <td class="td1">&nbsp;</td>
+    <td class="td1">&nbsp;</td>
+    <td class="td1">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td class="td1">medium    cooked semolina</td>
+    <td class="td1">&nbsp;</td>
+    <td class="td1">&nbsp;</td>
+    <td class="td1">&nbsp;</td>
+    <td class="td1">&nbsp;</td>
+  </tr>
+  </table>  <br />
+  These foods are in addition to those already introduced in    the earlier steps  		</li>
+		</ul>
+	</li>
+
+
+    
+    
+    
+    	
+	
+</ul>
+    </div>
+    </div>
+</div>
+</div>
+
+
+<div class="products_gal">
+<h3 style="color:#8dc1eb">Products for 6-12 months</h3>
+<div class="spacer"></div>
+<div class="list_carousel">
+				<ul id="foo2">
+					<li><a href="products_infant_6-12.html"><img src="images/pro_01.jpg" width="86" height="100" alt="pro" /></a></li>
+					<li><a href="products_infant_6-12.html"><img src="images/pro_02.jpg" width="86" height="100" alt="pro" /></a></li>
+					<li><a href="products_infant_6-12.html"><img src="images/pro_03.jpg" width="86" height="100" alt="pro" /></a></li>
+					<li><a href="products_infant_6-12.html"><img src="images/pro_01.jpg" width="86" height="100" alt="pro" /></a></li>
+					<li><a href="products_infant_6-12.html"><img src="images/pro_02.jpg" width="86" height="100" alt="pro" /></a></li>
+					<li><a href="products_infant_6-12.html"><img src="images/pro_03.jpg" width="86" height="100" alt="pro" /></a></li>
+                    <li><a href="products_infant_6-12.html"><img src="images/pro_01.jpg" width="86" height="100" alt="pro" /></a></li>
+					<li><a href="products_infant_6-12.html"><img src="images/pro_02.jpg" width="86" height="100" alt="pro" /></a></li>
+					<li><a href="products_infant_6-12.html"><img src="images/pro_03.jpg" width="86" height="100" alt="pro" /></a></li>
+                    <li><a href="products_infant_6-12.html"><img src="images/pro_01.jpg" width="86" height="100" alt="pro" /></a></li>
+					<li><a href="products_infant_6-12.html"><img src="images/pro_02.jpg" width="86" height="100" alt="pro" /></a></li>
+					<li><a href="products_infant_6-12.html"><img src="images/pro_03.jpg" width="86" height="100" alt="pro" /></a></li>
+                    <li><a href="products_infant_6-12.html"><img src="images/pro_01.jpg" width="86" height="100" alt="pro" /></a></li>
+					<li><a href="products_infant_6-12.html"><img src="images/pro_02.jpg" width="86" height="100" alt="pro" /></a></li>
+					<li><a href="products_infant_6-12.html"><img src="images/pro_03.jpg" width="86" height="100" alt="pro" /></a></li>
+                    <li><a href="products_infant_6-12.html"><img src="images/pro_01.jpg" width="86" height="100" alt="pro" /></a></li>
+					<li><a href="products_infant_6-12.html"><img src="images/pro_02.jpg" width="86" height="100" alt="pro" /></a></li>
+					<li><a href="products_infant_6-12.html"><img src="images/pro_03.jpg" width="86" height="100" alt="pro" /></a></li>
+				</ul>
+				<div class="clearfix"></div>
+				<a id="prev2" class="prev" href="#"><img src="images/arrow_left.png" width="43" height="33" /></a>
+				<a id="next2" class="next" href="#"><img src="images/arrow_right.png" width="43" height="33" /></a>
+	<div id="pager2" class="pager"></div>
+			</div>
+</div>
+<!-- Footer Starts Here -->
+<div class="footer clear">
+  <div class="wrapper clear">
+    <div class="footer_boxes clear">
+      <div class="footboxes footbox_01">
+        <h3>الحمل</h3>
+        <ul>
+        <li><a href="featured.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding.html">التغذية</a></li>
+          <li><a href="growing.html">النمو و التطور</a></li>
+                    <li><a href="products.html">المنتجات الخاصة للحامل</a></li>
+          <li><a href="faq.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_02">
+        <h3>الأشهر الأولى</h3>
+        <ul>
+          <li><a href="feeding_infant_0-6.html">التغذية</a></li>
+          <li><a href="growing_infant_0-6.html">النمو و التطور</a></li>
+          <li><a href="faq_infant_0-6.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_03">
+        <h3>من ٦‎ إلى ١‎٢‎ شهر</h3>
+        <ul>
+          <li><a href="featured_products_infant_6-12.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding_infant_6-12.html">التغذية</a></li>
+          <li><a href="growing_infant_6-12.html">النمو و التطور</a></li>
+          <li><a href="products_infant_6-12.html">المنتجات الخاصة لعمر ٦-١٢ شهراً</a></li>
+          <li><a href="faq_infant_6-12.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_04">
+        <h3>الأطفال من ١‎ إلى ٣‎ سنوات</h3>
+        <ul>
+          <li><a href="featured_products_toddler.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding_toddler.html">التغذية</a></li>
+          <li><a href="growing_toddler.html">النمو و التطور</a></li>
+          <li><a href="products_toddler.html">المنتجات الخاصة لعمر ١ إلى ٣ سنوات</a></li>
+          <li><a href="faq_toddler.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_05">
+        <h3>مرحلة ما قبل المدرسة:٣‎ إلى ٥‎ سنوات</h3>
+        <ul>
+          <li><a href="featured_products_preschooler.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding_preschooler.html">التغذية</a></li>
+          <li><a href="growing_preschooler.html">النمو و التطور</a></li>
+          <li><a href="products_preschooler.html">المنتجات الخاصة لعمر٣ إلى ٥ سنوات</a></li>
+          <li><a href="faq_preschooler.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer_menu">
+      <ul>
+        <li><a href="index.html">الصفحة الرئيسية</a></li>
+        <li><a href="parenting.html">الأمومة</a></li>
+        <li><a href="#">الوصفات</a></li>
+        <li><a href="our_commitment.html">التزاماتنا</a></li>
+        <li><a href="#">نادي طفل نستله</a></li>
+        <li><a href="#">اتصل بنا</a></li>
+        <li><a href="faq.html">الأسئلة و الأجوبة</a></li>
+        <li><a href="#">خريطة الموقع</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer_rule">
+    <div class="wrapper">
+      <div class="copy_right_right">علامات "بداية صحية لحياة صحية" هي علامات تجارية لشركة سوسيتيه دي برودوي نستله إس. إيه. فيفي – سويسرا<br />كل العلامات التجارية هي من ملك لشركة سوسيتيه دي برودوي نستله إس. إيه. فيفي – سويسرا</div>
+      <div class="copy_right_left">نستله نيوترشن<span dir="ltr">&nbsp;2013&nbsp;</span>جميع الحقوق محفوظة<br />
+        <a href="privacy_policy.html" class="active">الشروط و الأحكام  .  سياسة الخصوصية</a> </div>
+    </div>
+  </div>
+</div>
+<!-- Footer Ends Here -->
+
+</body>
+</html>

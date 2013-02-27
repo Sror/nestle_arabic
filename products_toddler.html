@@ -1,0 +1,1590 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>التغذية نستله</title>
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" language="javascript" src="js/jquery-1.8.2.min.js"></script>
+
+<script src="js/jquery.anythingslider.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
+
+<link rel="stylesheet" href="ui/css/ui-lightness/jquery_css.css" />
+
+<!--<script src="ui/js/jquery-ui-1.7.2.custom.min.js"></script>
+--><script src="js/jquery-ui.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#foo2').carouFredSel({
+		circular: false,
+		infinite: false,
+		auto: false,
+		prev: '#prev2',
+		next: '#next2',
+		pagination: false,
+		mousewheel: true,
+		swipe: {
+			onMouse: true,
+			onTouch: true
+		}
+	});
+});
+	$(function() {
+		$('#slider2').anythingSlider({
+			expand       : true,
+			showMultiple : 1,
+			changeBy     : 1
+		});
+	});
+	
+	$(document).ready(function(){
+		$(".more_btn").toggle(function(){
+		$(this).text("Less");
+		$(this).next(".acc_cont").slideDown(300);
+		$(this).toggleClass("less");
+		},
+		function(){
+		$(this).text("More");
+		$(this).next(".acc_cont").slideUp(300);	
+		$(this).toggleClass("less")
+		});
+	});
+	$(document).ready(function () {
+		$('.accordion a.item').click(function () {
+			//slideup or hide all the Submenu
+			if($($(this)).hasClass($(this).attr('rel') + 'Over')){
+				$(this).siblings('ul').slideUp('fast');	
+				$(this).removeClass($(this).attr('rel') + 'Over');
+			}else{
+				$('html,body').animate({scrollTop: $(this).offset().top}, 1000);
+				$(this).siblings('ul').slideDown('fast');
+				$(this).addClass($(this).attr('rel') + 'Over');   
+			}
+			return false;
+		});
+	});
+	$(document).ready(function () {
+		$('.accordion-2 a.item').click(function () {
+			//slideup or hide all the Submenu
+			$('.accordion-2 li').children('ul').slideUp('fast');if($($(this)).hasClass($(this).attr('rel') + 'Over')){
+            $(this).removeClass($(this).attr('rel') + 'Over');
+            }else{
+            $(this).siblings('ul').slideDown('fast');
+            $(this).addClass($(this).attr('rel') + 'Over');       
+            }
+			return false;
+		});
+	});	</script>
+<!--///////////////////Carosel /////////////-->
+	<!-- Required CSS -->
+	<link href="css/movingboxes.css" rel="stylesheet">
+	<!--[if lt IE 9]>
+	<link href="css/movingboxes-ie.css" rel="stylesheet" media="screen" />
+	<![endif]-->
+	
+	<!-- Required script -->
+	<script src="js/jquery.movingboxes.js"></script>
+	<style>
+		/* Dimensions set via css in MovingBoxes version 2.2.2+ */
+		#slider { width: 600px; }
+		#slider li { width: 250px; border:none; }
+				.mb-panel{opacity:0.5;}
+		.current{opacity:4}
+
+	</style>
+
+	<script>
+	$(function(){
+
+		$('#slider').movingBoxes({
+			startPanel   : 1,      // start with this panel
+			wrap         : false,  // if true, the panel will infinitely loop
+			buildNav     : true,   // if true, navigation links will be added
+			navFormatter : function(){ return "&#9679;"; } // function which returns the navigation text for each panel
+		});
+
+	});
+	</script>
+<!--///////////////////Carosel /////////////-->
+
+	<link rel="stylesheet" href="css/general.css" type="text/css" media="screen" />
+
+</head>
+<body>
+
+<!-- Header Starts Here -->
+<div class="header">
+  <div class="wrapper">
+    <div class="logo"> <img src="images/nestle_logo.png" width="147" height="99" alt="نستله"> </div>
+    <div class="header_left">
+      <div class="header_left_top">
+        <ul>
+          <li> <a href="/"  class="active">الصفحة الرئيسية</a> </li>
+          <li> <a href="our_commitment.html">التزاماتنا</a> </li>
+          <li> <a href="#">نادي طفل نستله</a> </li>
+          <li> <a href="parenting.html">الأمومة</a> </li>
+          <li> <a href="">اتصل بنا</a> </li>
+          <li> <a href="#">خريطة الموقع</a> </li>
+          <li> <a href="#">الحمل</a> </li>
+          <li> <a href="/eng" style="font-family: 'VAGRoundedStd-Light';" dir="ltr">English</a> </li>
+        </ul>
+        <div class="search_wrap">
+          <input name="" type="text" placeholder="البحث">
+          <input name="" type="submit">
+        </div>
+      </div>
+      <div class="nav">
+        <ul>
+          <li id="preg"> <a href="pregnancy.html">الحمل</a> </li>
+          <li id="inf_0_6"> <a href="infant_0-6.html">الأشهر الأولى</a> </li>
+          <li id="inf_6_12"> <a href="infant_6-12.html">من ٦‎ إلى ١‎٢‎ شهر</a> </li>
+          <li id="inf_1_3"> <a href="toddler.html">الأطفال من ١‎ إلى ٣‎ سنوات</a> </li>
+          <li id="inf_3_5"> <a href="preschooler.html">مرحلة ما قبل المدرسة:٣‎ إلى ٥‎ سنوات</a> </li>
+          <li id="for_ur_baby"> <a href="for_your_baby.html">لأجل طفلك</a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Header Ends Here -->
+
+<div class="inner_content clear">
+
+<div class="leftbar">
+
+<div class="toddler_1_3_feeding">
+<h4>Toddler 1-3 Years</h4>
+<div class="left_inner">
+  <ul class="header_ul">
+    <li>Products for 1-3 Years</li>
+  </ul>
+  <ul class="accordion-2">
+  <li><a href="growing_toddler.html" style="background:none !important;">Baby Growth and Development
+</a>
+  <ul>
+  <li>
+  
+  	<ol>
+    	<li style="border:none !important"><a href="growing_toddler.html#growing_toddler.html">How is your toddler progressing?
+ </a></li>
+    
+    </ol>
+  
+  </li>
+  </ul></li>
+ <li><a href="featured_products_toddler.html"style="background:none !important;" >
+Featured Products</a>
+  <!--<ul>
+  <li>
+  
+  	<ol>
+    	<li style="border:none !important"><a href="featured_products_toddler.html#featured_products_toddler">Product1 </a></li>
+    
+    </ol>
+  
+  </li>
+  </ul>--></li> <li><a href="feeding_toddler.html"style="background:none !important;">Nutrition & Feeding</a>
+  <ul>
+  <li>
+  
+  	<ol>
+    	<li style="border:none !important"><a href="feeding_toddler.html#feeding_toddler">What can your toddler start to eat? </a></li>
+    
+    </ol>
+  
+  </li>
+  </ul>
+  </li>
+ 
+ <li><a href="faq_toddler.html"style="background:none !important;">Faq’s</a>
+  <!--<ul>
+  <li>
+  
+  	<ol>
+    	<li style="border:none !important"><a href="faq_toddler.html#faq_toddler">My child doesn’t eat much, what should I do?
+
+</a></li>
+ <li style="border:none !important"><a href="faq_toddler.html#faq_toddler">How can I get my picky eater to enjoy food more?
+
+
+</a></li>
+<li style="border:none !important"><a href="faq_toddler.html#faq_toddler">My toddler doesn’t like to drink milk, what should I do?
+
+
+</a></li>
+
+
+    </ol>
+  
+  </li>
+  </ul>-->
+  </li>
+  </ul>
+</div>
+
+
+
+</div>
+<div class="babyfruit_img">
+<img src="images/ship.png" />
+</div>
+</div>
+
+
+<style>
+.anythingSlider-default.activeSlider .anythingControls a {
+	/* background image = top shadow */
+	background-color: #778d35;
+}
+.anythingSlider-default .anythingControls a.start-stop:hover,
+.anythingSlider-default .anythingControls a.start-stop.hover,
+.anythingSlider-default .anythingControls a.start-stop .anythingControls ul a:hover {
+	background-image: none;
+	color: #778d35;
+}
+.ui-widget-content {
+	border: none/*{borderColorContent}*/;
+}
+.ui-tabs-nav li {
+    border: none;
+}
+.ui-tabs-nav li.ui-tabs-focus, .ui-state-active,.ui-state-focus,.ui-state-hover,ui-state-default {
+	border:none !important;
+	background:#ffffff;
+	
+}
+.ui-tabs-nav li.ui-tabs-active{
+	border:none !important;
+	background:#f6f7f9;
+	min-height:83px;
+}
+.tabbackground{
+	background:#f6f7f9 !important;
+	margin:-1px 20px 20px 0;
+}
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+	border: none/*{borderColorDefault}*/;
+	background: #ffffff;
+	font-weight: normal/*{fwDefault}*/;
+	color: #555555/*{fcDefault}*/;
+}
+.contactArea h2{
+	color:#9db7cb !important;
+	font-family: 'VAGRoundedStd-Thin';
+	border:none !important;
+	padding-top:20px;
+	font-weight:normal;
+	font-size:16px !important; 
+	font-weight:bold;	
+}
+.popstyle{
+	background:#FFFFFF;
+}
+.popstyle ul{
+	padding-top:20px;
+	list-style-type:disc;
+}
+.popstyle ul li{
+	color:#9db7cb !important;
+	font-family: 'VAGRoundedStd-Thin';
+	font-size:13px !important; 
+	font-weight:bold;	
+	line-height:20px;
+}
+.popupContactClose{
+line-height:14px;
+right:-172px;
+top:106px;
+position:absolute;
+display:block;
+}
+#popupContactClose1,#popupContactClose0_1{
+line-height:14px;
+right:-172px;
+top:112px !important;
+position:absolute;
+display:block;
+}
+#popupContactClose2,#popupContactClose0_2{
+line-height:14px;
+right:-172px;
+top:150px !important;
+position:absolute;
+display:block;
+}
+
+</style>
+
+<div class="feeding_right">
+<h2 style="color:#cf6164">Products for 1-3 years</h2>
+<br />
+            <div style="float:left; width:712px">
+            
+                <ul id="slider">
+        
+                    <li>
+                        <img src="images/nan3.png" alt="picture">
+                    </li>
+        
+                    <li>
+                        <img src="images/nanha3.png" alt="picture">
+                    </li>
+        
+                    <li>
+                        <img src="images/nido1.png" alt="picture">
+                    </li>
+        
+                </ul><!-- end Slider #1 -->
+            
+            
+          </div>
+          
+          <div class="preschooler_pdcts_banner">
+          	
+            <div class="pre_left">
+            	<img src="images/nan3.png" style="z-index:2000" />
+            </div>
+            <div class="pdcts_toddler_right">
+            	<div style="float:left; width:100%">
+            	
+            		<h1>NAN 3</h1>
+	                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae orci eu sapien imperdiet feugiat. Phasellus bibendum libero in metus pretium at porttitor purus varius. Nunc id magna leo, vitae cursus orcibibendum libero in metus pretium at porttitor purus varius metus bibendum pretium. </p>
+                </div>
+            	<div style="float:left; width:100%; margin-top:50px">
+                
+                	<div style="float:left; vertical-align:text-bottom; margin-top:30px; width:50%">
+                   		<img src="images/table.png" style="padding-left:25px" />
+    					<span class="pdcts_brown_btn" onclick="show_nutrition_info_1()"><a id="button0_0" href="JavaScript:void(0);">Nutritional info</a></span>
+					</div>
+                	<div style="float:right;margin-top:13px; width:50%">
+                    <img src="images/sizes_gm.png" style="padding-left:25px" />
+    					<span class="pdcts_brown_btn"><a id="button0" href="JavaScript:void(0);">Sizes & Availability</a></span>
+					</div>
+				</div>                
+            </div>
+
+<!--/////////////////////////////////////////First pop up//////////////////////////////////////////////////////-->
+
+	<div id="popupContact0" class="popupContact" style="height:auto">
+    	
+        <div><img src="images/nan3.png" style="z-index:2000; background:none" /></div>
+        
+        <div style="background:#FFF;  height:auto; min-width:600px; margin-top:-150px" >
+			<a id="popupContactClose0" class="popupContactClose"><img src="images/esc.png" alt=""/></a>
+
+			<div id="contactArea0" class="contactArea" style="height:auto;">
+			<table><tr><td style="width:35%;">
+				<div style="float:left; padding-top:150px; ">
+	                <img src="images/map.png" />
+				</div>
+				</td><td style="width:60%;">
+                <div style="float:right; text-align:left; " class="popstyle">
+                	<h1>Sizes & Availability</h1>
+                    
+ <!--??????//////////////////////////////////////////////JQUERY TAB////////////////////////////////////////////////////////////////////////-->
+                    
+                    <div class="tab" id="tabs0">
+                        <ul>
+                        	<li><a href="#tabs-1"><img src="images/800gm.png"  /></a></li>
+                        	<li><a href="#tabs-2"><img src="images/400gm.png" style="margin-top:12px"/></a></li>
+                        </ul>
+                        <div class="tabbackground" id="tabs-1">
+                        	<h2>Available Countries</h2>
+                        	<table border="0" style="margin:0; padding:0">
+                            	<tr>
+                                	<td><img src="images/bahrain.png" /></td><td width="100px">Bahrain</td><td><img src="images/oman.png" /></td><td width="100px">Oman</td>
+                              	</tr>
+                                <tr>
+    	                            <td><img src="images/jordan.png" /></td><td width="100px">Jordan</td><td><img src="images/qatar.png" /></td><td width="100px">Qatar</td>
+                              	</tr>
+                                <tr>
+	                                <td><img src="images/ksa.png" /></td><td width="100px">KSA</td><td><img src="images/uae.png" /></td><td width="100px">UAE(Dubai, Abu Dhabi)</td>
+                                </tr>
+                                <tr>
+	                                <td><img src="images/lebanon.png" /></td><td width="100px">Lebanon</td><td></td><td width="100px"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="tabs-2" class="tabbackground">
+                        	<h2>Available Countries</h2>
+                        	<table border="0">
+                            	<tr>
+                                	<td><img src="images/bahrain.png" /></td><td width="100px">Bahrain</td><td><img src="images/oman.png" /></td><td width="100px">Oman</td>
+                              	</tr>
+                                <tr>
+    	                            <td><img src="images/jordan.png" /></td><td width="100px">Jordan</td><td><img src="images/qatar.png" /></td><td width="100px">Qatar</td>
+                              	</tr>
+                                <tr>
+	                                <td><img src="images/ksa.png" /></td><td width="100px">KSA</td><td><img src="images/uae.png" /></td><td width="100px">UAE(Dubai, Abu Dhabi)</td>
+                                <tr>
+	                                <td><img src="images/iran.png" /></td><td width="100px">Iran</td><td><img src="images/iraq.png" /></td><td width="100px">Iraq</td>
+                              	</tr>
+                                <tr>
+    	                            <td><img src="images/kuwait.png" /></td><td width="100px">Kuwait</td><td><img src="images/yemen.png" /></td><td width="100px">Yemen</td>
+                              	</tr>
+                                <tr>
+	                                <td><img src="images/lebanon.png" /></td><td width="100px">Lebanon</td><td></td><td width="100px"></td>
+                                </tr>
+                            </table>
+                        </div>
+                  	</div>
+
+                    <!--//////JQUERY TAB///////////-->
+                    
+                </div>  
+				</td></tr></table>                  
+			</div>
+        </div>
+	</div>
+	<div id="backgroundPopup0" class="backgroundPopup"></div>
+    
+ <!--//////////////////////////////////First pop up////////////////////////////////////////////-->   
+    
+<!--//////////////////////////////////////Second pop up/////////////////////////////////////////////-->
+
+	<div id="popupContact0_0" class="popupContact" style="height:auto;">
+    	
+        <div><img src="images/nan3.png" style="z-index:2000; background:none" /></div>
+        
+        <div style="background:#FFF; min-height:1268px; height:auto; min-width:600px; margin-top:-150px" >
+			<a id="popupContactClose0_0" class="popupContactClose"><img src="images/esc.png" alt=""/></a>
+
+			<div id="contactArea0_0" class="contactArea" style="height:auto; background:#FFF">
+				<div style="float:left; padding-top:120px; width:35%;">
+	                <h2 style="padding:110px 0 0 70px; color:#7b91a4">Ingredients</h2><br />
+                    <p style="padding-left:15px; text-align:justify; color:#9daebd">Skimmed cow’s milk, Maltodextrin, Lactose,
+Cow’s milk whey protein, Palm olein, Low erucic rapeseed
+oil, Sunflower oil, Soya lecithin, Calcium Citrate, Fish oil, Bifidus
+culture, Lactobacillus culture, Vitamins, Minerals.
+</p>
+				</div>
+                <div style="float:right; text-align:left; min-width:60%; width:auto;" class="popstyle">
+                	<h1>Nutritional Info</h1>
+<style>
+.clmn1{
+	width:50%;
+	background:#f8f9fb;
+}
+.clmn2{
+	width:25%;
+	background:#fff;
+}
+.clmn3{
+	width:25%;
+	background:#f8f9fb;
+}
+.clmn4{
+	width:25%;
+	background:#fff;
+}
+.table1 tr{
+	line-height:30px;
+	border-bottom:solid 2px #666;
+}
+.table1 tr td{
+	text-align:center;
+	border-bottom:1px dotted #999;
+}
+
+</style>
+                   	<table cellpadding="0" border="0" cellspacing="0"  class="table1" width="90%" style="background:#FFF">
+                    	<tr style="background:#eceff3; color:#8096a9; line-height:40px ">
+                        	<th>
+                            Nutritional Value</th><th>Per Meal</th><th>Per 100g</th>
+                        </tr>
+                    	 <tr>
+    <td class="clmn1" >Energy (kcal)</td>
+    <td class="clmn3">67</td>
+    <td class="clmn4">481</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Energy (kJ)</td>
+    <td class="clmn3">280</td>
+    <td class="clmn4">2010</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Fat (g)</td>
+    <td class="clmn3">2.95</td>
+    <td class="clmn4">21.2</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Linoleic Acid (g)</td>
+    <td class="clmn3">0.61</td>
+    <td class="clmn4">4.37</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Alpha-Linolenic acid (mg)</td>
+    <td class="clmn3">75</td>
+    <td class="clmn4">540</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >DHA (mg)</td>
+    <td class="clmn3">4.2</td>
+    <td class="clmn4">30</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Protein (g)</td>
+    <td class="clmn3">2.01</td>
+    <td class="clmn4">14.49</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Carbohydrate (g) </td>
+    <td class="clmn3">8.06</td>
+    <td class="clmn4">58</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Ash (g)</td>
+    <td class="clmn3">0.46</td>
+    <td class="clmn4">3.3</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Sodium (mg)</td>
+    <td class="clmn3">24</td>
+    <td class="clmn4">170</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Potassium (mg)</td>
+    <td class="clmn3">86</td>
+    <td class="clmn4">618</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Chloride (mg)</td>
+    <td class="clmn3">52</td>
+    <td class="clmn4">375</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Calcium (mg)</td>
+    <td class="clmn3">80</td>
+    <td class="clmn4">577</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Phosphorus (mg)</td>
+    <td class="clmn3">54</td>
+    <td class="clmn4">385</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Magnesium (mg)</td>
+    <td class="clmn3">6</td>
+    <td class="clmn4">43</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Manganese (µg)</td>
+    <td class="clmn3">9</td>
+    <td class="clmn4">65</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Selenium (µg)</td>
+    <td class="clmn3">1.3</td>
+    <td class="clmn4">9.6</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Water(g)</td>
+    <td class="clmn3">90.42</td>
+    <td class="clmn4">3</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Vitamin A (IU)</td>
+    <td class="clmn3">260</td>
+    <td class="clmn4">1837</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Vitamin A (µg)</td>
+    <td class="clmn3">77</td>
+    <td class="clmn4">551</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Vitamin D (IU)</td>
+    <td class="clmn3">50</td>
+    <td class="clmn4">360</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Vitamin D (µg)</td>
+    <td class="clmn3">1.3</td>
+    <td class="clmn4">9</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Vitamin E (IU)</td>
+    <td class="clmn3">2.1</td>
+    <td class="clmn4">14.9</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Vitamin E (µg)</td>
+    <td class="clmn3">1.4</td>
+    <td class="clmn4">9.9</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Vitamin K (µg)</td>
+    <td class="clmn3">7</td>
+    <td class="clmn4">50</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Vitamin C (mg)</td>
+    <td class="clmn3">12</td>
+    <td class="clmn4">86</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Vitamin B1 (mg)</td>
+    <td class="clmn3">0.14</td>
+    <td class="clmn4">0.99</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Vitamin B2 (mg)</td>
+    <td class="clmn3">0.17</td>
+    <td class="clmn4">1.25</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Niacin (mg)</td>
+    <td class="clmn3">0.7</td>
+    <td class="clmn4">5</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Vitamin B6 (mg)</td>
+    <td class="clmn3">0.079</td>
+    <td class="clmn4">0.57</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Folic acid (µg)</td>
+    <td class="clmn3">18</td>
+    <td class="clmn4">128</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Pantothenic acid (mg)</td>
+    <td class="clmn3">0.81</td>
+    <td class="clmn4">5.8</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Vitamin B12 (µg)</td>
+    <td class="clmn3">0.19</td>
+    <td class="clmn4">1.4</td>
+
+  </tr>
+  <tr>
+    <td class="clmn1" >Biotin (µg)</td>
+    <td class="clmn3">2.7</td>
+    <td class="clmn4">19.2</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Iron (mg)</td>
+    <td class="clmn3">1.2</td>
+    <td class="clmn4">8.6</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Iodine (µg)</td>
+    <td class="clmn3">20</td>
+    <td class="clmn4">145</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Copper (mg)</td>
+    <td class="clmn3">0.056</td>
+    <td class="clmn4">0.4</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Zinc (mg)</td>
+    <td class="clmn3">0.81</td>
+    <td class="clmn4">5.8</td>
+  </tr>
+                    </table>                    
+               </div>                    
+                                    <div style="float:left"><img src="images/Nutritional-Details_Nan3.png" width="600px" /></div>
+
+			</div>
+        </div>
+	</div>
+	<div id="backgroundPopup0_0" class="backgroundPopup"></div>
+    
+ <!--//////////////////////////////////Second pop up////////////////////////////////////////////-->   
+
+
+
+
+            </div>
+            
+          
+          
+          
+          
+          
+          <div class="preschooler_pdcts_banner">
+			<div class="pre_left">
+            	<img src="images/nanha3.png"  style="z-index:2000" />
+            </div>
+            <div class="pre_right">
+            	<div style="float:left; width:100%">
+            	
+            		<h1>NAN HA 3</h1>
+	                <p>Cow’s milk whey protein, Enzymatically Hydrolyzed cow’s milk
+whey protein (HALAL), Palm olein, Low erucic rapeseed oil, Maltodextrin,
+Sunflower oil, Soya lecithin, Fish oil (from tuna fish), Vegetable oil from
+mortierella alpina, Bifidus culture, Lactobacillus culture, Vitamins, Minerals. </p>
+                </div>
+            	<div style="float:left; width:100%; margin-top:50px">
+                
+                	<div style="float:left; vertical-align:text-bottom; margin-top:30px; width:50%">
+                   		<img src="images/table.png" style="padding-left:25px" />
+    					<span class="pdcts_brown_btn" onclick="show_nutrition_info_2()"><a id="button0_1" href="JavaScript:void(0);">Nutritional info</a></span>
+					</div>
+                	<div style="float:right;margin-top:13px; width:50%">
+                    <img src="images/sizes_gm.png" style="padding-left:25px" />
+    					<span class="pdcts_brown_btn"><a id="button1" href="JavaScript:void(0);">Sizes & Availability</a></span>
+					</div>
+				</div>                
+            </div>
+
+<!--/////////////////////////////////////////Third pop up//////////////////////////////////////////////////////-->
+
+	<div id="popupContact1" class="popupContact" style="height:auto">
+    	
+        <div><img src="images/nanha3.png" style="z-index:2000; background:none" /></div>
+        
+        <div style="background:#FFF;height:auto; min-width:600px; margin-top:-150px" >
+			<a id="popupContactClose1" class="popupContactClose"><img src="images/esc.png" alt=""/></a>
+
+			<div id="contactArea1" class="contactArea" style="height:auto;">
+				<table><tr><td style="width:35%;">
+				<div style="float:left; padding-top:150px;">
+	                <img src="images/map.png" />
+				</div>
+			</td><td style="width:60%;">
+                <div style="float:right; text-align:left; " class="popstyle">
+                	<h1>Sizes & Availability</h1>
+                    
+ <!--??????//////////////////////////////////////////////JQUERY TAB////////////////////////////////////////////////////////////////////////-->
+                    
+                    <div class="tab" id="tabs1">
+                        <ul>
+                        	<li><a href="#tabs-1"><img src="images/800gm.png"  /></a></li>
+                        	<li><a href="#tabs-2"><img src="images/400gm.png" style="margin-top:12px"/></a></li>
+                        </ul>
+                        <div class="tabbackground" id="tabs-1">
+                        	<h2>Available Countries</h2>
+                        	<table border="0" style="margin:0; padding:0">
+                            	<tr>
+                                	<td><img src="images/bahrain.png" /></td><td width="100px">Bahrain</td><td><img src="images/oman.png" /></td><td width="100px">Oman</td>
+                              	</tr>
+                                <tr>
+    	                            <td><img src="images/jordan.png" /></td><td width="100px">Jordan</td><td><img src="images/qatar.png" /></td><td width="100px">Qatar</td>
+                              	</tr>
+                                <tr>
+	                                <td><img src="images/ksa.png" /></td><td width="100px">KSA</td><td><img src="images/uae.png" /></td><td width="100px">UAE(Dubai, Abu Dhabi)</td>
+                                </tr>
+                                <tr>
+	                                <td><img src="images/lebanon.png" /></td><td width="100px">Lebanon</td><td></td><td width="100px"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="tabs-2" class="tabbackground">
+                        	<h2>Available Countries</h2>
+                        	<table border="0">
+                            	<tr>
+                                	<td><img src="images/bahrain.png" /></td><td width="100px">Bahrain</td><td><img src="images/oman.png" /></td><td width="100px">Oman</td>
+                              	</tr>
+                                <tr>
+    	                            <td><img src="images/jordan.png" /></td><td width="100px">Jordan</td><td><img src="images/qatar.png" /></td><td width="100px">Qatar</td>
+                              	</tr>
+                                <tr>
+	                                <td><img src="images/ksa.png" /></td><td width="100px">KSA</td><td><img src="images/uae.png" /></td><td width="100px">UAE(Dubai, Abu Dhabi)</td>
+                                <tr>
+	                                <td><img src="images/iran.png" /></td><td width="100px">Iran</td><td><img src="images/iraq.png" /></td><td width="100px">Iraq</td>
+                              	</tr>
+                                <tr>
+    	                            <td><img src="images/kuwait.png" /></td><td width="100px">Kuwait</td><td><img src="images/yemen.png" /></td><td width="100px">Yemen</td>
+                              	</tr>
+                                <tr>
+	                                <td><img src="images/lebanon.png" /></td><td width="100px">Lebanon</td><td></td><td width="100px"></td>
+                                </tr>
+                            </table>
+                        </div>
+                  	</div>
+
+                    <!--//////JQUERY TAB///////////-->
+                    
+                </div>     
+				</td></tr></table>               
+			</div>
+        </div>
+	</div>
+	<div id="backgroundPopup1" class="backgroundPopup"></div>
+    
+ <!--//////////////////////////////////Third pop up////////////////////////////////////////////-->   
+    
+<!--//////////////////////////////////////Fourth pop up/////////////////////////////////////////////-->
+
+	<div id="popupContact0_1" class="popupContact" style="height:auto;">
+    	
+        <div><img src="images/nanha3.png" style="z-index:2000; background:none" /></div>
+        
+        <div style="background:#FFF; min-height:1268px; height:auto; min-width:600px; margin-top:-150px" >
+			<a id="popupContactClose0_1" class="popupContactClose"><img src="images/esc.png" alt=""/></a>
+
+			<div id="contactArea0_1" class="contactArea" style="height:auto; background:#FFF">
+				<div style="float:left; padding-top:120px; width:35%;">
+	                <h2 style="padding:110px 0 0 70px; color:#7b91a4">Ingredients</h2><br />
+                    <p style="padding-left:15px; text-align:justify; color:#9daebd">Cow’s milk whey protein, Enzymatically Hydrolyzed cow’s milk
+whey protein (HALAL), Palm olein, Low erucic rapeseed oil, Maltodextrin,
+Sunflower oil, Soya lecithin, Fish oil (from tuna fish), Vegetable oil from
+mortierella alpina, Bifidus culture, Lactobacillus culture, Vitamins, Minerals.</p>
+				</div>
+                <div style="float:right; text-align:left; min-width:60%; width:auto;" class="popstyle">
+                	<h1>Nutritional Info</h1>
+                   	<table cellpadding="0" border="0" cellspacing="0"  class="table1" width="90%" style="background:#FFF">
+                    	<tr style="background:#eceff3; color:#8096a9; line-height:40px ">
+                        	<th>
+                            Nutritional Value</th><th>Per Meal</th><th>Per 100g</th>
+                        </tr>
+                    	 <tr>
+    <td class="clmn1" >Energy (kcal)</td>
+    <td class="clmn3">67</td>
+    <td class="clmn3">493</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Energy (kJ)</td>
+    <td class="clmn3">280</td>
+    <td class="clmn3">2060</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Fat (g)</td>
+    <td class="clmn3">3.1</td>
+    <td class="clmn3">22.8</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Linoleic Acid (g)</td>
+    <td class="clmn3">0.58</td>
+    <td class="clmn3">4.3</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Alpha-Linolenic acid (mg)</td>
+    <td class="clmn3">76</td>
+    <td class="clmn3">560</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >DHA (mg)</td>
+    <td class="clmn3">4.6</td>
+    <td class="clmn3">34</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >ARA (mg)</td>
+    <td class="clmn3">4.6</td>
+    <td class="clmn3">34</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Protein (g)</td>
+    <td class="clmn3">2.01</td>
+    <td class="clmn3">14.79</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Carbohydrate (g) </td>
+    <td class="clmn3">7.77</td>
+    <td class="clmn3">57.11</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Ash (g)</td>
+    <td class="clmn3">0.45</td>
+    <td class="clmn3">3.3</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Sodium (mg)</td>
+    <td class="clmn3">34</td>
+    <td class="clmn3">250</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Potassium (mg)</td>
+    <td class="clmn3">95</td>
+    <td class="clmn3">700</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Chloride (mg)</td>
+    <td class="clmn3">55</td>
+    <td class="clmn3">407</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Calcium (mg)</td>
+    <td class="clmn3">86</td>
+    <td class="clmn3">600</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Phosphorus (mg)</td>
+    <td class="clmn3">49</td>
+    <td class="clmn3">359</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Magnesium (mg)</td>
+    <td class="clmn3">6.8</td>
+    <td class="clmn3">50</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Selenium (µg)</td>
+    <td class="clmn3">1.7</td>
+    <td class="clmn3">12.8</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Water(g)</td>
+    <td class="clmn3">90.27</td>
+    <td class="clmn3">2</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Vitamin A (IU)</td>
+    <td class="clmn3">230</td>
+    <td class="clmn3">1720</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Vitamin A (µg)</td>
+    <td class="clmn3">70</td>
+    <td class="clmn3">516</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Vitamin D (IU)</td>
+    <td class="clmn3">51</td>
+    <td class="clmn3">372</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Vitamin D (µg)</td>
+    <td class="clmn3">1.3</td>
+    <td class="clmn3">9.3</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Vitamin E (IU)</td>
+    <td class="clmn3">1.9</td>
+    <td class="clmn3">14.1</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Vitamin E (µg)</td>
+    <td class="clmn3">1.3</td>
+    <td class="clmn3">9.4</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Vitamin K (µg)</td>
+    <td class="clmn3">5.4</td>
+    <td class="clmn3">40</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Vitamin C (mg)</td>
+    <td class="clmn3">12</td>
+    <td class="clmn3">85</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Vitamin B1 (mg)</td>
+    <td class="clmn3">0.13</td>
+    <td class="clmn3">0.94</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Vitamin B2 (mg)</td>
+    <td class="clmn3">0.2</td>
+    <td class="clmn3">1.5</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Niacin (mg)</td>
+    <td class="clmn3">0.56</td>
+    <td class="clmn3">4.1</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Vitamin B6 (mg)</td>
+    <td class="clmn3">0.061</td>
+    <td class="clmn3">0.45</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Folic acid (µg)</td>
+    <td class="clmn3">14</td>
+    <td class="clmn3">100</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Pantothenic acid (mg)</td>
+    <td class="clmn3">0.75</td>
+    <td class="clmn3">5.5</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Vitamin B12 (µg)</td>
+    <td class="clmn3">0.24</td>
+    <td class="clmn3">1.8</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Biotin (µg)</td>
+    <td class="clmn3">1.8</td>
+    <td class="clmn3">13</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Iron (mg)</td>
+    <td class="clmn3">1</td>
+    <td class="clmn3">7.5</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Iodine (µg)</td>
+    <td class="clmn3">11</td>
+    <td class="clmn3">100</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Copper (mg)</td>
+    <td class="clmn3">0.054</td>
+    <td class="clmn3">0.4</td>
+  </tr>
+  <tr>
+    <td class="clmn1" >Zinc (mg)</td>
+    <td class="clmn3">0.68</td>
+    <td class="clmn3">5</td>
+  </tr>
+  </table>
+               </div>                    
+                                    <div style="float:left"><img src="images/Nutritional-Details_NanHA3.png" width="600px" /></div>
+
+			</div>
+        </div>
+	</div>
+	<div id="backgroundPopup0_1" class="backgroundPopup"></div>
+    
+ <!--//////////////////////////////////Fourth pop up////////////////////////////////////////////-->   
+
+
+          </div>
+          
+          
+          
+          
+          <div class="preschooler_pdcts_banner">
+			<div class="pre_left">
+            	<img src="images/nido1.png"  style="z-index:2000" />
+            </div>
+            <div class="pre_right">
+            	<div style="float:left; width:100%">
+            	
+            		<h1>NIDO One plus</h1>
+	                <p>NIDO® ONE PLUS is a specialized growing-up milk designed for your 1-3 year old child to help support overall growth, development and immunity. </p>
+                </div>
+            	<div style="float:left; width:100%; margin-top:50px">
+                
+                	<div style="float:left; vertical-align:text-bottom; margin-top:35px; width:50%">
+                   		<img src="images/table.png" style="padding-left:25px" />
+    					<span class="pdcts_brown_btn" onclick="show_nutrition_info_2()"><a id="button0_2" href="JavaScript:void(0);">Nutritional info</a></span>
+					</div>
+                	<div style="float:right;margin-top:10px; width:50%">
+                    <img src="images/sizes_1.8_900_400.png" style="padding-left:25px" />
+    					<span class="pdcts_brown_btn"><a id="button2" href="JavaScript:void(0);">Sizes & Availability</a></span>
+					</div>
+				</div>                
+            </div>
+<!--/////////////////////////////////////////Fifth pop up//////////////////////////////////////////////////////-->
+
+	<div id="popupContact2" class="popupContact" style="height:auto">
+    	
+        <div><img src="images/nido1.png" style="z-index:2000; background:none" /></div>
+        
+        <div style="background:#FFF;height:auto; min-width:600px; margin-top:-150px" >
+			<a id="popupContactClose2" class="popupContactClose"><img src="images/esc.png" alt=""/></a>
+
+			<div id="contactArea2" class="contactArea" style="height:auto;">
+				<table><tr><td style="width:35%;">
+				<div style="float:left; padding-top:150px;">
+	                <img src="images/map.png" />
+				</div></td><td style="width:60%;">
+                <div style="float:right; text-align:left;" class="popstyle">
+                	<h1>Sizes & Availability</h1>
+                    
+ <!--??????//////////////////////////////////////////////JQUERY TAB////////////////////////////////////////////////////////////////////////-->
+                    
+                    <div class="tab" id="tabs2">
+                        <ul>
+                        	<li><a href="#tabs-1"><img src="images/1.8kg.png"  /></a></li>
+                        	<li><a href="#tabs-2"><img src="images/900gm.png" style="margin-top:13px"/></a></li>
+                        	<li><a href="#tabs-3"><img src="images/400gm.png" style="margin-top:26px"/></a></li>
+                        </ul>
+                        <div class="tabbackground" id="tabs-1">
+                        	<h2>Available Countries</h2>
+                        	<table border="0" style="margin:0; padding:0">
+                            	<tr>
+                                	<td><img src="images/bahrain.png" /></td><td width="100px">Bahrain</td><td><img src="images/oman.png" /></td><td width="100px">Oman</td>
+                              	</tr>
+                                <tr>
+    	                            <td><img src="images/jordan.png" /></td><td width="100px">Jordan</td><td><img src="images/qatar.png" /></td><td width="100px">Qatar</td>
+                              	</tr>
+                                <tr>
+	                                <td><img src="images/ksa.png" /></td><td width="100px">KSA</td><td><img src="images/uae.png" /></td><td width="100px">UAE(Dubai, Abu Dhabi)</td>
+                                </tr>
+                                <tr>
+	                                <td><img src="images/lebanon.png" /></td><td width="100px">Lebanon</td><td><img src="images/kuwait.png" /></td><td width="100px">Kuwait</td>
+                                </tr>
+                                <tr>
+	                                <td><img src="images/syria.png" /></td><td width="100px">Syria</td><td><img src="images/yemen.png" /></td><td width="100px">Yemen</td>
+                                </tr>
+                                <tr>
+	                                <td><img src="images/iraq.png" /></td><td width="100px">Iraq</td><td></td><td width="100px"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="tabs-2" class="tabbackground">
+                        	<h2>Available Countries</h2>
+                        	<table border="0">
+                            	<tr>
+                                	<td><img src="images/bahrain.png" /></td><td width="100px">Bahrain</td><td><img src="images/oman.png" /></td><td width="100px">Oman</td>
+                              	</tr>
+                                <tr>
+    	                            <td><img src="images/jordan.png" /></td><td width="100px">Jordan</td><td><img src="images/qatar.png" /></td><td width="100px">Qatar</td>
+                              	</tr>
+                                <tr>
+	                                <td><img src="images/ksa.png" /></td><td width="100px">KSA</td><td><img src="images/uae.png" /></td><td width="100px">UAE(Dubai, Abu Dhabi)</td>
+                                </tr>
+                                <tr>
+	                                <td><img src="images/lebanon.png" /></td><td width="100px">Lebanon</td><td><img src="images/kuwait.png" /></td><td width="100px">Kuwait</td>
+                                </tr>
+                                <tr>
+	                                <td><img src="images/syria.png" /></td><td width="100px">Syria</td><td><img src="images/yemen.png" /></td><td width="100px">Yemen</td>
+                                </tr>
+                                <tr>
+	                                <td><img src="images/iraq.png" /></td><td width="100px">Iraq</td><td></td><td width="100px"></td>
+                                </tr>
+                            </table>
+                        </div><div id="tabs-3" class="tabbackground">
+                        	<h2>Available Countries</h2>
+                        	<table border="0">
+                            	<tr>
+                                	<td><img src="images/bahrain.png" /></td><td width="100px">Bahrain</td><td><img src="images/oman.png" /></td><td width="100px">Oman</td>
+                              	</tr>
+                                <tr>
+    	                            <td><img src="images/jordan.png" /></td><td width="100px">Jordan</td><td><img src="images/qatar.png" /></td><td width="100px">Qatar</td>
+                              	</tr>
+                                <tr>
+	                                <td><img src="images/ksa.png" /></td><td width="100px">KSA</td><td><img src="images/uae.png" /></td><td width="100px">UAE(Dubai, Abu Dhabi)</td>
+                                </tr>
+                                <tr>
+	                                <td><img src="images/lebanon.png" /></td><td width="100px">Lebanon</td><td><img src="images/kuwait.png" /></td><td width="100px">Kuwait</td>
+                                </tr>
+                                <tr>
+	                                <td><img src="images/syria.png" /></td><td width="100px">Syria</td><td><img src="images/yemen.png" /></td><td width="100px">Yemen</td>
+                                </tr>
+                                <tr>
+	                                <td><img src="images/iraq.png" /></td><td width="100px">Iraq</td><td></td><td width="100px"></td>
+                                </tr>
+                            </table>
+                        </div>
+                  	</div>
+
+                    <!--//////JQUERY TAB///////////-->
+                    
+                </div>   
+				</td></tr></table>                 
+			</div>
+        </div>
+	</div>
+	<div id="backgroundPopup2" class="backgroundPopup"></div>
+    
+ <!--//////////////////////////////////Fifth pop up////////////////////////////////////////////-->   
+    
+<!--//////////////////////////////////////Sixth pop up/////////////////////////////////////////////-->
+
+	<div id="popupContact0_2" class="popupContact" style="height:auto;">
+    	
+        <div><img src="images/nido1.png" style="z-index:2000; background:none" /></div>
+        
+        <div style="background:#FFF; min-height:500px; height:auto; min-width:600px; margin-top:-150px" >
+			<a id="popupContactClose0_2" class="popupContactClose"><img src="images/esc.png" alt=""/></a>
+
+			<div id="contactArea0_2" class="contactArea" style="height:auto; background:#FFF">
+				<div style="float:left; padding-top:120px; width:30%;">
+	                <h2 style="padding:110px 0 0 70px; color:#7b91a4">Ingredients</h2><br />
+                    <p style="padding-left:15px; text-align:justify; color:#9daebd">
+                    
+                    
+                    
+                    
+                    </p>
+				</div>
+                <div style="float:right; text-align:justify; padding-right:18px; min-width:60%; width:60%;" class="popstyle">
+                	<h1>Nutritional Info</h1>
+                    <h3 style="font-size:12px ; color:#8096a9">NIDO® ONE PLUS is a specialized growing-up milk designed for your 1-3 year old child to help support overall growth, development and immunity. </h3><br />
+                    <h3 style="font-size:12px ; color:#8096a9">Here’s what makes NIDO® ONE PLUS superior to any regular milk…</h3>
+						
+                        
+                        <li style="line-height:25px; font-size:13px; color:#707070;">Adapted Protein content to provide your child with the right amount of protein from milk without overloading his growing yet immature kidneys. </li>
+                        <li style="line-height:25px; font-size:13px; color:#707070;">Healthy fat profile with Essential Fatty Acids (EFAs) for proper growth and development. </li>
+                        <li style="line-height:25px; font-size:13px; color:#707070;">Fortified with Iron to help prevent from iron-deficiency anemia and needed for your child’s normal brain development. </li>
+                        <li style="line-height:25px; font-size:13px; color:#707070;">Fortified with Vitamins and minerals including Vitamins A, C, D, E, Iron, Zinc and Selenium that help support your child’s immunity, overall growth and development. </li>
+                        <li style="line-height:25px; font-size:13px; color:#707070;">Lactobacillus PROTECTUS®: Live probiotic cultures that help boost your child’s natural body defenses.</li>
+                        <li style="line-height:25px; font-size:13px; color:#707070;" >A natural blend of dietary prebiotic fibers developed by Nestlé that contributes your child’s healthy digestive system.</li>
+                                          
+               </div>                    
+
+			</div>
+        </div>
+	</div>
+	<div id="backgroundPopup0_2" class="backgroundPopup"></div>
+    
+ <!--//////////////////////////////////Fourth pop up////////////////////////////////////////////-->   
+
+
+          </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+<script>
+
+//////////////////////POP UP//////////////////////////////////
+
+//SETTING UP OUR POPUP
+//0 means disabled; 1 means enabled;
+var popupStatus = 0;
+//loading popup with jQuery magic!
+function loadPopup0(){
+	//loads popup only if it is disabled
+	if(popupStatus==0){		$("#backgroundPopup0").css({"opacity": "0.7"});	$("#backgroundPopup0").fadeIn("slow");	$("#popupContact0").fadeIn("slow");popupStatus = 1;}}
+//disabling popup with jQuery magic!
+function disablePopup0(){//disables popup only if it is enabled
+	if(popupStatus==1){	$("#backgroundPopup0").fadeOut("slow");	$("#popupContact0").fadeOut("slow");popupStatus = 0;}}
+//centering popup
+function centerPopup0(){	//request data for centering
+	var windowWidth = document.documentElement.clientWidth;	var windowHeight = document.documentElement.clientHeight;	var popupHeight = $("#popupContact0").height();	var popupWidth = $("#popupContact0").width();
+	//centering
+	document.getElementById('popupContact0').style.margin = "8px 0px 0px -12px";
+	$("#popupContact0").css({	"position": "absolute",
+//		"top": (windowHeight/2-popupHeight/2) * 2,
+//		"left": windowWidth/2-popupWidth/2
+		//"top":602,	"left":425	
+		});
+	//only need force for IE6
+	$("#backgroundPopup0").css({	"height": windowHeight	});}
+//CONTROLLING EVENTS IN jQuery
+$(document).ready(function(){	
+	//LOADING POPUP	//Click the button event!
+	$("#button0").click(function(){		//centering with css
+		centerPopup0();		//load popup
+		loadPopup0();});
+				
+	//CLOSING POPUP	//Click the x event!
+	$("#popupContactClose0").click(function(){	disablePopup0();});
+	//Click out event!
+	$("#backgroundPopup0").click(function(){	disablePopup0();});
+	//Press Escape event!
+	$(document).keypress(function(e){	if(e.keyCode==27 && popupStatus==1){disablePopup0();}});});
+
+
+//////////////////////POP UP//////////////////////////////////
+
+$(function() {
+$( "#tabs0" ).tabs();
+});
+
+
+//////////////////////POP UP//////////////////////////////////
+
+//SETTING UP OUR POPUP
+//0 means disabled; 1 means enabled;
+var popupStatus = 0;
+//loading popup with jQuery magic!
+function loadPopup0_0(){
+	//loads popup only if it is disabled
+	if(popupStatus==0){		$("#backgroundPopup0_0").css({"opacity": "0.7"});	$("#backgroundPopup0_0").fadeIn("slow");	$("#popupContact0_0").fadeIn("slow");popupStatus = 1;}}
+//disabling popup with jQuery magic!
+function disablePopup0_0(){//disables popup only if it is enabled
+	if(popupStatus==1){	$("#backgroundPopup0_0").fadeOut("slow");	$("#popupContact0_0").fadeOut("slow");popupStatus = 0;}}
+//centering popup
+function centerPopup0_0(){	//request data for centering
+	var windowWidth = document.documentElement.clientWidth;	var windowHeight = document.documentElement.clientHeight;	var popupHeight = $("#popupContact0_0").height();	var popupWidth = $("#popupContact0_0").width();
+	//centering
+	document.getElementById('popupContact0_0').style.margin = "8px 0px 0px -12px";
+	$("#popupContact0_0").css({	"position": "absolute",
+//		"top": (windowHeight/2-popupHeight/2) * 2,
+//		"left": windowWidth/2-popupWidth/2
+		//"top":602,	"left":425	
+		});
+	//only need force for IE6
+	$("#backgroundPopup0_0").css({	"height": windowHeight	});}
+//CONTROLLING EVENTS IN jQuery
+$(document).ready(function(){	
+	//LOADING POPUP	//Click the button event!
+	$("#button0_0").click(function(){		//centering with css
+		centerPopup0_0();		//load popup
+		loadPopup0_0();});
+				
+	//CLOSING POPUP	//Click the x event!
+	$("#popupContactClose0_0").click(function(){	disablePopup0_0();});
+	//Click out event!
+	$("#backgroundPopup0_0").click(function(){	disablePopup0_0();});
+	//Press Escape event!
+	$(document).keypress(function(e){	if(e.keyCode==27 && popupStatus==1){disablePopup0_0();}});});
+
+
+//////////////////////POP UP//////////////////////////////////
+
+$(function() {
+$( "#tabs0_0" ).tabs();
+});
+//////////////////////POP UP//////////////////////////////////
+
+//SETTING UP OUR POPUP
+//0 means disabled; 1 means enabled;
+var popupStatus = 0;
+//loading popup with jQuery magic!
+function loadPopup1(){
+	//loads popup only if it is disabled
+	if(popupStatus==0){		$("#backgroundPopup1").css({"opacity": "0.7"});	$("#backgroundPopup1").fadeIn("slow");	$("#popupContact1").fadeIn("slow");popupStatus = 1;}}
+//disabling popup with jQuery magic!
+function disablePopup1(){//disables popup only if it is enabled
+	if(popupStatus==1){	$("#backgroundPopup1").fadeOut("slow");	$("#popupContact1").fadeOut("slow");popupStatus = 0;}}
+//centering popup
+function centerPopup1(){	//request data for centering
+	var windowWidth = document.documentElement.clientWidth;	var windowHeight = document.documentElement.clientHeight;	var popupHeight = $("#popupContact1").height();	var popupWidth = $("#popupContact1").width();
+	//centering
+	document.getElementById('popupContact1').style.margin = "8px 0px 0px -12px";
+	$("#popupContact1").css({	"position": "absolute",
+//		"top": (windowHeight/2-popupHeight/2) * 2,
+//		"left": windowWidth/2-popupWidth/2
+		//"top":976,	"left":425	
+		});
+	//only need force for IE6
+	$("#backgroundPopup1").css({	"height": windowHeight	});}
+//CONTROLLING EVENTS IN jQuery
+$(document).ready(function(){	
+	//LOADING POPUP	//Click the button event!
+	$("#button1").click(function(){		//centering with css
+		centerPopup1();		//load popup
+		loadPopup1();});
+				
+	//CLOSING POPUP	//Click the x event!
+	$("#popupContactClose1").click(function(){	disablePopup1();});
+	//Click out event!
+	$("#backgroundPopup1").click(function(){	disablePopup1();});
+	//Press Escape event!
+	$(document).keypress(function(e){	if(e.keyCode==27 && popupStatus==1){disablePopup1();}});});
+
+
+//////////////////////POP UP//////////////////////////////////
+
+$(function() {
+$( "#tabs1" ).tabs();
+});
+
+
+//////////////////////POP UP//////////////////////////////////
+
+//SETTING UP OUR POPUP
+//0 means disabled; 1 means enabled;
+var popupStatus = 0;
+//loading popup with jQuery magic!
+function loadPopup0_1(){
+	//loads popup only if it is disabled
+	if(popupStatus==0){		$("#backgroundPopup0_1").css({"opacity": "0.7"});	$("#backgroundPopup0_1").fadeIn("slow");	$("#popupContact0_1").fadeIn("slow");popupStatus = 1;}}
+//disabling popup with jQuery magic!
+function disablePopup0_1(){//disables popup only if it is enabled
+	if(popupStatus==1){	$("#backgroundPopup0_1").fadeOut("slow");	$("#popupContact0_1").fadeOut("slow");popupStatus = 0;}}
+//centering popup
+function centerPopup0_1(){	//request data for centering
+	var windowWidth = document.documentElement.clientWidth;	var windowHeight = document.documentElement.clientHeight;	var popupHeight = $("#popupContact0_1").height();	var popupWidth = $("#popupContact0_1").width();
+	//centering
+	document.getElementById('popupContact0_1').style.margin = "8px 0px 0px -12px";
+	$("#popupContact0_1").css({	"position": "absolute",
+//		"top": (windowHeight/2-popupHeight/2) * 2,
+//		"left": windowWidth/2-popupWidth/2
+		//"top":976,	"left":425	
+		});
+	//only need force for IE6
+	$("#backgroundPopup0_1").css({	"height": windowHeight	});}
+//CONTROLLING EVENTS IN jQuery
+$(document).ready(function(){	
+	//LOADING POPUP	//Click the button event!
+	$("#button0_1").click(function(){		//centering with css
+		centerPopup0_1();		//load popup
+		loadPopup0_1();});
+				
+	//CLOSING POPUP	//Click the x event!
+	$("#popupContactClose0_1").click(function(){	disablePopup0_1();});
+	//Click out event!
+	$("#backgroundPopup0_1").click(function(){	disablePopup0_1();});
+	//Press Escape event!
+	$(document).keypress(function(e){	if(e.keyCode==27 && popupStatus==1){disablePopup0_1();}});});
+
+
+//////////////////////POP UP//////////////////////////////////
+
+$(function() {
+$( "#tabs0_1" ).tabs();
+});
+//////////////////////POP UP//////////////////////////////////
+
+//SETTING UP OUR POPUP
+//0 means disabled; 1 means enabled;
+var popupStatus = 0;
+//loading popup with jQuery magic!
+function loadPopup2(){
+	//loads popup only if it is disabled
+	if(popupStatus==0){		$("#backgroundPopup2").css({"opacity": "0.7"});	$("#backgroundPopup2").fadeIn("slow");	$("#popupContact2").fadeIn("slow");popupStatus = 1;}}
+//disabling popup with jQuery magic!
+function disablePopup2(){//disables popup only if it is enabled
+	if(popupStatus==1){	$("#backgroundPopup2").fadeOut("slow");	$("#popupContact2").fadeOut("slow");popupStatus = 0;}}
+//centering popup
+function centerPopup2(){	//request data for centering
+	var windowWidth = document.documentElement.clientWidth;	var windowHeight = document.documentElement.clientHeight;	var popupHeight = $("#popupContact2").height();	var popupWidth = $("#popupContact2").width();
+	//centering
+	document.getElementById('popupContact2').style.margin = "8px 0px 0px -12px";
+	$("#popupContact2").css({	"position": "absolute",
+//		"top": (windowHeight/2-popupHeight/2) * 2,
+//		"left": windowWidth/2-popupWidth/2
+		//"top":1350,	"left":425	
+		});
+	//only need force for IE6
+	$("#backgroundPopup2").css({	"height": windowHeight	});}
+//CONTROLLING EVENTS IN jQuery
+$(document).ready(function(){	
+	//LOADING POPUP	//Click the button event!
+	$("#button2").click(function(){		//centering with css
+		centerPopup2();		//load popup
+		loadPopup2();});
+				
+	//CLOSING POPUP	//Click the x event!
+	$("#popupContactClose2").click(function(){	disablePopup2();});
+	//Click out event!
+	$("#backgroundPopup2").click(function(){	disablePopup2();});
+	//Press Escape event!
+	$(document).keypress(function(e){	if(e.keyCode==27 && popupStatus==1){disablePopup2();}});});
+
+
+//////////////////////POP UP//////////////////////////////////
+
+$(function() {
+$( "#tabs2" ).tabs();
+});
+
+
+//////////////////////POP UP//////////////////////////////////
+
+//SETTING UP OUR POPUP
+//0 means disabled; 1 means enabled;
+var popupStatus = 0;
+//loading popup with jQuery magic!
+function loadPopup0_2(){
+	//loads popup only if it is disabled
+	if(popupStatus==0){		$("#backgroundPopup0_2").css({"opacity": "0.7"});	$("#backgroundPopup0_2").fadeIn("slow");	$("#popupContact0_2").fadeIn("slow");popupStatus = 1;}}
+//disabling popup with jQuery magic!
+function disablePopup0_2(){//disables popup only if it is enabled
+	if(popupStatus==1){	$("#backgroundPopup0_2").fadeOut("slow");	$("#popupContact0_2").fadeOut("slow");popupStatus = 0;}}
+//centering popup
+function centerPopup0_2(){	//request data for centering
+	var windowWidth = document.documentElement.clientWidth;	var windowHeight = document.documentElement.clientHeight;	var popupHeight = $("#popupContact0_2").height();	var popupWidth = $("#popupContact0_2").width();
+	//centering
+	document.getElementById('popupContact0_2').style.margin = "8px 0px 0px -12px";
+	$("#popupContact0_2").css({	"position": "absolute",
+//		"top": (windowHeight/2-popupHeight/2) * 2,
+//		"left": windowWidth/2-popupWidth/2
+		//"top":1350,	"left":425	
+		});
+	//only need force for IE6
+	$("#backgroundPopup0_2").css({	"height": windowHeight	});}
+//CONTROLLING EVENTS IN jQuery
+$(document).ready(function(){	
+	//LOADING POPUP	//Click the button event!
+	$("#button0_2").click(function(){		//centering with css
+		centerPopup0_2();		//load popup
+		loadPopup0_2();});
+				
+	//CLOSING POPUP	//Click the x event!
+	$("#popupContactClose0_2").click(function(){	disablePopup0_2();});
+	//Click out event!
+	$("#backgroundPopup0_2").click(function(){	disablePopup0_2();});
+	//Press Escape event!
+	$(document).keypress(function(e){	if(e.keyCode==27 && popupStatus==1){disablePopup0_2();}});});
+
+
+//////////////////////POP UP//////////////////////////////////
+
+$(function() {
+$( "#tabs0_2" ).tabs();
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer Starts Here -->
+<div class="footer clear">
+  <div class="wrapper clear">
+    <div class="footer_boxes clear">
+      <div class="footboxes footbox_01">
+        <h3>الحمل</h3>
+        <ul>
+        <li><a href="featured.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding.html">التغذية</a></li>
+          <li><a href="growing.html">النمو و التطور</a></li>
+                    <li><a href="products.html">المنتجات الخاصة للحامل</a></li>
+          <li><a href="faq.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_02">
+        <h3>الأشهر الأولى</h3>
+        <ul>
+          <li><a href="feeding_infant_0-6.html">التغذية</a></li>
+          <li><a href="growing_infant_0-6.html">النمو و التطور</a></li>
+          <li><a href="faq_infant_0-6.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_03">
+        <h3>من ٦‎ إلى ١‎٢‎ شهر</h3>
+        <ul>
+          <li><a href="featured_products_infant_6-12.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding_infant_6-12.html">التغذية</a></li>
+          <li><a href="growing_infant_6-12.html">النمو و التطور</a></li>
+          <li><a href="products_infant_6-12.html">المنتجات الخاصة لعمر ٦-١٢ شهراً</a></li>
+          <li><a href="faq_infant_6-12.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_04">
+        <h3>الأطفال من ١‎ إلى ٣‎ سنوات</h3>
+        <ul>
+          <li><a href="featured_products_toddler.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding_toddler.html">التغذية</a></li>
+          <li><a href="growing_toddler.html">النمو و التطور</a></li>
+          <li><a href="products_toddler.html">المنتجات الخاصة لعمر ١ إلى ٣ سنوات</a></li>
+          <li><a href="faq_toddler.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_05">
+        <h3>مرحلة ما قبل المدرسة:٣‎ إلى ٥‎ سنوات</h3>
+        <ul>
+          <li><a href="featured_products_preschooler.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding_preschooler.html">التغذية</a></li>
+          <li><a href="growing_preschooler.html">النمو و التطور</a></li>
+          <li><a href="products_preschooler.html">المنتجات الخاصة لعمر٣ إلى ٥ سنوات</a></li>
+          <li><a href="faq_preschooler.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer_menu">
+      <ul>
+        <li><a href="index.html">الصفحة الرئيسية</a></li>
+        <li><a href="parenting.html">الأمومة</a></li>
+        <li><a href="#">الوصفات</a></li>
+        <li><a href="our_commitment.html">التزاماتنا</a></li>
+        <li><a href="#">نادي طفل نستله</a></li>
+        <li><a href="#">اتصل بنا</a></li>
+        <li><a href="faq.html">الأسئلة و الأجوبة</a></li>
+        <li><a href="#">خريطة الموقع</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer_rule">
+    <div class="wrapper">
+      <div class="copy_right_right">علامات "بداية صحية لحياة صحية" هي علامات تجارية لشركة سوسيتيه دي برودوي نستله إس. إيه. فيفي – سويسرا<br />كل العلامات التجارية هي من ملك لشركة سوسيتيه دي برودوي نستله إس. إيه. فيفي – سويسرا</div>
+      <div class="copy_right_left">نستله نيوترشن<span dir="ltr">&nbsp;2013&nbsp;</span>جميع الحقوق محفوظة<br />
+        <a href="privacy_policy.html" class="active">الشروط و الأحكام  .  سياسة الخصوصية</a> </div>
+    </div>
+  </div>
+</div>
+<!-- Footer Ends Here -->
+
+</body>
+</html>

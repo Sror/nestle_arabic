@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>التغذية نستله</title>
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" language="javascript" src="js/jquery-1.8.2.min.js"></script>
+
+<script src="js/jquery.anythingslider.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#foo2').carouFredSel({
+		circular: false,
+		infinite: false,
+		auto: false,
+		prev: '#prev2',
+		next: '#next2',
+		pagination: false,
+		mousewheel: true,
+		swipe: {
+			onMouse: true,
+			onTouch: true
+		}
+	});
+});
+	$(function() {
+		$('#slider2').anythingSlider({
+			expand       : true,
+			showMultiple : 1,
+			changeBy     : 1
+		});
+	});
+	
+	$(document).ready(function(){
+		$(".more_btn").toggle(function(){
+		$(this).text("Less");
+		$(this).next(".acc_cont").slideDown(300);
+		$(this).toggleClass("less");
+		},
+		function(){
+		$(this).text("More");
+		$(this).next(".acc_cont").slideUp(300);	
+		$(this).toggleClass("less")
+		});
+	});
+	$(document).ready(function () {
+		$('.accordion a.item').click(function () {
+			//slideup or hide all the Submenu
+			if($($(this)).hasClass($(this).attr('rel') + 'Over')){
+				$(this).siblings('ul').slideUp('fast');	
+				$(this).removeClass($(this).attr('rel') + 'Over');
+			}else{
+				$('html,body').animate({scrollTop: $(this).offset().top}, 1000);
+				$(this).siblings('ul').slideDown('fast');
+				$(this).addClass($(this).attr('rel') + 'Over');   
+			}
+			return false;
+		});
+	});
+	$(document).ready(function () {
+		$('.accordion-2 a.item').click(function () {
+			//slideup or hide all the Submenu
+			$('.accordion-2 li').children('ul').slideUp('fast');	if($($(this)).hasClass($(this).attr('rel') + 'Over')){
+            $(this).removeClass($(this).attr('rel') + 'Over');
+            }else{
+            $(this).siblings('ul').slideDown('fast');
+            $(this).addClass($(this).attr('rel') + 'Over');       
+            }
+			return false;
+		});
+	});	</script>
+
+</head>
+<body>
+
+<!-- Header Starts Here -->
+<div class="header">
+  <div class="wrapper">
+    <div class="logo"> <img src="images/nestle_logo.png" width="147" height="99" alt="نستله"> </div>
+    <div class="header_left">
+      <div class="header_left_top">
+        <ul>
+          <li> <a href="/"  class="active">الصفحة الرئيسية</a> </li>
+          <li> <a href="our_commitment.html">التزاماتنا</a> </li>
+          <li> <a href="#">نادي طفل نستله</a> </li>
+          <li> <a href="parenting.html">الأمومة</a> </li>
+          <li> <a href="">اتصل بنا</a> </li>
+          <li> <a href="#">خريطة الموقع</a> </li>
+          <li> <a href="#">الحمل</a> </li>
+          <li> <a href="/eng" style="font-family: 'VAGRoundedStd-Light';" dir="ltr">English</a> </li>
+        </ul>
+        <div class="search_wrap">
+          <input name="" type="text" placeholder="البحث">
+          <input name="" type="submit">
+        </div>
+      </div>
+      <div class="nav">
+        <ul>
+          <li id="preg"> <a href="pregnancy.html">الحمل</a> </li>
+          <li id="inf_0_6"> <a href="infant_0-6.html">الأشهر الأولى</a> </li>
+          <li id="inf_6_12"> <a href="infant_6-12.html">من ٦‎ إلى ١‎٢‎ شهر</a> </li>
+          <li id="inf_1_3"> <a href="toddler.html">الأطفال من ١‎ إلى ٣‎ سنوات</a> </li>
+          <li id="inf_3_5"> <a href="preschooler.html">مرحلة ما قبل المدرسة:٣‎ إلى ٥‎ سنوات</a> </li>
+          <li id="for_ur_baby"> <a href="for_your_baby.html">لأجل طفلك</a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Header Ends Here -->
+
+<div class="inner_content clear">
+<div class="leftbar">
+
+<div class="policy">
+<h4><!--Website Disclaimers-->Nestle Disclaimer and Terms & Conditions </h4>
+<div class="left_inner">
+<!--<h2>Terms and conditions</h2>--> 
+<ul class="header_ul">
+    <li><!--Privacy Policy-->Disclaimer</li>
+  </ul>
+ <ul class="header_ul">
+    <li><!--Privacy Policy-->Terms and conditions</li>
+  </ul>
+  
+</div>
+
+
+
+</div>
+<div class="babyfruit_img" style="margin-top:150px">
+<img src="images/alert.png" />
+</div>
+</div>
+<style>
+.anythingSlider-default.activeSlider .anythingControls a {
+	/* background image = top shadow */
+	background-color: #889cb0;
+}
+.anythingSlider-default .anythingControls a.start-stop:hover,
+.anythingSlider-default .anythingControls a.start-stop.hover,
+.anythingSlider-default .anythingControls a.start-stop .anythingControls ul a:hover {
+	background-image: none;
+	color: #889cb0;
+}
+
+</style>
+
+
+<div class="feeding_right feed_infan6_12">
+<h2 style="color:#4e829e">Nestle Disclaimer and Terms & Conditions </h2>
+<br />
+<div class="inner_banner">
+  <ul>
+        
+
+        <li>
+    	<div class="infant_banner clear" style="min-height:1000px">
+        
+        	<div class="growing_left">
+              	<div style="float:left">
+                
+                <h2 style="color:#88a6be">Disclaimer</h2>
+                <p class="terms_para">WHO recommends exclusive breastfeeding for 6 months
+Nestlé fully supports exclusive breastfeeding for 6 months and continued breastfeeding along with the introduction of complimentary foods as by your doctor and health authority .<br /><a href="#" style="text-decoration:underline " ><ul class="terms_para">Click to Continue</ul> </a></p>
+<style>
+.terms_para{
+	color:#8e8e8e !important;
+	font-size:14px !important;
+	text-align:justify;
+}
+.terms_para_para{
+	font-size:16px !important;
+	text-align:justify;
+}
+</style>
+
+<br />
+<br />
+<h2 style="color:#88a6be">Terms and Conditions </h2>
+<p class="terms_para">
+<span class="terms_para_para">NESTLÉ Website Terms and Conditions Template</span><br /><br /><br />
+Thank you for visiting this website. Please read the Terms and Conditions contained in this document carefully since any use of this website constitutes your acceptance of the Terms and Conditions set out herein.  <br /><br /><br />
+Throughout this site, the terms "we", "us", "our" "Nestlé" and "Nestlé Group" refer to the Nestlé S.A. and any of its affiliated companies as appropriate to the context [<i><i>or insert name of Nestlé Market company</i></i>].  “You” refers to any person accessing and/or using this website.<br /><br /><br />
+
+<span class="terms_para_para">Website Privacy Policy</span><br /><br /><br />
+Any personal information or material sent to the Nestlé Group websites are subject to the Nestlé Group policy on privacy and protection of personal data set out in the Privacy Notice located on this web page.  <br /><br /><br />
+<span class="terms_para_para">Accuracy, completeness and timeliness of information</span><br /><br /><br />
+Whilst we use all reasonable attempts to ensure the accuracy and completeness of information on this website, we are not responsible if the information that we make available on this website is not accurate or complete. Any reliance upon the material on this website shall be at your own risk. You agree that it is your responsibility to monitor any changes to the material and the information contained on this website.<br /><br /><br />
+
+<span class="terms_para_para">Transmission</span><br /><br /><br />
+Any non-personal communication or material you transmit to this website by electronic mail or otherwise, including any data, questions, comments, suggestions or the like is, and will be treated as, non-confidential and non-proprietary. Anything you transmit or post becomes the property of the Nestlé Group and may be used for any purpose, including but not limited to, reproduction, disclosure, transmission, publication, broadcast and posting. Furthermore, the Nestlé Group is free to use for any purposes whatsoever (including but not limited to the developing, manufacturing, advertising and marketing of products) any ideas, artwork, inventions, developments, suggestions or concepts contained in any communication you send to this website. Any such use is without compensation to the party submitting information. By submitting information, you are also warranting that you own the material/content submitted, that it is not defamatory and that the Nestlé Group's use will not violate any third party's rights or otherwise place us in breach of any applicable laws. The Nestlé Group is under no obligation to use the information submitted.<br /><br /><br />
+
+<span class="terms_para_para">Intellectual property rights</span><br /><br /><br />
+<span class="terms_para_para">&reg;&nbsp;&nbsp;Reg. Trademark of Société des Produits Nestlé S.A. . All rights reserved.</span><br /><br /><br />
+All copyright and other intellectual property rights in all text, images and other materials on this website are the property of the Nestlé Group or are included with the permission of the relevant owner. <br /> <br />
+You are permitted to browse this website, reproduce extracts by way of printing, downloading to a hard disk or for the purposes of distribution to other individuals. This is only to be done on the proviso that you keep intact all copyright and other proprietary notices and that the above trademark notice appears on such reproductions. No reproduction of any part of this website may be sold or distributed for commercial gain nor shall it be modified or incorporated in any other work, publication or website.<br /><br />
+The trademarks, logos, characters and service marks (collectively "Trademarks") displayed on this website belong to Société des Produits Nestlé S.A. part of the Nestlé Group. Nothing contained on this website should be construed as granting any license or right to use any Trademark displayed on this website. Your use/misuse of the Trademarks displayed on this website, or on any other content on this website, except as provided for in these Terms and Conditions, is strictly prohibited. You are also advised that the Nestlé Group will vigourously enforce its intellectual property rights to the fullest extent of the law.<br /><br /><br />
+
+<span class="terms_para_para">Links to other websites</span><br /><br /><br />
+Links on the Nestlé Group websites may take you outside the Nestlé Group network and systems and the Nestlé Group accepts no responsibility for the content, accuracy or function of these other third party websites. The links are provided in good faith and the Nestlé Group cannot be held responsible for any subsequent change in other third party websites to which we provide a link.   The inclusion of any link to other websites does not imply endorsement by the Nestlé Group. We highly recommend that you make yourself aware of and carefully read the legal and privacy notices of all other websites that you visit.<br /><br /><br />
+
+<span class="terms_para_para">Warranties and Disclaimers </span><br /><br /> <br />
+Your use of this website is at your own and exclusive risk.<br /><br /><br />
+
+<span class="terms_para_para">Warranties</span><br /><br /><br />
+This website is provided to you on an "As Is" and "As Available" basis and, consequently, the Nestlé Group gives no warranties of any kind, whether express, implied, statutory or otherwise (including the implied warranties of merchantability or satisfactory quality and fitness for a particular purpose) including warranties or representations that material on this website will be complete, accurate, reliable, timely, non-infringing to third parties, that access to this website will be un-interrupted or error-free or free from viruses, that this website will be secure, that any advice or opinion obtained from the Nestlé Group through this website is accurate or to be relied upon and any representations or warranties thereto are accordingly expressly disclaimed.<br /><br />
+Please note that some jurisdictions may not allow exclusions of implied warranties, so some of these exclusions may not apply to you. Please check your local laws.<br /><br />
+We reserve the right to restrict, suspend or terminate without notice your access to this website or any feature of this website or any feature or part thereof at any time.  <br /><br /><br />
+
+<span class="terms_para_para">Liability </span><br /><br /><br />
+The Nestlé Group and/or any other party involved in the creating, producing or delivering this site on our behalf shall have no liability or any responsibility whatsoever for any direct, incidental, consequential, indirect, special or punitive damages, costs, losses or liabilities whatsoever and howsoever arising out of your access to, use, inability to use, change in content of this website or arising from any other website you access through a link from this website or to the extent permitted by applicable law, from any actions we take or fail to take as a result of any electronic mail messages you send us. <br /><br />
+The Nestlé Group and/or any other party involved in the creating, producing or delivering this website shall have no responsibility to maintain the material and services made available on this web site or to supply any corrections, updates, or releases in connection therewith. Any material on this website is subject to change without notice.<br /><br />
+Further, the Nestlé Group shall have no liability or any responsibility whatsoever for any loss suffered caused by viruses that may infect your computer equipment or other property by reason of your use of, access to or downloading of any material from this website. If you choose to download material from this website you do so at your own risk.<br /><br />
+To the maximum extent permitted by applicable law, you expressly waive all claims against Nestlé Group, its officers, directors, employees, suppliers and programmers that may arise from your use or access of this website.<br /><br /><br />
+
+<span class="terms_para_para">Prohibited Activity</span><br /><br /><br />
+You are prohibited from doing any act that the Nestlé Group in its absolute discretion may deem to be inappropriate and/or would be deemed to be an unlawful act or is prohibited by any laws applicable to this website including but not limited to:<br /><br />
+Any act that would constitute a breach of either the privacy (including uploading private information without the concerned individual's consent) or any other of the legal rights of individuals; <br /><br />
+Using this website to defame or libel the Nestlé Group, its employees or other individuals or acting in such a way that brings into disrepute the good name of the Nestlé Group;<br /><br />
+Uploading files that contain viruses that may cause damage to the property of the Nestlé Group or the property of other individuals; and<br />
+Posting or transmitting to this website any non-authorized material including but not limited to material that is in our opinion likely to cause annoyance, detrimental to or in violation of Nestlé Group or third party´s systems or network security, defamatory, racist, obscene, threatening, pornographic or otherwise unlawful. <br /><br />
+<span class="terms_para_para">Jurisdiction and governing law</span><br /><br />
+<span class="terms_para_para">FOR NATION SPECIFIC WEBSITES</span><br /><br />
+<i><u>For websites offering products</u></i><br /><br />
+The Nestlé Group products, materials, offers and information appearing on this website are intended for <span style="color:#F00">[<i>enter a country</i></i>]</span> users and/or customers only. The Nestlé Group makes no representation that the products and the content of this website are appropriate or available in locations other than <span style="color:#F00">[<i>enter a country</i>]</span>. Please contact our local distributor to obtain more information about the products availability in your country. The products appearing in this website are only visual representations and as such are not in their real size, packaging colour etc..<br /><br />
+You and the Nestlé Group agree that any controversy or claim arising from or pertaining to the use of this website shall be governed by <span style="color:#F00">[<i>enter a country</i>] </span>law and be submitted to the exclusive jurisdiction of the courts of <span style="color:#F00">[<i>enter a city</i>]</span> <span style="color:#F00">[<i>enter a country</i>]</span>.<br /><br />
+<i><u>For informative websites</u></i><br /><br />
+The Nestlé Group material and information appearing on this website are intended for<span style="color:#F00"> [<i>enter a country</i>] </span>users only. The Nestlé Group makes no representations that the material and information on this website are appropriate or available in locations other than <span style="color:#F00">[<i>enter a country</i>]</span>.<br /><br />
+You and the Nestlé Group agree that any controversy or claim arising from or pertaining to the use of this website shall be governed by <span style="color:#F00">[<i>enter a country</i>]</span> law and be submitted to the exclusive jurisdiction of the courts of<span style="color:#F00"> [<i>enter a city</i>]</span> <span style="color:#F00">[<i>enter a country</i>]</span>.<br /><br />
+
+<span class="terms_para_para">FOR GLOBAL WEBSITES</span><br /><br />
+<i><u>For websites offering products</u></i><br /><br />  
+The Nestlé Group makes no representation that the products and the content of this website are appropriate or available in every country from where it is possible to access this website. Please contact our local distributor to obtain more information about availability of the products in your country. The products appearing in this website are only visual representations and as such are not an accurate reflection of their real size, packaging colour etc.<br /><br />
+You and the Nestlé Group agree that any controversy or claim arising from or pertaining to the use of this website shall be governed to the maximum extent possible by Swiss law and be submitted to the exclusive jurisdiction of the courts of Switzerland.<br /><br />
+<i><u>For informative websites</u></i><br /><br />
+The Nestlé Group makes no representations that the material and information on this website are appropriate or available in all national locations or languages.  <br /><br />
+
+You and the Nestlé Group agree that any controversy or claim arising from or pertaining to the use of this website shall be governed by Swiss law and be submitted to the exclusive jurisdiction of the courts of Switzerland.<br /><br />
+<span class="terms_para_para">Cookies</span><br /><br />
+Nestlé does use tracking technology ("cookies"). The policy of Nestlé Group on use of cookies is set out in the Nestlé Group privacy and personal information policy located on this web page.<br /><br />
+<span class="terms_para_para">Legal notice update</span><br /><br />
+We reserve the right to make any changes and corrections to this notice. Please refer to this page from time to time to review these and new additional information.<br /><br />
+Copyright © Société des Produits Nestlé S.A. 2004   
+
+</p>
+
+<!--       				<img src="images/kite_01.png" style="margin-top:-50px" align="left"/>
+-->              		<!--<p >Now that you are pregnant, maintaining a balanced diet will become a major preoccupation. But this isn’t a reason to worry. To eat healthily, all you have to do is to remember these few tips.Now that you are pregnant, maintaining a balanced diet will become a major preoccupation. But this isn’t a reason to worry. To eat healthily, all you have to do is to remember these few tips.Now that you are pregnant, maintaining a balanced diet will become a major preoccupation. But this isn’t a reason to worry. To eat healthily, all you have to do is to remember these few tips.Now that you are pregnant, maintaining a balanced diet will become a major preoccupation. But this isn’t a reason to worry. To eat healthily, all you have to do is to remember these few tips.</p>
+                 		<p >Now that you are pregnant, maintaining a balanced diet will become a major preoccupation. But this isn’t a reason to worry. To eat healthily, all you have to do is to remember these few tips.Now that you are pregnant, maintaining a balanced diet will become a major preoccupation. But this isn’t a reason to worry. To eat healthily, all you have to do is to remember these few tips.Now that you are pregnant, maintaining a balanced diet will become a major preoccupation. But this isn’t a reason to worry. To eat healthily, all you have to do is to remember these few tips.Now that you are pregnant, maintaining a balanced diet will become a major preoccupation. But this isn’t a reason to worry. To eat healthily, all you have to do is to remember these few tips.</p>
+                 		<p >Now that you are pregnant, maintaining a balanced diet will become a major preoccupation. But this isn’t a reason to worry. To eat healthily, all you have to do is to remember these few tips.Now that you are pregnant, maintaining a balanced diet will become a major preoccupation. But this isn’t a reason to worry. To eat healthily, all you have to do is to remember these few tips.Now that you are pregnant, maintaining a balanced diet will become a major preoccupation. But this isn’t a reason to worry. To eat healthily, all you have to do is to remember these few tips.Now that you are pregnant, maintaining a balanced diet will become a major preoccupation. But this isn’t a reason to worry. To eat healthily, all you have to do is to remember these few tips.</p>
+                 		<p >Now that you are pregnant, maintaining a balanced diet will become a major preoccupation. But this isn’t a reason to worry. To eat healthily, all you have to do is to remember these few tips.Now that you are pregnant, maintaining a balanced diet will become a major preoccupation. But this isn’t a reason to worry. To eat healthily, all you have to do is to remember these few tips.Now that you are pregnant, maintaining a balanced diet will become a major preoccupation. But this isn’t a reason to worry. To eat healthily, all you have to do is to remember these few tips.Now that you are pregnant, maintaining a balanced diet will become a major preoccupation. But this isn’t a reason to worry. To eat healthily, all you have to do is to remember these few tips.</p>-->
+              	</div>
+			</div>
+
+            <div class="growing_right">            
+				<img src="images/hand_01.png" style="margin-top:150px" height="220"/></div>
+        </div>
+    </li>
+        
+        
+        
+        
+        
+        
+
+  </ul>
+</div>
+
+   
+
+
+    
+    
+
+    
+    
+</div>
+</div>
+
+
+
+<!-- Footer Starts Here -->
+<div class="footer clear">
+  <div class="wrapper clear">
+    <div class="footer_boxes clear">
+      <div class="footboxes footbox_01">
+        <h3>الحمل</h3>
+        <ul>
+        <li><a href="featured.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding.html">التغذية</a></li>
+          <li><a href="growing.html">النمو و التطور</a></li>
+                    <li><a href="products.html">المنتجات الخاصة للحامل</a></li>
+          <li><a href="faq.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_02">
+        <h3>الأشهر الأولى</h3>
+        <ul>
+          <li><a href="feeding_infant_0-6.html">التغذية</a></li>
+          <li><a href="growing_infant_0-6.html">النمو و التطور</a></li>
+          <li><a href="faq_infant_0-6.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_03">
+        <h3>من ٦‎ إلى ١‎٢‎ شهر</h3>
+        <ul>
+          <li><a href="featured_products_infant_6-12.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding_infant_6-12.html">التغذية</a></li>
+          <li><a href="growing_infant_6-12.html">النمو و التطور</a></li>
+          <li><a href="products_infant_6-12.html">المنتجات الخاصة لعمر ٦-١٢ شهراً</a></li>
+          <li><a href="faq_infant_6-12.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_04">
+        <h3>الأطفال من ١‎ إلى ٣‎ سنوات</h3>
+        <ul>
+          <li><a href="featured_products_toddler.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding_toddler.html">التغذية</a></li>
+          <li><a href="growing_toddler.html">النمو و التطور</a></li>
+          <li><a href="products_toddler.html">المنتجات الخاصة لعمر ١ إلى ٣ سنوات</a></li>
+          <li><a href="faq_toddler.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_05">
+        <h3>مرحلة ما قبل المدرسة:٣‎ إلى ٥‎ سنوات</h3>
+        <ul>
+          <li><a href="featured_products_preschooler.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding_preschooler.html">التغذية</a></li>
+          <li><a href="growing_preschooler.html">النمو و التطور</a></li>
+          <li><a href="products_preschooler.html">المنتجات الخاصة لعمر٣ إلى ٥ سنوات</a></li>
+          <li><a href="faq_preschooler.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer_menu">
+      <ul>
+        <li><a href="index.html">الصفحة الرئيسية</a></li>
+        <li><a href="parenting.html">الأمومة</a></li>
+        <li><a href="#">الوصفات</a></li>
+        <li><a href="our_commitment.html">التزاماتنا</a></li>
+        <li><a href="#">نادي طفل نستله</a></li>
+        <li><a href="#">اتصل بنا</a></li>
+        <li><a href="faq.html">الأسئلة و الأجوبة</a></li>
+        <li><a href="#">خريطة الموقع</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer_rule">
+    <div class="wrapper">
+      <div class="copy_right_right">علامات "بداية صحية لحياة صحية" هي علامات تجارية لشركة سوسيتيه دي برودوي نستله إس. إيه. فيفي – سويسرا<br />كل العلامات التجارية هي من ملك لشركة سوسيتيه دي برودوي نستله إس. إيه. فيفي – سويسرا</div>
+      <div class="copy_right_left">نستله نيوترشن<span dir="ltr">&nbsp;2013&nbsp;</span>جميع الحقوق محفوظة<br />
+        <a href="privacy_policy.html" class="active">الشروط و الأحكام  .  سياسة الخصوصية</a> </div>
+    </div>
+  </div>
+</div>
+<!-- Footer Ends Here -->
+
+</body>
+</html>

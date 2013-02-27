@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>التغذية نستله</title>
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" language="javascript" src="js/jquery-1.8.2.min.js"></script>
+
+<script src="js/jquery.anythingslider.js"></script>
+	<script>
+	$(document).ready(function(){
+		$(".more_btn").toggle(function(){
+		$(this).text("Less");
+		$(this).next(".acc_cont").slideDown(300);
+		$(this).toggleClass("less");
+		},
+		function(){
+		$(this).text("More");
+		$(this).next(".acc_cont").slideUp(300);	
+		$(this).toggleClass("less")
+		});
+	});
+	$(document).ready(function () {
+		$('.accordion a.item').click(function () {
+			//slideup or hide all the Submenu
+			if($($(this)).hasClass($(this).attr('rel') + 'Over')){
+				$(this).siblings('ul').slideUp('fast');	
+				$(this).removeClass($(this).attr('rel') + 'Over');
+			}else{
+				$('html,body').animate({scrollTop: $(this).offset().top}, 1000);
+				$(this).siblings('ul').slideDown('fast');
+				$(this).addClass($(this).attr('rel') + 'Over');   
+			}
+			return false;
+		});
+	});
+	$(document).ready(function () {
+		$('.accordion-2 a.item').click(function () {
+			//slideup or hide all the Submenu
+			$('.accordion-2 li').children('ul').slideUp('fast');if($($(this)).hasClass($(this).attr('rel') + 'Over')){
+            $(this).removeClass($(this).attr('rel') + 'Over');
+            }else{
+            $(this).siblings('ul').slideDown('fast');
+            $(this).addClass($(this).attr('rel') + 'Over');       
+            }
+			return false;
+		});
+	});
+	</script>
+
+</head>
+<body>
+
+<!-- Header Starts Here -->
+<div class="header">
+  <div class="wrapper">
+    <div class="logo"> <img src="images/nestle_logo.png" width="147" height="99" alt="نستله"> </div>
+    <div class="header_left">
+      <div class="header_left_top">
+        <ul>
+          <li> <a href="/"  class="active">الصفحة الرئيسية</a> </li>
+          <li> <a href="our_commitment.html">التزاماتنا</a> </li>
+          <li> <a href="#">نادي طفل نستله</a> </li>
+          <li> <a href="parenting.html">الأمومة</a> </li>
+          <li> <a href="">اتصل بنا</a> </li>
+          <li> <a href="#">خريطة الموقع</a> </li>
+          <li> <a href="#">الحمل</a> </li>
+          <li> <a href="/eng" style="font-family: 'VAGRoundedStd-Light';" dir="ltr">English</a> </li>
+        </ul>
+        <div class="search_wrap">
+          <input name="" type="text" placeholder="البحث">
+          <input name="" type="submit">
+        </div>
+      </div>
+      <div class="nav">
+        <ul>
+          <li id="preg"> <a href="pregnancy.html">الحمل</a> </li>
+          <li id="inf_0_6"> <a href="infant_0-6.html">الأشهر الأولى</a> </li>
+          <li id="inf_6_12"> <a href="infant_6-12.html">من ٦‎ إلى ١‎٢‎ شهر</a> </li>
+          <li id="inf_1_3"> <a href="toddler.html">الأطفال من ١‎ إلى ٣‎ سنوات</a> </li>
+          <li id="inf_3_5"> <a href="preschooler.html">مرحلة ما قبل المدرسة:٣‎ إلى ٥‎ سنوات</a> </li>
+          <li id="for_ur_baby"> <a href="for_your_baby.html">لأجل طفلك</a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Header Ends Here -->
+
+<div class="inner_content clear">
+
+<div class="feeding_left">
+<h4>Pregnancy</h4>
+<div class="left_inner">
+  <ul class="header_ul">
+    <li>Your Growing and Changing Body</li>
+  </ul>
+  <ul class="accordion-2">
+  	<li><a href="feeding.html" style="background:none !important;">Nutrition & Feeding</a>
+  <!--<ul>
+  <li>
+  	<ol>
+    	<li><a href="feeding.html#feeding">What can you eat?</a></li>
+    	<li><a href="feeding.html#feeding">What should you eat?</a></li>
+    	<li><a href="feeding.html#feeding">What should you drink?</a></li>
+    	<li style="border:none !important"><a href="feeding.html#feeding">Very Specific Requirements</a></li>
+    
+    </ol>
+ 
+  </li>
+  </ul>--></li>
+  <li><a href="faq.html" style="background:none !important;">Faq’s</a>
+  <!--<ul>
+  <li>  	
+  	<ol>
+    	<li><a href="faq.html#faq"> Am I ready? </a></li>
+    	<li><a href="faq.html#faq">Will my child be normal?</a></li>
+    	<li><a href="faq.html#faq">Does parenting come naturally?</a></li>
+    	<li><a href="faq.html#faq">Why am I anxious about giving birth?</a></li>
+    	<li style="border:none !important"><a href="faq.html#faq">Will I love my baby? </a></li>
+    
+    </ol>
+</li>
+  </ul>-->
+  </li>
+  </ul>
+</div>
+</div>
+
+
+<div class="feeding_right">
+<h2>
+Your Growing and Changing Body</h2>
+<br />
+<div class="inner_banner" style="padding-bottom:30px; width:622px; margin:0 auto;">
+
+<!--////////////////////////////////////////-->
+
+<ul id="slider3">
+    <li>
+    	<div class="infant_banner clear">
+        
+        	<div class="growing_left">
+            	<div style="float:left">      
+      				<h4>Change </h4>
+      				<h1>for the</h1>
+      				<h6>better</h6> 
+              	</div>
+              	<div style="float:left; width:400px;">
+       				<img src="images/triple_hearts.png" align="left"/>
+              		<p>Your body goes through many changes in pregnancy. These changes are normal, and can be divided into three main stages. Take a look at how your body will adapt at each stage, so you are ready to welcome these changes when they happen, stress-free!</p>
+              	</div>
+			</div>
+
+            <div class="growing_right">            
+<img src="images/bat.png" height="216"/></div>
+        </div>
+    </li>
+  </ul>  
+<!--////////////////////////////////////////////////-->  
+</div>
+
+
+<div class="quest">
+	<img src="images/grow_img_03.png" width="161" height="116" alt="nestle" />
+    <p> &nbsp;&nbsp;&nbsp;&nbsp;My<br /> Changing Body</p>
+    <div class="spacer"></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont acc_cont_margin">
+    <ul class="accordion">
+	<li>
+		<a href="#" class="item popular" rel="popular">Introduction</a>
+		<ul>
+			<li >
+           Your body goes through many changes in pregnancy. These changes are normal, and can be divided into three main stages. 
+Take a look at how your body will adapt at each stage, so you are ready to welcome these changes when they happen, stress-free!
+            <h5>1st Trimester : The Big Change</h5>
+            <span>Intense hormonal activity transforms your body all over. Your breasts are already preparing for breastfeeding. They have increased in size and are tense; their areolas are generally larger and darker.
+Your uterus expands and pushes down on the bladder, which explains why you want to urinate more often. This little inconvenience will disappear after a few weeks because the uterus will move up towards the abdomen.
+The activity of your hormones also has an effect on your mood, your appetite and your libido. You may become sensitive to the slightest thing. Perhaps you have unusual cravings and certain foods that you normally like turn your stomach.
+During the first trimester, weight gain is often minimal, even nonexistent, due to frequent nausea. This generally disappears at the end of the third month.
+You are more tired than usual; you may be surprised by an unusual feeling of tiredness due to progesterone, which has a strong sedative power.</span>
+            <h5>2nd Trimester : Contentedness</h5>
+            <span>Your belly is filling out, you are serene and content. The scales are showing a few extra kilos. Your back and legs feel it.
+Rest as often as you need to.
+As it develops, your uterus pushes the other organs towards the thoracic cage. This compresses the diaphragm and you become more easily out of breath.
+Sometimes a brown line appears on your abdomen; it will disappear after the birth. Your blood volume increases and little concerns due to poor circulation may arise: varicose veins, heavy legs, slight bleeding of the gums.
+Your libido is in good shape. And wonder of wonders, you feel baby moving inside you!</span>
+
+                        <h5>3rd Trimester : Impatience </h5>
+            <span>As the birth approaches, you are impatient and anxious. Like all mums-to-be!
+The weight of the baby, which will double during the last trimester, changes the way you hold yourself and walk. You move at a slow pace, but your body is working flat out to do the extra work that baby requires.
+Your heart beats an extra twelve times a minute. In 1 minute, 185 ml of your blood irrigates the placenta, providing baby with the elements necessary for growth. Your breasts are ready for breastfeeding and trickles of colostrum, the initial milk that comes before lactation, may stain your clothes.
+Your sleep is disturbed and you find it difficult to find a comfortable sleeping position.
+In the weeks before the birth, the joints of the pelvis move apart to allow baby – who is beginning his descent – through.
+Rest while you’re awaiting the happy event!</span>
+            
+    		 </li>
+		</ul>
+	</li>
+	
+	
+</ul>
+    </div>
+</div>
+
+<div class="quest growing_img_01">
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;My <br />Growing Body</p>
+    <img src="images/grow_img_01.png" width="115" height="122" alt="Nestle" />
+    <div class="spacer"></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont acc_cont_margin">
+    <ul class="accordion">
+	<li>
+    	<blockquote>Many future mums worry about putting on weight during pregnancy. But if you are already following a healthy, balanced diet, there is absolutely no need to worry. Keeping to your good eating habits will help keep your weight gain under control.</blockquote>
+		<a href="#" class="item popular" rel="popular">How many kilos will I gain?</a>
+		<ul>
+			<li >
+           Most women in good health put on between 10 and 15 kilos, but this may vary widely depending on the person, so there’s no need to panic if you are not within this range: speak to your doctor about it. This weight gain is gradual; remember every woman has her own rhythm.
+Adequate weight gain allows you to look forward to a pregnancy and labour free from complications and a store of sufficient reserves of energy and nutrients to breastfeed your baby and remain healthy yourself.
+            
+    		</li>
+		</ul>
+	</li>
+	<li>
+		<a href="#" class="item popular" rel="popular">How will my weight change throughout my pregnancy?</a>
+		<ul>
+			<li >
+          Your weight gain is distributed almost evenly between your baby (including the placenta and the amniotic fluid) and your own body (increase in blood volume, growth of the uterus and development of the breasts).
+Weight gain varies from one woman to another. Nonetheless, here is an indication of average weight gain during the different trimesters of pregnancy. You must not worry if the changes in your weight are not exactly within these ranges.
+During the 1st trimester, average weight gain is between 0.5 and 1.5 kilos per month.
+During the 2nd trimester, you should theoretically gain between 0.4 and 0.5 kilos per week.
+During the 3rd trimester, you will put on approximately 0.5 kilos per week.
+            
+    		</li>
+		</ul>
+	</li>
+	<li>
+		<a href="#" class="item popular" rel="popular">What happens if I put on a lot of weight?</a>
+		<ul>
+			<li >
+         As each woman’s body is different, weight gain therefore varies from one woman to the next. But you are right to question rapid weight gain at an early stage (after eight weeks, it is normal to have gained 1.3 to 2.2 extra kilos).
+If you were thin before becoming pregnant, there is no reason to worry. However, if your weight was normal or you were even overweight before the pregnancy, you should pay particular attention to your diet during the rest of your pregnancy.
+Give preference to fresh fruit, vegetables, whole grain cereals, sources of protein and foods rich in calcium. Avoid fatty fried foods. And don’t hesitate to discuss your concerns with your doctor.
+Even though they are maintaining a balanced diet, some pregnant women tend to put on a little too much weight during their pregnancy. Others are tempted to use their pregnancy as an excuse to ignore all the rules of a healthy diet.
+However, by putting on too much weight:
+You put extra strain on your heart, which is already forced to cope with increased activity.
+You risk having more back pain.
+It will be more difficult for you to regain your figure after the birth.
+            
+    		</li>
+		</ul>
+	</li>
+	
+	
+</ul>
+    </div>
+</div>
+    <div class="quest growing_img_02">
+    <img src="images/grow_img_02.png" width="126" height="138" alt="nestle" />
+    <p style="font-size:30px !important">&nbsp;&nbsp;&nbsp;&nbsp;Taking <br />Care of your Body</p>
+	<div class="spacer"></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont acc_cont_margin">
+    <ul class="accordion">
+	<li>
+    	<blockquote>During pregnancy, hormonal upheavals lead to positive and other, less pleasant, changes that require particular attention and specific treatments.</blockquote>
+		<a href="#" class="item popular" rel="popular">Face</a>
+		<ul>
+			<li >
+           Your face becomes dehydrated under the influence of hormones. Remember to apply nourishing and moisturising creams several times a day. Thermal spring water, which is rich in minerals and trace elements, effectively soothes pulling sensations. Gentle exfoliation once a week will be useful in removing dead cells.
+Avoid sunbathing without protecting yourself with a high factor sun cream. The sun accentuates the appearance of chloasma, those little dark spots on the forehead, nose, chin, cheeks and temples. Dark skin is more subject to this problem, which will gradually disappear after the birth.
+            
+    		</li>
+		</ul>
+	</li>
+	<li>    	
+		<a href="#" class="item popular" rel="popular">Breasts</a>
+		<ul>
+			<li >
+          You breasts will fill out from the first weeks of pregnancy. And that’s only the beginning! Sensitive and tender, they may become marked with little linear striae, a few millimetres wide, which are the result of tissue distension.<br />
+To preserve the beauty of your breasts, you can:<br />
+
+
+
+  *&nbsp;&nbsp;&nbsp; Choose bras with wide straps to prevent marks on your shoulders and with deep enough cups to support your chest without squashing it.<br />
+ *&nbsp;&nbsp;&nbsp;At the end of your shower, direct a jet of cold water onto your breasts for its skin-firming properties.<br />
+ *&nbsp;&nbsp;&nbsp;Apply a specific bust or body cream every day.
+            
+    		</li>
+		</ul>
+	</li>
+	<li>    	
+		<a href="#" class="item popular" rel="popular">Body</a>
+		<ul>
+			<li >
+           Your skin undergoes significant changes during pregnancy. It becomes drier and more fragile. The solution: apply gentle products morning and evening that preserve sensitive skin’s hydrolipid film. Good nutrition also helps to keep your skin looking beautiful: be sure to drink fluids often and eat a balanced diet.
+            
+    		</li>
+		</ul>
+	</li>
+	<li>    	
+		<a href="#" class="item popular" rel="popular">Stretch Marks</a>
+		<ul>
+			<li >
+           Stretch marks are formed by the breaking of bonds between the elastic fibres of the dermis. They arise when the skin is significantly stretched over a short space of time, such as at the end of pregnancy with excess weight gain. They may be permanent. To try to prevent them, it is best to watch your weight gain and apply a moisturiser, sweet almond oil or shea butter to sensitive areas – breasts, stomach, hips and thighs – every day. In this way, you can hope to prevent stretch marks from appearing.
+            
+    		</li>
+		</ul>
+	</li>
+	
+	
+	
+	
+	
+</ul>
+    </div>
+    </div>
+</div>
+</div>
+<!-- Footer Starts Here -->
+<div class="footer clear">
+  <div class="wrapper clear">
+    <div class="footer_boxes clear">
+      <div class="footboxes footbox_01">
+        <h3>الحمل</h3>
+        <ul>
+        <li><a href="featured.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding.html">التغذية</a></li>
+          <li><a href="growing.html">النمو و التطور</a></li>
+                    <li><a href="products.html">المنتجات الخاصة للحامل</a></li>
+          <li><a href="faq.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_02">
+        <h3>الأشهر الأولى</h3>
+        <ul>
+          <li><a href="feeding_infant_0-6.html">التغذية</a></li>
+          <li><a href="growing_infant_0-6.html">النمو و التطور</a></li>
+          <li><a href="faq_infant_0-6.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_03">
+        <h3>من ٦‎ إلى ١‎٢‎ شهر</h3>
+        <ul>
+          <li><a href="featured_products_infant_6-12.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding_infant_6-12.html">التغذية</a></li>
+          <li><a href="growing_infant_6-12.html">النمو و التطور</a></li>
+          <li><a href="products_infant_6-12.html">المنتجات الخاصة لعمر ٦-١٢ شهراً</a></li>
+          <li><a href="faq_infant_6-12.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_04">
+        <h3>الأطفال من ١‎ إلى ٣‎ سنوات</h3>
+        <ul>
+          <li><a href="featured_products_toddler.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding_toddler.html">التغذية</a></li>
+          <li><a href="growing_toddler.html">النمو و التطور</a></li>
+          <li><a href="products_toddler.html">المنتجات الخاصة لعمر ١ إلى ٣ سنوات</a></li>
+          <li><a href="faq_toddler.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_05">
+        <h3>مرحلة ما قبل المدرسة:٣‎ إلى ٥‎ سنوات</h3>
+        <ul>
+          <li><a href="featured_products_preschooler.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding_preschooler.html">التغذية</a></li>
+          <li><a href="growing_preschooler.html">النمو و التطور</a></li>
+          <li><a href="products_preschooler.html">المنتجات الخاصة لعمر٣ إلى ٥ سنوات</a></li>
+          <li><a href="faq_preschooler.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer_menu">
+      <ul>
+        <li><a href="index.html">الصفحة الرئيسية</a></li>
+        <li><a href="parenting.html">الأمومة</a></li>
+        <li><a href="#">الوصفات</a></li>
+        <li><a href="our_commitment.html">التزاماتنا</a></li>
+        <li><a href="#">نادي طفل نستله</a></li>
+        <li><a href="#">اتصل بنا</a></li>
+        <li><a href="faq.html">الأسئلة و الأجوبة</a></li>
+        <li><a href="#">خريطة الموقع</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer_rule">
+    <div class="wrapper">
+      <div class="copy_right_right">علامات "بداية صحية لحياة صحية" هي علامات تجارية لشركة سوسيتيه دي برودوي نستله إس. إيه. فيفي – سويسرا<br />كل العلامات التجارية هي من ملك لشركة سوسيتيه دي برودوي نستله إس. إيه. فيفي – سويسرا</div>
+      <div class="copy_right_left">نستله نيوترشن<span dir="ltr">&nbsp;2013&nbsp;</span>جميع الحقوق محفوظة<br />
+        <a href="privacy_policy.html" class="active">الشروط و الأحكام  .  سياسة الخصوصية</a> </div>
+    </div>
+  </div>
+</div>
+<!-- Footer Ends Here -->
+
+</body>
+</html>

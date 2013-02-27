@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>التغذية نستله</title>
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" language="javascript" src="js/jquery-1.8.2.min.js"></script>
+
+<script src="js/jquery.anythingslider.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#foo2').carouFredSel({
+		circular: false,
+		infinite: false,
+		auto: false,
+		prev: '#prev2',
+		next: '#next2',
+		pagination: false,
+		mousewheel: true,
+		swipe: {
+			onMouse: true,
+			onTouch: true
+		}
+	});
+});
+	
+	$(document).ready(function(){
+		$(".more_btn").toggle(function(){
+		$(this).text("Less");
+		$(this).next(".acc_cont").slideDown(300);
+		$(this).toggleClass("less");
+		},
+		function(){
+		$(this).text("More");
+		$(this).next(".acc_cont").slideUp(300);	
+		$(this).toggleClass("less")
+		});
+	});
+	$(document).ready(function () {
+		$('.accordion a.item').click(function () {
+			//slideup or hide all the Submenu
+			if($($(this)).hasClass($(this).attr('rel') + 'Over')){
+				$(this).siblings('ul').slideUp('fast');	
+				$(this).removeClass($(this).attr('rel') + 'Over');
+			}else{
+				$('html,body').animate({scrollTop: $(this).offset().top}, 1000);
+				$(this).siblings('ul').slideDown('fast');
+				$(this).addClass($(this).attr('rel') + 'Over');   
+			}
+			return false;
+		});
+	});
+	$(document).ready(function () {
+		$('.accordion-2 a.item').click(function () {
+			//slideup or hide all the Submenu
+			$('.accordion-2 li').children('ul').slideUp('fast');if($($(this)).hasClass($(this).attr('rel') + 'Over')){
+            $(this).removeClass($(this).attr('rel') + 'Over');
+            }else{
+            $(this).siblings('ul').slideDown('fast');
+            $(this).addClass($(this).attr('rel') + 'Over');       
+            }
+			return false;
+		});
+	});	</script>
+
+</head>
+<body>
+
+<!-- Header Starts Here -->
+<div class="header">
+  <div class="wrapper">
+    <div class="logo"> <img src="images/nestle_logo.png" width="147" height="99" alt="نستله"> </div>
+    <div class="header_left">
+      <div class="header_left_top">
+        <ul>
+          <li> <a href="/"  class="active">الصفحة الرئيسية</a> </li>
+          <li> <a href="our_commitment.html">التزاماتنا</a> </li>
+          <li> <a href="#">نادي طفل نستله</a> </li>
+          <li> <a href="parenting.html">الأمومة</a> </li>
+          <li> <a href="">اتصل بنا</a> </li>
+          <li> <a href="#">خريطة الموقع</a> </li>
+          <li> <a href="#">الحمل</a> </li>
+          <li> <a href="/eng" style="font-family: 'VAGRoundedStd-Light';" dir="ltr">English</a> </li>
+        </ul>
+        <div class="search_wrap">
+          <input name="" type="text" placeholder="البحث">
+          <input name="" type="submit">
+        </div>
+      </div>
+      <div class="nav">
+        <ul>
+          <li id="preg"> <a href="pregnancy.html">الحمل</a> </li>
+          <li id="inf_0_6"> <a href="infant_0-6.html">الأشهر الأولى</a> </li>
+          <li id="inf_6_12"> <a href="infant_6-12.html">من ٦‎ إلى ١‎٢‎ شهر</a> </li>
+          <li id="inf_1_3"> <a href="toddler.html">الأطفال من ١‎ إلى ٣‎ سنوات</a> </li>
+          <li id="inf_3_5"> <a href="preschooler.html">مرحلة ما قبل المدرسة:٣‎ إلى ٥‎ سنوات</a> </li>
+          <li id="for_ur_baby"> <a href="for_your_baby.html">لأجل طفلك</a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Header Ends Here -->
+
+<div class="inner_content clear">
+
+<div class="preschooler_3_5_feeding">
+<h4>Preschooler <span style="color:#c7e373">3-5 Years</span></h4>
+<div class="left_inner">
+  <ul class="header_ul">
+    <li>Nutrition & Feeding</li>
+  </ul>
+  <ul class="accordion-2">
+  <li><a href="featured_products_preschooler.html" style="background:none !important;">
+Featured Products</a>
+  <!--<ul>
+  <li>
+  
+  	<ol>
+    	<li style="border:none !important"><a href="featured_products_preschooler.html#featured_products_preschooler">Product </a></li>
+    
+    </ol>
+  
+  </li>
+  </ul>--></li>
+ <li><a href="growing_preschooler.html" style="background:none !important;">Baby Growth & Development</a>
+  <!--<ul>
+  <li>
+  
+  	<ol>
+    	<li style="border:none !important"><a href="growing_preschooler.html#growing_preschooler">How is your young child progressing?
+ </a></li>
+    <li style="border:none !important"><a href="growing_preschooler.html#growing_preschooler">How do you help your child to play creatively and think?
+ </a></li>
+    </ol>
+  
+  </li>
+  </ul>-->
+  </li>  <li><a href="products_preschooler.html" style="background:none !important;">Products for 3-5yrs</a>
+  <!--<ul>
+  <li>
+  
+  	<ol>
+    	<li style="border:none !important"><a href="products_preschooler.html#products_preschooler">NIDO Three plus
+ </a></li>
+    
+    </ol>
+  
+  </li>
+  </ul>-->
+  </li>
+ 
+  <li><a href="faq_preschooler.html" style="background:none !important;">Faq’s</a>
+  <!--<ul>
+  <li>
+  
+  	<ol>
+    	<li style="border:none !important"><a href="faq_preschooler.html#faq_preschooler">Donec varius, mauris quis dictum molestie ? </a></li>
+    
+    </ol>
+  
+  </li>
+  </ul>-->
+  </li>
+  </ul>
+</div>
+</div>
+<style>
+.anythingSlider-default.activeSlider .anythingControls a {
+	/* background image = top shadow */
+	background-color: #778d35;
+}
+.anythingSlider-default .anythingControls a.start-stop:hover,
+.anythingSlider-default .anythingControls a.start-stop.hover,
+.anythingSlider-default .anythingControls a.start-stop .anythingControls ul a:hover {
+	background-image: none;
+	color: #778d35;
+}
+
+</style>
+
+<div class="feeding_right">
+<h2 style="color:#778d35">Nutrition & Feeding</h2>
+<br />
+<div class="preschooler_feeding_banner" style="width:622px; margin:0 auto;">
+  <ul id="slider2">
+    <li>
+    	<div class="infant_banner clear">
+        	<div class="inf_left">
+            	<div style="float:left">      
+      				<h4>Your</h4>
+      				<h1>3 year </h1>
+      				<h6>old</h6>
+              	</div>
+              	<div style="float:left">
+       				<img src="images/img.png" style="padding-top:20px" align="left"/>
+              		<p>Every stage in life is characterized by certain milestones or events, and specific nutritional needs make no exception! During young childhood, your role as a parent is not only to nurture your young child’s curiosity, but most importantly, to nurture his constantly active body and blooming brain with the energy and essential nutrients he needs.<br />
+By choosing the right foods and offering them in balanced meals and healthy snacks you can support your preschooler who has so much to learn and grasp, now that he is joining preschool. </p>
+              	</div>
+			</div>
+            <div class="inf_right"><img src="images/image.png"/></div>
+        </div>
+    </li>
+  </ul>
+</div>
+<div class="infantquest preschoolerquest" style="background-color:#f6f9ff" id="feeding_infant_6-12">
+	<img src="images/crane.png" alt="nestle" />
+    <p style="color:#ce7957;padding-left:10px">How is your 3-5 </p><br />
+    <p class="sec_title" style="color:#ce3336; padding-left:100px">year old growing? <br /><br /></p>
+    <div class="spacer"></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont acc_cont_margin">
+    <ul class="accordion">
+	<li>
+		<a href="#" class="item popular" rel="popular">How is your 3-5 year old growing? </a>
+		   <ul>
+			  <li>
+           <span>Young children do not grow as fast as babies and toddlers. Don’t worry if your previously chubby two-years old is turning into a slimmer and straighter five year old. The plumpness of the baby fat will be replaced by that of strong and healthy muscles as he starts to engage in regular sports activities by 4 or 5. As long as weight and height rise together, growth will be proceeding normally. Three year olds will probably gain around 2.3kg and 9cm; dropping to 2kg and 6.5cm during the fifth year. These are approximate figures only, and remember that every child is unique in his development and growth. Your child’s pediatrician will surely monitor his growth during the routine check-ups, but don’t think twice before contacting the doctor if you have concerns with regards to your child’s growth at any point in time.
+</span>        
+    		 </li>
+            </ul>
+        </li>
+           
+             <li>
+		<a href="#" class="item popular" rel="popular">Meal Table </a>
+		<ul>
+			<li >
+           <span>
+                    
+ <style>
+ tr.border_bottom td {
+  border-bottom:1pt solid #CCC;
+}
+.td1, th {
+  border-left: solid 1px #CCC;
+} 
+.grey_color{
+	background-color:#edf2fe;
+}
+.lightorange_color{
+	background-color:#f0bb3b;
+}
+.lightblue_color{
+	background-color:#66ccff;
+}
+.darkblue_color{
+	background-color:#3f71aa;
+}
+.darkorange_color{
+	background-color:#f47b20;
+}
+.lightgreen_color{
+	background-color:#A0CC76;
+}
+.darkgreen_color{
+	background-color:#88B45C;
+}
+.rose_color{
+	background-color:#ED709E;
+}
+.white{
+	color:#FFF;
+}
+  </style>           
+           
+<table width="100%" border="0" style=" border:1px solid #CCC" cellpadding="5px;">
+  <tr class="border_bottom">
+    <td width="16%" class="lightblue_color"><span class="white">BREADS & CEREALS</span></td>
+    <td width="16%" class="lightorange_color"><span class="white">VEGETABLES</span></td >
+    <td width="16%" class="darkorange_color"><span class="white">FRUITS</span></td>
+    <td width="16%" class="darkblue_color"><span class="white">MEATS & PULSES</span></td>
+    <td width="16%" class="lightgreen_color"><span class="white">MILK & DAIRY</span></td>
+    <td class="rose_color"><span class="white">FATS & OILS</span></td>
+  </tr>
+  <tr class="border_bottom">
+    <td>3-5 Servings
+</td>
+    <td class="td1">1 - 1 ½ Cups
+
+</td>
+    <td class="td1">1 - 1 ½ Cups
+</td>
+    <td class="td1">2-4 Servings
+
+
+</td>
+    <td class="td1">2 – 2 ½ cups
+
+</td>
+    <td class="td1">3-4 Teaspoons
+</td>
+  </tr>
+  <tr class="border_bottom">
+    <td>1 slice of toast
+</td>
+    <td class="td1">1 cup of raw or cooked vegetables 
+</td>
+    <td class="td1">1 cup of 100% fruit juice,
+</td>
+    <td class="td1">1 egg,
+</td>
+    <td class="td1">1 cup of Specialized Growing-up milk, 
+</td>
+    <td class="td1">1 teaspoon of:
+</td>
+  </tr>
+  <tr class="border_bottom">
+    <td>1 small Arabic bread
+</td>
+    <td class="td1">1 cup of vegetable juice
+</td>
+    <td class="td1">½ cup of dried fruits
+</td>
+    <td class="td1">30g of cooked meat chicken or fish 
+</td>
+    <td class="td1">1 cup of yogurt or custard
+</td>
+    <td class="td1">Olive oil
+</td>
+  </tr>
+  <tr class="border_bottom">
+    <td>5 Whole Wheat Crackers
+</td>
+    <td class="td1">2 cups of raw leafy greens
+</td>
+    <td class="td1">½ a cup of canned fruits
+</td>
+    <td class="td1">2 slices of Turkey 
+</td>
+    <td class="td1">30g of cheese 
+</td>
+    <td class="td1">Canola oil
+</td>
+  </tr>
+  <tr class="border_bottom">
+    <td>½ cup of cooked rice pasta
+</td>
+    <td class="td1">&nbsp;</td>
+    <td class="td1">1 cup of fruit
+</td>
+    <td class="td1">1 Tablespoon of peanut butter,
+</td>
+    <td class="td1">2 tablespoons labneh 
+</td>
+    <td class="td1">Corn oil
+</td>
+  </tr>
+  <tr class="border_bottom">
+    <td >½ cup of  cooked grains such as Burgul or Oatmeal
+</td>
+    <td class="td1">&nbsp;</td>
+    <td class="td1">(1 small apple
+</td>
+    <td class="td1">12 almonds
+</td>
+    <td class="td1">&nbsp;</td>
+    <td class="td1">Sunflower oil
+</td>
+  </tr>
+  <tr class="border_bottom">
+    <td>½ cup of Breakfast cereals
+</td>
+    <td class="td1">&nbsp;</td>
+    <td class="td1">1 large banana
+</td>
+    <td class="td1">1/4 cup of cooked beans or peas,
+</td>
+    <td class="td1">&nbsp;</td>
+    <td class="td1">¼ Medium avocado
+</td>
+  </tr>
+  <tr class="border_bottom">
+    <td >1 ¼ cup puffed cereals
+</td>
+    <td class="td1">&nbsp;</td>
+    <td class="td1">1 large orange
+</td>
+    <td class="td1">¼ cup of tofu
+</td>
+    <td class="td1">&nbsp;</td>
+    <td class="td1">1 teaspoon of butter 
+</td>
+  </tr>
+  <tr class="border_bottom">
+    <td>&nbsp;</td>
+    <td class="td1">&nbsp;</td>
+    <td class="td1">1 large peach
+</td>
+    <td class="td1">2 Tablespoons Hummus
+</td>
+    <td class="td1">&nbsp;</td>
+    <td class="td1">&nbsp;</td>
+  </tr>
+  <tr class="border_bottom">
+    <td>&nbsp;</td>
+    <td class="td1">&nbsp;</td>
+    <td class="td1">1 medium pear
+</td>
+    <td class="td1">&nbsp;</td>
+    <td class="td1">&nbsp;</td>
+    <td class="td1">&nbsp;</td>
+  </tr>
+  <tr class="border_bottom">
+    <td>&nbsp;</td>
+    <td class="td1">&nbsp;</td>
+    <td class="td1">3 medium plums
+</td>
+    <td class="td1">&nbsp;</td>
+    <td class="td1">&nbsp;</td>
+    <td class="td1">&nbsp;</td>
+  </tr>
+  <tr >
+    <td>&nbsp;</td>
+    <td class="td1">&nbsp;</td>
+    <td class="td1">8 large strawberries)
+</td>
+    <td class="td1">&nbsp;</td>
+    <td class="td1">&nbsp;</td>
+    <td class="td1">&nbsp;</td>
+  </tr>
+</table>
+
+           
+</span> 
+
+ </li>
+            </ul>
+        </li>
+    <li>
+		<a href="#" class="item popular" rel="popular">Meal Plan </a>
+		<ul>
+			<li >
+           <span>
+       <table width="100%" border="0" style=" border:1px solid #CCC" cellpadding="5px;">
+  <tr class="border_bottom">
+    <td width="24%" class="lightblue_color"><span class="white">Breakfast</span></td>
+    <td width="11%" class="lightorange_color" ><span class="white">Snack</span></td>
+    <td width="31%" class="darkorange_color" ><span class="white">Lunch</span></td>
+    <td width="11%"  class="darkblue_color"><span class="white">Snack</span></td>
+    <td width="23%" class="rose_color" ><span class="white">Dinner</span></td>
+  </tr>
+   <tr>
+    <td align="justify">• 1 cup of Specialized Growing up milk<br /> • 1/2 a cup of whole grain breakfast cereals<br />
+• 1 kiwi or 1/2 cup of strawberries or ½ cup of fresh orange juice (Fruit rich in Vitamin C)</td>
+    <td class="td1">• ½ cup of Yogurt<br /> 
+• 1 banana or apple</td>
+    <td class="td1" align="justify">&nbsp;• 1 ounce (30g) of meat, fish, or chicken<br />
+• 1/2 cup of cooked pasta or ½ cup of cooked rice, or 1 boiled potato<br />
+• 1 cup of Sautéed Dark Green or Yellow Vegetables (Carrots, broccoli, Spinach…)<br />
+• 1 teaspoon of oil for cooking meat and 1 for sautéing the vegetables.<br /></td>
+    <td class="td1">• ½ cup of Yogurt<br /> 
+• 1 banana or apple<br /></td>
+    <td class="td1" align="justify">&nbsp;• 1 cup of specialized growing up milk<br />
+• Turkey sandwich—1 small Arabic bread and 2 thin slices of Turkey (30g)<br />
+• 1/2 cup of fresh salad (greens, tomato and carrot shavings)<br />
+• One teaspoon of oil or 2 teaspoons of salad dressing<br /></td>
+  </tr>
+</table>
+
+
+</span> 
+ </li>
+            </ul>
+        </li>
+           	  <li>
+		<a href="#" class="item popular" rel="popular">What foods can your child eat? </a>
+		<ul>
+			<li >
+           
+          <h5>HOME-MADE BALANCED MEALS</h5><span>
+Young children at this age enjoy eating the delicious balanced meals that you prepare for the entire family. Balance means choosing wholesome ingredients from all 5 food groups to prepare your meals. These are: Breads and Cereals; fresh and cooked Vegetables, Fruits, Milk and Dairy, Lean Meats (chicken, fish, lean red meat) & Pulses (lentils and beans).</span> <h5>
+FOODS TO WATCH OUT FOR</h5>
+
+<blockquote>
+<ul style="list-style-type:disc;display:list-item;">
+Avoid raw or undercooked meats, fish, poultry or eggs and their derivative products as well as dairy from unpasteurized milk.  </ul>
+<ul style="list-style-type:disc;display:list-item;">
+Nuts are unlikely to cause choking in children older than 3, yet if you are still worried, let your child indulge in their health benefits when you are around.</ul>
+<ul style="list-style-type:disc;display:list-item;">Limit the amount of Fatty and Sugary foods. Many of these could affect your child’s intake of more nutritious foods, as well as have a negative effect on their oral health since the added sugar may cause dental cavities. Whenever possible, try to prepare healthier alternatives to pre-packed snacks that are lower in fat and sugar such as home-made custard or pudding, fruit or chocolate smoothies prepared by mixing your child’s specialized growing-up milk and his favorite fruit. If your child insists on having his favorite dessert, it is fine once in a while.</ul>
+<ul style="list-style-type:disc;display:list-item;">Avoid Sweetened Juices and Carbonated beverages; since they are very high in sugar and may replace milk and water which are an essential part of your child’s diet.</ul> </blockquote>
+</li>
+            </ul>
+        </li>
+           	
+          <li>
+		<a href="#" class="item popular" rel="popular">Very Specific Requirements </a>
+		<ul>
+			<li >
+           <span>
+           Children begin developing their learning and mental abilities at early stages in their childhood, even before going to school and offering them the best nutrition to ensure the finest mental development is crucial at this stage.
+Prepare your little one to learn, grasp and store new information everyday by offering the right nutrition for his developing brain. At this age, Carbohydrates, Proteins, Iron and Zinc may need your attention, as well as Essential Fatty acids that boost his little brain’s development.
+And because young children are so energetic and physically active, supporting their bodies with the right amount of Calcium and Vitamin D is crucial to build strong bones.
+
+</span> 
+
+ </li>
+            </ul>
+        </li>
+        
+        
+        <li>
+		<a href="#" class="item popular" rel="popular">Complete nutrition for brain development
+ </a>
+		<ul>
+			<li >
+           Choose a wide variety of nutrient-rich foods to help your child develop his mental abilities to the fullest. Some crucial nutrients for brain development are:
+ <h5>Carbohydrates</h5>
+            <span>Carbohydrates are the body’s main source of energy. When broken down, they produce a sugar, Glucose, which fuels the brain and the nervous system. Glucose feeds the brain and has a major role to play in proper brain functioning and performance.<h5>
+There are 2 types of carbohydrates, simple and complex:</h5><span>
+<blockquote>
+<ul style="list-style-type:disc;display:list-item;">Simple carbohydrates are the sugars found in fruits, milk and dairy products, honey and table sugar;</ul>
+<ul style="list-style-type:disc;display:list-item;">Complex carbohydrates are present in grains, cereals and starchy vegetables.</ul></blockquote>
+
+Both types of carbohydrates provide energy for the body and brain. For children over 2 years old, a healthy balanced diet should include 50% to 60% of Calories coming from carbohydrates. Make healthy carbohydrates a part of every meal to keep your child alert and attentive for better learning.
+</span>
+            <h5>Essential Fatty Acids (EFAs)</h5>
+            <span>Essential fatty acids (EFAs) are healthy fats that are essential for growth and the development of the brain, eyes and the nervous system during infancy and early childhood. Young kids, especially, need an adequate amount of EFAs in their diets to help the brain and nervous system develop correctly; about 25% to 35% of Calories in their diets should come from fat. 
+
+<h5 style="text-indent:50px"><u>EFA are commonly called Omega 3 and 6 and are found in: </u></h5><blockquote>
+<ul style="list-style-type:disc;display:list-item;">
+ Oily Fish such as Salmon, Tuna and Sardines</ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Eggs</ul>
+<ul style="list-style-type:disc;display:list-item;">
+Vegetable oils such as corn, olive, soy bean oil, sunflower and canola oil</ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Wholegrains such as whole wheat and oats</ul>
+<ul style="list-style-type:disc;display:list-item;">
+Nuts such as Walnuts and Peanuts</ul>
+<ul style="list-style-type:disc;display:list-item;">
+Specialised Growing up milk.</ul></blockquote>
+</span>
+            <h5>Proteins
+</h5>
+            <span>Proteins are made-up of amino acids that build the cells in the body and are vital to the proper functioning of the body’s major organs including the brain. Most of the Amino acids can be produced by the body, but 9 of them called “Essential Amino Acids” must be provided in your child’s diet. They can be found in proteins from animal sources such as Meat and Milk. 
+Offering your child a variety of proteins from different sources is a sure way to cover his entire needs of amino acids. 
+<h5 style="text-indent:50px"><u>Here are some examples:</u></h5><blockquote>
+<ul style="list-style-type:disc;display:list-item;">Animal Sources such as fish, meat, Poultry, eggs, and Milk</ul>
+<ul style="list-style-type:disc;display:list-item;">Plant sources such as beans, lentils and nuts</ul></blockquote>
+<br />
+Each day, children between the age of 3 and 5 need to eat around 1.1g of proteins for every kilogram of body weight. So a 20kg child would require around 22g proteins daily.<h5 style="text-indent:50px"><u> These can be found in:</u></h5><blockquote>
+<ul style="list-style-type:disc;display:list-item;">1 cup of your child’s Specialized Growing-Up milk: 7g</ul>
+<ul style="list-style-type:disc;display:list-item;">2 Slices (30g) of Cheddar cheese: 7g</ul>
+<ul style="list-style-type:disc;display:list-item;">30g of Chicken breast: 7g</ul></blockquote>
+
+ </span>
+            	<h5>Iron</h5>
+<span>Many children are at high risk of becoming anaemic or having low iron stores in the body. Because iron is important in forming red blood cells, in healthy brain development and functioning like concentration, as well as immunity, getting enough of it every day is necessary. Young children aged 3 to 5 years require 10mg of Iron per day, so make Iron-rich foods part of your child’s daily menu. 
+<h5 style="text-indent:50px"><u>Good sources of Iron are:</u></h5><blockquote>
+<ul style="list-style-type:disc;display:list-item;">
+ Red meat</ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Legumes, such as beans and lentils</ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Green leafy vegetables like spinach and broccoli</ul>
+<ul style="list-style-type:disc;display:list-item;">
+Fortified Breakfast Cereals</ul>
+<ul style="list-style-type:disc;display:list-item;">
+Specialised Growing-up Milk </ul></blockquote>
+
+Maximize the absorption of Iron in your child’s body by adding a source of Vitamin C to plant sources of Iron; As an example, add a dash of lemon over the lentil soup or the Spinach stew.
+</span>
+<h5>Zinc</h5>
+<span>Zinc is an important mineral for good growth during childhood, since a Zinc deficiency can lead to slower mental development. It is recommended that children at this age get 10mg of Zinc daily, so be sure your child is getting enough for proper memory and brain function by offering him foods like: <br /><blockquote>
+<ul style="list-style-type:disc;display:list-item;">
+ Meats</ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Legumes such as beans</ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Whole grains</ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Specialised Growing-up Milk</ul> </blockquote>
+</span>
+            
+    		 </li>
+		</ul>
+	</li>
+           
+	 <li>
+		<a href="#" class="item popular" rel="popular">Complement his physical activity with the right nutrients for strong bones
+ </a>
+		<ul>
+			<li >
+           <span>
+           Young children are very active, they enjoy engaging in ball games, they love to run and jump and this is very important to promote bone health. To start with the strongest bones possible, kids should get enough physical activity as well as a healthy diet, one that provides them with the nutrients needed for optimal bone development. 
+Calcium is a key building block for strong, healthy bones and it is abundantly found in Milk and Dairy products. Young Children need 800mg of Calcium per day and can be covered by offering a varied diet that includes green leafy vegetables, as well as 2 to 3 servings of dairy including fortified milk.<br /><br />
+
+In addition to Calcium, another nutrient gets in the equation for strong and healthy bones: Vitamin D. It plays an important role in bone growth and it is also needed by the body to absorb the Calcium we eat. Even though the body can produce Vitamin D when skin is exposed to sunlight, young children’s skin is sensitive and it is not recommended that children below the age of 5 be exposed to the sun. So count on your child’s diet to provide him with his Vitamin D needs by offering Fortified milk, fortified Breakfast cereals, and serving eggs and oily Fish such as Salmon weekly. 
+
+
+</span> 
+ </li>
+            </ul>
+        </li>
+          <li>
+		<a href="#" class="item popular" rel="popular">The importance of milk as part of your Preschooler’s healthy diet.
+ </a>
+		<ul>
+			<li >
+           <span>
+          Wondering why Nutrition recommendations stress on the importance of serving your child 2-3 servings of dairy per day? The role of milk in your child’s healthy and balanced diet remains crucial even though by the age of 3, he would be probably eating what the rest of the family is, for lunch or dinner at least. Milk remains at the core of his diet as it contains different key nutrients in one convenient yummy drink. Other than Calcium, did you know that milk contains more than 9 essential nutrients?
+<h5>Here are some of milk’s key nutrients and their health benefits:</h5><blockquote>
+<ul style="list-style-type:disc;display:list-item;">
+ High Quality Protein: help build strong muscles and antibodies to boost the immune system so that young children can feel at their best</ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Carbohydrates: are the body’s preferred source of energy</ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Vitamins and Minerals: are essential for a healthy growth; Calcium and Phosphorus are vital for building healthy bones and teeth. Calcium is also involved in proper muscle functioning. B vitamins help the body get the energy it needs from foods and Vitamin A plays an important role in building your child’s immunity.</ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Fats present in milk are also important for the development of your healthy child.</ul></blockquote>
+At 3 years of age, your child will become more and more independent and it shows in his eating patterns! He may start to reject many kinds of foods he previously ate and refuse to try new ones. As a result, the amount and quality of food he eats may not meet his daily nutritional requirements.  Offering your young child the milk that is specific for his age, is one simple way of supporting his diet with the essential nutrients his body needs for:<blockquote> <ul style="list-style-type:disc;display:list-item;">
+ Optimal Growth and Strong Bones: High-Quality Proteins, Calcium, Vitamin D, Phosphorus and Iron.</ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Brain Development: Carbohydrates (glucose), Proteins, EFAs, Iron and Zinc</ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Healthy Immune System: Iron, Selenium and Vitamin A and C, Prebiotics and Probiotics.</ul></blockquote>
+ 
+</span> 
+ </li>
+            </ul>
+        </li>
+     <li>
+		<a href="#" class="item popular" rel="popular">3 Main meals and 2 Snacks!
+ </a>
+		<ul>
+			<li >
+           <span>
+     Young children aged 2 to 5 years old usually need to eat every 2 to 3 hours, thus the necessity of introducing snacks in their diets.  The more active they are, the more snacks they need; So children that engage in a lot of running, dancing, or any kind of active play, may need more snacks than children who watch a lot of TV or who play video games. On average, young children need 2 snacks in between main meals every day.
+Divide their Foods according to Breakfast, Mid-Morning Snack, Lunch, Afternoon Snack and Dinner. <h5>Here is an example schedule: </h5>
+Breakfast: 7:00am<br />
+Mid-Morning Snack: 9:30<br />
+Lunch: 12:00<br />
+Afternoon Snack: 3:30 pm<br />
+Dinner: 7pm<br />
+      
+</span> 
+<h5>Why is a Snack important for young children?
+</h5><span><blockquote> <ul style="list-style-type:disc;display:list-item;">
+ Provides them with the essential energy and nutrients: because young children are constantly active and dynamic, a snack grants them the energy to continue their activities and supplies them with essential nutrients such as vitamins, minerals and fibers </ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Controls blood sugar levels: snacking a couple of hours before their main meal helps in maintaining a normal level of blood sugar throughout the day and thus preventing them from getting too hungry at lunch or dinner</ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Enhances their mental activity: it has an important role in improving children’s mental performance by strengthening their memory, boosting their mood and improving their overall school performance. </ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Promotes their physical performance:  an afternoon snack gives their body and energy boost and allows children to perform better in their sports’ practice   </ul></blockquote>
+</span>
+
+ </li>
+            </ul>
+        </li>
+     <li>
+		<a href="#" class="item popular" rel="popular">How to make Snacks a healthful part of your child’s diet?
+ </a>
+		<ul>
+			<li >
+           <blockquote>
+           <ul style="list-style-type:disc;display:list-item;">
+ Plan his daily menus ahead of time, this way you can prepare the snacks based on whatever your child is having as main meals and fill in the gap; Macaroni and Cheese for lunch? Turkey Sandwich for dinner? Make sure to offer his 5-a-day fruits and veggies as snacks.</ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Offer light Snacks that come in a small portion, 2 hours away from main meals, so that your child is still hungry when its lunch or dinner time.</ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Allow for his favorite treat like chocolate or biscuits to be his snack occasionally only, so that he doesn’t get confused about the meaning of a Snack; Snack-time is not a Synonym of Junk-time.</ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Try offering home-made snacks rather than ready convenience foods that may be too high in Sugar, Salt and or unhealthy Fats such as chips and candy. Home-made Low-fat fruit cake, fruit custard or Mini Oat biscuits make a nice change.</ul>
+<ul style="list-style-type:disc;display:list-item;">
+ You want to reward your child? Offer stickers, magnets, crayons and not sweets. It is better not to link food to reward or punishment. Keep treats away from affection. </ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Always have some ready-to-eat fruits and vegetables sticks in the fridge for a snack on the go; or for your child to grab if they feel hungry between meals and reach for the refrigerator.</ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Watch the sweetened juices and carbonated beverages as these drinks can replace milk which is still at the core of preschoolers’ diets.</ul>
+<ul style="list-style-type:disc;display:list-item;">
+Here are examples of healthy snacks:</ul><blockquote>
+-&nbsp;&nbsp;&nbsp;&nbsp; ½ cup of your child’s specialized growing-up milk with whole grain cereals<br />
+-&nbsp;&nbsp;&nbsp;&nbsp; Fresh fruit salad<br />
+-&nbsp;&nbsp;&nbsp;&nbsp; Carrot, Cucumber and Celery sticks with Labneh or Hummus Dip<br />
+-&nbsp;&nbsp;&nbsp;&nbsp; Pudding and bread sticks<br />
+-&nbsp;&nbsp;&nbsp;&nbsp; A cup of your child’s specialized growing-up milk and a banana<br />
+-&nbsp;&nbsp;&nbsp;&nbsp; Fruit milkshake (1/2 a cup of your child’s Specialized Growing-up milk, strawberry, banana and &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;a ½ teaspoon of honey)<br />
+-&nbsp;&nbsp;&nbsp;&nbsp; A toast with Labneh or a slice of cheese<br />
+-&nbsp;&nbsp;&nbsp;&nbsp; Fruit Yogurt or Plain Yogurt with fruit chunks<br />
+-&nbsp;&nbsp;&nbsp;&nbsp; ½ a cup of oatmeal mixed with your child’s specialized growing-up milk
+</blockquote>
+A light snack will not only satisfy your child’s hunger, but also provide him with the energy and nutrients he needs to continue his activities, as well as improving his ability to learn, concentration on his tasks or his performance in sports.
+
+           
+</blockquote>
+ </li>
+            </ul>
+        </li>
+     <li>
+		<a href="#" class="item popular" rel="popular">How to combat bad influences on my child's Diet
+ </a>
+		<ul>
+			<li >
+           <span>
+           4 to 5 year olds are extremely influenced by what their friends are eating, and trying to keep children as healthy as possible is challenge nowadays. Here are a few tips:<br /><blockquote>
+*&nbsp;&nbsp;&nbsp;&nbsp; Limit the time where your child is watching TV<br />
+*&nbsp;&nbsp;&nbsp;&nbsp; Encourage your child to be physically active everyday<br />
+*&nbsp;&nbsp;&nbsp;&nbsp; Be aware of what your child is eating at home, in preschool, in play groups and birthdays <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and encourage him to develop healthy eating habits
+<br />
+*&nbsp;&nbsp;&nbsp;&nbsp; Keep your own home as healthy as possible<br />
+*&nbsp;&nbsp;&nbsp;&nbsp; Stock up on healthier choices lower in fats, salt and sugar and always have ready washed fruits <br />
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;and veggies within reach.</blockquote>
+</blockquote>
+</span> 
+ </li>
+            </ul>
+        </li>
+     <li>
+		<a href="#" class="item popular" rel="popular">Help your child eat sociably 
+ </a>
+		<ul>
+			<li >
+           <span>
+           Is your child attending preschool yet? If not he will very soon and he would have to adapt to eating with his new friends the food that you lovably arranged in his lunchbox this morning or whatever is cooking at school. How to get your child ready to eat alone, outside of the house and to make sure his lunchbox doesn’t come back half-full?<h5> Here are tips to help your child eat sociably:</h5><blockquote>
+<ul style="list-style-type:disc;display:list-item;">
+Ask ahead of time what time are morning snack and lunch offered and try to put your child on the new schedule at home 2 weeks before going to preschool</ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Start by putting in the lunchbox the foods that your young one generally likes and does not make a fuss to eat at home</ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Prepare a small and light morning Snack so that he will be hungry enough at lunch-time</ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Make the snack something easy to eat such as a mini bagel, sandwich, vegetables sticks or a fruit</ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Get your child used to his new Lunch bag, lunch box, utensils and the water container. It helps if his favorite and familiar cartoon characters are on his new school kit</ul>
+<ul style="list-style-type:disc;display:list-item;">
+When it comes to teaching him table manners so he eats a little more neatly at school or in a restaurant even, try teaching him by following you and other members of the family as an example. So never miss the opportunity of gathering the entire family for meals where you can be a role model by respecting table manners and of course trying and enjoying new foods together.</ul>
+
+<ul style="list-style-type:disc;display:list-item;">
+ Ditch the high-chair and prepare your preschooler to eat like everyone else by making him sit on an ordinary chair with a support of a cushion and by preparing his place setting like everyone else. Give him the chance to eat in China and utensils (if safe) just like you.</ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Allow him to feed alone even if this means a few spots here and there, allow him to even serve himself. This way, your child may enjoy the greater independence of group mealtimes.</ul>
+<ul style="list-style-type:disc;display:list-item;">
+ If you are serving something new, Involve your preschooler in all the steps of the preparation process, from shopping to washing and cooking the dish. All this positive talking about him being the star chef for today’s dish will surely make him at least try it!
+Don’t worry! Very soon, you will realize that he will eat more foods and more neatly when he is with his friends than he is at home. Imitation of peers is a very powerful tool as you may know, so raise your expectations when it comes to your young one feeding himself alone and like an adult.</ul>
+
+</blockquote>
+ </li>
+            </ul>
+        </li>
+     <li>
+		<a href="#" class="item popular" rel="popular">Encourage healthy eating but not overeating!
+ </a>
+		<ul>
+			<li >
+           <span>
+           Most active children between 3 and 5 years need between 1,200 to 1,600 Calories a day, depending on their age, gender, size and level of physical activity. <br />
+How do you know if your 3 to 5 years old is eating enough?<br />
+Is he growing normally according to his height and weight charts? Does he seem healthy and has a lot of energy to play? If yes, than your child is probably eating right and enough. If you see him putting on some chubbiness, then he is probably overeating or maybe eating too many sweets or is not active enough so you would better check with his pediatrician to be sure.<br /><h5>
+Your aim is to feed your children the right quality and not quantity:</h5><blockquote><ul style="list-style-type:disc;display:list-item;">
+ Don’t encourage the empty plate policy; encourage him early to obey his internal hunger cues. This means that he should listen to his body and stop eating when he feels full. You can help him develop this ability by accepting that he has had enough when he says so – whether or not the plate is emptied. </ul>
+
+<ul style="list-style-type:disc;display:list-item;">
+ Serve your preschooler portions that are smaller than yours and let him ask for more. Remember, young children don’t need as much as we do, and their stomachs are still small.</ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Your job is to offer varied foods from all the food groups; his job is to tell you he’s had enough.</ul></blockquote>
+
+
+</span> 
+ </li>
+            </ul>
+        </li>
+        
+       <li>
+		<a href="#" class="item popular" rel="popular">Be a role model: eat smart, be active
+ </a>
+		<ul>
+			<li >
+           <span>
+           Young childhood is the time where your little one is eager to learn everything that passes in front of their eyes, and learns a big deal from imitating his parents. So be a positive role model and follow good nutrition habits by:<blockquote>
+<ul style="list-style-type:disc;display:list-item;">
+ Introducing in your own diet a diversity of foods and choosing wisely from each food group</ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Eating appropriate amounts at each meal and savoring it slowly</ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Never Skipping meals and particularly Breakfast </ul>
+<ul style="list-style-type:disc;display:list-item;">
+Bring the family together for meals as much as possible</ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Never eat in front of the TV</ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Drink enough water</ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Indulge in sweets sensibly</ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Lead an active lifestyle and exercise regularly, encourage your young child to join a sport of his choice and commit to the practice</ul></blockquote>
+
+Remember! Communicating with your child about his food choices with simple language can go a long way in encouraging healthy eating habits and a good appetite towards a diversity of foods. 
+
+</span> 
+ </li>
+            </ul>
+        </li>
+     <li>
+		<a href="#" class="item popular" rel="popular">What should your young child eat?  
+ </a>
+		<ul>
+			<li >
+           <span>
+        Your young child is much more active than when he was a toddler and therefore requires a little more energy meaning a little more food. Most active children aged 3 to 5 years likely need 1,200 to 1,600 Calories a day depending on age, gender, and activity level. Here’s how to increase their energy intake healthfully:<br /><blockquote>
+<ul style="list-style-type:disc;display:list-item;"> Make lunch a little  more consistent</ul>
+<ul style="list-style-type:disc;display:list-item;"> Foods from the Bread and Cereals group should constitute his main source of energy.  Serve them with every meal.</ul>
+<ul style="list-style-type:disc;display:list-item;"> Serve your child the right number of servings from the 5 food groups (Breads and Cereals, vegetables, fruits, meat and pulses, milk and dairy).</ul>
+<ul style="list-style-type:disc;display:list-item;">Add a light morning snack to his lunch box to refuel his little body and brain.</ul></blockquote>
+
+Because Variety is key to providing his body with the different nutrients needed for growing healthy and smart, help your young child get the right nutrition by planning your menus weekly. Here are some guidelines to help you in meal planning:<blockquote>
+<ul style="list-style-type:disc;display:list-item;">
+Continue serving 2 cups of his specialized growing-up milk every day, as it should remain a crucial part of your child’s diet. Now that he has certain food preferences and might not accept everything you carefully select for him; a specialized growing-up milk which is adapted to his needs and age will help support his diet by not missing specific nutrients important for  healthy growth and brain development.</ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Make sure you offer foods in different colors, textures and shapes to make them appealing and more interesting: rainbow salads, fresh home-made soups, juicy stews, crunchy sandwiches, soft pudding, funny face fruit cuts… </ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Make fruits or vegetables part of every meal and vary the veggies:<blockquote>
+-&nbsp;&nbsp;&nbsp;&nbsp; Dark Green Vegetables (ex. parsley, broccoli, spinach..) = 1 cup weekly: a good source of &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;vitamin A, C and iron<br />
+-&nbsp;&nbsp;&nbsp;&nbsp; Orange Vegetables (ex. carrots) = 1/2cup weekly: a good source of beta carotene (vitamin  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A)</blockquote></ul>
+<ul style="list-style-type:disc;display:list-item;">
+Make half of the Grains, Whole Grains. Whole wheat bread, crackers, oatmeal, burgul are all good choices.</ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Serve foods that are rich in Iron every day: Red meats, beans, lentils, spinach, and broccoli. A squeeze of lemon would help increase the absorption of iron from plant sources. </ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Include Legumes and Pulses such as beans, lentils and green peas at least 2-3 times a week.</ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Include fish and especially fatty fish like Salmon and Tuna twice a week.</ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Follow healthy cooking techniques like stewing, stir-frying and steaming instead of frying.</ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Use healthy oils like Canola, Olive and Sunflower oil instead of butter or margarine and in little amounts only</ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Do not add salt in your cooking, adults can add after serving themselves.</ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Try to limit carbonated beverages and sweetened juices as they fill up their tiny stomachs and replace their meals</ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Serve sweets occasionally and in small amounts (do not serve an adult portion!)</ul> </blockquote>
+   
+</span> 
+ </li>
+            </ul>
+        </li>
+           
+             
+		</ul>
+	</li>
+</ul>
+    </div>
+</div>
+    
+    
+</div>
+</div>
+
+
+
+
+<div class="products_gal">
+<h3 style="color:#54671c">Products for 3-5 years</h3>
+<div class="spacer"></div>
+<div class="list_carousel">
+					<ul id="foo2" style="margin-left:400px;">
+					<li style="border-right:none"><a href="products_preschooler.html"><img src="images/nido_03.png" height="100" alt="pro" /></a></li>
+				</ul>
+				<div class="clearfix"></div>
+				<a id="prev2" class="prev" href="#"><img src="images/arrow_left.png" width="43" height="33" /></a>
+				<a id="next2" class="next" href="#"><img src="images/arrow_right.png" width="43" height="33" /></a>
+	<div id="pager2" class="pager"></div>
+			</div>
+</div>
+<!-- Footer Starts Here -->
+<div class="footer clear">
+  <div class="wrapper clear">
+    <div class="footer_boxes clear">
+      <div class="footboxes footbox_01">
+        <h3>الحمل</h3>
+        <ul>
+        <li><a href="featured.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding.html">التغذية</a></li>
+          <li><a href="growing.html">النمو و التطور</a></li>
+                    <li><a href="products.html">المنتجات الخاصة للحامل</a></li>
+          <li><a href="faq.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_02">
+        <h3>الأشهر الأولى</h3>
+        <ul>
+          <li><a href="feeding_infant_0-6.html">التغذية</a></li>
+          <li><a href="growing_infant_0-6.html">النمو و التطور</a></li>
+          <li><a href="faq_infant_0-6.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_03">
+        <h3>من ٦‎ إلى ١‎٢‎ شهر</h3>
+        <ul>
+          <li><a href="featured_products_infant_6-12.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding_infant_6-12.html">التغذية</a></li>
+          <li><a href="growing_infant_6-12.html">النمو و التطور</a></li>
+          <li><a href="products_infant_6-12.html">المنتجات الخاصة لعمر ٦-١٢ شهراً</a></li>
+          <li><a href="faq_infant_6-12.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_04">
+        <h3>الأطفال من ١‎ إلى ٣‎ سنوات</h3>
+        <ul>
+          <li><a href="featured_products_toddler.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding_toddler.html">التغذية</a></li>
+          <li><a href="growing_toddler.html">النمو و التطور</a></li>
+          <li><a href="products_toddler.html">المنتجات الخاصة لعمر ١ إلى ٣ سنوات</a></li>
+          <li><a href="faq_toddler.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_05">
+        <h3>مرحلة ما قبل المدرسة:٣‎ إلى ٥‎ سنوات</h3>
+        <ul>
+          <li><a href="featured_products_preschooler.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding_preschooler.html">التغذية</a></li>
+          <li><a href="growing_preschooler.html">النمو و التطور</a></li>
+          <li><a href="products_preschooler.html">المنتجات الخاصة لعمر٣ إلى ٥ سنوات</a></li>
+          <li><a href="faq_preschooler.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer_menu">
+      <ul>
+        <li><a href="index.html">الصفحة الرئيسية</a></li>
+        <li><a href="parenting.html">الأمومة</a></li>
+        <li><a href="#">الوصفات</a></li>
+        <li><a href="our_commitment.html">التزاماتنا</a></li>
+        <li><a href="#">نادي طفل نستله</a></li>
+        <li><a href="#">اتصل بنا</a></li>
+        <li><a href="faq.html">الأسئلة و الأجوبة</a></li>
+        <li><a href="#">خريطة الموقع</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer_rule">
+    <div class="wrapper">
+      <div class="copy_right_right">علامات "بداية صحية لحياة صحية" هي علامات تجارية لشركة سوسيتيه دي برودوي نستله إس. إيه. فيفي – سويسرا<br />كل العلامات التجارية هي من ملك لشركة سوسيتيه دي برودوي نستله إس. إيه. فيفي – سويسرا</div>
+      <div class="copy_right_left">نستله نيوترشن<span dir="ltr">&nbsp;2013&nbsp;</span>جميع الحقوق محفوظة<br />
+        <a href="privacy_policy.html" class="active">الشروط و الأحكام  .  سياسة الخصوصية</a> </div>
+    </div>
+  </div>
+</div>
+<!-- Footer Ends Here -->
+
+</body>
+</html>

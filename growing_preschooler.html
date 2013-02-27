@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>التغذية نستله</title>
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" language="javascript" src="js/jquery-1.8.2.min.js"></script>
+
+<script src="js/jquery.anythingslider.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#foo2').carouFredSel({
+		circular: false,
+		infinite: false,
+		auto: false,
+		prev: '#prev2',
+		next: '#next2',
+		pagination: false,
+		mousewheel: true,
+		swipe: {
+			onMouse: true,
+			onTouch: true
+		}
+	});
+});
+	
+	$(document).ready(function(){
+		$(".more_btn").toggle(function(){
+		$(this).text("Less");
+		$(this).next(".acc_cont").slideDown(300);
+		$(this).toggleClass("less");
+		},
+		function(){
+		$(this).text("More");
+		$(this).next(".acc_cont").slideUp(300);	
+		$(this).toggleClass("less")
+		});
+	});
+	$(document).ready(function () {
+		$('.accordion a.item').click(function () {
+			//slideup or hide all the Submenu
+			if($($(this)).hasClass($(this).attr('rel') + 'Over')){
+				$(this).siblings('ul').slideUp('fast');	
+				$(this).removeClass($(this).attr('rel') + 'Over');
+			}else{
+				$('html,body').animate({scrollTop: $(this).offset().top}, 1000);
+				$(this).siblings('ul').slideDown('fast');
+				$(this).addClass($(this).attr('rel') + 'Over');   
+			}
+			return false;
+		});
+	});
+	$(document).ready(function () {
+		$('.accordion-2 a.item').click(function () {
+			//slideup or hide all the Submenu
+			$('.accordion-2 li').children('ul').slideUp('fast');if($($(this)).hasClass($(this).attr('rel') + 'Over')){
+            $(this).removeClass($(this).attr('rel') + 'Over');
+            }else{
+            $(this).siblings('ul').slideDown('fast');
+            $(this).addClass($(this).attr('rel') + 'Over');       
+            }
+			return false;
+		});
+	});	</script>
+
+</head>
+<body>
+
+<!-- Header Starts Here -->
+<div class="header">
+  <div class="wrapper">
+    <div class="logo"> <img src="images/nestle_logo.png" width="147" height="99" alt="نستله"> </div>
+    <div class="header_left">
+      <div class="header_left_top">
+        <ul>
+          <li> <a href="/"  class="active">الصفحة الرئيسية</a> </li>
+          <li> <a href="our_commitment.html">التزاماتنا</a> </li>
+          <li> <a href="#">نادي طفل نستله</a> </li>
+          <li> <a href="parenting.html">الأمومة</a> </li>
+          <li> <a href="">اتصل بنا</a> </li>
+          <li> <a href="#">خريطة الموقع</a> </li>
+          <li> <a href="#">الحمل</a> </li>
+          <li> <a href="/eng" style="font-family: 'VAGRoundedStd-Light';" dir="ltr">English</a> </li>
+        </ul>
+        <div class="search_wrap">
+          <input name="" type="text" placeholder="البحث">
+          <input name="" type="submit">
+        </div>
+      </div>
+      <div class="nav">
+        <ul>
+          <li id="preg"> <a href="pregnancy.html">الحمل</a> </li>
+          <li id="inf_0_6"> <a href="infant_0-6.html">الأشهر الأولى</a> </li>
+          <li id="inf_6_12"> <a href="infant_6-12.html">من ٦‎ إلى ١‎٢‎ شهر</a> </li>
+          <li id="inf_1_3"> <a href="toddler.html">الأطفال من ١‎ إلى ٣‎ سنوات</a> </li>
+          <li id="inf_3_5"> <a href="preschooler.html">مرحلة ما قبل المدرسة:٣‎ إلى ٥‎ سنوات</a> </li>
+          <li id="for_ur_baby"> <a href="for_your_baby.html">لأجل طفلك</a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Header Ends Here -->
+
+<div class="inner_content clear">
+
+<div class="preschooler_3_5_feeding">
+<h4>Preschooler <span style="color:#c7e373">3-5 Years</span></h4>
+<div class="left_inner">
+  <ul class="header_ul">
+    <li>Baby Growth & Development</li>
+  </ul>
+  <ul class="accordion-2">
+  <li><a href="featured_products_preschooler.html" style="background:none !important;">
+Featured Products</a>
+  <!--<ul>
+  <li>
+  
+  	<ol>
+    	<li style="border:none !important"><a href="featured_products_preschooler.html#featured_products_preschooler">Product </a></li>
+    
+    </ol>
+  
+  </li>
+  </ul>--></li><li><a href="feeding_preschooler.html" style="background:none !important;">
+Nutrition & Feeding</a>
+  <ul>
+  <li>
+  
+  	<ol>
+    	<li style="border:none !important"><a href="feeding_preschooler.html#feeding_preschooler.html">How is your 3-5 year old growing?
+</a></li>
+    
+    </ol>
+  
+  </li>
+  </ul></li>
+  <li><a href="products_preschooler.html" style="background:none !important;">Products for 3-5yrs</a>
+  <ul>
+  <li>
+  
+  	<ol>
+    	<li style="border:none !important"><a href="products_preschooler.html#products_preschooler">NIDO Three plus
+ </a></li>
+    
+    </ol>
+  
+  </li>
+  </ul>
+  </li>
+  <li><a href="faq_preschooler.html" style="background:none !important;">Faq’s</a>
+  <ul>
+  <li>
+  
+  	<ol>
+    	<li style="border:none !important"><a href="faq_preschooler.html#faq_preschooler">Donec varius, mauris quis dictum molestie ? </a></li>
+    
+    </ol>
+  
+  </li>
+  </ul>
+  </li>
+  </ul>
+</div>
+</div>
+<style>
+.anythingSlider-default.activeSlider .anythingControls a {
+	/* background image = top shadow */
+	background-color: #778d35;
+}
+.anythingSlider-default .anythingControls a.start-stop:hover,
+.anythingSlider-default .anythingControls a.start-stop.hover,
+.anythingSlider-default .anythingControls a.start-stop .anythingControls ul a:hover {
+	background-image: none;
+	color: #778d35;
+}
+
+</style>
+
+<div class="feeding_right">
+<h2 style="color:#778d35">Baby Growth & Development</h2>
+<br />
+<div class="preschooler_growing_banner" style="width:622px; margin:0 auto;" >
+  <ul id="slider2">
+    <li>
+    	<div class="infant_banner clear">
+        	<div class="inf_left">
+            	<div style="float:left">      
+      				<h4>Your</h4>
+      				<h1>3 year </h1>
+     				<h6>old </h6>
+              	</div>
+              	<div style="float:left">
+       				<img src="images/kite.png" style="padding-top:20px" align="left"/>
+              		<p align="justify">	Your baby has turned into a young child in a blink of an eye; your calm toddler has become a dynamic young child full of energy, always busy, and sometimes bossy and fussy.</p>
+              	</div>
+			</div>
+            <div class="inf_right"><img src="images/slide.png" width="338px" style="vertical-align:text-bottom"/></div>
+        </div>
+    </li>
+    
+
+  </ul>
+</div>
+<div class="infantquest preschoolerquest" style="background-color:#f6f9ff" id="feeding_infant_6-12">
+	<img src="images/xylophone.png" alt="nestle" />
+    <p style="color:#6a9c39; font-size:45px;padding-left:100px">How   </p><br />
+    <p class="sec_title" style="color:#ce3336; font-size:22px; padding-left:100px">is your young child<br /><br /></p>
+    <p style="color:#6a9c39;padding-left:50px; font-size:45px; padding-top:0px"> progressing?</p><br />
+    <div class="spacer"></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont acc_cont_margin">
+    <ul class="accordion">
+	<li>
+<a href="#" class="item popular" rel="popular">How is your young child progressing? </a>
+		<ul>
+			<li >
+       <style>
+ tr.border_bottom td {
+  border-bottom:1pt solid #CCC;
+}
+.td1, th {
+  border-left: solid 1px #CCC;
+} 
+
+.lightorange_color{
+	background-color:#f0bb3b;
+}
+.lightblue_color{
+	background-color:#66ccff;
+}
+
+.darkorange_color{
+	background-color:#f47b20;
+}
+
+.white{
+	color:#FFF;
+}
+  </style>                    
+    	<table width="100%" class="tablecentre" align="center" border="0" style=" border:1px solid #CCC">
+  <tr class="border_bottom" >
+    <td width="30px"  class="lightblue_color" rowspan="2">&nbsp;</td>
+    <td  class="lightorange_color" rowspan="2"><span class="white">3 to 4 Years old</span></td>
+    <td  class="darkorange_color"rowspan="2"><span class="white">4 to 5 years old</span></td>
+  </tr>
+  <tr class="border_bottom"> </tr>
+  <tr class="border_bottom">
+    <td rowspan="14">Physical milestones</td>
+    <td class="td1">Very    agile in his movements</td>
+    <td class="td1" >Dares    in physical activities, swings and climbs</td>
+  </tr>
+  <tr class="border_bottom">
+    <td class="td1">Goes up and down the stairs but    still holds to ramp</td>
+    <td class="td1">May be able to skip a rope</td>
+  </tr>
+  <tr class="border_bottom">
+    <td class="td1">Catches bounced ball most of    the time</td>
+    <td class="td1">&nbsp;</td>
+  </tr>
+  <tr class="border_bottom">
+    <td class="td1">&nbsp;</td>
+    <td class="td1">Draws circles and squares</td>
+  </tr>
+  <tr class="border_bottom">
+    <td class="td1">Holds crayon like and    adult </td>
+    <td class="td1" >&nbsp;</td>
+  </tr>
+  <tr class="border_bottom">
+    <td class="td1">&nbsp;</td>
+    <td class="td1" >Draws person with details</td>
+  </tr>
+  <tr class="border_bottom">
+    <td class="td1">Copies Squares</td>
+    <td class="td1">&nbsp;</td>
+  </tr>
+  <tr class="border_bottom">
+    <td class="td1">&nbsp;</td>
+    <td class="td1">Prints some letters</td>
+  </tr>
+  <tr class="border_bottom">
+    <td class="td1">Draws a person with  a few body parts</td>
+    <td class="td1">&nbsp;</td>
+  </tr>
+  <tr class="border_bottom">
+    <td class="td1">&nbsp;</td>
+    <td class="td1">Dresses and Undresses without assistance</td>
+  </tr>
+  <tr class="border_bottom">
+    <td class="td1">Uses safety scissors</td>
+    <td class="td1">&nbsp;</td>
+  </tr>
+  <tr class="border_bottom">
+    <td class="td1">&nbsp;</td>
+    <td class="td1">Cares for own toilet needs</td>
+  </tr>
+  <tr class="border_bottom">
+    <td class="td1">Can gradually wash and dress    and brush his teeth with very little help </td>
+    <td class="td1">&nbsp;</td>
+  </tr>
+  <tr class="border_bottom">
+    <td class="td1">He can put his shoes on</td>
+    <td class="td1">Can tie own shoe laces</td>
+  </tr>
+  <tr class="border_bottom">
+    <td rowspan="7">Cognitive and    Language Milestones</td>
+    <td class="td1">Talks well enough for strangers to understand most of the time; Makes sentences of 5 words</td>
+    <td class="td1">Speaks very clearly; Tells and recalls stories and Uses future    and conditional tense </td>
+  </tr>
+  <tr class="border_bottom">
+    <td class="td1">Says first name, age, and    sex </td>
+    <td class="td1">Says name and address</td>
+  </tr>
+  <tr class="border_bottom">
+    <td class="td1">&nbsp;</td>
+    <td class="td1">Knows alphabet, and counts well</td>
+  </tr>
+  <tr class="border_bottom">
+    <td class="td1">Names some colors and Is able    to count a little</td>
+    <td class="td1">&nbsp;</td>
+  </tr>
+  <tr class="border_bottom">
+    <td class="td1">&nbsp;</td>
+    <td class="td1">Understands opposites notions concerning weight, length and    height</td>
+  </tr>
+  <tr class="border_bottom">
+    <td class="td1">&nbsp;</td>
+    <td class="td1">Knows about things used every day, like money and food</td>
+  </tr>
+  <tr class="border_bottom">
+    <td class="td1">Joins in social conversations    and enjoys talking with others</td>
+    <td class="td1">Understands the notion of time</td>
+  </tr>
+  <tr class="border_bottom">
+    <td rowspan="6" >Social and    Emotional Milestones</td>
+
+    <td class="td1">Copies adults and friends</td>
+    <td class="td1">Wants to please friends and be like them</td>
+  </tr>
+  <tr class="border_bottom">
+    <td class="td1">&nbsp;</td>
+    <td class="td1">Likes to sing, dance, and act </td>
+  </tr>
+  <tr class="border_bottom">
+    <td class="td1">Loves playing with other    children</td>
+    <td class="td1">Is aware of gender</td>
+  </tr>
+  <tr class="border_bottom">
+    <td class="td1">&nbsp;</td>
+    <td class="td1">Can tell what’s real and what’s make-believe</td>
+  </tr>
+  <tr class="border_bottom">
+    <td class="td1">Shows a wide range of emotions    like affection and concern for others</td>
+    <td class="td1">Shows more independence </td>
+  </tr>
+  <tr class="border_bottom">
+    <td class="td1">Separates easily from parents</td>
+    <td class="td1">&nbsp;</td>
+  </tr>
+  <tr >
+    <td rowspan="6">Food-related    abilities</td>
+    <td class="td1" >Uses fork and spoon </td>
+    <td class="td1">Cuts with the knife with supervision</td>
+  </tr>
+  <tr class="border_bottom">
+    <td class="td1">Mashes his own food</td>
+    <td class="td1">&nbsp;</td>
+  </tr>
+  <tr class="border_bottom">
+    <td class="td1">Pours glass without overflowing    it</td>
+    <td class="td1">Receptive to table manners if taught</td>
+  </tr>
+  <tr >
+    <td class="td1">Can eat any foods from    different textures</td>
+    <td class="td1">&nbsp;</td>
+  </tr>
+  
+</table><br />
+		 </li>
+		</ul>
+	</li>
+    <li>
+		<a href="#" class="item popular" rel="popular">Psychomotor milestones of  3 to 4 years old </a>
+		<ul>
+			<li >
+            <span>As your child turns 3, the ‘terrible twos’ are over and you can say hello to a more independent young child, that can almost take care of himself and asks for what he wants more clearly. His world is dominated by fantasy, magic and his vivid imagination will guide him through the coming 2 years. Here are the milestones to look for in 3 to 4 years old. 
+</span>
+    		 </li>
+		</ul>
+	</li>
+    
+    <li>
+		<a href="#" class="item popular" rel="popular">Physical milestones </a>
+		<ul>
+			<li >
+            <span>Your preschooler is in constant movement all time as he is trying to convey the messages he cannot completely explain using words yet. His movements are quite agile now; he can go up and down the stairs without support, jump and stand on one foot up to five seconds.  A 3 year old can ride a tricycle with ease and can kick and throw the ball easily and catch a bouncing ball most of the time. They love games such as tag, catch or playing ball with other children.<br />
+Tip: your supervision remains essential to prevent some injuries, yet allow a lot of time for your child to play alone. <br />
+Your 3 year old is slowly gaining control over his muscles and this will enable him to concentrate on using his hands and fingers more precisely. You probably have noticed that he is holding a crayon more like an adult and can now copy some shapes and capital letters. He can draw persons with a few body parts and use the safety scissors. He now dress or undress with little help and become more and more independent in self-care.<br />
+Tip: Encourage your child to develop their manual abilities by engaging in activities such as building blocks and zipping, unzipping, buttoning and unbuttoning cloths.
+</span>
+            
+    		 </li>
+		</ul>
+	</li>
+    
+    
+    <li>
+		<a href="#" class="item popular" rel="popular">Cognitive and Language milestones </a>
+		<ul>
+			<li >
+           <span>A 3 year old child can now speak sentences of 5 to 6 words, and clearly enough for strangers to understand. A milestone in his vocabulary that shows by the age of 3 and the half of 4 is the word “we”. By saying it your child understands his position and that of other and makes his way in society. They tell stories from their own imagination, love to engage in fantasy play. They can correctly name some colors, understand the concept of counting and may be able count a little, and understand the idea of same and different. The sense of time will become much clearer now.
+</span> 
+
+
+            
+    		 </li>
+		</ul>
+	</li>
+    
+    
+     <li>
+		<a href="#" class="item popular" rel="popular">Social and Emotional milestones </a>
+		<ul>
+			<li >
+           <span>A 3 year old shows a great interest in playing and interacting with other children, and would not mind you leaving him at preschool. <br />
+Starting 3 years of age, your child’s imagination will guide his actions. This is the time where your child is interested in details and starts to ask those famous “why?”, “where?”, “how?” questions. His vocabulary has progressed and enables him to express his adventures or fairy tales of his own creation with attention to details: “I killed the wolf with my sword!”  They show a bigger interest in books that help in inventing their own stories; almost all children like to be told stories, so try to make this a ritual that can stay with them beyond childhood. His vivid imagination makes it difficult for him to distinguish between fantasy and reality. <br />
+Acting and dressing up for the role becomes his favorite hobby. Little girls love to dress-up their dolls, while little boys love to drive their trucks and miniature cars and trains. Both of them like construction toys, big puzzles, coloring books and the outside play swings and slides.
+Tip: Be sure to take all the little questions that your young one asks seriously; as this will feed his curiosity and knowledge and will help him to think more clearly.
+</span> 
+    		 </li>
+		</ul>
+	</li>
+    <li>
+		<a href="#" class="item popular" rel="popular">Between Home and Preschool </a>
+		<ul>
+			<li >
+           <span>Stimulating your child’s intelligence, developing his imagination and social skills and teaching him discipline are the main reasons why your child should attend pre-school. Your child will grow by playing with other children his age, by learning how to express himself and clearly to adults he is just starting to trust and learns to be more and more independent. Through play, the child will learn to concentrate and to control himself that means that he has to listen, understand and do what he is told to. It is not easy in the beginning, but you will be waiting for him at home to encourage him and support him.
+</span>
+
+            
+    		 </li>
+             
+             
+		</ul>
+	</li>
+   
+    <li>
+		<a href="#" class="item popular" rel="popular">Feeding Milestones of 3 to 4 year olds   </a>
+		<ul>
+			<li >
+           <span>Your young child has gained muscular control of his hands and is now able to concentrate in order to poor water from a bottle into a cup without over pouring or even serving himself without spilling. At this age, young children develop Spatial awareness, which will make them take great care while feeding themselves and when using utensils so they don’t spill. They can use a fork but might still hold it with their fist. Being at preschool children will adapt to eating in group lunches along with their friends and will learn quite a lot from them.<br />
+At this age, children might reject certain foods and have a favorite menu that they would like to stick to, but keep on offering a variety of healthy foods and always encourage young children to try new foods.<br />
+Encourage him to be More and more independent<br />
+Your child is growing and so are his responsibilities! A preschooler is constantly busy experimenting, talking, singing and dancing, whether at home or in pre-school. His agenda is packed with activities that will help him grow smarter and stronger each day. Reminding our busy bees to take a break, wash their hands and enjoy a healthy and yummy meal or snack is something we should do 4 to 5 times a day but make sure to encourage independence by:
+<blockquote>
+•&nbsp;&nbsp;&nbsp;&nbsp;Encourage a young child to wash his hands alone, if dedicated sinks are available, or if provided a stool to &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stand on<br />
+•&nbsp;&nbsp;&nbsp;&nbsp;Do not assist in feeding, but expect a little spilling between their mouth and plate occasionally<br />
+•&nbsp;&nbsp;&nbsp;&nbsp;Encourage him to sit and eat alone on the table<br />
+•&nbsp;&nbsp;&nbsp;&nbsp;If he still holds the spoon with his fists, very soon around 4 he will be able to manipulate kitchen utensils like &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;you do; so make sure to arrange for at least one family meal daily to allow him to learn from you <br />
+•&nbsp;&nbsp;&nbsp;&nbsp;Encourage him to brush his teeth alone and change his cloths if necessary after meals.</blockquote>
+
+</span>
+
+            
+    		 </li>
+             
+             
+		</ul>
+	</li>
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</ul>
+    </div>
+</div>
+
+
+
+<div class="infantquest preschoolerquest" style="background-color:#f6f9ff" id="feeding_infant_6-12">
+    <p style="color:#6a9c39; font-size:45px;padding-left:100px">How</p><br />
+    <p class="sec_title" style="color:#ce3336; margin-left:20px; font-size:22px; padding-left:30px"> is your young preschooler</p>
+    <p style="color:#6a9c39;margin-left:-165px !important; font-size:45px; margin:0px; margin-top:120px">progressing</p><br />
+	<img src="images/image.png" style="float:right" alt="nestle" /> 
+    <div class="spacer"></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont acc_cont_margin">
+    <ul class="accordion">
+	
+	<li>    	
+		<a href="#" class="item popular" rel="popular">Psychomotor milestones of 4 to 5 years old
+</a>
+		<ul>
+			<li >
+          <span>
+          Your active child has now the coordination and balance of an adult, he can throw and catch a bounced ball; do much better in games that need patience and concentration such as puzzles. But above all, what you will love is his ability to communicate with you and his ability to take care of himself, like dress, use the bathroom and many other day to day jobs. 
+
+          </span>
+    		</li>
+		</ul>
+	</li>
+    <li>    	
+		<a href="#" class="item popular" rel="popular">Physical milestones
+</a>
+		<ul>
+			<li >
+          <span>
+          A young 4 to 5 years old is physically stronger and can engage a whole lot of activities like swinging alone, or skipping a rope maybe. By 5 years of age, the child’s physical activity increases and becomes more daring both at home and at school. He will test his physical limits to gain admiration and that of the people around him. <br />
+Tip: Encourage him to commit in a sports of his choice. Always watch over him in some situations like swimming or crossing the street for example.
+By age four, your young child can use his hands to the fullest now that his coordination is fully developed. He enjoys building complex structures with many blocks, and can now draw a person with an entire body, geometric patterns, print some letters, paint, model clay, cut and paste. At this age, children enjoy engaging in Arts and Crafts as their self-esteem grows along with their new creations. <br />
+By the time he turns five, your child will be able to brush his teeth, get dressed alone and maybe able to lace his own shoes.<br />
+Tip: Let your child take the direction he enjoys most by engaging him in different activities, whether it is Sports, Arts and Crafts or any other activity. 
+          </span>
+    		</li>
+		</ul>
+	</li>
+	
+	<li>    	
+		<a href="#" class="item popular" rel="popular">Cognitive and language milestones
+</a>
+		<ul>
+			<li >
+       <span>Young children this age can tell longer stories and recall past stories, can correctly name colors and shapes and comprehend essential ideas of counting, the alphabet and size relationships (tall vs. short). Your child now uses adjectives, adverbs, and has a better notion of time as he understands what is yesterday, today and tomorrow. He asks: “is it time for …?” Your child now uses the future and conditional tense: “if I …, then…”. His imagination continues to guide his actions
+</span>   
+    		</li>
+		</ul>
+	</li>
+    <li>    	
+		<a href="#" class="item popular" rel="popular">Social and Emotional milestones
+</a>
+		<ul>
+			<li >
+         <span>
+         Just as when he was three, your little one loves acting and taking part in role play; but now he is learning to distinguish between reality and make-believe. Young children by 4 years of age want to please friends and want to be like them. Singing and dancing are favorite pass times and children are less shy than when they were younger. They are much more friendly, talkative and curious. They are very likely to be sensitive to the feelings others.  At about the same time, little girls may be fascinated by their father and little boys by their mothers and this will disappear with time all by itself as long as parents do not pay a very big attention to it. 
+
+         </span> 
+    		</li>
+		</ul>
+	</li>
+    <li>    	
+		<a href="#" class="item popular" rel="popular">Getting Ready for School
+</a>
+		<ul>
+			<li >
+          <span>   Want to get your child ready for school? Here are some tips:<blockquote>
+•&nbsp;&nbsp;&nbsp;&nbsp;Always encourage your child to tell you about his day, friends and activities<br />
+•&nbsp;&nbsp;&nbsp;&nbsp;Have a quiet reading time together each day and ask your child questions about the stories<br />
+•&nbsp;&nbsp;&nbsp;&nbsp;Encourage your child to talk in full sentences<br />
+•&nbsp;&nbsp;&nbsp;&nbsp;Listen to and treat your child with respect. Insist that others do so as well<br />
+•&nbsp;&nbsp;&nbsp;&nbsp;Encourage him to be kind to others and apologize after hurting someone’s feelings<br />
+•&nbsp;&nbsp;&nbsp;&nbsp;Help your child express his feelings<br />
+•&nbsp;&nbsp;&nbsp;&nbsp;Give your child the chance to play with others often<br />
+•&nbsp;&nbsp;&nbsp;&nbsp;Consider enrolling your child in preschool at the age of three or earlier if necessary.</blockquote></span>
+    		</li>
+		</ul>
+	</li>
+    <li>    	
+		<a href="#" class="item popular" rel="popular">Feeding Milestones of 4 to 5 year olds  
+</a>
+		<ul>
+			<li >
+           <span>
+        
+Four year olds gain a lot of coordination skills and a great ability to use their hands. So, young children can hold a fork or a spoon like an adult. Your little one is eager to learn everything so instruct him on how to use a knife and encourage him to use it under your supervision. They are now clean and are able to brush their teeth alone, use the toilet alone and change their cloths if asked to.
+Good time to Teach Table Manners<br />
+After the age of four, children are generally good company but do not hesitate to encourage and reward good table manners such as not talking with the mouth full, using a napkin and not sleeves to wipe his mouth, and not reaching to another person’s plate. Do not miss the opportunity to gather around a family meal and model all the necessary etiquette; they will learn faster by imitating you. Involve your child in setting the table and in the meal preparation.
+           </span>
+    		</li>
+		</ul>
+	</li>
+</ul>
+    </div>
+    </div>
+
+
+
+    <div class="infantquest preschoolerquest" style="background-color:#f6f9ff" id="feeding_infant_6-12">
+	<img src="images/puzzle.png" alt="nestle" style="padding-top:35px" />
+    <p class="sec_title" style="color:#ce3336; font-size:22px; margin-top:60px; padding-left:100px">How do you help your child to</p>
+     <p style="color:#6a9c39; font-size:45px;margin-left:312px !important; margin-top:-120px !important;margin:0">Play creatively<br /><br /></p>
+    <p class="sec_title" style="color:#ce3336; font-size:45px; margin-top:170px; padding-left:170px">and think?</p><br />
+    <div class="spacer"></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont acc_cont_margin">
+    <ul class="accordion">
+	
+	
+	
+	<li>    	
+    
+	      <blockquote> Find a balance in his possibilities for play: indoor, outdoor and group play and arrange for toys and involve in activities that include:<br /><span>
+•&nbsp;&nbsp;&nbsp;&nbsp;Natural Materials: playing with clay and dough, sand, stones and leaves,<br />
+•&nbsp;&nbsp;&nbsp;&nbsp;Basic Engineering: Building blocks and fitting toys: threading toys and puzzles<br />
+•&nbsp;&nbsp;&nbsp;&nbsp;Physical play: Climbing, Swinging, running, throwing, catching and kicking, push and pull toys as well as ride-on &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;toys<br />
+•&nbsp;&nbsp;&nbsp;&nbsp;Imaginative play: Miniature houses, Domestic play such as helping in house chores, dressing up and playing with &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dolls and soft toys<br />
+•&nbsp;&nbsp;&nbsp;&nbsp;Looking and Listening: read story books and listen to music, limit TV as much as possible<br />
+•&nbsp;&nbsp;&nbsp;&nbsp;Creativity: Painting and drawing, cutting and sticking<blockquote>
+
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Read books together and engage in conversation by discussing them<br />
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Keep some time for peaceful alone time to encourage amazing discoveries<br />
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Organize his toys, in a play space of his own that is safe enough and where he can do whatever &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;he pleases without assistance or surveillance will help concentrate creative play.<br />
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Providing too much support and demonstrations would rob his imagination, just be there when he &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;needs you and offer casual suggestions.<br />
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Help him concentrate on puzzles or fitting toys by sitting with him, talk, support and encourage &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;him. Each time he will be able to go for longer until he completes the task. Completing it will give &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;him satisfaction and your role is to congratulate him.<br />
+
+ </blockquote></span></blockquote>
+	</li>
+</ul>
+    </div>
+    </div>
+    
+    
+    
+</div>
+</div>
+
+
+
+
+<div class="products_gal">
+<h3 style="color:#54671c">Products for 3-5 years</h3>
+<div class="spacer"></div>
+<div class="list_carousel">
+					<ul id="foo2" style="margin-left:400px;">
+					<li style="border-right:none"><a href="products_preschooler.html"><img src="images/nido_03.png" height="100" alt="pro" /></a></li>
+				</ul>
+				<div class="clearfix"></div>
+				<a id="prev2" class="prev" href="#"><img src="images/arrow_left.png" width="43" height="33" /></a>
+				<a id="next2" class="next" href="#"><img src="images/arrow_right.png" width="43" height="33" /></a>
+	<div id="pager2" class="pager"></div>
+			</div>
+</div>
+<!-- Footer Starts Here -->
+<div class="footer clear">
+  <div class="wrapper clear">
+    <div class="footer_boxes clear">
+      <div class="footboxes footbox_01">
+        <h3>الحمل</h3>
+        <ul>
+        <li><a href="featured.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding.html">التغذية</a></li>
+          <li><a href="growing.html">النمو و التطور</a></li>
+                    <li><a href="products.html">المنتجات الخاصة للحامل</a></li>
+          <li><a href="faq.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_02">
+        <h3>الأشهر الأولى</h3>
+        <ul>
+          <li><a href="feeding_infant_0-6.html">التغذية</a></li>
+          <li><a href="growing_infant_0-6.html">النمو و التطور</a></li>
+          <li><a href="faq_infant_0-6.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_03">
+        <h3>من ٦‎ إلى ١‎٢‎ شهر</h3>
+        <ul>
+          <li><a href="featured_products_infant_6-12.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding_infant_6-12.html">التغذية</a></li>
+          <li><a href="growing_infant_6-12.html">النمو و التطور</a></li>
+          <li><a href="products_infant_6-12.html">المنتجات الخاصة لعمر ٦-١٢ شهراً</a></li>
+          <li><a href="faq_infant_6-12.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_04">
+        <h3>الأطفال من ١‎ إلى ٣‎ سنوات</h3>
+        <ul>
+          <li><a href="featured_products_toddler.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding_toddler.html">التغذية</a></li>
+          <li><a href="growing_toddler.html">النمو و التطور</a></li>
+          <li><a href="products_toddler.html">المنتجات الخاصة لعمر ١ إلى ٣ سنوات</a></li>
+          <li><a href="faq_toddler.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_05">
+        <h3>مرحلة ما قبل المدرسة:٣‎ إلى ٥‎ سنوات</h3>
+        <ul>
+          <li><a href="featured_products_preschooler.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding_preschooler.html">التغذية</a></li>
+          <li><a href="growing_preschooler.html">النمو و التطور</a></li>
+          <li><a href="products_preschooler.html">المنتجات الخاصة لعمر٣ إلى ٥ سنوات</a></li>
+          <li><a href="faq_preschooler.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer_menu">
+      <ul>
+        <li><a href="index.html">الصفحة الرئيسية</a></li>
+        <li><a href="parenting.html">الأمومة</a></li>
+        <li><a href="#">الوصفات</a></li>
+        <li><a href="our_commitment.html">التزاماتنا</a></li>
+        <li><a href="#">نادي طفل نستله</a></li>
+        <li><a href="#">اتصل بنا</a></li>
+        <li><a href="faq.html">الأسئلة و الأجوبة</a></li>
+        <li><a href="#">خريطة الموقع</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer_rule">
+    <div class="wrapper">
+      <div class="copy_right_right">علامات "بداية صحية لحياة صحية" هي علامات تجارية لشركة سوسيتيه دي برودوي نستله إس. إيه. فيفي – سويسرا<br />كل العلامات التجارية هي من ملك لشركة سوسيتيه دي برودوي نستله إس. إيه. فيفي – سويسرا</div>
+      <div class="copy_right_left">نستله نيوترشن<span dir="ltr">&nbsp;2013&nbsp;</span>جميع الحقوق محفوظة<br />
+        <a href="privacy_policy.html" class="active">الشروط و الأحكام  .  سياسة الخصوصية</a> </div>
+    </div>
+  </div>
+</div>
+<!-- Footer Ends Here -->
+
+</body>
+</html>

@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>التغذية نستله</title>
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" language="javascript" src="js/jquery-1.8.2.min.js"></script>
+
+<script src="js/jquery.anythingslider.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#foo2').carouFredSel({
+		circular: false,
+		infinite: false,
+		auto: false,
+		prev: '#prev2',
+		next: '#next2',
+		pagination: false,
+		mousewheel: true,
+		swipe: {
+			onMouse: true,
+			onTouch: true
+		}
+	});
+});
+	
+	$(document).ready(function(){
+		$(".more_btn").toggle(function(){
+		$(this).text("Less");
+		$(this).next(".acc_cont").slideDown(300);
+		$(this).toggleClass("less");
+		},
+		function(){
+		$(this).text("More");
+		$(this).next(".acc_cont").slideUp(300);	
+		$(this).toggleClass("less")
+		});
+	});
+	$(document).ready(function () {
+		$('.accordion a.item').click(function () {
+			//slideup or hide all the Submenu
+			if($($(this)).hasClass($(this).attr('rel') + 'Over')){
+				$(this).siblings('ul').slideUp('fast');	
+				$(this).removeClass($(this).attr('rel') + 'Over');
+			}else{
+				$('html,body').animate({scrollTop: $(this).offset().top}, 1000);
+				$(this).siblings('ul').slideDown('fast');
+				$(this).addClass($(this).attr('rel') + 'Over');   
+			}
+			return false;
+		});
+	});
+	$(document).ready(function () {
+		$('.accordion-2 a.item').click(function () {
+			//slideup or hide all the Submenu
+			$('.accordion-2 li').children('ul').slideUp('fast');if($($(this)).hasClass($(this).attr('rel') + 'Over')){
+            $(this).removeClass($(this).attr('rel') + 'Over');
+            }else{
+            $(this).siblings('ul').slideDown('fast');
+            $(this).addClass($(this).attr('rel') + 'Over');       
+            }
+			return false;
+		});
+	});	</script>
+
+</head>
+<body>
+
+<!-- Header Starts Here -->
+<div class="header">
+  <div class="wrapper">
+    <div class="logo"> <img src="images/nestle_logo.png" width="147" height="99" alt="نستله"> </div>
+    <div class="header_left">
+      <div class="header_left_top">
+        <ul>
+          <li> <a href="/"  class="active">الصفحة الرئيسية</a> </li>
+          <li> <a href="our_commitment.html">التزاماتنا</a> </li>
+          <li> <a href="#">نادي طفل نستله</a> </li>
+          <li> <a href="parenting.html">الأمومة</a> </li>
+          <li> <a href="">اتصل بنا</a> </li>
+          <li> <a href="#">خريطة الموقع</a> </li>
+          <li> <a href="#">الحمل</a> </li>
+          <li> <a href="/eng" style="font-family: 'VAGRoundedStd-Light';" dir="ltr">English</a> </li>
+        </ul>
+        <div class="search_wrap">
+          <input name="" type="text" placeholder="البحث">
+          <input name="" type="submit">
+        </div>
+      </div>
+      <div class="nav">
+        <ul>
+          <li id="preg"> <a href="pregnancy.html">الحمل</a> </li>
+          <li id="inf_0_6"> <a href="infant_0-6.html">الأشهر الأولى</a> </li>
+          <li id="inf_6_12"> <a href="infant_6-12.html">من ٦‎ إلى ١‎٢‎ شهر</a> </li>
+          <li id="inf_1_3"> <a href="toddler.html">الأطفال من ١‎ إلى ٣‎ سنوات</a> </li>
+          <li id="inf_3_5"> <a href="preschooler.html">مرحلة ما قبل المدرسة:٣‎ إلى ٥‎ سنوات</a> </li>
+          <li id="for_ur_baby"> <a href="for_your_baby.html">لأجل طفلك</a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Header Ends Here -->
+
+<div class="inner_content clear">
+
+<div class="toddler_1_3_feeding">
+<h4>Toddler 1-3 Years</h4>
+<div class="left_inner">
+  <ul class="header_ul">
+    <li>Baby Growth & Development</li>
+  </ul>
+  <ul class="accordion-2">
+ <li><a href="featured_products_toddler.html" style="background:none !important;" >
+Featured Products</a>
+ <!-- <ul>
+  <li>
+  
+  	<ol>
+    	<li style="border:none !important"><a href="featured_products_toddler.html#featured_products_toddler">Product1 </a></li>
+    
+    </ol>
+  
+  </li>
+  </ul>--></li> <li><a href="feeding_toddler.html" style="background:none !important;">Nutrition & Feeding</a>
+  <ul>
+  <li>
+  
+  	<ol>
+    	<li style="border:none !important"><a href="feeding_toddler.html#feeding_toddler">What can your toddler start to eat? </a></li>
+    
+    </ol>
+  
+  </li>
+  </ul>
+  </li>
+ 
+  <li><a href="products_toddler.html" style="background:none !important;">
+Products for 1-3yrs</a>
+  <ul>
+  <li>
+  
+  	<ol>
+    <li style="border:none !important"><a href="products_toddler.html#products_toddler">NAN 3 </a></li>
+    <li style="border:none !important"><a href="products_toddler.html#products_toddler">NAN HA 3 </a></li>
+    <li style="border:none !important"><a href="products_toddler.html#products_toddler">NAN One plus </a></li>
+    
+    </ol>
+  
+  </li>
+  </ul></li><li><a href="faq_toddler.html" style="background:none !important;">Faq’s</a>
+  <ul>
+  <li>
+  
+  	<ol>
+    		<li style="border:none !important"><a href="faq_toddler.html#faq_toddler">My child doesn’t eat much, what should I do?
+
+</a></li>
+ <li style="border:none !important"><a href="faq_toddler.html#faq_toddler">How can I get my picky eater to enjoy food more?
+
+
+</a></li>
+<li style="border:none !important"><a href="faq_toddler.html#faq_toddler">My toddler doesn’t like to drink milk, what should I do?
+
+
+</a></li>
+ 
+
+
+    </ol>
+  
+  </li>
+  </ul>
+  </li>
+  </ul>
+</div>
+</div>
+<style>
+.anythingSlider-default.activeSlider .anythingControls a {
+	/* background image = top shadow */
+	background-color: #d2888e;
+}
+.anythingSlider-default .anythingControls a.start-stop:hover,
+.anythingSlider-default .anythingControls a.start-stop.hover,
+.anythingSlider-default .anythingControls a.start-stop .anythingControls ul a:hover {
+	background-image: none;
+	color: #ffc832;
+}
+
+</style>
+
+<div class="feeding_right">
+<h2 style="color:#d4797d">Baby Growth & Development</h2>
+<br />
+<div class="toddler_feeding_banner" style=" width:622px; margin:0 auto;">
+  <ul id="slider2">
+    <li>
+    	<div class="infant_banner clear">
+        	<div class="inf_left">
+            	<div style="float:left">      
+      				<h4>Your</h4>
+      				<h1>1 year old</h1>
+      				<h6>Ready to explore!
+</h6>
+              	</div>
+              	<div style="float:left">
+       				<img src="images/drum_01.png" style="padding-top:20px;" align="left"/>
+<p>Your toddler’s now ready for walking, talking and all the other adventures that are just around the corner. During the toddler years, your child will make huge strides physically, intellectually, and emotionally. At this stage, your baby has sufficient reflexes to be able to hold small pieces of food or small objects without dropping them and will eat independently much more, holding a small mug, bowl or spoon. Chewing is now possible thanks to those new teeth pushing through - provided the pieces of food are sufficiently small and soft.</p>
+              	</div>
+			</div>
+            <div class="inf_right"><img src="images/palace.png" width="252"/></div>
+        </div>
+    </li>
+  </ul>
+</div>
+<div class="infantquest toddlerquest" style="background-color:#f6f9ff" id="feeding_infant_6-12">
+	<img src="images/abu.png" alt="nestle" />
+    <p style="color:#c76239;padding-left:10px">How is your</p><br />
+    <p class="sec_title" style="color:#ce3234; padding-left:100px">toddler<br /><br /></p>
+    <p class="sec_title" style="color:#ce3234; padding-top:40px; padding-left:70px">progressing<br /></p>
+    <div class="spacer"></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont acc_cont_margin">
+    <ul class="accordion">
+    
+    
+    
+    <li>
+		<a href="#" class="item popular" rel="popular">How is your toddler progressing?
+</a>
+		<ul>
+			<li >
+  <style>
+tr.border_bottom td {
+  border-bottom:1pt solid #CCC;
+}
+td, th {
+  border-left: solid 1px #CCC;
+} 
+.lightgrey_color{
+	
+	background-color:#E5ECF6;
+}
+.darkgrey_color{
+	background-color:#AEB8C1;
+}
+.darkblue_color{
+	background-color:#3E72A9;
+}
+.lightblue_color{
+	background-color:#65CDFF;
+}
+.orange_color{
+	background-color:#F57A1F;
+}
+.yellow_color{
+	background-color:#EFBB3B;
+}
+.darkgreen_color{
+	background-color:#88B45C;
+}
+.lightgreen_color{
+	background-color:#A0CC76;
+}
+.rose_color{
+	background-color:#ED709E;
+}
+.middle_yellow{
+	background-color:#DAAB42;
+}
+.middle_rose{
+	background-image:url(images/pink.png);
+	background-repeat:repeat-x;
+	
+	
+}
+.light_yellow{
+	background-image:url(images/yellow.png);
+	background-repeat:repeat-x;
+}
+.middle_green{
+	background-image:url(images/green.png);
+	background-repeat:repeat-x;
+}
+.middle_blue{
+	background-image:url(images/blue.png);
+	background-repeat:repeat-x;
+}
+.middle_violet{
+	background-image:url(images/violet.png);
+	background-repeat:repeat-x;
+}
+.grey_color{
+	
+	background-color:#F8FAFF;
+}
+.white{
+	color:#FFF;
+	line-height:24px;
+}
+td{
+	text-align:center;
+}
+
+#rose_div1{
+	 width:280px; height:24px; position:absolute; z-index:1; margin-left:220px; margin-top:70px; border-radius:20px;
+}
+
+#yellow_div3{
+	 width:250px; height:24px; position:absolute; z-index:1; margin-left:270px; margin-top:100px;border-radius:20px;
+}
+#green_div4{
+	 width:415px; height:24px; position:absolute; z-index:1; margin-left:270px; margin-top:130px;border-radius:20px;
+}
+#blue_div5{
+ width:380px; height:24px; position:absolute; z-index:1; margin-left:305px; margin-top:160px;border-radius:20px;
+}
+#violet_div6{
+	 width:230px; height:24px; position:absolute; z-index:1; margin-left:145px; margin-top:200px;border-radius:20px;
+}
+#rose_div7{
+ width:330px; height:24px; position:absolute; z-index:1; margin-left:145px; margin-top:230px;border-radius:20px;
+}
+#yellow_div8{
+	 width:460px; height:24px; position:absolute; z-index:1; margin-left:225px; margin-top:260px;border-radius:20px;
+}
+
+
+</style>
+
+<div style=" margin:0 auto">
+<table width="100%" bgcolor="#FFFFFF" cellpadding="0" align="center" cellspacing="0"  border="0" style=" border:1px solid #CCC">
+
+<div class="middle_rose" id="rose_div1"><span class="white"><center>Starts to walk
+</center></span></div>
+<div class="light_yellow" id="yellow_div3"><span class="white"><center>Expresses rejection
+</center></span></div>
+<div class="middle_green" id="green_div4"><span class="white"><center>Toilet trained
+</center></span></div>
+<div class="middle_blue" id="blue_div5"><span class="white"><center>Learns to talk
+</center></span></div>
+<div class="middle_rose" id="violet_div6"><span class="white"><center>Drinks from a cup
+</center></span></div>
+<div class="light_yellow" id="rose_div7"><span class="white"><center>Wants to eat alone(with fingers, spoons, etc.)
+</center></span></div>
+<div class="middle_green" id="yellow_div8"><span class="white"><center>Discover new tastes and can eat small peices of food
+</center></span></div>
+
+
+ <tr class="border_bottom" align="left" style="height:60px" >
+    <td width="16.7%" height="22" class="lightgrey_color" wid>&nbsp;</td>
+    <td width="16.7%" class="darkgrey_color"><span class="white">1  <br /> year </span></td>
+    <td width="16.7%" class="darkblue_color"><span class="white">2nd <br /> year</span></td>
+    <td width="16.7%" class="lightblue_color"><span class="white">2  <br />years</span></td>
+    <td width="16.7%" class="orange_color"><span class="white">3rd <br /> year</span></td>
+    <td width="16.7%" class="yellow_color"><span class="white">3  <br />years</span></td>
+     
+  </tr>
+  <tr class="border_bottom" style="height:130px">
+    <td class="grey_color">Psychomotor progress</td>
+    <td class="lightgrey_color">&nbsp;</td>
+    <td class="white_color">&nbsp;</td>
+    <td class="lightgrey_color">&nbsp;</td>
+    <td class="white_color">&nbsp;</td>
+    <td class="lightgrey_color">&nbsp;</td>
+   
+
+   
+   
+  </tr>
+  <tr class="border_bottom" style="height:100px">
+    <td class="white_color">Food-related ability</td>
+    <td class="lightgrey_color">&nbsp;</td>
+    <td class="white_color">&nbsp;</td>
+    <td class="lightgrey_color">&nbsp;</td>
+    <td class="white_color">&nbsp;</td>
+    <td class="lightgrey_color">&nbsp;</td>
+   
+   
+  </tr>
+</table>
+</div>	</li>
+		</ul>
+	</li>
+    
+    
+	<li>
+		<a href="#" class="item popular" rel="popular">Psychomotor Milestones </a>
+		<ul>
+			<li >
+            What a journey the last 12 months have been. The first smiles, the first words, the first teeth. Your baby’s done and learned so much. Now it must all be practised and perfected.
+<h5>The age of great changes </h5><span>Although he probably still does not walk very well, and needs to be held, Baby is getting around more and more easily. He has become an expert in crawling and in changing position. 
+His arms and legs are growing longer. 
+He is becoming more dextrous, and examines his toys with great care. He loves things that pile up on top of one another, that slot into one another, that can be built and then taken back down, and he will spend a long time playing by himself. 
+He points at the thing he wants or at pictures in a book.
+</span>
+          <h5>A clearer relationship with the world around </h5><span>"The more aware he becomes of the environment, the more he wants to interact with it to find his own place. 
+He loves watching you closely to imitate your movements, your facial expressions. 
+In his own way, he plays an active role in family life. Don't hesitate to involve him, as much as he is able. He'll be proud to show you that he can manage all by himself
+</span>
+
+            <h5>Throwing and kicking a ball (from 12 months)</h5><span>Soon after your the first birthday, your child will show interest in ball play -- first by throwing, then by kicking at age 2 (catching comes around age 3 to 4).</span>
+            <h5>Pushing and pulling (12 to 18 months)</h5>
+            <span>Once your child's a confident walker, he'll discover the joy of dragging or pushing toys along. So offer him some pull or push toys to play with, or make your own by attaching a string to a toy car (make sure to supervise or limit the length of the cord to 12 inches to avoid a strangulation hazard).
+</span>
+<h5>
+Squatting (12 to 18 months)</h5> 
+<span>Up to now, your baby has had to bend down to pick things up off the ground. But soon, he’ll attempt to squat instead.
+</span>   	
+<h5>
+Climbing (12 to 24 months)
+
+</h5><span>Toddlers climb up on the kitchen table (or your desk or the bed) for the obvious reason: Because it's there. Kids this age are trying to find a balance between risk and challenge. Climbing is an important physical milestone, though. It'll help your child develop the coordination he needs to master skills like walking up steps.
+</span><h5>Running (18 to 24 months)</h5><span>Some kids seems to go from crawling to sprinting in two seconds flat. Others take more time. How come? Because kids fall a lot when learning to run, and some are just more willing to risk it.
+</span><h5>Gaining independence (18 to 36 months) </h5><span>Most babies don't see themselves as entities separate from their parents, especially their mothers. This changes quickly sometime in the second year, when they become aware that they're individuals, and are more insistent on doing things on their own. Here's how to give your child room to grow: 
+Allow more time in your schedule for him to do things himself. If he wants to put on his own shirt, shoes, etc., getting out of the house will take that much longer. 
+Include him in your chores. Let him hold the dustpan, or send him around with a rag to dust furniture legs. 
+Be patient. At first, letting your child use a fork or pull on his pants will drive you crazy. But let him try and don't step in. 
+Your toddler's growing independence comes with a stage that can, at times, be exasperating: He'll assert his independence by saying ""no"" all the time. Your impulse may be to show your child who's boss, but you'll have better luck if you: 
+Say yes to your little naysayer whenever you can - in other words, when it isn't unsafe, inconvenient, or unreasonable. 
+Be firm when necessary. When you have to get your way, do it as quickly, deliberately, and calmly as you can. Once you've physically put your toddler in his car seat, you can explain your reasoning in simple terms - you can tell him that it's dangerous to ride in a car without one. 
+
+</span><h5>Using simple sentences (18 to 24 months)
+</h5>
+<span>Don't finish your toddler's sentences for him; doing so will only add to his frustration.<blockquote>
+<ul style="list-style-type:disc;display:list-item;">
+Remember that he'll still resort to crying when he's too tired, hungry, cranky, or overwhelmed to use words. </ul>
+<ul style="list-style-type:disc;display:list-item;">
+ Give your child lots of opportunities to speak, especially if there are older kids in the house, too. </ul>
+<ul style="list-style-type:disc;display:list-item;">
+ As your toddler becomes more verbal, make sure you model good speech rather than correct his pronunciation or his grammar. Children who are interrupted and corrected can feel like giving up. </ul></blockquote>
+</span>
+<h5>Potty training (24 to 36 months)</h5>
+<span>Potty training is one of the milestones parents look forward to the most - no more diapers! But keep in mind that the age when kids are ready for it varies widely. Signs that it may be time: <blockquote><ul style="list-style-type:disc;display:list-item;">
+
+ Your child peers down at her diapers, grabs them, or tries to pull them off when they're soiled; or he squats or crosses his legs when he needs to go. These actions show that he’s mature enough to understand how his body works. </ul>
+<ul style="list-style-type:disc;display:list-item;">
+he shows an interest in things that are potty-related - wanting to watch you go to the bathroom or talking about pee-pee or poo-poo. </ul></blockquote>
+</span>
+<h5>Jumping (24 to 36 months) </h5>
+<span>Between the ages of 2 and 3, toddlers learn how to jump off low structures, and eventually learn to jump from a standing position.
+</span></li>
+		</ul>
+	</li>
+    
+    
+     <li>
+		<a href="#" class="item popular" rel="popular">Feeding Milestones  </a>
+		<ul>
+			<li>
+            <h5>Wants to eat alone (from 12 months)  </h5>
+<span>Baby is now sufficiently sensitive and dextrous to: 
+pick up small pieces of food without squashing them, 
+use a plastic cup and cutlery, designed especially for babies. He has new teeth. He can chew real pieces, if they are soft enough. 
+He wants to eat all by himself, using his fingers or a spoon. 
+Because he is now capable of chewing real pieces of food, and can do a lot of things all by himself at the table, your baby has made astounding progress. But although he would like nothing better than to eat what you have in your plate, he still has specific needs, and his diet cannot be the same as yours
+</span><h5>Eating food that is more firm (from 15 months) </h5><span>Baby has taken his first steps, is trying out his first words. These major developments are accompanied by two new phenomena which affect his diet. 
+His teeth (he now has eight incisors and four molars) enable him to chew food now that is firm, without yet being hard. 
+His intestines are now mature enough for him to be able to eat practically the same food as adults (with the exception of certain fibres). Nevertheless, babies still have specific needs. The nutritional quality of his diet depends on using products that are specifically suited to his age group, and this is essential. 
+In short, Baby can eat almost anything now, but the texture needs to be suitable, and the right quantities from the different nutrients need to be respected.
+</span>
+
+            </li>
+		</ul>
+	</li>
+    
+    
+</ul>
+    </div>
+</div>
+    
+    
+</div>
+</div>
+
+
+
+
+<div class="products_gal">
+<h3 style="color:#da858a">Products for 1-3 years</h3>
+<div class="spacer"></div>
+<div class="list_carousel">
+				<ul id="foo2" style="margin-left:250px;">
+					<li><a href="products_toddler.html"><img src="images/nido1.png" height="100" alt="pro" /></a></li>
+					<li><a href="products_toddler.html"><img src="images/nan3.png" height="100" alt="pro" /></a></li>
+					<li><a href="products_toddler.html"><img src="images/nanha3.png" height="100" alt="pro" /></a></li>
+	</ul>
+				<div class="clearfix"></div>
+				<a id="prev2" class="prev" href="#"><img src="images/arrow_left.png" width="43" height="33" /></a>
+				<a id="next2" class="next" href="#"><img src="images/arrow_right.png" width="43" height="33" /></a>
+	<div id="pager2" class="pager"></div>
+			</div>
+</div>
+<!-- Footer Starts Here -->
+<div class="footer clear">
+  <div class="wrapper clear">
+    <div class="footer_boxes clear">
+      <div class="footboxes footbox_01">
+        <h3>الحمل</h3>
+        <ul>
+        <li><a href="featured.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding.html">التغذية</a></li>
+          <li><a href="growing.html">النمو و التطور</a></li>
+                    <li><a href="products.html">المنتجات الخاصة للحامل</a></li>
+          <li><a href="faq.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_02">
+        <h3>الأشهر الأولى</h3>
+        <ul>
+          <li><a href="feeding_infant_0-6.html">التغذية</a></li>
+          <li><a href="growing_infant_0-6.html">النمو و التطور</a></li>
+          <li><a href="faq_infant_0-6.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_03">
+        <h3>من ٦‎ إلى ١‎٢‎ شهر</h3>
+        <ul>
+          <li><a href="featured_products_infant_6-12.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding_infant_6-12.html">التغذية</a></li>
+          <li><a href="growing_infant_6-12.html">النمو و التطور</a></li>
+          <li><a href="products_infant_6-12.html">المنتجات الخاصة لعمر ٦-١٢ شهراً</a></li>
+          <li><a href="faq_infant_6-12.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_04">
+        <h3>الأطفال من ١‎ إلى ٣‎ سنوات</h3>
+        <ul>
+          <li><a href="featured_products_toddler.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding_toddler.html">التغذية</a></li>
+          <li><a href="growing_toddler.html">النمو و التطور</a></li>
+          <li><a href="products_toddler.html">المنتجات الخاصة لعمر ١ إلى ٣ سنوات</a></li>
+          <li><a href="faq_toddler.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_05">
+        <h3>مرحلة ما قبل المدرسة:٣‎ إلى ٥‎ سنوات</h3>
+        <ul>
+          <li><a href="featured_products_preschooler.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding_preschooler.html">التغذية</a></li>
+          <li><a href="growing_preschooler.html">النمو و التطور</a></li>
+          <li><a href="products_preschooler.html">المنتجات الخاصة لعمر٣ إلى ٥ سنوات</a></li>
+          <li><a href="faq_preschooler.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer_menu">
+      <ul>
+        <li><a href="index.html">الصفحة الرئيسية</a></li>
+        <li><a href="parenting.html">الأمومة</a></li>
+        <li><a href="#">الوصفات</a></li>
+        <li><a href="our_commitment.html">التزاماتنا</a></li>
+        <li><a href="#">نادي طفل نستله</a></li>
+        <li><a href="#">اتصل بنا</a></li>
+        <li><a href="faq.html">الأسئلة و الأجوبة</a></li>
+        <li><a href="#">خريطة الموقع</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer_rule">
+    <div class="wrapper">
+      <div class="copy_right_right">علامات "بداية صحية لحياة صحية" هي علامات تجارية لشركة سوسيتيه دي برودوي نستله إس. إيه. فيفي – سويسرا<br />كل العلامات التجارية هي من ملك لشركة سوسيتيه دي برودوي نستله إس. إيه. فيفي – سويسرا</div>
+      <div class="copy_right_left">نستله نيوترشن<span dir="ltr">&nbsp;2013&nbsp;</span>جميع الحقوق محفوظة<br />
+        <a href="privacy_policy.html" class="active">الشروط و الأحكام  .  سياسة الخصوصية</a> </div>
+    </div>
+  </div>
+</div>
+<!-- Footer Ends Here -->
+
+</body>
+</html>

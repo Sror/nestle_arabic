@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>التغذية نستله</title>
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" language="javascript" src="js/jquery-1.8.2.min.js"></script>
+
+<script src="js/jquery.anythingslider.js"></script>
+	<script>
+	$(document).ready(function(){
+		$(".more_btn").toggle(function(){
+		$(this).text("Less");
+		$(this).next(".acc_cont").slideDown(300);
+		$(this).toggleClass("less");
+		},
+		function(){
+		$(this).text("More");
+		$(this).next(".acc_cont").slideUp(300);	
+		$(this).toggleClass("less")
+		});
+	});
+	$(document).ready(function () {
+		$('.accordion a.item').click(function () {
+			//slideup or hide all the Submenu
+			if($($(this)).hasClass($(this).attr('rel') + 'Over')){
+				$(this).siblings('ul').slideUp('fast');	
+				$(this).removeClass($(this).attr('rel') + 'Over');
+			}else{
+				$('html,body').animate({scrollTop: $(this).offset().top}, 1000);
+				$(this).siblings('ul').slideDown('fast');
+				$(this).addClass($(this).attr('rel') + 'Over');   
+			}
+			return false;
+		});
+	});
+	$(document).ready(function () {
+		$('.accordion-2 a.item').click(function () {
+			//slideup or hide all the Submenu
+			$('.accordion-2 li').children('ul').slideUp('fast');	
+			if($($(this)).hasClass($(this).attr('rel') + 'Over')){
+            $(this).removeClass($(this).attr('rel') + 'Over');
+            }else{
+            $(this).siblings('ul').slideDown('fast');
+            $(this).addClass($(this).attr('rel') + 'Over');       
+            }
+			return false;
+		});
+	});	</script>
+
+</head>
+<body>
+
+<!-- Header Starts Here -->
+<div class="header">
+  <div class="wrapper">
+    <div class="logo"> <img src="images/nestle_logo.png" width="147" height="99" alt="نستله"> </div>
+    <div class="header_left">
+      <div class="header_left_top">
+        <ul>
+          <li> <a href="/"  class="active">الصفحة الرئيسية</a> </li>
+          <li> <a href="our_commitment.html">التزاماتنا</a> </li>
+          <li> <a href="#">نادي طفل نستله</a> </li>
+          <li> <a href="parenting.html">الأمومة</a> </li>
+          <li> <a href="">اتصل بنا</a> </li>
+          <li> <a href="#">خريطة الموقع</a> </li>
+          <li> <a href="#">الحمل</a> </li>
+          <li> <a href="/eng" style="font-family: 'VAGRoundedStd-Light';" dir="ltr">English</a> </li>
+        </ul>
+        <div class="search_wrap">
+          <input name="" type="text" placeholder="البحث">
+          <input name="" type="submit">
+        </div>
+      </div>
+      <div class="nav">
+        <ul>
+          <li id="preg"> <a href="pregnancy.html">الحمل</a> </li>
+          <li id="inf_0_6"> <a href="infant_0-6.html">الأشهر الأولى</a> </li>
+          <li id="inf_6_12"> <a href="infant_6-12.html">من ٦‎ إلى ١‎٢‎ شهر</a> </li>
+          <li id="inf_1_3"> <a href="toddler.html">الأطفال من ١‎ إلى ٣‎ سنوات</a> </li>
+          <li id="inf_3_5"> <a href="preschooler.html">مرحلة ما قبل المدرسة:٣‎ إلى ٥‎ سنوات</a> </li>
+          <li id="for_ur_baby"> <a href="for_your_baby.html">لأجل طفلك</a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Header Ends Here -->
+<div class="inner_content clear">
+
+<div class="feeding_left">
+<h4>Pregnancy</h4>
+<div class="left_inner">
+  <ul class="header_ul">
+    <li>Nutrition & Feeding</li>
+  </ul>
+  <ul class="accordion-2">
+  <li><a href="growing.html" style="background:none !important;">
+Your Growing & Changing Body</a>
+  <!--<ul>
+  <li>
+    	<ol>
+    	<li><a href="growing.html#growing">My Changing Body</a></li>
+    	<li><a href="growing.html#growing">My Growing Body</a></li>
+    	<li style="border:none !important"><a href="growing.html#growing">Taking Care of your body</a></li>
+    
+    </ol>
+
+  </li>
+  </ul>--></li>
+  <li><a href="faq.html" style="background:none !important;">Faq’s</a>
+  <!--<ul>
+  <li>  	<ol>
+    	<li><a href="faq.html#faq"> Am I ready?</a></li>
+    	<li><a href="faq.html#faq">Will my child be normal?</a></li>
+    	<li><a href="faq.html#faq">Does parenting come naturally?</a></li>
+    	<li><a href="faq.html#faq">Why am I anxious about giving birth?</a></li>
+    	<li style="border:none !important"><a href="faq.html#faq">Will I love my baby? </a></li>
+    
+    </ol>
+</li>
+  </ul>-->
+  </li>
+  </ul>
+</div>
+</div>
+
+
+<div class="feeding_right">
+<h2>Nutrition & Feeding</h2>
+<br />
+<div class="inner_banner" style="width:622px; margin:0 auto;">
+  <ul id="slider2">
+    <li>
+    	<div class="infant_banner clear">
+        
+        	<div class="growing_left">
+            	<div style="float:left">      
+      				<h4>Watching</h4>
+      				<h1>what you </h1>
+      				<h6>eat</h6> 
+              	</div>
+              	<div style="float:left">
+       				<img src="images/balloon.png" align="left"/>
+              		<p>Now that you are pregnant, maintaining a balanced diet will become a major preoccupation. But this isn’t a reason to worry. To eat healthily, all you have to do is to remember these few tips.</p>
+              	</div>
+			</div>
+
+            <div class="growing_right">            
+<img src="images/flower_img.png" height="183"/></div>
+        </div>
+    </li>
+  </ul>
+</div>
+
+   
+<div class="quest">
+	<img src="images/quest_img_01.png" width="225" height="115" alt="Nestle" />
+    <p>&nbsp;&nbsp;&nbsp;What <br />can you eat?</p>
+    
+    <div class="spacer"></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont acc_cont_margin">
+    <ul class="accordion">
+	<li>
+		<a href="#" class="item popular" rel="popular">Which foods should you choose</a>
+		<ul>
+			<li >
+           Eat your meals at regular intervals. If you feel peckish, include a snack in the morning and mid-afternoon.<br />
+Adopt a varied, balanced diet, including:
+milk and dairy products, for their high calcium content, 
+meat, eggs and fish (red meat in particular is the best source of iron),
+large amounts of bread, rice, pasta, grains and potatoes, along with cereal or bread for breakfast,
+fruit and vegetables, particularly green leafy vegetables that will provide you with the folic acid that you need,
+fat, such as oil and butter, for both you and baby,
+not forgetting liquids: at least 1.5 l of water per day.<br />
+A daily 0.4 mg folic acid supplement (vitamin B9) is often strongly recommended up to the 12th week of pregnancy and longer in the event of a particular previous history known to your doctor.
+            
+    		</li>
+		</ul>
+	</li>
+	<li>    	
+		<a href="#" class="item popular" rel="popular">How should you cook your food?</a>
+		<ul>
+			<li >
+         You are even more vulnerable to bacterial attacks when you are pregnant. To prevent any risk of contamination, always remember to wash:
+raw vegetables and herbs,
+all food covered in soil, under running water,
+your hands, before touching any foodstuffs and before meals.<br />
+Be especially sure to:
+cook your meat and fish well, which is all the more important if you are not vaccinated against toxoplasmosis: consult your doctor,
+remove the rind from cheese (to prevent any risk of contamination with listeria),
+follow the best-before dates,
+regularly clean your utensils and your refrigerator with dilute bleach.<br />
+Finally, you should also remember to:
+store raw food separately from cooked or ready-made food so as to prevent contamination from one foodstuff to another,
+monitor the temperature of your refrigerator: it should not exceed 4°C.
+            
+    		</li>
+		</ul>
+	</li>
+	<li>    	
+		<a href="#" class="item popular" rel="popular">Which foods should you avoid?</a>
+		<ul>
+			<li >
+           Certain foods are strongly advised against.
+This is the case for foods that may be contaminated with listeria, which may trigger listeriosis. Listeriosis is an infection caused by a bacterium present in plants and animals. It is responsible for serious disorders, particularly in pregnant women. As a precaution, you are recommended to avoid:
+unpasteurised or grated cheese,
+cooked meats such as potted meats, pâtés, and jellied products,
+smoked fish, surimi, taramasalata and raw shellfish.
+It is also recommended to carefully wash fruit and vegetables to be eaten raw and herbs, and to cook meat, fish and raw meat well. These last two measures should be scrupulously applied if you are not vaccinated against toxoplasmosis, a disease caused by a parasite present in meat and the soil.
+            
+    		</li>
+		</ul>
+	</li>
+    <li>    	
+		<a href="#" class="item popular" rel="popular">If you are a vegetarian</a>
+		<ul>
+			<li >
+           It is perfectly possible to follow a vegetarian diet during your pregnancy if it is done properly, and to satisfy your nutritional needs and those of your child.<br />
+A balanced and varied vegetarian diet allows you to cover all of your needs, except for your iron needs.<br />
+Your vegetarian diet is low in iron. Heme iron, which is better absorbed by the body, is only found in red meat. Your iron needs increase during pregnancy. The foetus requires 30 mg per day of iron, in other words practically double that of a menstruating woman. You may need to take supplements.<br />
+A poorly diversified vegetarian diet may be lacking in protein. Talk to your doctor about it. He will offer to check your iron count and, if necessary, prescribe you suitable menus.<br />
+To cover your increased needs during pregnancy, choose fish, eggs, dairy products and whole grain cereals.
+            
+    		</li>
+		</ul>
+	</li>
+	<li>    	
+		<a href="#" class="item popular" rel="popular">If you are a vegan</a>
+		<ul>
+			<li >
+           A vegan diet is one that does not include any foods of animal origin. However, animal proteins are essential building blocks: certain essential amino acids are only provided by animal proteins found in meat, fish, eggs and dairy products.<br />
+This dietary regime runs the risk of being deficient in many areas. Women who are vegans should benefit from specific nutritional supervision (consult your doctor).
+            
+    		</li>
+		</ul>
+	</li>
+	
+	
+	
+	
+	
+</ul>
+    </div>
+</div><div class="quest">
+	<img src="images/quest_img_01.png" width="225" height="115" style="float:right" alt="Nestle" />
+    <p>&nbsp;&nbsp;&nbsp;What <br />should you eat?</p>
+    <div class="spacer"></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont acc_cont_margin">
+    <ul class="accordion">
+	<li>
+		<a href="#" class="item popular" rel="popular">Introduction</a>
+		<ul>
+			<li >
+           Whether for the first time or to expand your family, you want to launch into the adventure of motherhood. An adventure in which your plate plays an active role so that everything goes even more smoothly.
+            
+    		</li>
+		</ul>
+	</li>
+    <li>
+		<a href="#" class="item popular" rel="popular">Why the need for a Balance diet?</a>
+		<ul>
+			<li >
+           A balanced diet prepares your body for the exceptional experience of pregnancy. What you eat while you are pregnant is important both for your health and for your baby to develop properly.
+            
+    		</li>
+		</ul>
+	</li>
+	<li>    	
+		<a href="#" class="item popular" rel="popular">What does it provide?</a>
+		<ul>
+			<li >
+        Eating well on a daily basis provides your body with all of the nutrients and micro-nutrients that your baby needs to grow, without any deficiencies or excess! The nine months to come will thus be an experience filled with pleasure for you.
+            
+    		</li>
+		</ul>
+	</li>
+	<li>    	
+		<a href="#" class="item popular" rel="popular">What are the benefits?</a>
+		<ul>
+			<li >
+           Adopting good eating habits even before you become pregnant offers numerous advantages and will be of value to you during and after your pregnancy.
+            
+    		</li>
+		</ul>
+	</li>
+	<li>    	
+		<a href="#" class="item popular" rel="popular">Will eating well as of now help me feel better during my pregnancy?</a>
+		<ul>
+			<li >
+           Yes. Quite simply, because by providing your body with what it needs as of now, you allow it to build up reserves of essential elements, such as iron and folic acid. In addition, a balanced diet gives your body renewed energy, enabling you to avoid the fatigue that is sometimes associated with pregnancy.
+            
+    		</li>
+		</ul>
+	</li>
+	<li>    	
+		<a href="#" class="item popular" rel="popular">Can nutrition help me combat the risks of anemia?</a>
+		<ul>
+			<li >
+           Yes, by increasing your iron intake. If you are lacking in iron, you run the risk of being more tired. You can limit the effects of an iron deficiency by giving preference to certain foods, notably red meat (2.9 to 5.6 mg per 100 g). If your diet does not provide you with enough iron, your doctor will be able to prescribe a supplement.
+            
+    		</li>
+		</ul>
+	</li>
+	<li>    	
+		<a href="#" class="item popular" rel="popular">Can it help me recover more quickly after giving birth?</a>
+		<ul>
+			<li >
+           Yes. Your body needs a maximum of energy and nutritional resources to recover after your baby’s birth. Good nutrition is essential in this recuperation process.
+            
+    		</li>
+		</ul>
+	</li>
+	<li>    	
+		<a href="#" class="item popular" rel="popular">Does it play a role in preventing problems linked to pregnancy?</a>
+		<ul>
+			<li >
+           Yes. Fortunately, few women will experience serious complications during their pregnancy. The majority of them will only have to face minor problems, such as constipation, tiredness and mood swings. You can easily minimise these problems by maintaining a balanced diet. It is thus preferable to discuss nutrition with your doctor
+            
+    		</li>
+		</ul>
+	</li>
+	<li>    	
+		<a href="#" class="item popular" rel="popular">Why is it important to eat well beforehand?</a>
+		<ul>
+			<li >
+           During the first weeks following conception, baby is developing rapidly and its vital organs are forming at full speed.<br />
+Before you realise that you are pregnant, several important steps in its development have already been crossed: it is therefore better to be prepared nutritionally, so as to give it all the elements that it needs.<br />
+Eating well before you become pregnant prepares you for making sure that baby develops satisfactorily over the following nine months.<br />
+When you are trying for a baby, it is without a doubt an ideal time to review your dietary balance.<br />
+            
+    		</li>
+		</ul>
+	</li>
+	<li>    	
+		<a href="#" class="item popular" rel="popular">The Importance of Iron </a>
+		<ul>
+			<li >
+          The iron needs of pregnant women are higher than at any other time of life.<br />
+A pregnant woman’s iron needs increase during pregnancy to reach up to 30 mg per day during the third trimester. Baby creates its own iron reserves by drawing on yours. Therefore, build up good reserves before becoming pregnant.<br />
+
+
+            <h5>What does Iron do?</h5>
+            <span>Iron plays an essential role in the body: it forms part of the red blood cells and facilitates the transport of oxygen by haemoglobin in the blood.
+You will need large amounts of iron to make up your baby’s blood volume.</span>
+            <h5>Where is it found?</h5>
+            <span>Two forms of iron exist:<br />
+*&nbsp;&nbsp;&nbsp;&nbsp;heme iron: red meat is its main source. In this form, heme iron is well absorbed by the body.<br />
+*&nbsp;&nbsp;&nbsp;&nbsp;non-heme iron: it is found in numerous foods, mainly pulses, dried fruit and, in smaller quantities, in whole grain cereals and &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;green vegetables. In this form, it is much less well absorbed by the body. This absorption can, however, be stimulated by the &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;consumption of food rich in vitamin C (for example: an orange for dessert) during the same meal.</span>
+            
+    		</li>
+		</ul>
+	</li>
+	<li>    	
+		<a href="#" class="item popular" rel="popular">The Importance of Calcium </a>
+		<ul>
+			<li >
+          An essential component of the skeleton, calcium, plays a key role all life long. Bone is a living organ that is constantly being renewed: a regular intake of calcium guarantees that you remain in good health.
+
+
+            <h5>What does calcium do?</h5>
+            <span>Calcium encourages the renewal of bone cells along with solid bones and teeth. Later, when you are pregnant, it is involved in the process of forming your child’s bones.
+Calcium also takes part in blood coagulation, helps to control cardiac rhythm and plays a fundamental role in muscle contraction and relaxation. Last but not least, it enables certain enzymes to function and certain hormones to be secreted.</span>
+            <h5>Where is it found?</h5>
+            <span>The main source of calcium is obviously milk and dairy produce. By way of example, a litre of milk contains approximately 1200 mg of calcium.<br />
+It is also contained in fruit and vegetables but, to obtain as much calcium as with milk, they must be eaten in large quantities.<br />
+Finally, certain mineral waters Nestlé Pure Life are very useful sources of calcium.<br />
+To prepare for your pregnancy, eat at least 3 dairy products per day.</span>
+            
+    		</li>
+		</ul>
+	</li>
+    <li>    	
+		<a href="#" class="item popular" rel="popular">The importance of folic acid (Vitamin B9)</a>
+		<ul>
+			<li >
+          Folic acid plays a key role in intense metabolic activities: an adequate intake is therefore very important both for the mother and the child’s development, especially in its initial phases.<br />
+It is therefore necessary to increase folic acid intake right from baby’s conception:
+one trimester before pregnancy for mothers-to-be: in order to prevent the risk of malformation of the neural tube (anencephaly, spina bifida),
+on stopping oral contraception: with a view to pregnancy,
+during pregnancy: to keep in step with the growth of the uterus and the formation of the placenta.<br />
+A folic acid deficiency induces the risk of premature birth and slow foetal growth, and may – in extreme cases of a diet greatly lacking in vitamin B9 – lead to anomalies of the “neural tube” or spinal cord.
+
+            <h5>Where is it found?</h5>
+            <span>The recommended daily amounts are 400 micrograms; make your choice from among foodstuffs with the highest content:
+over 100 micrograms of folic acid per 100 grams: spinach, green salad, walnuts, almonds, peanuts, melon, parsley, asparagus.
+between 50 and 100 micrograms per 100 grams: cabbage, broccoli, sorrel, red kidney beans, beetroot, eggs, strawberries, avocado.
+Although they are rich in folic acid, pregnant women are advised not to eat poultry, lamb and calf’s liver because they are too rich in vitamin A.</span>
+            
+    		</li>
+		</ul>
+	</li>
+	
+	
+	
+	
+	
+</ul>
+    </div>
+</div>
+    <div class="quest drink">
+    <p>&nbsp;&nbsp;&nbsp;What<br /> should you drink?</p>
+	<img src="images/quest_img_02.png" width="113" height="182" alt="nestle" /> 
+    <div class="spacer"></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont acc_cont_margin">
+    <ul class="accordion">
+	<li><blockquote>Drinking 1.5 to 2 litres of liquids per day ensures that your kidneys are working properly and allows you to effectively combat constipation, which is a minor inconvenience common to most mums-to-be.</blockquote>
+		<a href="#" class="item popular" rel="popular">What should you drink as a priority</a>
+		<ul>
+			<li >
+           Water is the only indispensable drink. Drinking a litre or a litre and a half of water per day makes exchanges between the mother’s body and that of the foetus easier.<br />
+Milk is a drink that is particularly recommended for mums-to-be because of its high calcium and protein content. It is a foodstuff in its own right and should be added to your everyday food intake. Skimmed milk contains just as much calcium and protein but fewer fats and calories.
+Once that you have given birth and if you are breastfeeding your child, it is recommended to continue to drink approximately 500 ml of milk per day.
+            
+    		</li>
+		</ul>
+	</li>
+	<li>    	
+		<a href="#" class="item popular" rel="popular">Can you replace water with other liquids?</a>
+		<ul>
+			<li >
+         There are many perfectly acceptable ways to have a change from still water.
+Infusions. Drink in moderation. Some of them may make it easier to get to sleep. There is something to everyone’s taste: verbena, linden tree, camomile, orange blossom. A little precaution: mint is advised against if you are following a homeopathic treatment. Moreover, certain infusions of a medical nature are to be avoided.<br />
+Broths. Vegetable broths are low in calories and contain the minerals in vegetables, as long as they have not been cooked for too long in water. Lean meat broth has the advantage of stimulating secretions of the stomach.<br />
+Fresh fruit juice. It is rich in vitamins, but be careful not to confuse it with fruit-flavoured drinks, which often have a low vitamin and very high sugar content, just like lemonade and fizzy drinks. However, be careful not to go overboard: fruit is naturally rich in sugar.
+            
+    		</li>
+		</ul>
+	</li>
+	<li>    	
+		<a href="#" class="item popular" rel="popular">Can you drink everything?</a>
+		<ul>
+			<li >
+           It is preferable to limit your tea and coffee consumption during your pregnancy.
+It would be a good idea to reduce your daily coffee intake to one or two cups a day. Pregnancy increases your sensitivity to caffeine and its effects on sleep and cardiac rhythm. Above five cups a day, coffee can have the same consequences as smoking (risk of miscarriage or low birth weight).<br />
+Just like coffee, tea is a stimulant. What’s more, it limits the absorption of iron.
+Drink it extremely weak or drink infusions based on camomile, linden tree, verbena or orange blossom instead.
+Alcohol is strongly advised against during pregnancy, as is smoking.
+            
+    		</li>
+		</ul>
+	</li>
+	
+	
+	
+</ul>
+    </div>
+    </div>
+    <div class="quest drink fish">
+    <img src="images/quest_img_03.png" width="138" height="77" alt="nestle" />
+    <p>Very Specific<br />&nbsp;&nbsp; Requirements</p>
+    
+    <div class="spacer"></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont acc_cont_margin">
+    <ul class="accordion">
+	<li>    	
+		<a href="#" class="item popular" rel="popular">Nutritional Needs</a>
+		<ul>
+			<li >
+           When you eat, you are not only feeding yourself, but also the child that you are carrying. It is therefore normal to pay a bit more attention to your diet.  <br />
+What are your needs?<br />
+There’s nothing difficult about eating well for two, and even your cravings when pregnant are compatible with a balanced diet. To eat well, you need:
+            
+    		</li>
+		</ul>
+	</li>
+	<li>    	
+		<a href="#" class="item popular" rel="popular">What are your needs</a>
+		<ul>
+			<li >
+
+            <h5>Proteins</h5>
+            <span>These are essential for maintaining your body and the development of your baby. Your needs increase by 10 g per day from the 3rd trimester. Do not deprive yourself of meat, fish, eggs or dairy products, which are all sources of animal protein with high nutritional value. Cereal products and pulses provide you with vegetable proteins.</span>
+            <h5>Fats</h5>
+            <span>You can vary the sources of fat to avoid deficiencies in fat-soluble vitamins, but also in essential fatty acids, which are indispensable to the cerebral development of the foetus: vegetable oils of different kinds and fish oils should be given priority, but also include butter and margarine for variety and pleasure.</span>
+            <h5>Carbohydrates</h5>
+            <span>Carbohydrates are a source of energy for you and for baby. They should represent at least half of your Total Calorie Intake. To achieve this, it is a good idea to eat, at every meal, foods that are sources of complex carbohydrates (bread, cereals, pulses, potatoes, etc.), which are very effective at keeping hunger at bay, and simple carbohydrates in the form of fruit and vegetables. Sugar and sweet products are to be eaten on a more occasional basis for pleasure. </span>
+            <h5>Fibres</h5>
+            <span>They help to ensure good intestinal transit. If you suffer from bouts of constipation, you should eat lots of fibre-rich foods: fruit and vegetables for the most part, not forgetting bread, starchy food, pulses and dried fruit.</span>
+            <h5>Vitamins</h5>
+            <span>And especially vitamin B9, which you will need in much greater amounts during your pregnancy. Folates (or vitamin B9 or folic acid) play a role in creating your baby’s nervous system. Your needs double during your pregnancy. This is why you should give preference to foods rich in vitamin B9.
+If you cannot cover your needs through your diet: your doctor will be able to prescribe you a supplement in the form of medication.
+Your needs in terms of other vitamins will be covered if you eat a varied diet. You must be careful to eat enough foods rich in vitamin C, which encourages the absorption of iron, and in vitamin D for calcium fixation.</span>
+            <h5>Minerals and Trace Elements</h5>
+            <span>Calcium and iron, first and foremost. Your calcium needs increase considerably in the 3rd trimester and reach 1000 mg per day. Your iron needs rise from 18 to 30 mg per day during the 3rd trimester of your pregnancy. At this time, a supplement is most often recommended by your doctor (consult him), even if you are eating iron-rich foods, such as meat and pulses.</span>
+            <h5>Salt</h5>
+            <span>Contrary to what was commonly thought in the past, a pregnant woman needs salt in her diet to compensate for the expansion in her blood volume, which increases by almost 50%. Therefore, unless your doctor advises you to the contrary, you can continue to season your meals with salt according to taste (but not too much).</span>
+            <h5>Calories </h5>
+            <span>A balanced diet should help you to put on the extra kilos that you will need (often 10 to 15 kg, but this largely depends on each person). Pregnancy is not therefore an appropriate time to start following a diet.
+In fact, regular weight gain is one of the signs that a pregnancy is going well. If you cut out certain foods and do not compensate with foods from the same family, your baby will be deprived of important nutrients for its development.
+How many calories?
+Your daily energy needs during the 1st trimester remain more or less the same as before your pregnancy. However, these needs vary depending on your weight, height and how active you are.
+During the 2nd and 3rd trimesters you will need approximately 250 extra kilocalories daily to satisfy the needs of your baby, which is growing at a remarkable rate. This corresponds, for example, to a piece of fruit, a dairy product and a piece of bread extra!</span>
+            
+    		</li>
+		</ul>
+	</li>
+	<li>    	
+		<a href="#" class="item popular" rel="popular">Substances to avoid </a>
+       <ul>
+			<li >
+             <span>Certain substances, which are already harmful before you become pregnant, become really dangerous now that you are expecting a baby. Stop taking them or reduce your consumption to a minimum during your pregnancy and do not hesitate to consult your doctor if you have any questions or if you think that this is too difficult.</span>
+		
+            <h5>Caffeine</h5>
+            <span>There is no official proof that small quantities of caffeine are harmful. Several studies suggest that strong doses of caffeine may be linked to a low birth weight.
+If you choose to consume drinks or food containing caffeine, limit your consumption to small amounts, an espresso at the end of a meal for example.</span>
+            <h5>Smoking</h5>
+            <span>Smoking exposes your baby to dangerous chemical products that can affect it irreversibly. When you smoke, this may reduce the flow of oxygen that your baby receives and also reduce its nutrient intake.
+Studies have shown the link between a mother who smokes and an increase in the risks of miscarriage or low birth weight.
+Nicotine is also not without an effect on baby, and nicotine gum or patches should only be used with your doctor’s approval.</span>
+            
+    		</li>
+		</ul>
+	</li>
+	
+	
+</ul>
+    </div>
+    </div>
+</div>
+</div>
+<!-- Footer Starts Here -->
+<div class="footer clear">
+  <div class="wrapper clear">
+    <div class="footer_boxes clear">
+      <div class="footboxes footbox_01">
+        <h3>الحمل</h3>
+        <ul>
+        <li><a href="featured.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding.html">التغذية</a></li>
+          <li><a href="growing.html">النمو و التطور</a></li>
+                    <li><a href="products.html">المنتجات الخاصة للحامل</a></li>
+          <li><a href="faq.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_02">
+        <h3>الأشهر الأولى</h3>
+        <ul>
+          <li><a href="feeding_infant_0-6.html">التغذية</a></li>
+          <li><a href="growing_infant_0-6.html">النمو و التطور</a></li>
+          <li><a href="faq_infant_0-6.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_03">
+        <h3>من ٦‎ إلى ١‎٢‎ شهر</h3>
+        <ul>
+          <li><a href="featured_products_infant_6-12.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding_infant_6-12.html">التغذية</a></li>
+          <li><a href="growing_infant_6-12.html">النمو و التطور</a></li>
+          <li><a href="products_infant_6-12.html">المنتجات الخاصة لعمر ٦-١٢ شهراً</a></li>
+          <li><a href="faq_infant_6-12.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_04">
+        <h3>الأطفال من ١‎ إلى ٣‎ سنوات</h3>
+        <ul>
+          <li><a href="featured_products_toddler.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding_toddler.html">التغذية</a></li>
+          <li><a href="growing_toddler.html">النمو و التطور</a></li>
+          <li><a href="products_toddler.html">المنتجات الخاصة لعمر ١ إلى ٣ سنوات</a></li>
+          <li><a href="faq_toddler.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_05">
+        <h3>مرحلة ما قبل المدرسة:٣‎ إلى ٥‎ سنوات</h3>
+        <ul>
+          <li><a href="featured_products_preschooler.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding_preschooler.html">التغذية</a></li>
+          <li><a href="growing_preschooler.html">النمو و التطور</a></li>
+          <li><a href="products_preschooler.html">المنتجات الخاصة لعمر٣ إلى ٥ سنوات</a></li>
+          <li><a href="faq_preschooler.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer_menu">
+      <ul>
+        <li><a href="index.html">الصفحة الرئيسية</a></li>
+        <li><a href="parenting.html">الأمومة</a></li>
+        <li><a href="#">الوصفات</a></li>
+        <li><a href="our_commitment.html">التزاماتنا</a></li>
+        <li><a href="#">نادي طفل نستله</a></li>
+        <li><a href="#">اتصل بنا</a></li>
+        <li><a href="faq.html">الأسئلة و الأجوبة</a></li>
+        <li><a href="#">خريطة الموقع</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer_rule">
+    <div class="wrapper">
+      <div class="copy_right_right">علامات "بداية صحية لحياة صحية" هي علامات تجارية لشركة سوسيتيه دي برودوي نستله إس. إيه. فيفي – سويسرا<br />كل العلامات التجارية هي من ملك لشركة سوسيتيه دي برودوي نستله إس. إيه. فيفي – سويسرا</div>
+      <div class="copy_right_left">نستله نيوترشن<span dir="ltr">&nbsp;2013&nbsp;</span>جميع الحقوق محفوظة<br />
+        <a href="privacy_policy.html" class="active">الشروط و الأحكام  .  سياسة الخصوصية</a> </div>
+    </div>
+  </div>
+</div>
+<!-- Footer Ends Here -->
+
+</body>
+</html>

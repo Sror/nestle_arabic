@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>التغذية نستله</title>
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" language="javascript" src="js/jquery-1.8.2.min.js"></script>
+
+<script src="js/jquery.anythingslider.js"></script>
+	<script>
+	
+	$(document).ready(function(){
+		$(".more_btn").toggle(function(){
+		$(this).text("Less");
+		$(this).next(".acc_cont").slideDown(300);
+		$(this).toggleClass("less");
+		},
+		function(){
+		$(this).text("More");
+		$(this).next(".acc_cont").slideUp(300);	
+		$(this).toggleClass("less")
+		});
+	});
+	$(document).ready(function () {
+		$('.accordion a.item').click(function () {
+			//slideup or hide all the Submenu
+			if($($(this)).hasClass($(this).attr('rel') + 'Over')){
+				$(this).siblings('ul').slideUp('fast');	
+				$(this).removeClass($(this).attr('rel') + 'Over');
+			}else{
+				$('html,body').animate({scrollTop: $(this).offset().top}, 1000);
+				$(this).siblings('ul').slideDown('fast');
+				$(this).addClass($(this).attr('rel') + 'Over');   
+			}
+			return false;
+		});
+	});
+	$(document).ready(function () {
+		$('.accordion-2 a.item').click(function () {
+			//slideup or hide all the Submenu
+			$('.accordion-2 li').children('ul').slideUp('fast');if($($(this)).hasClass($(this).attr('rel') + 'Over')){
+            $(this).removeClass($(this).attr('rel') + 'Over');
+            }else{
+            $(this).siblings('ul').slideDown('fast');
+            $(this).addClass($(this).attr('rel') + 'Over');       
+            }
+			return false;
+		});
+	});	</script>
+
+</head>
+<body>
+
+<!-- Header Starts Here -->
+<div class="header">
+  <div class="wrapper">
+    <div class="logo"> <img src="images/nestle_logo.png" width="147" height="99" alt="نستله"> </div>
+    <div class="header_left">
+      <div class="header_left_top">
+        <ul>
+          <li> <a href="/"  class="active">الصفحة الرئيسية</a> </li>
+          <li> <a href="our_commitment.html">التزاماتنا</a> </li>
+          <li> <a href="#">نادي طفل نستله</a> </li>
+          <li> <a href="parenting.html">الأمومة</a> </li>
+          <li> <a href="">اتصل بنا</a> </li>
+          <li> <a href="#">خريطة الموقع</a> </li>
+          <li> <a href="#">الحمل</a> </li>
+          <li> <a href="/eng" style="font-family: 'VAGRoundedStd-Light';" dir="ltr">English</a> </li>
+        </ul>
+        <div class="search_wrap">
+          <input name="" type="text" placeholder="البحث">
+          <input name="" type="submit">
+        </div>
+      </div>
+      <div class="nav">
+        <ul>
+          <li id="preg"> <a href="pregnancy.html">الحمل</a> </li>
+          <li id="inf_0_6"> <a href="infant_0-6.html">الأشهر الأولى</a> </li>
+          <li id="inf_6_12"> <a href="infant_6-12.html">من ٦‎ إلى ١‎٢‎ شهر</a> </li>
+          <li id="inf_1_3"> <a href="toddler.html">الأطفال من ١‎ إلى ٣‎ سنوات</a> </li>
+          <li id="inf_3_5"> <a href="preschooler.html">مرحلة ما قبل المدرسة:٣‎ إلى ٥‎ سنوات</a> </li>
+          <li id="for_ur_baby"> <a href="for_your_baby.html">لأجل طفلك</a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Header Ends Here -->
+
+<div class="inner_content clear">
+
+<div class="infant_left_0_6">
+<h4>infant: 0-6 months</h4>
+<div class="left_inner">
+  <ul class="header_ul">
+    <li>Nutrition & Feeding</li>
+  </ul>
+  <ul class="accordion-2">
+  	<li><a href="growing_infant_0-6.html" style="background:none !important;">
+Baby growth and Development</a>
+  		<!--<ul>
+  			<li>
+  
+  				<ol>
+    				<li style="border:none !important"><a href="growing_infant_0-6.html#growing_infant_0-6">My First Months  </a></li>
+    
+    			</ol>
+  
+  			</li>
+  		</ul>-->
+   	</li>
+  
+  <li><a href="faq_infant_0-6.html" style="background:none !important;">Faq’s</a>
+  <!--<ul>
+  <li>
+  
+  	<ol>
+      <li style="border:none !important"><a href="faq_infant_0-6.html#faq_infant_0-6">What is the difference between breastmilk and cows’ milk?
+ </a></li>
+    	<li style="border:none !important"><a href="faq_infant_0-6.html#faq_infant_0-6">Does my breastmilk contain iron? </a></li>
+        <li style="border:none !important"><a href="faq_infant_0-6.html#faq_infant_0-6">What does breastmilk contain? </a></li>
+      
+       
+    </ol>
+  
+  </li>
+  </ul>-->
+  </li>
+  </ul>
+</div>
+</div>
+<style>
+.anythingSlider-default.activeSlider .anythingControls a {
+	/* background image = top shadow */
+	background-color: #ffc832;
+}
+.anythingSlider-default .anythingControls a.start-stop:hover,
+.anythingSlider-default .anythingControls a.start-stop.hover,
+.anythingSlider-default .anythingControls a.start-stop .anythingControls ul a:hover {
+	background-image: none;
+	color: #ffc832;
+}
+
+</style>
+
+<div class="feeding_right">
+<h2 style="color:#996633">Nutrition & Feeding</h2>
+<br />
+<div class="inner_banner" style="padding-bottom:30px;width:622px; margin:0 auto;">
+  <ul id="slider2">
+    <li>
+    	<div class="infant_banner clear">
+        	<div class="inf_left">
+            	<div style="float:left">      
+      				<h4>First Months :</h4>
+      				<h1> It’s a </h1>
+      				<h6>great start!</h6>
+              	</div>
+              	<div style="float:left">
+       				<img src="images/rattle.png" align="left"/>
+              		<p>You have been breastfeeding for months. Your baby is now on a routine to have milk four times a day. Ready to introduce infant formula or bottled milk? Consult with your family doctor first. You can gradually get your baby used to a new form of milk while still feeding them at the same intervals.</p>
+              	</div>
+			</div>
+            <div class="inf_right"><img src="images/circle.png" width="252"/></div>
+        </div>
+    </li>
+  </ul>
+</div>
+<div class="infantquest" id="feeding_infant_0-6">
+	<img src="images/hearts.png" alt="nestle" />
+    <p>First months:</p><br />
+    <p class="sec_title">It's a <br />Great start! <br /><br /></p>
+    <div class="spacer"></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont acc_cont_margin">
+    <ul class="accordion">
+	<li><blockquote>You have been breastfeeding for months. Your baby is now on a routine to have milk four times a day. Ready to introduce infant formula or bottled milk? Consult with your family doctor first. You can gradually get your baby used to a new form of milk while still feeding them at the same intervals.</blockquote>
+		<a href="#" class="item popular" rel="popular">Your baby's nutrition in the first 6 months </a>
+		<ul>
+			<li >
+            Eating is one of the first activities your baby will discover. Of course, knowing what foods you should give your child, and in what quantities, is not always easy. When can you introduce solids? What menus should you prepare?
+            <h5>The World Health Organisation</h5>
+            <span>The World Health Organisation (WHO) has issued recommendations stating that pregnant women and the mothers of young infants should be informed of the advantages and superior benefits gained from breast feeding, and in particular that breast milk is the best means of feeding their baby and protecting them from disease.
+Mothers should be advised on how to prepare for breast feeding and how to continue with it and on the importance of their own diet in this respect, both during pregnancy and after the birth of their child. The superfluous introduction of partial bottle feeding, or other forms of foods and drinks, should be avoided because of the negative impact it has on lactation.
+Similarly, mothers should be warned about how difficult it is to go back on a decision not to breast feed. Mothers should also be informed of the social and financial implications of their decision, before they use a formula milk. The family situation and economic context should be taken into account, and mothers should be reminded that maternal milk is not only the best but also the most economical diet for their infants.
+If the decision is taken to use a formula milk, it is essential to provide clear instructions on how to use it properly, and to draw mothers' attentions to the fact that unboiled water, non-sterilised bottles or incorrect reconstitution of the formula may make their baby ill.</span>
+            <h5>Breast Milk</h5>
+            <span>Breast milk is the ideal food for a newborn: it provides them with all the nutrition they require, and it changes to accompany their own development!</span>
+            <h5 style="text-indent:50px"><u>It changes along with Baby</u></h5>
+            <blockquote>From 1st to 5th day: The colostrum, which is extremely nourishing and easy to digest, helps newborn babies retain their birth weight. 
+From 6th to 14th day: A fluid milk rich in specific sugars and fats, paving the way for breast feeding proper. 
+Around the 15th day: Mature breast milk begins to provide all of the elements needs for harmonious and rapid growth. 
+Milk also changes within the course of a single feed: It is lighter at the start of the food and becomes richer as it goes on, to maximise satiety.</blockquote>
+            <h5 style="text-indent:50px"><u>It meets all baby's requirement </u></h5>
+            <blockquote>The correct proteins. 
+Carbohydrate, the main source of energy. 
+Fats for energy and the proper development of the brain. 
+Small amounts of mineral salts, so as not to overload the infant's kidneys. 
+Iron and vitamins. 
+Protective agents (anti-bodies) because babies are incapable for the moment of making them by themselves.</blockquote>
+            <h5>Starting Infant Formula</h5>
+            <span>Mother’s milk is the natural and ideal food for a newborn. However, if after consulting with your doctor you choose not to breast feed, or if you are unable to do so, there are infant formula milks that meet your baby's dietary requirements. </span>
+            <h5 style="text-indent:50px"><u>Going from breast to bottle : Take things slowly </u></h5>
+            <blockquote>For the first week replace one breast-feed a day with a bottle, preferably in the middle of the day. Then twice a day the following week (still replacing a feed in the middle of the day) and so on. The most important thing is that you and your baby are comfortable and relaxed. 
+Before giving the first bottle to your baby ask your healthcare professional for advice. Only they can recommend the formula (infant formula milk) that best corresponds to your child’s needs, and help you to organise the transition period between breast and bottle.</blockquote>
+            <h5 style="text-indent:50px"><u>Safety Notice</u></h5>
+            <blockquote>Reconstituted milk is a fragile substance which can easily be deteriorated. You must therefore take a few simple but effective precautions.
+Wash your hands, bottle and utensils thoroughly before looking after your baby and in particular before getting the bottle ready. 
+Only prepare one bottle at a time and use it immediately. 
+Only use the measuring spoon in the tin. 
+One level measuring spoon for 30 ml of water (or as instructions on tin): simply level it off with a knife or on the edge of the tin. 
+Throw away the contents of a bottle that has not been finished. 
+After opening, keep the tin in a cool, dry place for no more than three weeks. 
+Always hold your baby while they are drinking from the bottle, to avoid any risk of choking. </blockquote>
+            <h5 style="text-indent:50px"><u>Preparing the bottle</u></h5>
+			<blockquote>The bottle must be prepared just before the meal. Careful! Using unsterilized water or bottles, or failing to properly reconstitute the formula may harm your baby's health. Be sure to follow the preparation instructions to the letter.<br />
+			•&nbsp;Wash your hands thoroughly before preparing your baby's meal.<br />
+			•&nbsp;Sterilise the bottle, the teat and the ring for 10 minutes in boiling water or in cold water using an appropriate disinfectant.<br />
+			•&nbsp;Into the sterilised bottle, pour the necessary amount of water (mineral water or spring water that is suitable for babies, or boiled water), heated to a maximum of 40°C. You can also choose not to heat the water at all and give it at room temperature.<br />
+			•&nbsp;Add the number of measuring spoons that correspond to the amount of water. Make sure the contents of the spoons are not compacted and have been levelled using the special lip on the inside of the tin. Close the bottle using the sterilised ring and teat. Shake the bottle well before giving it. Check the temperature of the milk on the back of your hand</blockquote>
+            <h5>How many feeds should my baby have?</h5>
+            <div>
+            	
+         
+    <style>
+ tr.border_bottom td {
+  border-bottom:1pt solid #CCC;
+}
+.td1, th {
+  border-left: solid 1px #CCC;
+} 
+.lightorange_color{
+	background-color:#f0bb3b;
+}
+.lightblue_color{
+	background-color:#66ccff;
+}
+.darkorange_color{
+	background-color:#f47b20;
+}
+.white{
+	color:#FFF;
+}
+</style>
+<table width="90%" class="tablecentre" align="center" border="0" style=" border:1px solid #CCC">   
+
+    
+    	<tr class="border_bottom" >
+        	<td width="41%" height="40" class="lightblue_color"><span class="white">Age</span></td>
+   	    <td width="29%" class="lightorange_color"><center><span class="white">Quantity of water required</span></center></td>
+        	<td width="30%" class="darkorange_color"><span class="white"><center>Number of feeds per day</center></span></td>
+            
+        </tr >
+        <tr class="border_bottom" >
+        	<td height="34">&nbsp;&nbsp;Up to 1 month (1st month)</td>
+   	        <td class="td1"><center>90ml</center></td>
+        	<td class="td1"><center>6</center></td>
+            
+        </tr>
+        <tr class="border_bottom" >
+        	<td height="34">&nbsp;&nbsp;From 1 to 2 months (2nd month)</td>
+       	  <td class="td1"><center>120ml</center></td>
+        	<td class="td1"><center>6</center></td>
+            
+        </tr>
+        <tr class="border_bottom" >
+        	<td height="34">&nbsp;&nbsp;From 2 to 3 months (3rd month)</td>
+        	<td class="td1"><center>150ml</center></td>
+        	<td class="td1"><center>5</center></td>
+            
+        </tr>
+        <tr class="border_bottom" >
+        	<td height="34">&nbsp;&nbsp;From 3 to 4 months (4th month)</td>
+        	<td class="td1"><center>180ml</center></td>
+        	<td class="td1"><center>5</center></td>
+            
+        </tr>
+        <tr class="border_bottom" >
+        	<td height="34">&nbsp;&nbsp;From 4 to 5 months (5th month)</td>
+        	<td class="td1"><center>210ml</center></td>
+        	<td class="td1"><center>4</center></td>
+            
+        </tr>
+        <tr class="border_bottom" >
+        	<td height="34">&nbsp;&nbsp;From 5 to 6 months (6th month)</td>
+        	<td class="td1"><center>210ml</center></td>
+        	<td class="td1"><center>*4</center></td>
+            
+        </tr>
+        <tr class="border_bottom" >
+        	<td height="34">&nbsp;&nbsp;From 6 months (7th month) to 1 year</td>
+        	<td class="td1"><center>210ml</center></td>
+        	<td class="td1"><center>*3</center></td>
+            
+        </tr>
+        <tr class="border_bottom" >
+        	<td height="46">&nbsp;&nbsp;From 1 year</td>
+   	    <td class="td1"><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;500ml of specialized growing up milk</center></td>
+        	<td class="td1"><center>500ml of <br />specialized<br /> growing up milk</center></td>
+            
+        </tr>
+        <tr>
+        	<td height="34" colspan="3">&nbsp;&nbsp;*Introduce solid foods gradually (infant cereals, vegetables, fruits, meats, etc…)</td>
+        	
+            
+        </tr>
+    
+    </table>
+
+            </div>
+            
+
+
+            
+    		 </li>
+		</ul>
+	</li>
+<!--	<li>
+		<a href="#" class="item popular" rel="popular">Category</a>
+		<ul>
+			<li class="quest clear">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec risus nibh. Praesent semper arcu ac leo dictum laoreet. Sed eu mattis nisi. Praesent vulputate, urna at pharetra euismod, nulla urna rutrum lacus, ut interdum nisl sapien at quam. Donec vitae sem lectus, in cursus urna. Duis posuere adipiscing tellus, a commodo magna egestas pellentesque. Cras id cursus leo. Fusce metus dui, hendrerit nec adipiscing vitae, pharetra sit amet felis. Aliquam est libero, pellentesque a dapibus et, dignissim et leo.
+            </li>
+		</ul>
+	</li>
+	<li>
+		<a href="#" class="item popular" rel="popular">Recent Comment</a>
+		<ul>
+			<li class="quest clear">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec risus nibh. Praesent semper arcu ac leo dictum laoreet. Sed eu mattis nisi. Praesent vulputate, urna at pharetra euismod, nulla urna rutrum lacus, ut interdum nisl sapien at quam. Donec vitae sem lectus, in cursus urna. Duis posuere adipiscing tellus, a commodo magna egestas pellentesque. Cras id cursus leo. Fusce metus dui, hendrerit nec adipiscing vitae, pharetra sit amet felis. Aliquam est libero, pellentesque a dapibus et, dignissim et leo.
+            </li>
+		</ul>
+	</li>
+--></ul>
+    </div>
+</div>
+    
+    
+</div>
+</div>
+<!-- Footer Starts Here -->
+<div class="footer clear">
+  <div class="wrapper clear">
+    <div class="footer_boxes clear">
+      <div class="footboxes footbox_01">
+        <h3>الحمل</h3>
+        <ul>
+        <li><a href="featured.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding.html">التغذية</a></li>
+          <li><a href="growing.html">النمو و التطور</a></li>
+                    <li><a href="products.html">المنتجات الخاصة للحامل</a></li>
+          <li><a href="faq.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_02">
+        <h3>الأشهر الأولى</h3>
+        <ul>
+          <li><a href="feeding_infant_0-6.html">التغذية</a></li>
+          <li><a href="growing_infant_0-6.html">النمو و التطور</a></li>
+          <li><a href="faq_infant_0-6.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_03">
+        <h3>من ٦‎ إلى ١‎٢‎ شهر</h3>
+        <ul>
+          <li><a href="featured_products_infant_6-12.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding_infant_6-12.html">التغذية</a></li>
+          <li><a href="growing_infant_6-12.html">النمو و التطور</a></li>
+          <li><a href="products_infant_6-12.html">المنتجات الخاصة لعمر ٦-١٢ شهراً</a></li>
+          <li><a href="faq_infant_6-12.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_04">
+        <h3>الأطفال من ١‎ إلى ٣‎ سنوات</h3>
+        <ul>
+          <li><a href="featured_products_toddler.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding_toddler.html">التغذية</a></li>
+          <li><a href="growing_toddler.html">النمو و التطور</a></li>
+          <li><a href="products_toddler.html">المنتجات الخاصة لعمر ١ إلى ٣ سنوات</a></li>
+          <li><a href="faq_toddler.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_05">
+        <h3>مرحلة ما قبل المدرسة:٣‎ إلى ٥‎ سنوات</h3>
+        <ul>
+          <li><a href="featured_products_preschooler.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding_preschooler.html">التغذية</a></li>
+          <li><a href="growing_preschooler.html">النمو و التطور</a></li>
+          <li><a href="products_preschooler.html">المنتجات الخاصة لعمر٣ إلى ٥ سنوات</a></li>
+          <li><a href="faq_preschooler.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer_menu">
+      <ul>
+        <li><a href="index.html">الصفحة الرئيسية</a></li>
+        <li><a href="parenting.html">الأمومة</a></li>
+        <li><a href="#">الوصفات</a></li>
+        <li><a href="our_commitment.html">التزاماتنا</a></li>
+        <li><a href="#">نادي طفل نستله</a></li>
+        <li><a href="#">اتصل بنا</a></li>
+        <li><a href="faq.html">الأسئلة و الأجوبة</a></li>
+        <li><a href="#">خريطة الموقع</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer_rule">
+    <div class="wrapper">
+      <div class="copy_right_right">علامات "بداية صحية لحياة صحية" هي علامات تجارية لشركة سوسيتيه دي برودوي نستله إس. إيه. فيفي – سويسرا<br />كل العلامات التجارية هي من ملك لشركة سوسيتيه دي برودوي نستله إس. إيه. فيفي – سويسرا</div>
+      <div class="copy_right_left">نستله نيوترشن<span dir="ltr">&nbsp;2013&nbsp;</span>جميع الحقوق محفوظة<br />
+        <a href="privacy_policy.html" class="active">الشروط و الأحكام  .  سياسة الخصوصية</a> </div>
+    </div>
+  </div>
+</div>
+<!-- Footer Ends Here -->
+
+</body>
+</html>

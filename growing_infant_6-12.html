@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>التغذية نستله</title>
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" language="javascript" src="js/jquery-1.8.2.min.js"></script>
+
+<script src="js/jquery.anythingslider.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#foo2').carouFredSel({
+		circular: false,
+		infinite: false,
+		auto: false,
+		prev: '#prev2',
+		next: '#next2',
+		pagination: false,
+		mousewheel: true,
+		swipe: {
+			onMouse: true,
+			onTouch: true
+		}
+	});
+});
+	
+	$(document).ready(function(){
+		$(".more_btn").toggle(function(){
+		$(this).text("Less");
+		$(this).next(".acc_cont").slideDown(300);
+		$(this).toggleClass("less");
+		},
+		function(){
+		$(this).text("More");
+		$(this).next(".acc_cont").slideUp(300);	
+		$(this).toggleClass("less")
+		});
+	});
+	$(document).ready(function () {
+		$('.accordion a.item').click(function () {
+			//slideup or hide all the Submenu
+			if($($(this)).hasClass($(this).attr('rel') + 'Over')){
+				$(this).siblings('ul').slideUp('fast');	
+				$(this).removeClass($(this).attr('rel') + 'Over');
+			}else{
+				$('html,body').animate({scrollTop: $(this).offset().top}, 1000);
+				$(this).siblings('ul').slideDown('fast');
+				$(this).addClass($(this).attr('rel') + 'Over');   
+			}
+			return false;
+		});
+	});
+	$(document).ready(function () {
+		$('.accordion-2 a.item').click(function () {
+			//slideup or hide all the Submenu
+			$('.accordion-2 li').children('ul').slideUp('fast');if($($(this)).hasClass($(this).attr('rel') + 'Over')){
+            $(this).removeClass($(this).attr('rel') + 'Over');
+            }else{
+            $(this).siblings('ul').slideDown('fast');
+            $(this).addClass($(this).attr('rel') + 'Over');       
+            }
+			return false;
+		});
+	});	</script>
+    <style>
+	.feed_infan6_12 .acc_cont
+	{
+		padding-right:0px !important;}
+	</style>
+
+</head>
+<body>
+
+<!-- Header Starts Here -->
+<div class="header">
+  <div class="wrapper">
+    <div class="logo"> <img src="images/nestle_logo.png" width="147" height="99" alt="نستله"> </div>
+    <div class="header_left">
+      <div class="header_left_top">
+        <ul>
+          <li> <a href="/"  class="active">الصفحة الرئيسية</a> </li>
+          <li> <a href="our_commitment.html">التزاماتنا</a> </li>
+          <li> <a href="#">نادي طفل نستله</a> </li>
+          <li> <a href="parenting.html">الأمومة</a> </li>
+          <li> <a href="">اتصل بنا</a> </li>
+          <li> <a href="#">خريطة الموقع</a> </li>
+          <li> <a href="#">الحمل</a> </li>
+          <li> <a href="/eng" style="font-family: 'VAGRoundedStd-Light';" dir="ltr">English</a> </li>
+        </ul>
+        <div class="search_wrap">
+          <input name="" type="text" placeholder="البحث">
+          <input name="" type="submit">
+        </div>
+      </div>
+      <div class="nav">
+        <ul>
+          <li id="preg"> <a href="pregnancy.html">الحمل</a> </li>
+          <li id="inf_0_6"> <a href="infant_0-6.html">الأشهر الأولى</a> </li>
+          <li id="inf_6_12"> <a href="infant_6-12.html">من ٦‎ إلى ١‎٢‎ شهر</a> </li>
+          <li id="inf_1_3"> <a href="toddler.html">الأطفال من ١‎ إلى ٣‎ سنوات</a> </li>
+          <li id="inf_3_5"> <a href="preschooler.html">مرحلة ما قبل المدرسة:٣‎ إلى ٥‎ سنوات</a> </li>
+          <li id="for_ur_baby"> <a href="for_your_baby.html">لأجل طفلك</a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Header Ends Here -->
+<div class="inner_content clear">
+<div class="leftbar">
+
+<div class="toddler_1_3">
+<h4>infant: 6-12 months</h4>
+<div class="left_inner">
+  <ul class="header_ul">
+    <li>Baby growth & Development</li>
+  </ul>
+  <ul class="accordion-2">
+   <li><a href="featured_products_infant_6-12.html" style="background:none !important;">
+Featured Product</a>
+ <!--
+   <li><a href="featured_products_infant_6-12.html" class="item popular" rel="popular">
+Featured Product</a>
+ --><!-- <ul>
+  <li>
+  
+  	<ol>
+    	
+    <li style="border:none !important"><a href="featured_products_infant_6-12.html#featured_products_infant_6-12">Product1 
+ </a></li>
+    
+    </ol>
+  
+  </li>
+  </ul>--></li>
+  
+ 
+  <li><a href="feeding_infant_6-12.html" style="background:none !important;">
+Nutrition & Feeding</a>
+  <ul>
+  <li>
+  
+  	<ol>
+    	<li style="border:none !important"><a href="feeding_infant_6-12.html#feeding_infant_6-12">What can your 6 months old start to eat?  </a></li>
+    <li style="border:none !important"><a href="feeding_infant_6-12.html#feeding_infant_6-12">What can your 7 months old start to eat?  </a></li>
+    <li style="border:none !important"><a href="feeding_infant_6-12.html#feeding_infant_6-12">What can your 8 months old start to eat? 
+ </a></li>
+    
+    </ol>
+  
+  </li>
+  </ul></li>
+  <li><a href="products_infant_6-12.html" style="background:none !important;">
+Products for 6-12m</a>
+  <ul>
+  <li>
+  
+  	<ol>
+    
+    	 <li style="border:none !important"><a href="products_infant_6-12.html#products_infant_6-12">Cerelac Rice </a></li>
+    <li style="border:none !important"><a href="products_infant_6-12.html#products_infant_6-12">Cerelac Wheat </a></li>
+     <li style="border:none !important"><a href="products_infant_6-12.html#products_infant_6-12">Cerelac Wheat and Date Pieces</a></li>
+      <li style="border:none !important"><a href="products_infant_6-12.html#products_infant_6-12">Cerelac Wheat and Dates</a></li>
+       <li style="border:none !important"><a href="products_infant_6-12.html#products_infant_6-12">Cerelac Wheat and Fruit Pieces</a></li>
+        <li style="border:none !important"><a href="products_infant_6-12.html#products_infant_6-12">Cerelac Wheat and Honey</a></li>
+          <li style="border:none !important"><a href="products_infant_6-12.html#products_infant_6-12">Cerelac Wheat and Fruit</a></li>
+    </ol>
+  
+  </li>
+  </ul></li>
+  <li><a href="faq_infant_6-12.html" style="background:none !important;">Faq’s</a>
+  <ul>
+  <li>
+  
+  	<ol>
+    	<li style="border:none !important"><a href="faq_infant_6-12.html#faq_infant_6-12">What can you eat? </a></li>
+    
+    </ol>
+  
+  </li>
+  </ul>
+  </li>
+  </ul>
+</div>
+
+
+
+</div>
+<div class="babyfruit_img">
+<!--<img src="images/baby_fuits.png" />
+--></div>
+</div>
+<style>
+.anythingSlider-default.activeSlider .anythingControls a {
+	/* background image = top shadow */
+	background-color: #889cb0;
+}
+.anythingSlider-default .anythingControls a.start-stop:hover,
+.anythingSlider-default .anythingControls a.start-stop.hover,
+.anythingSlider-default .anythingControls a.start-stop .anythingControls ul a:hover {
+	background-image: none;
+	color: #889cb0;
+}
+
+</style>
+
+
+<div class="feeding_right feed_infan6_12">
+<h2 style="color:#869bae">Baby growth & Development</h2>
+<br />
+<div class="inner_banner" style="padding-bottom:30px; width:622px; margin:0 auto;">
+  <ul id="slider2">
+        
+
+        <li>
+    	<div class="infant_banner clear">
+        
+        	<div class="growing_left">
+            	<div style="float:left">      
+      				<h4 style="color:#ce9805; font-size:36px">The</h4>
+      				<h1 style="color:#ce9805">first teeth</h1>
+      				<h6 style="color:#cc6600">Ouch!</h6> 
+              	</div>
+              	<div style="float:left">
+<!--       				<img src="images/kite_01.png" style="margin-top:-50px" align="left"/>
+-->              		<p style="margin-left:80px">Now that you are pregnant, maintaining a balanced diet will become a major preoccupation. But this isn’t a reason to worry. To eat healthily, all you have to do is to remember these few tips.</p>
+              	</div>
+			</div>
+
+            <div class="growing_right">            
+				<img src="images/teddy_03.png" height="230"/></div>
+        </div>
+    </li>
+  </ul>
+</div>
+
+   
+<div class="quest">
+	<div style="width:100%; float:left">
+		<div style="width:40%; float:left">
+    		<img src="images/bow_01.png" alt="Nestle" />
+        </div>
+	    <div style="width:60%; float:right">
+        	<p style="color:#52799a; padding-left:20px; font-size:25px">Your baby 
+
+</p>
+        	<p style="margin-top:0px; color:#ce9703; font-size:50px">6 months   </p>
+        	<p style="margin-top:0px;color:#52799a; padding-left:70px; font-size:25px"> to  1 year old</span></p>
+		</div>
+    </div>
+            
+    <div class="spacer"></div>
+    <div class="more_btn" >More</div>
+    <div class="acc_cont acc_cont_margin">
+    <ul class="accordion">
+	<li>
+		<a href="#" class="item popular" rel="popular">How is your 6 months old progressing?
+</a>
+		<ul>
+			<li >
+        <style>
+tr.border_bottom td {
+  border-bottom:1pt solid #CCC;
+}
+td, th {
+  border-left: solid 1px #CCC;
+} 
+.lightgrey_color{
+	
+	background-color:#E5ECF6;
+}
+.darkgrey_color{
+	background-color:#AEB8C1;
+}
+.darkblue_color{
+	background-color:#3E72A9;
+}
+.lightblue_color{
+	background-color:#65CDFF;
+}
+.orange_color{
+	background-color:#F57A1F;
+}
+.yellow_color{
+	background-color:#EFBB3B;
+}
+.darkgreen_color{
+	background-color:#88B45C;
+}
+.lightgreen_color{
+	background-color:#A0CC76;
+}
+.rose_color{
+	background-color:#ED709E;
+}
+.middle_yellow{
+	background-color:#DAAB42;
+}
+.middle_rose{
+	background-image:url(images/pink.png);
+	background-repeat:repeat-x;
+	
+	
+}
+.light_yellow{
+	background-image:url(images/yellow.png);
+	background-repeat:repeat-x;
+}
+.middle_green{
+	background-image:url(images/green.png);
+	background-repeat:repeat-x;
+}
+.middle_blue{
+	background-image:url(images/blue.png);
+	background-repeat:repeat-x;
+}
+.middle_violet{
+	background-image:url(images/violet.png);
+	background-repeat:repeat-x;
+}
+.grey_color{
+	
+	background-color:#F8FAFF;
+}
+.white{
+	color:#FFF;
+	line-height:24px;
+}
+#sen
+{
+	padding-top:20px;
+}
+td{
+	text-align:center;
+}
+
+#rose_div1{
+	 width:220px; height:24px; position:absolute; z-index:1; margin-left:150px; margin-top:70px; border-radius:20px;
+}
+
+#yellow_div2{
+	 width:205px; height:24px; position:absolute; z-index:1; margin-left:435px; margin-top:100px;border-radius:20px;
+}
+#green_div3{
+	 width:130px; height:24px; position:absolute; z-index:1; margin-left:270px; margin-top:130px;border-radius:20px;
+}
+#blue_div4{
+ width:335px; height:24px; position:absolute; z-index:1; margin-left:305px; margin-top:160px;border-radius:20px;
+}
+#violet_div5{
+	 width:266px; height:24px; position:absolute; z-index:1; margin-left:180px; margin-top:200px;border-radius:20px;
+}
+#rose_div6{
+ width:460px; height:24px; position:absolute; z-index:1; margin-left:180px; margin-top:230px;border-radius:20px;
+}
+#yellow_div7{
+	 width:278px; height:24px; position:absolute; z-index:1; margin-left:180px; margin-top:260px;border-radius:20px;
+}
+
+#blue_div8{
+	 width:300px; height:24px; position:absolute; z-index:1; margin-left:340px; margin-top:290px;border-radius:20px;
+}
+</style>
+
+<div style=" margin:0 auto" >
+<table width="100%" bgcolor="#FFFFFF" cellpadding="0" align="center" cellspacing="0"  border="0" style=" border:1px solid #CCC">
+
+<div class="middle_rose" id="rose_div1"><center><span class="white" >Can hold head up</center></span></div>
+<div class="light_yellow" id="yellow_div2"><center><span class="white">Can grab own feet</center></span></div>
+<div class="middle_green" id="green_div3"><center><span class="white">Babbles</center></span></div>
+<div class="middle_blue" id="blue_div4"><center><span class="white">Recognises faces</center></span></div>
+<div class="middle_rose" id="violet_div5"><center><span class="white">Constant sucking</center></span></div>
+<div class="light_yellow" id="rose_div6"><center><span class="white">Gentle familiarisation with a spoon(smooth texture)</center></span></div>
+<div class="middle_green" id="yellow_div7"><center><span class="white">Digestive system is still immature</center></span></div>
+<div class="middle_blue" id="blue_div8"><center><span class="white">Introduction to one food at a time</center></span></div>
+
+ <tr class="border_bottom" align="left" style="height:60px" >
+    <td width="16.7%" height="22" class="lightgrey_color" wid>&nbsp;</td>
+    <td width="16.7%" class="darkgrey_color"><span class="white">6 <br /> months</span></td>
+    <td width="16.7%" class="darkblue_color"><span class="white">6th <br /> month</span></td>
+    <td width="16.7%" class="lightblue_color"><span class="white">7  <br />months</span></td>
+    <td width="16.7%" class="orange_color"><span class="white">7th  <br />month</span></td>
+    
+     
+  </tr>
+  <tr class="border_bottom" style="height:130px">
+    <td class="grey_color">Psychomotor progress</td>
+    <td class="lightgrey_color">&nbsp;</td>
+    <td class="white_color">&nbsp;</td>
+    <td class="lightgrey_color">&nbsp;</td>
+    <td class="white_color">&nbsp;</td>
+   
+   
+
+   
+   
+  </tr>
+  <tr class="border_bottom" style="height:130px">
+    <td class="white_color">Food-related ability</td>
+    <td class="lightgrey_color">&nbsp;</td>
+    <td class="white_color">&nbsp;</td>
+    <td class="lightgrey_color">&nbsp;</td>
+    <td class="white_color">&nbsp;</td>
+    
+   
+   
+  </tr>
+</table> 
+    	
+	</li>
+		</ul>
+	</li>
+	<li>
+		<a href="#" class="item popular" rel="popular">How is your 7 months old progressing?
+</a>
+		<ul>
+			<li >
+       
+      <style>    
+#rose_div11{
+	 width:220px; height:24px; position:absolute; z-index:1; margin-left:170px; margin-top:70px; border-radius:20px;
+}
+
+#yellow_div22{
+	 width:175px; height:24px; position:absolute; z-index:1; margin-left:278px; margin-top:100px;border-radius:20px;
+}
+#green_div33{
+	 width:330px; height:24px; position:absolute; z-index:1; margin-left:310px; margin-top:130px;border-radius:20px;
+}
+#blue_div44{
+ width:285px; height:24px; position:absolute; z-index:1; margin-left:355px; margin-top:160px;border-radius:20px;
+}
+#rose_div55{
+	 width:295px; height:24px; position:absolute; z-index:1; margin-left:326px; margin-top:200px;border-radius:20px;
+}
+#yellow_div66{
+ width:235px; height:24px; position:absolute; z-index:1; margin-left:245px; margin-top:230px;border-radius:20px;
+}
+#green_div77{
+	 width:339px; height:24px; position:absolute; z-index:1; margin-left:282px; margin-top:260px;border-radius:20px;
+}
+  </style>
+  <div style="margin:0 auto">
+<table width="100%" bgcolor="#FFFFFF" cellpadding="0" align="center" cellspacing="0"  border="0" style=" border:1px solid #CCC">
+
+<div class="middle_rose" id="rose_div11"><center><span class="white">Can sit up with support</center></span></div>
+<div class="light_yellow" id="yellow_div22"><center><span class="white">Can see perfectly</center></span></div>
+<div class="middle_green" id="green_div33"><center><span class="white">Understands yes and no</center></span></div>
+<div class="middle_blue" id="blue_div44"><center><span class="white">Can pronounce "ma" and "da"</center></span></div>
+<div class="middle_rose" id="rose_div55"><center><span class="white">Can hold his bottle</center></span></div>
+<div class="light_yellow" id="yellow_div66"><center><span class="white">Can chew different textures</center></span></div>
+<div class="middle_green" id="green_div77"><center><span class="white">Can bring food to his mouth</center></span></div>
+
+
+ <tr class="border_bottom" align="left" style="height:60px" >
+    <td width="20%" height="22" class="lightgrey_color" wid>&nbsp;</td>
+    <td width="20%" class="darkgrey_color"><span class="white">7 <br />months</span></td>
+    <td width="20%" class="darkblue_color"><span class="white">7th  <br />month</span></td>
+    <td width="20%" class="lightblue_color"><span class="white">8  <br />months</span></td>
+    <td width="20%" class="orange_color"><span class="white">8th  <br />month</span></td>
+   
+     
+  </tr>
+  <tr class="border_bottom" style="height:130px">
+    <td class="grey_color">Psychomotor progress</td>
+    <td class="lightgrey_color">&nbsp;</td>
+    <td class="white_color">&nbsp;</td>
+    <td class="lightgrey_color">&nbsp;</td>
+    <td class="white_color">&nbsp;</td>
+   
+
+   
+   
+  </tr>
+  <tr class="border_bottom" style="height:100px">
+    <td class="white_color">Food-related ability</td>
+    <td class="white_color">&nbsp;</td>
+    <td class="white_color">&nbsp;</td>
+    <td class="white_color">&nbsp;</td>
+    <td class="white_color">&nbsp;</td>
+    
+   
+   
+  </tr>
+</table>
+   	</li>
+		</ul>
+	</li>
+	<li>
+		<a href="#" class="item popular" rel="popular">How is your 8 months to 12 months old progressing?
+</a>
+		<ul>
+			<li >
+        <style>
+			
+#rose_div01{
+	 width:188px; height:24px; position:absolute; z-index:1; margin-left:138px; margin-top:70px; border-radius:20px;
+}
+#rose_div02{
+	 width:218px; height:24px; position:absolute; z-index:1; margin-left:395px; margin-top:70px; border-radius:20px;
+}
+#yellow_div03{
+	 width:255px; height:24px; position:absolute; z-index:1; margin-left:185px; margin-top:100px;border-radius:20px;
+}
+#green_div04{
+	 width:300px; height:24px; position:absolute; z-index:1; margin-left:270px; margin-top:130px;border-radius:20px;
+}
+#blue_div05{
+	 width:335px; height:24px; position:absolute; z-index:1; margin-left:340px; margin-top:160px;border-radius:20px;
+}
+#violet_div06{
+	 width:310px; height:24px; position:absolute; z-index:1; margin-left:365px; margin-top:190px;border-radius:20px;
+}
+#rose_div07{
+	 width:418px; height:24px; position:absolute; z-index:1; margin-left:143px; margin-top:230px;border-radius:20px;
+}
+#yellow_div08{
+	 width:275px; height:24px; position:absolute; z-index:1; margin-left:143px; margin-top:260px;border-radius:20px;
+}
+#green_div09{
+	 width:325px; height:24px; position:absolute; z-index:1; margin-left:170px; margin-top:290px;border-radius:20px;
+}
+</style>
+<div style=" margin:0 auto">
+<table width="100%" bgcolor="#FFFFFF" cellpadding="0" align="center" cellspacing="0"  border="0" style=" border:1px solid #CCC">
+
+<div class="middle_rose" id="rose_div01"><center><span class="white">Can sit alone</center></span></div>
+<div class="middle_rose" id="rose_div02"><center><span class="white">Asserts independence</center></span></div>
+<div class="light_yellow" id="yellow_div03"><center><span class="white">Can crawl</center></span></div>
+<div class="middle_green" id="green_div04"><center><span class="white">Reacts to name</center></span></div>
+<div class="middle_blue" id="blue_div05"><center><span class="white">Can stand up</center></span></div>
+<div class="middle_violet" id="violet_div06"><center><span class="white">Says "daddy" and "mummy" with meaning</center></span></div>
+<div class="middle_rose" id="rose_div07"><center><span class="white">First teeth</center></span></div>
+<div class="light_yellow" id="yellow_div08"><center><span class="white">Wants to hold his spoon</center></span></div>
+<div class="middle_green" id="green_div09"><center><span class="white">Can eat small chunks of food</center></span></div>
+
+
+ <tr class="border_bottom" align="left" style="height:60px" >
+    <td width="11%" height="22" class="lightgrey_color" wid>&nbsp;</td>
+    <td width="11%" class="darkgrey_color"><span class="white">8  <br />months</span></td>
+    <td width="11%" class="darkblue_color"><span class="white">9th <br /> month</span></td>
+    <td width="11%" class="lightblue_color"><span class="white">9  <br />months</span></td>
+    <td width="11%" class="orange_color"><span class="white">10th <br />month</span></td>
+    <td width="11%" class="yellow_color"><span class="white">10  <br />months</span></td>
+     <td width="11%" class="darkgreen_color"><span class="white">11th  <br />month</span></td>
+      <td width="11%" class="lightgreen_color"><span class="white">11 <br /> months</span></td>
+      <td width="11%" class="rose_color"><span class="white">12th  <br />month</span></td>
+  </tr>
+  <tr class="border_bottom" style="height:160px">
+    <td class="grey_color">Psychomotor progress</td>
+    <td class="lightgrey_color">&nbsp;</td>
+    <td class="white_color">&nbsp;</td>
+    <td class="lightgrey_color">&nbsp;</td>
+    <td class="white_color">&nbsp;</td>
+    <td class="lightgrey_color">&nbsp;</td>
+    <td class="white_color">&nbsp;</td>
+    <td class="lightgrey_color">&nbsp;</td>
+    <td class="white_color">&nbsp;</td>
+
+   
+   
+  </tr>
+  <tr class="border_bottom" style="height:100px">
+    <td class="white_color">Food-related ability</td>
+    <td class="lightgrey_color">&nbsp;</td>
+    <td class="white_color">&nbsp;</td>
+    <td class="lightgrey_color">&nbsp;</td>
+    <td class="white_color">&nbsp;</td>
+    <td class="lightgrey_color">&nbsp;</td>
+    <td class="white_color">&nbsp;</td>
+    <td class="lightgrey_color">&nbsp;</td>
+    <td class="white_color">&nbsp;</td>
+   
+  </tr>
+</table>
+			
+					</li>
+		</ul>
+	</li>
+	
+	
+	
+	
+	
+</ul>
+    </div>
+</div><div class="quest">
+	<div style="width:100%; float:left">
+		<div style="width:60%; float:left">
+        	<p style="color:#52799a; padding-left:20px; font-size:25px">Psychomotor </p>
+        	<p style="margin-top:0px; color:#89a73f; font-size:50px">milestones</p>
+        	<p style="margin-top:0px;color:#52799a; padding-left:70px; font-size:25px"></p>
+        </div>
+	    <div style="width:40%; float:right">
+    		<img src="images/bow_02.png" alt="Nestle" />
+		</div>
+    </div>
+    <div class="spacer"></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont acc_cont_margin">
+    <ul class="accordion">
+	<li>
+		<a href="#" class="item popular" rel="popular">6th month
+</a>
+		<ul>
+			<li >
+           He uses more and more energy<br />
+He sleeps less and has more intense physical activity<br />
+He holds out his arms to you, or lifts himself up on his forearms… he uses his whole body to communicate.<br />
+He grabs objects within his reach, with the right and left hand, and uses all his fingers, except the thumb.<br />
+When he is on his back, he grabs his feet or objects within reach.<br />
+Lastly, he can now see in 3-D because his ""binocular"" vision is fully developed: a new world opens up to your baby!<br /><br />
+
+More and more sociable<br />
+You are still the great love of his life, but he is becoming interested in other people around him too.<br />
+He laughs aloud when his brother or sister pull faces.<br />
+He is no longer fearful of faces he sees for the first time: he takes time to study them, and watches them carefully, before rewarding them with his best smile!
+
+ 
+    		</li>
+		</ul>
+	</li>
+	
+	<li>
+		<a href="#" class="item popular" rel="popular">7th month
+</a>
+		<ul>
+			<li >
+          Your baby is 6 months old and is just entering the 7th month. They can crawl around now, hold toys quite firmly, and will look around for them if they lose them. The relationships with people around them get stronger by the day: he can recognise faces he hasn’t seen for a long time.
+<h5>
+A fast developing muscle system</h5><span>
+They can now push himself up on their hands or elbows to sit up straight again.<br />
+They can also roll over from the tummy to the back.<br />
+If you stand them up, by holding their hands or under their arms, they can stand straight for a few moments and jiggle on the spot.<br />
+</span><h5>
+Their communication skills are also developing fast</h5><span>
+They are sensitive to voices and intonations, and will turn to find the face of a person who is talking. They understand perfectly well what “NO” means, so this is the time to lay down the foundation stones of their education.<br />
+They can make themselves understood to their mothers, particularly if the message refers to hunger!<br />
+They are aware of the sounds they can produce and are fascinated by their own babbling. Listen to your baby carefully, and encourage all the babbling you hear..</span>
+<h5>
+The first teeth: Ouch!</h5><span>
+The first tooth is not far off now, and with it, in some cases, a little touch of fever. It is also time to welcome in the first colds and ear infections.<br />
+Baby is often a bit grizzly… take him in your arms and give him a cuddle. You can also gentle massage his gums to relieve a bit of the pain.
+It is quite common to see babies of this age sucking and chewing away at objects quite fiercely. You can give them a teething ring or a clean bit of cloth to chew on.</span>
+  
+    		</li>
+		</ul>
+	</li>
+	<li>
+		<a href="#" class="item popular" rel="popular">8th month
+</a>
+		<ul>
+			<li >
+         Your baby is 7 months old and is just entering the 8th month. His increasing agility and curiosity are opening up whole new avenues before his. What a joy it is to see him progressing so fast. But it’s also a time when you need to be more vigilant than ever.
+
+<h5>More strength and better skills</h5><span>
+Your baby is even stronger, and can hold himself upright on his legs, when supported.<br />
+He can sit back up all by himself (but be careful, he’ll often topple over!).<br />
+Your baby can now catch hold of objects between thumb and forefinger, and move them from one hand to the other.<br />
+He starts looking round for objects he has lost.</span>
+<h5>
+It is time to take some safety measures:</h5><span>
+
+Keep an eye out for danger<br />
+Remember to protect the sharp corners of coffee tables.<br />
+Protect electrical sockets using socket covers.<br />
+Put all your cleaning products and medicine well out of reach.<br />
+Don’t leave dried fruit, small sweets or other dangerous objects within his reach.<br /></span>
+<h5>
+He is beginning to assert his identity</h5><span>
+He is becoming more and more aware of his own identity, and is delighted to let you know. Even if it means screaming until you take notice of him!
+Mirror mirror, on the wall… he loves looking in the mirror, admiring his own movements and funny faces…<br />
+With time, the contradictions come onto the scene: he goes quickly from cuddly to capricious, from smiley to grumpy, and shows more of an interest in other babies.</span>
+    
+    		</li>
+		</ul>
+	</li>
+	<li>
+		<a href="#" class="item popular" rel="popular">9th month
+</a>
+		<ul>
+			<li >
+        Your baby is 8 months old and is just entering the 9th month. His personality is more defined, and his own particular interests are beginning to stand out. What is needed now is the right balance between his desires and the limits that are so essential.
+
+<h5>More skilful, and more wilful, too</h5><span>
+You are amazed by your baby’s determination to learn and his perseverance, and if he wants something, he’s sure to let you know!<br />
+He can hold a small object between thumb and forefinger. Careful he doesn’t put it in his mouth…<br />
+Show him how to put two cubes on top of one another, and very quickly he’ll be able to do it himself.</span>
+<h5>
+What he loves</h5><span>
+At bath time, Baby just loves hitting the surface of the water and splashing everything around: you’ll need to be ready with a towel…<br />
+Making noise, hitting toys together, even if you start to feel the need for earplugs.<br />
+Listening and listening and listening again to the nursery rhymes you sing him so lovingly.<br /></span>
+<h5>
+Baby Charming, the centre of the universe</h5><span>
+Above all else, your baby is a charmer. The close family around his is not the only potential audience he has. You’re going to have to share his affection with his minder or any other person he has chosen to grace with his smiles.<br />
+He’ll play to the gallery, and likes nothing more than a round of delighted applause. Woe betide anybody who tries to push his out of the limelight…<br />
+If anybody crosses his path, he can show his dissatisfaction in a way that is a little over insistent. But you don’t have to give in to his. In fact, quite the opposite. He has to start learning the rules of the game, too.</span>
+
+    		</li>
+		</ul>
+	</li>
+	<li>
+		<a href="#" class="item popular" rel="popular">10th month
+</a>
+		<ul>
+			<li >
+    Your baby is 9 months old and is just entering the 10th month. He has now spent as long outside his Mum’s tummy as he did inside… and his progress remains startling, both in physical and intellectual activities.
+
+<h5>Agile and adventurous</h5><span>
+He is not scared of the staircase: crawling up on all fours, and on his bottom for coming down, the temptation is strong to go up and down all day… <br />Be careful!<br />
+He is beginning to stand very straight on his legs. If you support him, he may well start to take a few steps, but don’t push things too fast, there’s plenty of time.<br />
+At this age, Baby can grab hold of pretty much everything, do be careful to ensure anything dangerous is well out of reach.</span>
+<h5>
+Focused and attentive</h5><span>
+Because he finds it easier to put objects together and concentrate on more than one thing at once, Baby can play by himself for quite a while. But don’t forget to keep a watchful eye out, especially if he is not safe in his baby pen. And don’t deprive yourself of the pleasure of playing with him: he loves sharing with you these moments of joy and togetherness.<br />
+Now that your baby is starting to associate more than one syllable together, you could try and get him to repeat a word or two. Which one of you is going to be the proudest when he says his first ""Mummy"" or ""Daddy""?</span>
+<h5>
+Sometimes a daydreamer, sometimes a sulker, always a delight</h5><span>
+Because your baby is curious and attentive to everything going on around his it can sometimes be a surprise to see his looking so dreamy. Make the most of these moments of calm, before he is up and demanding your attention again!<br />
+Your baby’s mood can vary greatly from one movement to the next. He is developing his character and will oscillate quickly between demands for a cuddle and signs of irritation with you. You’ll need to find a balance, without always saying yes, because he is also trying to find out where the limits are.</span>
+
+  
+         
+    		</li>
+		</ul>
+	</li>
+	<li>
+		<a href="#" class="item popular" rel="popular">11th month
+</a>
+		<ul>
+			<li >
+          Your baby is 10 months old and starting his 11th month. It’s a transitional time for him, physically, emotionally and intellectually. For you, it’s time to set down the foundations of your education, including teaching, games and encouragement.
+<h5>
+Playing and learning</h5><span>
+To get around, Baby is trying out a new technique: sitting on his bottom and pushing himself along with his hands: what a hoot!<br />
+He can lift the lid off a box, now. If it is a toy or something completely harmless, you should encourage his, but be careful, because he’ll try and open any old box.<br />
+He can hold a pen and scribble with it.<br />
+And he can point at the object he wants to play with next.<br />
+In the bathtub or when you’re dressing his, you can teach his to recognise certain parts of his body. He’ll be as proud as punch to point to his nose, his feet or his mouth…<br />
+<h5>
+Obeying and daring</h5><span>
+He is able to obey a simple instruction, such as “come” or “catch”…, and you’ll be amazed when he does…<br />
+When you’re sitting together with a book, your baby will be able to participate, turning the pages, and there’s no better way to instil a love of books. It is an important stage on the road to his future pleasure in reading.<br />
+You baby may want to try out his first few steps on his own, especially if there are other children of around his own age that he knows who have already taken the great leap. If he does, then congratulate his, but if he doesn’t, just let his go at his own pace.</span>
+<h5>
+The joys and surprises of education</h5><span>
+It is not always easy to forbid your baby from doing something, especially if he cries as soon as you say ""no"". But it’s something you have to do: don’t forget that your baby needs set limits in order to structure his identity.<br />
+Always bear in mind that your baby wants nothing better than to please you, to make you proud of him. If you encourage and congratulate him when he does something good, he will accept it better when you lay down the law.<br /></span>
+
+  
+    		</li>
+		</ul>
+	</li>
+	<li>
+		<a href="#" class="item popular" rel="popular">12th month
+</a>
+		<ul>
+			<li >
+          Your baby is 11 months old and is just entering the 12th month. You’ll soon be celebrating his first birthday. Already! This is the month when walking really begins in earnest (with help from grown-ups in the vast majority of cases).
+It is also a period during which the most recent physical, emotional and intellectual gains are being confirmed and perfected.
+<h5>
+Baby’s physical development</h5><span>
+He is moving around, with ever greater determination, on his knees or on all fours. The more you encourage his, and the more he loves moving.<br />
+With your help, he can stand and take a few steps, or might be able to do so by standing against a wall or a piece of furniture.<br />
+He concentrates hard to pick up really small objects between thumb and forefinger, such as a grain of rice that has fallen off his plate, or a tiny stone that he finds in the path… careful that they don’t go straight into the mouth…<br /></span>
+<h5>
+His daily activities</h5><span>
+He loves putting the bits of an object together to make one large object.<br />
+He has great fun putting things on his head or throwing his toys as far as he can. Beware of things getting broken… anything fragile has to be out of reach…<br />
+Generally speaking, Baby still needs two little naps during the day: a short one in the morning, and a slightly longer one in the afternoon. But if he refuses to sleep, don’t worry about that, because some babies simply need less sleep than others. Let him burble away in his bed, he’s still getting the rest he needs.</span>
+<h5>
+More and more sociable</h5><span>
+He loves participating, showing his presence and being useful.<br />
+He is perfectly capable of finding and bringing to you the set of keys that you have been looking everywhere for, especially if it was he who ""forgot"" them behind the door.<br />
+He is now aware of objects that he can no longer see, and his visual memory is very good. He can make a difference between what is ""there"" and what is ""no longer there"".<br />
+He is becoming familiar with abstract notions such as up/down, solid/liquid, container/contents</span>
+  
+    		</li>
+		</ul>
+	</li>
+	
+	
+	
+</ul>
+    </div>
+</div>
+    
+    <div class="quest drink fish">
+	<div style="width:100%; float:left">
+		<div style="width:40%; float:left">
+    		<img src="images/bow_03.png" alt="Nestle" />
+        </div>
+	    <div style="width:60%; float:right"><br />
+        	<p style="color:#52799a; padding-left:20px; font-size:25px">Food Related</p>
+        	<p style="margin-top:0px; color:#c85134; font-size:50px">abillities</p>
+        	
+		</div>
+    </div>
+    
+    <div class="spacer"></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont acc_cont_margin">
+    <ul class="accordion">
+	<li>
+		<a href="#" class="item popular" rel="popular">7th month</a>
+		<ul>
+			<li >
+       Thanks to his new abilities, your baby will be able gradually to move over to a rhythm of 4 meals a day, and discover a wider range and variety of foods.<br />
+Baby can control the movements of his tongue and his lips better.<br />
+He can move food from the front of the mouth to the back and therefore swallow better.<br />
+His digestive system has matured: he can digest the proteins found in meat or fish.<br />
+As a result, even if his first teeth have not yet put in an appearance, he can still move gradually from runny textures through smooth pastes to more solid, coarsely chopped foods.
+
+
+            
+    		</li>
+		</ul>
+	</li>
+	<li>
+		<a href="#" class="item popular" rel="popular">8th month</a>
+		<ul>
+			<li >
+    Baby is beginning to be able to wait a little before satisfying his hunger: his meals can be spaced out a little. A new rhythm of 4 meals a day can be introduced, gradually.<br />
+Your baby is beginning to coordinate his swallowing and breathing better.<br />
+Because he is curious about absolutely everything, all he wants to do is make new discoveries, and his new capacities enable his to do just that!<br /> Make the most of it to develop his diet and share those tender moments of complicity together.
+
+            
+    		</li>
+		</ul>
+	</li>
+	<li>
+		<a href="#" class="item popular" rel="popular">9th month</a>
+		<ul>
+			<li >
+ In the coming months, your little cherub will gradually be able to start enjoying small soft bits in his food, feeding himself with his own little spoon or picking up little pieces with his fingers.<br />
+Baby has become even more expressive: if he doesn’t like a given food, he turns his head and closes his mouth.<br />
+He has gone successfully from smooth pastes to minced foods.<br />
+His first teeth may well have appeared by now. The 8 upper and lower incisors are the first to appear, usually between 6 months and 1 year. But this may vary quite a lot from one baby to the next…<br />
+So if your little bay’s gums are still all smooth, there’s no need to worry: this won’t prevent him from gradually beginning to learn how to eat small pieces of soft food.
+           
+    		</li>
+		</ul>
+	</li>
+	<li>
+		<a href="#" class="item popular" rel="popular">10th month</a>
+		<ul>
+			<li >
+   Baby is getting better and better at chewing: he can swallow those small soft pieces even more easily now.<br />
+His sense of taste is developing, and becoming more refined: he is more sensitive to different associations of flavours and likes more and more elaborate dishes.<br />
+He is starting to take hold of objects between thumb and forefinger: as a result, he will often take small pieces of food and eat them with his fingers.<br />
+And because Nature has thought of everything before us, this new manual dexterity comes at just the same time as Baby is able to enjoy his biscuit.<br /> What a treat to be able to hold the biscuit and feed himself!
+ 		</li>
+		</ul>
+	</li>
+	<li>
+		<a href="#" class="item popular" rel="popular">11th month</a>
+		<ul>
+			<li >
+       Baby is starting to be able to drink out of a glass: start by giving him a plastic drinking cup that is specially designed for babies.<br />
+New teeth begin to appear, again with wide variations between babies.<br />
+His physical progress means that he can eat with you at the table: he can sit up straight in his high chair and be part of family meals.<br />
+Easting at a table is an important step on the road to growing up. Your baby will be as proud as a peacock, and it’s a wonderful opportunity to carry on learning!
+
+            
+    		</li>
+		</ul>
+	</li>
+	<li>
+		<a href="#" class="item popular" rel="popular">12th month</a>
+		<ul>
+			<li >
+     As he approaches his first birthday, your baby is becoming ever more sociable, and discovering the joys of eating together as a family. His nutritional needs, however, are not yet in any way comparable to those around his.
+
+            
+    		</li>
+		</ul>
+	</li>
+	
+	
+</ul>
+    </div>
+    </div>
+</div>
+</div>
+
+
+<div class="products_gal">
+<h3 style="color:#8dc1eb">Products for 6-12 months</h3>
+<div class="spacer"></div>
+<div class="list_carousel">
+				<ul id="foo2">
+					<li><a href="products_infant_6-12.html"><img src="images/pro_01.jpg" width="86" height="100" alt="pro" /></a></li>
+					<li><a href="products_infant_6-12.html"><img src="images/pro_02.jpg" width="86" height="100" alt="pro" /></a></li>
+					<li><a href="products_infant_6-12.html"><img src="images/pro_03.jpg" width="86" height="100" alt="pro" /></a></li>
+					<li><a href="products_infant_6-12.html"><img src="images/pro_01.jpg" width="86" height="100" alt="pro" /></a></li>
+					<li><a href="products_infant_6-12.html"><img src="images/pro_02.jpg" width="86" height="100" alt="pro" /></a></li>
+					<li><a href="products_infant_6-12.html"><img src="images/pro_03.jpg" width="86" height="100" alt="pro" /></a></li>
+                    <li><a href="products_infant_6-12.html"><img src="images/pro_01.jpg" width="86" height="100" alt="pro" /></a></li>
+					<li><a href="products_infant_6-12.html"><img src="images/pro_02.jpg" width="86" height="100" alt="pro" /></a></li>
+					<li><a href="products_infant_6-12.html"><img src="images/pro_03.jpg" width="86" height="100" alt="pro" /></a></li>
+                    <li><a href="products_infant_6-12.html"><img src="images/pro_01.jpg" width="86" height="100" alt="pro" /></a></li>
+					<li><a href="products_infant_6-12.html"><img src="images/pro_02.jpg" width="86" height="100" alt="pro" /></a></li>
+					<li><a href="products_infant_6-12.html"><img src="images/pro_03.jpg" width="86" height="100" alt="pro" /></a></li>
+                    <li><a href="products_infant_6-12.html"><img src="images/pro_01.jpg" width="86" height="100" alt="pro" /></a></li>
+					<li><a href="products_infant_6-12.html"><img src="images/pro_02.jpg" width="86" height="100" alt="pro" /></a></li>
+					<li><a href="products_infant_6-12.html"><img src="images/pro_03.jpg" width="86" height="100" alt="pro" /></a></li>
+                    <li><a href="products_infant_6-12.html"><img src="images/pro_01.jpg" width="86" height="100" alt="pro" /></a></li>
+					<li><a href="products_infant_6-12.html"><img src="images/pro_02.jpg" width="86" height="100" alt="pro" /></a></li>
+					<li><a href="products_infant_6-12.html"><img src="images/pro_03.jpg" width="86" height="100" alt="pro" /></a></li>
+				</ul>
+				<div class="clearfix"></div>
+				<a id="prev2" class="prev" href="#"><img src="images/arrow_left.png" width="43" height="33" /></a>
+				<a id="next2" class="next" href="#"><img src="images/arrow_right.png" width="43" height="33" /></a>
+	<div id="pager2" class="pager"></div>
+			</div>
+</div>
+<!-- Footer Starts Here -->
+<div class="footer clear">
+  <div class="wrapper clear">
+    <div class="footer_boxes clear">
+      <div class="footboxes footbox_01">
+        <h3>الحمل</h3>
+        <ul>
+        <li><a href="featured.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding.html">التغذية</a></li>
+          <li><a href="growing.html">النمو و التطور</a></li>
+                    <li><a href="products.html">المنتجات الخاصة للحامل</a></li>
+          <li><a href="faq.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_02">
+        <h3>الأشهر الأولى</h3>
+        <ul>
+          <li><a href="feeding_infant_0-6.html">التغذية</a></li>
+          <li><a href="growing_infant_0-6.html">النمو و التطور</a></li>
+          <li><a href="faq_infant_0-6.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_03">
+        <h3>من ٦‎ إلى ١‎٢‎ شهر</h3>
+        <ul>
+          <li><a href="featured_products_infant_6-12.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding_infant_6-12.html">التغذية</a></li>
+          <li><a href="growing_infant_6-12.html">النمو و التطور</a></li>
+          <li><a href="products_infant_6-12.html">المنتجات الخاصة لعمر ٦-١٢ شهراً</a></li>
+          <li><a href="faq_infant_6-12.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_04">
+        <h3>الأطفال من ١‎ إلى ٣‎ سنوات</h3>
+        <ul>
+          <li><a href="featured_products_toddler.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding_toddler.html">التغذية</a></li>
+          <li><a href="growing_toddler.html">النمو و التطور</a></li>
+          <li><a href="products_toddler.html">المنتجات الخاصة لعمر ١ إلى ٣ سنوات</a></li>
+          <li><a href="faq_toddler.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_05">
+        <h3>مرحلة ما قبل المدرسة:٣‎ إلى ٥‎ سنوات</h3>
+        <ul>
+          <li><a href="featured_products_preschooler.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding_preschooler.html">التغذية</a></li>
+          <li><a href="growing_preschooler.html">النمو و التطور</a></li>
+          <li><a href="products_preschooler.html">المنتجات الخاصة لعمر٣ إلى ٥ سنوات</a></li>
+          <li><a href="faq_preschooler.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer_menu">
+      <ul>
+        <li><a href="index.html">الصفحة الرئيسية</a></li>
+        <li><a href="parenting.html">الأمومة</a></li>
+        <li><a href="#">الوصفات</a></li>
+        <li><a href="our_commitment.html">التزاماتنا</a></li>
+        <li><a href="#">نادي طفل نستله</a></li>
+        <li><a href="#">اتصل بنا</a></li>
+        <li><a href="faq.html">الأسئلة و الأجوبة</a></li>
+        <li><a href="#">خريطة الموقع</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer_rule">
+    <div class="wrapper">
+      <div class="copy_right_right">علامات "بداية صحية لحياة صحية" هي علامات تجارية لشركة سوسيتيه دي برودوي نستله إس. إيه. فيفي – سويسرا<br />كل العلامات التجارية هي من ملك لشركة سوسيتيه دي برودوي نستله إس. إيه. فيفي – سويسرا</div>
+      <div class="copy_right_left">نستله نيوترشن<span dir="ltr">&nbsp;2013&nbsp;</span>جميع الحقوق محفوظة<br />
+        <a href="privacy_policy.html" class="active">الشروط و الأحكام  .  سياسة الخصوصية</a> </div>
+    </div>
+  </div>
+</div>
+<!-- Footer Ends Here -->
+
+</body>
+</html>

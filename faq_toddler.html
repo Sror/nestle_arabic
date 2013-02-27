@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>التغذية نستله</title>
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" language="javascript" src="js/jquery-1.8.2.min.js"></script>
+
+<script src="js/jquery.anythingslider.js"></script>
+	<script>
+	$(function() {
+		$('#slider2').anythingSlider({
+			expand       : true,
+			showMultiple : 1,
+			changeBy     : 1
+		});
+	});
+	
+	$(document).ready(function(){
+		$(".more_btn").toggle(function(){
+		$(this).text("Less");
+		$(this).next(".acc_cont").slideDown(300);
+		$(this).toggleClass("less");
+		},
+		function(){
+		$(this).text("More");
+		$(this).next(".acc_cont").slideUp(300);	
+		$(this).toggleClass("less")
+		});
+	});
+	$(document).ready(function () {
+		$('.accordion a.item').click(function () {
+			//slideup or hide all the Submenu
+			if($($(this)).hasClass($(this).attr('rel') + 'Over')){
+				$(this).siblings('ul').slideUp('fast');	
+				$(this).removeClass($(this).attr('rel') + 'Over');
+			}else{
+				$('html,body').animate({scrollTop: $(this).offset().top}, 1000);
+				$(this).siblings('ul').slideDown('fast');
+				$(this).addClass($(this).attr('rel') + 'Over');   
+			}
+			return false;
+		});
+	});
+	$(document).ready(function () {
+		$('.accordion-2 a.item').click(function () {
+			//slideup or hide all the Submenu
+			$('.accordion-2 li').children('ul').slideUp('fast');	
+			//remove all the "Over" class, so that the arrow reset to default
+			$('.accordion-2 a.item').each(function () {
+				if ($(this).attr('rel')!='') {
+					$(this).removeClass($(this).attr('rel') + 'Over');	
+				}
+			});
+			//show the selected submenu
+			$(this).siblings('ul').slideDown('fast');
+			//add "Over" class, so that the arrow pointing down
+			$(this).addClass($(this).attr('rel') + 'Over');			
+			return false;
+		});
+	});	</script>
+
+</head>
+<body>
+
+<!-- Header Starts Here -->
+<div class="header">
+  <div class="wrapper">
+    <div class="logo"> <img src="images/nestle_logo.png" width="147" height="99" alt="نستله"> </div>
+    <div class="header_left">
+      <div class="header_left_top">
+        <ul>
+          <li> <a href="/"  class="active">الصفحة الرئيسية</a> </li>
+          <li> <a href="our_commitment.html">التزاماتنا</a> </li>
+          <li> <a href="#">نادي طفل نستله</a> </li>
+          <li> <a href="parenting.html">الأمومة</a> </li>
+          <li> <a href="">اتصل بنا</a> </li>
+          <li> <a href="#">خريطة الموقع</a> </li>
+          <li> <a href="#">الحمل</a> </li>
+          <li> <a href="/eng" style="font-family: 'VAGRoundedStd-Light';" dir="ltr">English</a> </li>
+        </ul>
+        <div class="search_wrap">
+          <input name="" type="text" placeholder="البحث">
+          <input name="" type="submit">
+        </div>
+      </div>
+      <div class="nav">
+        <ul>
+          <li id="preg"> <a href="pregnancy.html">الحمل</a> </li>
+          <li id="inf_0_6"> <a href="infant_0-6.html">الأشهر الأولى</a> </li>
+          <li id="inf_6_12"> <a href="infant_6-12.html">من ٦‎ إلى ١‎٢‎ شهر</a> </li>
+          <li id="inf_1_3"> <a href="toddler.html">الأطفال من ١‎ إلى ٣‎ سنوات</a> </li>
+          <li id="inf_3_5"> <a href="preschooler.html">مرحلة ما قبل المدرسة:٣‎ إلى ٥‎ سنوات</a> </li>
+          <li id="for_ur_baby"> <a href="for_your_baby.html">لأجل طفلك</a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Header Ends Here -->
+<div class="inner_content clear">
+<div class="leftbar">
+
+<div class="toddler_1_3_feeding">
+<h4>Toddler 1-3 Years</h4>
+<div class="left_inner">
+  <ul class="header_ul">
+    <li>Faq's</li>
+  </ul>
+  <ul class="accordion-2">
+  <li><a href="featured_products_toddler.html" style="background:none !important;">
+Featured Products</a>
+  <!--<ul>
+  <li>
+  
+  	<ol>
+    	<li style="border:none !important"><a href="featured_products_toddler.html#featured_products_toddler">Product1 </a></li>
+    
+    </ol>
+  
+  </li>
+  </ul>--></li><li><a href="growing_toddler.html" style="background:none !important;">Baby Growth and Development
+</a>
+  <ul>
+  <li>
+  
+  	<ol>
+    	<li style="border:none !important"><a href="growing_toddler.html#growing_toddler.html">How is your toddler progressing?
+ </a></li>
+    
+    </ol>
+  
+  </li>
+  </ul></li>
+  <li><a href="feeding_toddler.html" style="background:none !important;">Nutrition & Feeding</a>
+  <ul>
+  <li>
+  
+  	<ol>
+    	<li style="border:none !important"><a href="feeding_toddler.html#feeding_toddler">What can your toddler start to eat? </a></li>
+    
+    </ol>
+  
+  </li>
+  </ul>
+  </li>
+  <li><a href="products_toddler.html" style="background:none !important;">
+Products for 1-3yrs</a>
+  <ul>
+  <li>
+  
+  	<ol>
+    	<li style="border:none !important"><a href="products_toddler.html#products_toddler">NAN 3 </a></li>
+    <li style="border:none !important"><a href="products_toddler.html#products_toddler">NAN HA 3 </a></li>
+    <li style="border:none !important"><a href="products_toddler.html#products_toddler">NAN One plus </a></li>
+    
+    </ol>
+  
+  </li>
+  </ul></li>
+  </ul>
+</div>
+</div>
+
+<div class="faq_img">
+<img src="images/elephant.png" />
+</div>
+</div>
+<style>
+.anythingSlider-default.activeSlider .anythingControls a {
+	/* background image = top shadow */
+	background-color: #ffc832;
+}
+.anythingSlider-default .anythingControls a.start-stop:hover,
+.anythingSlider-default .anythingControls a.start-stop.hover,
+.anythingSlider-default .anythingControls a.start-stop .anythingControls ul a:hover {
+	background-image: none;
+	color: #ffc832;
+}
+
+</style>
+
+<div class="toddlerfaq_right faq_right">
+<h2>Frequently Asking Questions</h2>
+<br />
+<div class="quest" id="faq_infant_0-6">
+    <div style="width:80%;"><p>My child doesn’t eat much, what should I do?</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont">
+    At this age, your child becomes more curious and begins to explore his surroundings. This distracts him from eating. Also, he is beginning to express his independence by refusing certain foods and eating only what he wants. This is natural, so don’t worry and don’t set your expectations too high. Interestingly, after age 1 due to the slowdown in the growth rate, caloric requirement also decreases which could lead to a decrease in food consumption. But this does not diminish the importance of good nutrition; however, it does pose a few challenges. The most important thing the mother can do to make sure that her child is getting his daily nutritional requirements for growth and healthy development, is to provide him with a large variety of foods from each of the five food groups. <br />
+And remember, for all young children, snacks play an important role in meeting food needs. As the appetite of young children tends to be small they may not be able to consume a full meal at one time. <br />
+Healthy children, when given the right selection of healthy foods, will tend to eat just the right amount. Our role as parents is to learn to recognize their signals. When we attempt to force a baby to keep eating, or even to coax them to eat more, they lose trust in their bodies’ own signals.<br />
+We recommend you offer your child 2 cups of growing-up milk every day to help him achieve a balanced diet. 
+<br /><h5>
+Here are some tips to encourage proper eating:</h5> <blockquote> <ul style="line-height:normal;list-style-type:disc"><li>
+Make sure your child is hungry,  avoid snacking 2 hours before a main meal</li><li>
+Allow for some quiet time before meals, they eat better when relaxed</li><li>
+Let your child feed himself, this is the age of independence: Put his food in child-sized dishes and utensils that he can use easily</li><li>
+Sit down and Share meals together he’ll eat what you’re eating and give them enough time to eat, since they just learned to do it themselves.</li><li>
+Reward with attention and affection not sweets. This promotes unhealthy attitudes towards food.</li><li>
+Make attractive, texture, shapes and colors</li>
+<li> Respect food preference: give them an alternative when they really dislike the food</li>
+</ul></blockquote>
+
+   </div>
+</div>
+<hr />
+<div class="quest">
+    <div style="width:80%;"><p>How can I make sure my toddler has a balanced and varied diet?
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont">This is a transitional period, where children learn how to eat and to accept new foods with new tastes and textures and transition to newer foods. The most important thing you can do to make sure that your child is getting his daily nutritional requirements for growth and healthy development, is to provide him with a large variety of foods from each of the five food groups. <br />
+Depending on their weight, and the level of activity they have, young children need about 1000-1400 calories a day. <br />
+Children get their needs of carbohydrates, proteins, essential fats, in addition to vitamins and minerals to ensure proper growth and development through a healthy varied and balanced diet from the entire 5 food group distributed over 5 meals a day. <br /><h5>
+For example, a 1200 calories toddler meal plan would include: </h5><blockquote>
+•&nbsp;&nbsp;&nbsp;&nbsp;Breads and cereals: 4-6 servings (1 serving = 1 slice of bread or ½ cup cooked rice or potato or pasta…)<br />
+•&nbsp;&nbsp;&nbsp;&nbsp;Vegetables: 2-3 servings (1 serving= 1 cup raw vegetables or ½ cup cooked vegetables)<br />
+•&nbsp;&nbsp;&nbsp;&nbsp;Fruits: 2-3 servings (1 serving= 1 medium fruit or ½ cup fresh fruit juice)<br />
+•&nbsp;&nbsp;&nbsp;&nbsp;Milk & Dairy: 2-3 servings (offer your child 2 cups of growing-up milk and one serving from another dairy &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;product. Examples of a serving: 2 tablespoons of labneh or 40gm cheese)<br />
+•&nbsp;&nbsp;&nbsp;&nbsp;Meat and beans: 2 servings (examples of a serving= 30 gm of lean meat or 1 egg or ½ cup of cooked &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;beans)<br /></blockquote>
+In addition to selections from each of the food groups, young children need to have the equivalent of 3 to 4 teaspoons of healthy oils daily.
+Nutrition is all about averages so do not panic if your child does not finish his food every day. Just provide him with a variety of healthy foods from all the food groups to ensure that he is meeting his needs.
+</div>
+</div>
+<hr />
+<div class="quest">
+    <div style="width:80%;"><p>How can I get my picky eater to enjoy food more?
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont">
+    At this age, your child is beginning to express his independence by refusing certain foods and eating only what he wants and also, he becomes more curious and begins to explore his surroundings. This distracts him from eating.. This is natural, so don’t worry and don’t set your expectations too high. <br />
+As long as your preschooler is healthy, energetic and is growing normally for his age then he is getting his needs. So you need not get frustrated, picky eating is something most kids grow out of. It is just their way of showing their independence and it will soon fade out on its own.<br /><h5>
+Here are some tips on how to deal with your picky eater and help him try new foods: </h5><blockquote><ul style="list-style-type:disc;line-height:normal"><li>Offer new foods many times. It may take up to a dozen tries for a child to accept a new food. </li><li>
+Give him a small taste at first and be patient with him. Eventually his taste buds will get used to the new and he will learn to enjoy it.</li><li>
+Be a good role model by trying new foods yourself. Show your child that you are eating the same and soon he will want to try for himself.</li><li>
+Offer only one new food at a time. Serve something that you know your child likes along with the new food.</li><li>
+Offer new foods first, at the beginning of a meal, when your child is still hungry.</li><li>
+Involve your child in doing the groceries children enjoy help out in picking out produce and this way he can choose foods such as fruits and vegetables that look appealing. </li><li>Involve your child in the preparation of the food; they are more likely to eat something they helped prepare.</li><li>Offer a variety of foods for your child to choose from. Usually children go for the second one, so offer the one you want to give second. Example, do you want yogurt or strawberries?</li><li>Cool down, do not get angry if your child refuses to eat a certain food or if he is restless at the table tell him to go to his room and do not offer food till the next meal.</li><li>
+Buy plates, bowls and cups with your child’s favorite heroes or characters pictured on them. This is one way to encourage him to eat new foods.</li><li>
+Many children eat better in a group of kids, so try to regularly invite your child’s friends, relatives or neighbours over and introduce new foods!</li><li>
+Don’t force him to eat: Healthy children, when given the right selection of healthy foods, will tend to eat just the right amount. Our role as parents is to learn to recognize their signals. When we attempt to force a child to keep eating, or even to coax them to eat more, they lose trust in their bodies’ own signals. </li></ul></blockquote>
+
+    </div>
+</div>
+<hr />
+<div class="quest">
+    <div style="width:80%;"><p>My toddler doesn’t like to drink milk, what should I do?</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont"><h5>Here are some tips to help encourage your child to drink milk: </h5><blockquote>
+•&nbsp;&nbsp;&nbsp;&nbsp;Involve your child in preparing his milk: this will make him more likely to accept it. <br />
+•&nbsp;&nbsp;&nbsp;&nbsp;Dunk in the biscuit: as an afternoon snack, serve milk cold with your child’s favorite biscuits, show him &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;how to dunk them in and enjoy them even more  with their growing-up milk.<br />
+•&nbsp;&nbsp;&nbsp;&nbsp;Prepare a milk pudding with the new milk: Puddings are a very tasty and usually very popular with the &nbsp;&nbsp;&nbsp;kids. They are easy to make together with your child. For example: (mouhallabieh, riz bel halib, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kashtalieh).<br />
+•&nbsp;&nbsp;&nbsp;&nbsp;Make milk fruit smoothies: These taste great and are an excellent healthy choice. Full of vitamins and &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;minerals, they give your child a boost of energy and guess what? A cup of milk!<br />
+•&nbsp;&nbsp;&nbsp;&nbsp;Improvise: sometimes you need to play it smart and make milk appealing to your kids: Incorporate milk &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in your cooking: a very easy inconspicuous way to add milk in your child’s diet. Just incorporate it in your &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cooking. Soups with milk, pasta with white sauce prepared with milk.<br />
+•&nbsp;&nbsp;&nbsp;&nbsp;Buy nice sippy cups and straws: that can make drinking the milk more fun and appealing to your child.</blockquote>
+</div>
+</div>
+<hr />
+<div class="quest">
+    <div style="width:80%;"><p>What nutrients are important for my child’s immunity?
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont">The thing about illness and children, particularly younger children, is that they haven’t been around very long and their bodies have not met many of the germs that surround us. Therefore, they get sick often. This leads to an important fact: In order to build immunity, children have to get sick! You can help boost your child’s immunity with the active involvement and cooperation of the person caring for your child – whether that is yourself, a nanny or outside day care – by providing your child with a healthy balanced diet, ensuring good hygiene and, most importantly, insisting on frequent hand washing.<br /><h5>
+The most important nutrients for immunity are: </h5><blockquote> <ul style="list-style-type:disc;line-height:normal"><li>
+Protein: Protein is essential for growth, tissue repair and enzyme activity. Animal products (e.g., meat, dairy and eggs) constitute the main source of high-quality protein.</li>
+<li>Vitamins and minerals: These include Vitamins A, C and E, zinc and selenium. They protect cells in your child’s body from oxidation and defend him against germs and infection. Coloured fruits and vegetables are rich in Vitamins A and C; vegetable oil and avocados are rich in Vitamin E; meat and seafood are rich in zinc and selenium.</li>
+<li>Iron: A very important component of red blood cells. It prevents iron-deficiency anaemia and protects your child from infections. Foods that contain high amounts of iron include liver, meat, beans, green vegetables and fortified cereals and some growing-up milks.</li>
+<li> Fat: A source of concentrated energy, fat also serves as a vehicle for certain vitamins like A, D, E and K. Essential Fatty Acids (EFAs) play an important role in building cells and enhancing your child’s immunity.</li><li>
+Probiotics and prebiotics: These are ingredients found in fortified foods, such as some growing-up milks for children, and can help build your child’s natural immunity.</li></ul></blockquote>
+</div>
+</div>
+<hr />
+<div class="quest">
+    <div style="width:80%;"><p>What role do Prebiotics play in protecting my child’s digestive system?
+
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont">Prebiotics are carbohydrates that are not digested or absorbed in the small intestine but remain intact through the digestive tract to reach the large intestine where they essentially serve as food for the beneficial bacteria (microflora) that resides there. Alongside fibre, they play an important role in maintaining your child’s healthy digestive system.<br />
+From the time your child begins to crawl, and as he learns to walk and run, curiosity drives much of his activity. He will touch, and even taste, whatever he can get his hands on. This exposes your child to all kinds of bacteria and microbes that can cause stomach upset, irregular bowel movements and diarrhoea that can be severe at times. Prebiotics play a role in treating constipation in children, and research shows that they also can help protect the gut from harmful microorganisms that can lead to intestinal infections. <br />
+One good way to help your child stay healthy and keep his immune system strong is to choose his foods wisely and make sure that they include prebiotics. <br /><h5>
+Where can you find Prebiotics?</h5>
+ Prebiotics are found naturally in fruits and vegetables such as tomatoes, bananas, berries, onions, garlic, artichoke, asparagus, chicory and spinach; it is also present in grains such as wheat and barley; legumes, including lentils, kidney beans, chickpeas, navy beans and soy beans, and Growing-Up milk fortified with prebiotics.   So try to include these foods in his diet, and offer your child 2 cups of Growing-up milk that is fortified with Prebiotics.
+</div>
+</div>
+<hr />
+<div class="quest">
+    <div style="width:80%;"><p>What kinds of physical exercises can my toddler do?
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont">Toddlers develop physically when exposed to different physical activities & if they are not given the opportunity to do all sorts of activities there will be a small delay in areas that they are not quite familiar with.
+Here are some ideas of activities for toddlers between 1 - 3 years old depending on their development: (note: make sure to create a safe environment for your child to play!)<blockquote><ul style="line-height:normal;list-style-type:disc"><li>
+From 12 - 18 months : At this stage toddlers are generally beginning to walk so playing with push toys may help to develop walking skills. Also they should be allowed to roll, catch & throw balls, carry items, build with blocks & play hide & seek.</li><li>
+From 18 - 24 months: At this time toddlers should be encouraged to kick a ball, walk up & down stairs and also dance to music which is also a great activity for physical development.</li><li>
+From 2 - 2.5 years : At this time toddlers can sit on a small tricycle but cannot use pedals but propel vehicle forward with feet on floor, run well, climb easily & can jump with 2 feet together from a low step.</li><li>
+From 2.5 - 3 years: At this time toddlers can turn around obstacles & corners while running so can participate actively in hide & seek, can ride tricycle using pedals & can steer round wide corners, can stand & walk on tiptoe & can stand on one foot, also they can sit feet crossed at ankles so they can be encouraged to play gymnastics or ballet & can play with scooter. They can start to learn swimming. </li></ul></blockquote>
+</div>
+</div>
+<hr />
+<div class="quest">
+    <div style="width:80%;"><p>My baby is exerting her independence. Is it wrong to discipline her already?
+
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont">Your baby wants and needs to explore the world, and she needs you there to help her. Her new-found independence is exciting, but can also lead to potential problems. When you correct her, as you sometimes must, she may dissolve into tears or even have a toddler tantrum. Respond lovingly, but firmly with a simple "No," but, avoid getting harsh or using too many words to explain yourself. Find ways to distract your child from most misbehavior.
+</div>
+</div>
+<hr />
+<div class="quest">
+    <div style="width:80%;"><p>I'm worried about dangers in the kitchen and bathroom. Any ideas?
+
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont">Each room in your house has its own unique hazards, but with careful attention to safety, these hazards can be minimized. In the kitchen, cover oven knobs. Keep knives and pan handles away from the work top edges so they don’t tumble into baby’s path. Plastic shopping bags should be out of reach too. In the bathroom, place all medications in a locked or inaccessible cabinet. Keep the toilet lid down by installing a lid latch. Add spout guards on bath taps to protect baby’s head at bath time, and adjust the temperature of your water heater to no higher than 120 degrees Fahrenheit or 48 degrees Celsius so she can’t be scalded. And remember: Electricity and water don’t mix. Keep hair dryers, radios, and other small electric items out of reach or out of the bathroom. Discover more in our Parenting section.
+</div>
+</div>
+<hr />
+<div class="quest">
+    <div style="width:80%;"><p>Any tips on how to make eating out with a baby less stressful?
+
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont">Dining out with your baby can be a challenge, but advance planning will make your meal out more pleasant. Make a list of family-friendly restaurants and talk with other new mums to find out their experiences with these places. Before leaving the house, pack baby’s bag with formula and bottles (if not breastfeeding), bibs, cups, spoons, baby wipes, and nappies. Include favorite toys and snacks for diversions. Avoid dining during the busy hours. Crowds and excessive noise can upset your baby. Ask for an out-of-the-way table that provides plenty of room for your baby supplies and changing bag. It also means that if you are still breastfeeding you can have a quieter place to feed your baby. If your baby gets fussy, try to divert her with toys. If that doesn’t work, take a walk to calm her down. And do it quickly. There’s no reason to wait until all eyes are on your table before you try to remedy the problem. And at all times, remain flexible. If the restaurant of your choice is crowded even at off-peak time, go elsewhere. If baby simply wants nothing to do with the experience on a particular day, ask for a takeaway. Perhaps this is the perfect time for an impromptu picnic in the park (weather permitting) instead of dinner indoors.   
+</div>
+</div>
+<hr />
+<div class="quest">
+    <div style="width:80%;"><p>My baby keeps throwing his food on the floor. What can I do?
+
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont">Mealtime is as much a time for nutrition as a time to learn social skills. Throwing food across    the room makes for cute scenes and it can be funny - but beware, your laughter may encourage unwanted behaviour. Without dampening your baby’s enthusiasm for food and the spirit of the family gathering, start letting your baby know what you think is or is not appropriate. Pleasant chat and laughter make meals enjoyable for baby and the whole family.
+</div>
+</div>
+<hr />
+<div class="quest">
+    <div style="width:80%;"><p>I hear that toddlers are at risk of having Iron deficiency Anemia. How to prevent it in my child?
+
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont">Iron plays a major role in your child’s physical and mental development, as well as strengthening his immune system. Anemia caused by iron deficiency is common among little children. This form of anemia is most often a result of not eating enough foods – such as meat – that contain iron. To prevent your child from having it, offer your child foods rich in iron. These include:<blockquote><ul style="line-height:normal;list-style-type:disc"><li>
+Meat, poultry & fish: The most important source of iron and one that is easily absorbed by the body</li><li>
+Legumes (e.g., lentils and beans) and green leafy vegetables (e.g., spinach) <br />
+Always add a source of Vitamin C to vegetarian iron-rich sources (Orange, Lemon Juice) to maximize the absorption of Iron in your child’s body.</li>
+<li>Fortified foods: Some foods, such as growing-up milk and breakfast cereals, often are enriched with iron. As milk plays a vital role in your child’s daily diet, offer 2 cups of Growing-up milk fortified with iron every day, it helps your child meet his daily requirement of this important mineral.</li></ul></blockquote>
+</div>
+</div>
+<hr />
+<div class="quest">
+    <div style="width:80%;"><p>My child doesn’t accept the taste of meat. How can I give him the amount of Iron he needs?
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont">It is right that your child might not be getting enough iron from a meat-free diet and can therefore be at a higher risk of developing iron deficiency anemia, a common nutrient disorder in childhood. He also needs Iron for his mental development, to keep him active and energetic as well as to strengthen his immunity. It is quite common for young children not to like meat. Here are some tips: <blockquote>
+•&nbsp;&nbsp;&nbsp;&nbsp;Hide minced meat in his meal. Boil it or steam it, put it in a blender until very thin and add it to his favorite &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foods. Mix it with mashed potatoes, pasta sauce, vegetables, or rice and yogurt dishes.<br />
+•&nbsp;&nbsp;&nbsp;&nbsp;Keep reintroducing meat from time to time, preferably along with other foods he already knows and likes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;as your child’s tastes change and he might accept meat later.<br />
+•&nbsp;&nbsp;&nbsp;&nbsp;Try to substitute red meat with poultry or fish. If he rejects all types of meats, try eggs or pulses such as &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lentils and beans, chickpeas, fava beans. Or, dark green leafy vegetables, dried fruits, dark molasses, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;whole grain and enriched bread and cereals. Always add a source of Vitamin C to vegetarian iron-rich &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sources (Orange, Lemon Juice) to maximize the absorption of Iron in your child’s body.<br />
+•&nbsp;&nbsp;&nbsp;&nbsp;Some foods, such as milk and breakfast cereals, often are enriched with iron. As milk plays a vital role in &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;your child’s daily diet, offer your child 2 cups of Growing-up milk fortified with iron every day, it helps &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;your child meet his daily requirement of this important mineral.</blockquote>
+
+</div>
+</div>
+<hr />
+<div class="quest">
+    <div style="width:80%;"><p>My child won’t eat his vegetables. What important nutrients is he missing out on? 
+
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont">Not only vegetables are the healthiest of all foods, they are also packed with vitamins & minerals that the children need for normal metabolism, growth and development as well as helping their little tiny bodies fights germs and infections. Vegetables are also rich in fibers that stimulate the good motility of the digestive system and prevent constipation.<h5>
+Here are some additional tips to encourage your child eat his veggies:</h5><blockquote>
+•&nbsp;&nbsp;&nbsp;&nbsp;Allow your child to interact with food such as vegetables by making different shapes and sizes and then &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;eating his work of art<br />
+•&nbsp;&nbsp;&nbsp;&nbsp;Buy plates, bowls and cups with your child’s favorite heroes or characters pictured on them. This is one &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;way to encourage him to eat new foods or tricky foods<br />
+•&nbsp;&nbsp;&nbsp;&nbsp;Involve your child in food shopping to introduce him to a variety of vegetables and fruits; and let them &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;help you pick out what they like to eat<br />
+•&nbsp;&nbsp;&nbsp;Many children eat better in a group of kids, so try to regularly invite your child’s friends, relatives or &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;neighbours over and offer new veggies or reintroduce the veggies he rejected before<br />
+•&nbsp;&nbsp;&nbsp;&nbsp;If your child is attending daycare, include fresh fruits and vegetables in his lunch box as kids tend to eat &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;them when they are hungry<br />
+•&nbsp;&nbsp;&nbsp;&nbsp;As snacks for your child, always have fresh fruits and vegetables washed, cut and ready to serve in the &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;refrigerator<br />
+•&nbsp;&nbsp;&nbsp;&nbsp;Set a good example by saying “I love salad” or “I love broccoli.” Who knows, your child may be tempted &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to try it?<br />
+•&nbsp;&nbsp;&nbsp;&nbsp;When all else fails, sneak it in. Make carrot muffins; add shaved carrots to the pasta sauce. Just add &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;grated vegetables or pieces of fruit to virtually any meal!</blockquote>
+</div>
+</div>
+<hr />
+<div class="quest">
+    <div style="width:80%;"><p>My baby is suffering from constipation. How can I help him?
+
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont">A healthy digestive system is a sign of good health, good immunity and good nutrition rich in fibre. If your child is passing hard stools, having less than 3 movements of hard stools a week and having difficulty and pain in this process, it means he’s constipated.<h5>  Here are some tips to help your child:</h5><blockquote><ul style="line-height:normal;list-style-type:disc">
+<li>Encourage your child to drink enough water, water and with fiber help pass the stools</li>
+
+<li>To help your child be regular, enhance his diet with fibre:<blockquote>-&nbsp;&nbsp;&nbsp;&nbsp;Offer vegetables on every meal, like a vegetable soup for lunch or cut small pieces of his &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;favorite vegetables as a salad for dinner<br/>
+-&nbsp;&nbsp;&nbsp;&nbsp;Offer him a fruit salad or dried fruits as snacks (raisins, prunes, apricots) <br/>
+-&nbsp;&nbsp;&nbsp;&nbsp;Include in his menu pulses 2-3 times a week, including beans, lentils and chickpeas.<br/>
+-&nbsp;&nbsp;&nbsp;&nbsp;Healthy snacks that are full of fibre include, a whole wheat bread sandwich, porridge, or &nbsp;&nbsp;&nbsp;oats and milk, try whole-wheat pancakes or whole grain breakfast cereals with milk, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bran muffins.<br/></blockquote> </li>
+
+<li> To enhance a healthy regular bowel movement and build good bacterial balance in your child’s digestive system, offer foods rich in Probiotics and Prebiotics.<br />
+Probiotics are healthy bacteria that aid digestion, prevent an overgrowth of harmful bacteria, and protect your child’s body by strengthening his immune system. They are found in yogurt, cheese as well as foods fortified with probiotics like fortified growing-up milk.
+Prebiotics, on the other hand, are indigestible fibers that nurture the growth of good bacteria in your child’s digestive system. These are found in artichokes, bananas, garlic, onions, leeks, asparagus, whole grains, legumes and in fortified growing-up milk.
+</li>
+<li> Encourage daily movement and involve your child in some physical activity everyday which helps keep bowels working well. </li>
+
+<li>Teach your child not to hold a bowel movement or else he may be stuck in a vicious cycle of hard stools, further ignoring the urge to go…  Explain that regular bowel movements are normal and important for good health.</li></ul> </blockquote>
+</div>
+</div>
+<hr />
+<div class="quest">
+    <div style="width:80%;"><p>How can I keep my baby healthy at day care?
+
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont">It’s natural to be concerned about protecting baby as she’s exposed to new environments and people. Maintaining a healthy immune system is baby’s best natural defense. During your baby’s first 12 months, she develops immunities and strengthens her resistance. However, the immune system doesn’t fully develop until children are teenagers. That’s why babies need extra care to keep them healthy. <h5>
+To help keep baby healthy, try these tips: </h5><blockquote><ol style="line-height:normal;list-style-type:"1""><li>
+ Breastfeed your baby throughout the first year of life. Breastmilk is the ideal source of nutrition and protection for baby throughout the first year of life, because it contains antibodies that help protect your baby. Breastfeeding also fosters an infection-fighting environment in your baby’s digestive tract that appears to help reduce the incidence of ear infections, allergies, and diarrhoea. </li><li>
+ Keep baby’s immunizations up to date. Take your baby for regular checkups, and make sure her immunizations stay on schedule. Talk to your health care professional about the best immunization schedule for your baby.</li><li>
+ Allow for plenty of rest. Ask your day care provider about when and where baby will nap. Babies and young children generally get their sleep from a combination of night time sleep and day time naps. Without adequate sleep, the immune system weakens, and baby becomes more vulnerable. Newborn babies need about 16 hours of sleep per day. After 6 months of age and until your child is 3 years old, the sleep requirement decreases slightly to between 10 to 14 hours per day. </li><li>
+ Keep baby’s environment clean. Many day care providers successfully limit the spread of colds and flu by frequently washing their hands, as well as the children’s hands, faces, toys, and changing surfaces. Ask about your provider’s policies, and adopt their routines.</li></ol>
+</div>
+</div>
+<hr />
+<div class="quest">
+    <div style="width:80%;"><p>When can I start to potty train my baby? How to ensure it is successful?
+
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont">The right age to start potty training is around 2 years as the muscles around the sphincter are strong enough to control the bladder and also because the child is able at this age to express her needs. By 4 years of age, the child should be potty trained at day time. By 5 years, the child should be potty trained at night time. If she is not potty trained by that age, please consult your pediatrician to help and offer you suitable recommendations.<br />
+The best way to prepare your child to be potty trained is to tell him at least 2 weeks in advance how important it is to be without diapers. When you start potty training, you should remove his diaper and ask him to pee every half hour on a potty or in the toilet (the potty is preferable for children who don’t want to interrupt their activity). This practice should be cultivated even outside the house, until you notice that your child is able to ask to go to the toilet. The next phase you will notice is that your child will be able to control himself for a longer time. Night-time potty training comes after daytime potty training has been acquired. Make sure not to offer him liquids before going to bed (for at least an hour) and encourage him not to wet his night suit, and when he succeeds, don’t forget to congratulate him.
+</div>
+</div>
+<hr />
+<div class="quest">
+    <div style="width:80%;"><p>My baby keeps on waking up at night. Is it normal?
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont">Toddlers sleep an average of about 12-14 hours a day and take one nap, and it is recommended that toddlers are put on a sleep schedule and have them stick to it every day even during weekends and holidays to ensure a continuation of this pattern. Sleep schedules and routines usually vary according to the child’s age and how much sleep he needs.
+The following table gives you an example of a sleep schedule for toddlers:<br /><br />
+<table cellspacing="0" cellpadding="10px" border="1">
+  <tr>
+    <th>Morning    wake-up time</td>
+    <th>Nap time</td>
+    <th>Nap wake-up time</td>
+    <th>Bed time</td>
+  </tr>
+  <tr>
+    <td>7:00 AM</td>
+    <td>11:00 AM</td>
+    <td>1:00 PM</td>
+    <td>7:00 PM</td>
+  </tr>
+</table>
+<br />
+Even with the above sleep schedule and a good routine you might still face problems in your child’s sleep, like waking up in the middle of the night crying, asking for milk or visiting your bed if he is old enough to climb out of his. Rest assured, it is normal for children or even adults to wake up in the night. Some toddlers know how to settle themselves back down and some need some assistance.
+Here are some tips to help your child fall back asleep:<blockquote><ul style="line-height:normal;list-style-type:disc">
+<li> Make sure that your baby is not waking up because of a dirty diaper, tight pajamas, feeling hot or cold, or hunger and check if he is ill. </li>
+<li>If your baby is attached to a sleep aid, like a dummy, a blanket or a doll, make sure that he can find it in his crib when he first wakes up. This way he is able to soothe himself back alone.</li>
+<li> Avoid including in the sleep routine music or lighting, unless, if he wakes up he will find the same conditions as when he fell asleep. If the music was on, the music needs to be playing when he wakes up!</li>
+<li> Avoid giving him a bottle of milk if he wakes up; break the rule once and he is already asking for it every time in the middle of the night. </li>
+<li>Avoid taking him out of his crib, and instead cuddle him or tap his back. When he first cries, wait for a while just in case he falls back to sleep alone. If he fails to do so, comfort him for a short time, and then get out. Return every 5 minutes at first, and then make the gaps bigger until he falls asleep, even if at first, he will cry a bit. This way, he knows that you are there for him, but that he needs to sleep.  After a few nights, he will learn to sleep faster. </li></ul></blockquote>
+</div>
+</div>
+<hr />
+<div class="quest">
+    <div style="width:80%;"><p>From what age can a child drink cow's milk?
+
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont">If you are still breastfeeding your baby, then it is advised to do so as long as possible, but do not introduce cow’s milk before your baby is one year old. If your baby is having an infant formula milk, or a growing-up milk suitable for his age, it is also recommended to continue as for as long as possible. What does that mean? It means that preferably, a mum should give her child at least 500 ml of specialised growing-up milk until the age of at least 3, simply because cow's milk does not provide all of the child's nutritional requirements. For example, it is too rich in proteins, it doesn't provide the essential fatty acids that the child needs for their brain to develop, nor does it provide the vitamins and trace elements such as iron and copper that infant formula milk contains.
+</div>
+</div>
+<hr />
+<div class="quest">
+    <div style="width:80%;"><p>What should you give my child who refuses milk in the morning?
+
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont">Growing-up milk plays a major role in your child’s growth and development especially between 1-3 years. Children who continuously avoid milk are exposed to loss in bone density which can cause osteoporosis later in life. 25% of children who avoid milk are prone to bone fractures before 8 years of age, most of them caused by small trips or falls.<br /><h5>
+Try making milk a little more fun! here are some delicious ways to serve it:</h5><blockquote><ul style="line-height:normal;list-style-type:disc"><li>Prepare a milkshake by add his favorite fruits such as strawberries </li>
+<li>Beat the milk with a teaspoon of vanilla flavor</li>
+<li> Try offering growing-up milk that is already flavored with Honey that babies usually like</li>
+<li> Add unsweetened cocoa powder (Serve with cold or hot milk) or add strawberry flavor</li>
+<li> Prepare milk in an attractive cup (with his favorite cartoon picture)</li>
+<li> Serve him milk with cereals suitable for his age.</li></ul></blockquote>
+
+Remember, toddlers need 3 milk and dairy products per day. So offer your child 2 cups of his growing- up milk that contains all the essential nutrients for healthy growth, brain development and good immunity, as well as 1 serving of yogurt, labneh or cheese. Include in his diet as well, foods that are naturally rich in Calcium such as Spinach and Broccoli, knowing that the absorption of Calcium is higher from milk.
+</div>
+</div>
+<hr />
+<div class="quest">
+    <div style="width:80%;"><p>Can you use frozen vegetables to feed one-year-old children?
+
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont">The answer is a clear YES! It's important that children eat vegetables. Depending on the time of year, some vegetables can be difficult to get and frozen vegetables really are just as safe and reliable as fresh vegetables. It's true that it’s always better to eat fresh vegetables, but frozen vegetables are really very good and you shouldn't hesitate for one moment to feed them to your child. Freezing vegetables does not make them lose their vitamins and minerals nor their fibre content, all of which are essential for your child’s health.
+</div>
+</div>
+<hr />
+<div class="quest">
+    <div style="width:80%;"><p>Is it all right to add salt and fat to food for babies above one year?
+
+</p></div>
+    <div class="more_btn">More</div>
+    <div class="acc_cont">You can obviously add salt in moderation. Just as with sugar, you shouldn't use excessive quantities of salt. If possible it's preferable not to add any at all, simply to get the child used to not eating things with too much salt. However, it is important to add some fat. Children need 3-4 teaspoons of healthy fats (oils preferably) in their diet daily. As part of every balanced meal you serve for lunch and dinner, include a knob of butter or a drizzle of vegetable oil such as corn, canola, sunflower or olive oil.
+</div>
+</div>
+<hr />
+
+    
+    
+</div>
+</div>
+<!-- Footer Starts Here -->
+<div class="footer clear">
+  <div class="wrapper clear">
+    <div class="footer_boxes clear">
+      <div class="footboxes footbox_01">
+        <h3>الحمل</h3>
+        <ul>
+        <li><a href="featured.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding.html">التغذية</a></li>
+          <li><a href="growing.html">النمو و التطور</a></li>
+                    <li><a href="products.html">المنتجات الخاصة للحامل</a></li>
+          <li><a href="faq.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_02">
+        <h3>الأشهر الأولى</h3>
+        <ul>
+          <li><a href="feeding_infant_0-6.html">التغذية</a></li>
+          <li><a href="growing_infant_0-6.html">النمو و التطور</a></li>
+          <li><a href="faq_infant_0-6.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_03">
+        <h3>من ٦‎ إلى ١‎٢‎ شهر</h3>
+        <ul>
+          <li><a href="featured_products_infant_6-12.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding_infant_6-12.html">التغذية</a></li>
+          <li><a href="growing_infant_6-12.html">النمو و التطور</a></li>
+          <li><a href="products_infant_6-12.html">المنتجات الخاصة لعمر ٦-١٢ شهراً</a></li>
+          <li><a href="faq_infant_6-12.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_04">
+        <h3>الأطفال من ١‎ إلى ٣‎ سنوات</h3>
+        <ul>
+          <li><a href="featured_products_toddler.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding_toddler.html">التغذية</a></li>
+          <li><a href="growing_toddler.html">النمو و التطور</a></li>
+          <li><a href="products_toddler.html">المنتجات الخاصة لعمر ١ إلى ٣ سنوات</a></li>
+          <li><a href="faq_toddler.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+      <div class="footboxes footbox_05">
+        <h3>مرحلة ما قبل المدرسة:٣‎ إلى ٥‎ سنوات</h3>
+        <ul>
+          <li><a href="featured_products_preschooler.html">المنتجات الخاصة</a></li>
+          <li><a href="feeding_preschooler.html">التغذية</a></li>
+          <li><a href="growing_preschooler.html">النمو و التطور</a></li>
+          <li><a href="products_preschooler.html">المنتجات الخاصة لعمر٣ إلى ٥ سنوات</a></li>
+          <li><a href="faq_preschooler.html">الأسئلة و الأجوبة</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer_menu">
+      <ul>
+        <li><a href="index.html">الصفحة الرئيسية</a></li>
+        <li><a href="parenting.html">الأمومة</a></li>
+        <li><a href="#">الوصفات</a></li>
+        <li><a href="our_commitment.html">التزاماتنا</a></li>
+        <li><a href="#">نادي طفل نستله</a></li>
+        <li><a href="#">اتصل بنا</a></li>
+        <li><a href="faq.html">الأسئلة و الأجوبة</a></li>
+        <li><a href="#">خريطة الموقع</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer_rule">
+    <div class="wrapper">
+      <div class="copy_right_right">علامات "بداية صحية لحياة صحية" هي علامات تجارية لشركة سوسيتيه دي برودوي نستله إس. إيه. فيفي – سويسرا<br />كل العلامات التجارية هي من ملك لشركة سوسيتيه دي برودوي نستله إس. إيه. فيفي – سويسرا</div>
+      <div class="copy_right_left">نستله نيوترشن<span dir="ltr">&nbsp;2013&nbsp;</span>جميع الحقوق محفوظة<br />
+        <a href="privacy_policy.html" class="active">الشروط و الأحكام  .  سياسة الخصوصية</a> </div>
+    </div>
+  </div>
+</div>
+<!-- Footer Ends Here -->
+
+</body>
+</html>
