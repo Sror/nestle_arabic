@@ -736,7 +736,7 @@ p.red_btn a {
     color: #DE5792;
     float: left;
     font-size: 16px;
-    margin-top: 20px;
+    margin-top: 50px;
     width: 245px;
 }
 
@@ -1216,15 +1216,6 @@ p.red_btn a {
     width: 72px;
 }
 
-.inner_content .preganany_cont_top .pregn_left{
-	width:510px;
-	float:right;	
-}
-.inner_content .preganany_cont_top .pregn_left p{
-	color:#8e8e8e;
-	margin-right:130px;
-	margin-top:80px;	
-}
 .inner_content .preganany_cont_top .infant_left{
 	width:510px;
 	float:right;	
@@ -1241,17 +1232,8 @@ p.red_btn a {
 	right:530px;
 	bottom:50px;
 
-}.inner_content .preganany_cont_top .pregn_right{
-	width:400px;
-	float:left;	
 }
-.inner_content .preganany_cont_top .pregn_right .preg_txt{
-	color:#de5792;
-	font-size:16px;
-	width:245px;
-	float:left;
-	margin-top:20px;
-}
+
 .bottom_box{
 	width:100%;
 	margin-top:20px;
