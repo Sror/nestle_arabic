@@ -145,7 +145,7 @@
 outline: 0; display: none;
  position:absolute;
  top:-50px;
- right:0;
+ left:0;
  }
 .anythingSlider-default .anythingControls ul { margin: 0; padding: 0; float: left; }
 .anythingSlider-default .anythingControls ul li { display: inline; }
@@ -275,7 +275,7 @@ outline: 0; display: none;
  ***********************/
 /* slider autoplay right-to-left, reverse order of nav links to look better */
 .anythingSlider.rtl .anythingWindow {
-	direction: ltr;
+	direction: rtl;
 	unicode-bidi: bidi-override;
 }
 .anythingSlider.rtl .anythingControls ul { float: left; } /* move nav link group to left */
