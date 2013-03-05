@@ -596,6 +596,10 @@ p.red_btn {
     padding: 3px 20px 3px 5px;
 }
 
+p.red_btn:hover {
+	background: none repeat scroll 0 0 #F73389;
+}
+
 p.red_btn a {
     background: url("../images/btn_arrow.png") no-repeat scroll left center transparent;
     color: #FFFFFF;
@@ -612,10 +616,24 @@ p.red_btn a {
     padding: 3px 20px 3px 5px;
 }
 
+.home_content .cont_boxes p.gray_btn:hover {
+	background: none repeat scroll 0 0 #666666;
+}
+
 .home_content .cont_boxes p.gray_btn a {
     background: url("../images/btn_arrow.png") no-repeat scroll left center transparent;
     color: #FFFFFF;
     padding: 2px 0 2px 40px;
+}
+
+.products_gal ul li.list_02 {
+    color: #5C6F84 !important;
+}
+.products_gal ul li.list_03 {
+    color: #CC3333 !important;
+}
+.products_gal ul li.list_04 {
+    color: #5E7222 !important;
 }
 
 .products_gal {
