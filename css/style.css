@@ -141,7 +141,7 @@ ul {
 }
 .header_left_top ul li a{
 	color:#FFF;
-	font-family: 'ge_sslight';
+	/*font-family: 'ge_sslight';*/
 	font-size:12px;
 }
 .header_left_top ul li a:hover, .header_left_top ul li a.active{
@@ -190,7 +190,7 @@ ul {
 }
 .nav ul li a{
 	color:#FFF;
-	font-family: 'ge_ssmedium';
+	/*font-family: 'ge_ssmedium';*/
 	font-size:14px;
 	padding:10px 16px 20px 16px;
 	margin-right:2px;
@@ -379,7 +379,7 @@ ul {
     background: url("../images/info_btn.png") no-repeat scroll 0 0 transparent;
     color: #FFFFFF;
     display: block;
-	font-family: 'ge_ssmedium';
+	/*font-family: 'ge_ssmedium';*/
 	font-size:13px;
     font-weight: bold;
     height: 35px;
