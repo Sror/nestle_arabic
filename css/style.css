@@ -78,15 +78,14 @@ ul {
 }
 
 @font-face {
-    font-family: 'webfontregular';
-    src: url('../font/axtfashkoul-webfont.eot');
-    src: url('../font/axtfashkoul-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/axtfashkoul-webfont.woff') format('woff'),
-         url('../font/axtfashkoul-webfont.ttf') format('truetype'),
-         url('../font/axtfashkoul-webfont.svg#webfontregular') format('svg');
+    font-family: 'axtfashkoulregular';
+    src: url('../font/axtfashkoul.eot');
+    src: url('../font/axtfashkoul.eot?#iefix') format('embedded-opentype'),
+         url('../font/axtfashkoul.woff') format('woff'),
+         url('../font/axtfashkoul.ttf') format('truetype'),
+         url('../font/axtfashkoul.svg#axtfashkoulregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
@@ -332,19 +331,19 @@ ul {
 
 .banner .banner_middle h2 {
     color: #DD0C15;
-    font-family: 'webfontregular';
+    font-family: 'axtfashkoulregular';
     font-size: 52px;
 }
 
 .banner .banner_middle h3 {
     color: #009FE3;
-    font-family: 'webfontregular';
+    font-family: 'axtfashkoulregular';
     font-size: 32px;
 }
 
 .banner .banner_middle h4 {
     color: #009FE3;
-    font-family: 'webfontregular';
+    font-family: 'axtfashkoulregular';
     font-size: 27px;
 }
 
@@ -698,14 +697,14 @@ p.red_btn a {
 
 .inner_content .preganany_cont_top h3 {
     color: #58AAE0;
-    font-family: 'webfontregular';
+    font-family: 'axtfashkoulregular';
     font-size: 35px;
     margin-right: 130px;
 }
 
 .inner_content .preganany_cont_top h1 {
     color: #DE5792;
-    font-family: 'webfontregular';
+    font-family: 'axtfashkoulregular';
     font-size: 60px;
     right: 0;
     position: absolute;
@@ -1165,7 +1164,7 @@ p.red_btn a {
 .lp-cont-box2 h4 {
     color: #CC6600;
     float: right;
-    font-family: 'webfontregular';
+    font-family: 'axtfashkoulregular';
     font-size: 20px;
     margin-right: -120px;
     margin-top: 80px;
@@ -1175,7 +1174,7 @@ p.red_btn a {
 .lp-cont-box2 h2 {
     color: #CE9702;
     float: right;
-    font-family: 'webfontregular';
+    font-family: 'axtfashkoulregular';
     font-size: 60px;
     line-height: 60px;
     margin-right: 10px;
