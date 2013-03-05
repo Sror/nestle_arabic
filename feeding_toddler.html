@@ -27,12 +27,12 @@ $(function(){
 	
 	$(document).ready(function(){
 		$(".more_btn").toggle(function(){
-		$(this).text("Less");
+		$(this).text("أقل");
 		$(this).next(".acc_cont").slideDown(300);
 		$(this).toggleClass("less");
 		},
 		function(){
-		$(this).text("More");
+		$(this).text("أكثر");
 		$(this).next(".acc_cont").slideUp(300);	
 		$(this).toggleClass("less")
 		});
@@ -74,7 +74,7 @@ $(function(){
     <div class="header_left">
       <div class="header_left_top">
         <ul>
-          <li> <a href="/"  class="active">الصفحة الرئيسية</a> </li>
+          <li> <a href="index.html" >الصفحة الرئيسية</a> </li>
           <li> <a href="our_commitment.html">التزاماتنا</a> </li>
           <li> <a href="#">نادي طفل نستله</a> </li>
           <li> <a href="parenting.html">الأمومة</a> </li>
@@ -93,7 +93,7 @@ $(function(){
           <li id="preg"> <a href="pregnancy.html">الحمل</a> </li>
           <li id="inf_0_6"> <a href="infant_0-6.html">الأشهر الأولى</a> </li>
           <li id="inf_6_12"> <a href="infant_6-12.html">من ٦‎ إلى ١‎٢‎ شهر</a> </li>
-          <li id="inf_1_3"> <a href="toddler.html">الأطفال من ١‎ إلى ٣‎ سنوات</a> </li>
+          <li id="inf_1_3"> <a class="active" href="toddler.html">الأطفال من ١‎ إلى ٣‎ سنوات</a> </li>
           <li id="inf_3_5"> <a href="preschooler.html">مرحلة ما قبل المدرسة:٣‎ إلى ٥‎ سنوات</a> </li>
           <li id="for_ur_baby"> <a href="for_your_baby.html">لأجل طفلك</a> </li>
         </ul>
@@ -209,7 +209,7 @@ $(function(){
 	<img src="images/train.png" alt="nestle" />
     <img src="text/1-3_Nutrition.png" style="padding-top:30px"/>
     <div class="spacer"></div>
-    <div class="more_btn">More</div>
+    <div class="more_btn">أكثر</div>
     <div class="acc_cont acc_cont_margin">
     <ul class="accordion">
 	<li>

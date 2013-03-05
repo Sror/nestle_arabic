@@ -34,12 +34,12 @@ $(function(){
 	
 	$(document).ready(function(){
 		$(".more_btn").toggle(function(){
-		$(this).text("Less");
+		$(this).text("أقل");
 		$(this).next(".acc_cont").slideDown(300);
 		$(this).toggleClass("less");
 		},
 		function(){
-		$(this).text("More");
+		$(this).text("أكثر");
 		$(this).next(".acc_cont").slideUp(300);	
 		$(this).toggleClass("less")
 		});
@@ -81,8 +81,8 @@ $(function(){
     <div class="header_left">
       <div class="header_left_top">
         <ul>
-          <li> <a href="/"  class="active">الصفحة الرئيسية</a> </li>
-          <li> <a href="our_commitment.html">التزاماتنا</a> </li>
+          <li> <a href="index.html" >الصفحة الرئيسية</a> </li>
+          <li> <a class="active" href="our_commitment.html">التزاماتنا</a> </li>
           <li> <a href="#">نادي طفل نستله</a> </li>
           <li> <a href="parenting.html">الأمومة</a> </li>
           <li> <a href="">اتصل بنا</a> </li>

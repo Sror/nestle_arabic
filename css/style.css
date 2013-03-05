@@ -196,6 +196,30 @@ ul {
 	margin-right:2px;
 } 
 
+#preg a:hover, #preg a.active{
+	background:#de5792;
+	border-radius:15px 15px 0 0;
+} 
+#inf_0_6 a:hover, #inf_0_6 a.active{
+	background:#f2d03d;
+	border-radius:15px 15px 0 0;
+} 
+#inf_6_12 a:hover, #inf_6_12 a.active{
+	background:#a8d0f1;
+	border-radius:15px 15px 0 0;
+} 
+#inf_1_3 a:hover, #inf_1_3 a.active{
+	background:#ca3232;
+	border-radius:15px 15px 0 0;
+} 
+#inf_3_5 a:hover, #inf_3_5 a.active{
+	background:#b8d269;
+	border-radius:15px 15px 0 0;
+} 
+#for_ur_baby a:hover, #for_ur_baby a.active{
+	background:#67c8d3;
+	border-radius:15px 15px 0 0;
+} 
 /*------------------------------------------------------------------Footer-----------------------------------------------------*/
 .footer{
 	width:100%;
