@@ -23,6 +23,19 @@ $(function(){
 	});
 });
 </script>
+<link rel="stylesheet" href="ui/css/ui-lightness/jquery-ui-1.7.2.custom.css" />
+
+<script src="ui/js/jquery-ui-1.7.2.custom.min.js"></script>
+<style>
+.ui-dialog{
+background:url(images/arabic.png) no-repeat !important;
+border:none;
+}
+.ui-dialog-buttonpane{
+background:none !important;
+border:none !important;
+}
+</style>
 </head>
 <body>
 
@@ -288,6 +301,7 @@ $(function(){
     <div id="pager2" class="pager"></div>
   </div>
 </div>
+<div id="dialog" title="Basic dialog"> </div>
 <div class="spacer" style="height:60px"></div>
 <!--  --> 
 
@@ -395,6 +409,37 @@ break;
 
 }
 }
+
+            $(document).ready(function () {
+
+                var amodal = $("#dialog").dialog({
+
+                    bgiframe: true,
+                    resizable: false,
+                    autoOpen: true,
+                    height: 450,
+                    width: 716,
+                    modal: true,
+                    buttons: {
+                        ' ': function () {
+
+                            $(this).dialog('close');
+                        }
+                    },
+                    open: function () {
+
+
+                        $('.ui-dialog-buttonpane').find('button:contains(" ")').addClass('ui-icon-continue');
+
+                    }
+
+
+                });
+                $(".ui-dialog-titlebar").hide();
+
+
+            });
+			
 </script>
 </body>
 </html>
