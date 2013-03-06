@@ -6,7 +6,7 @@ html {
 	direction:rtl;
 }
 body {
-	margin:0px;
+	margin:0px auto;
 	font-family: Arial, Helvetica, sans-serif;
 	height:100%;
 	font-size:13px;
@@ -643,17 +643,18 @@ p.red_btn a {
     font-family: 'Conv_GE_SS_Two_Light';
     font-size: 22px;
     font-weight: normal;
-    width: 300px;
+    width: 250px;
 }
 
 .right_name_pro {
     float: left;
-    width: 60%;
+    width: 680px;
 }
 
 .products_gal ul.names {
     line-height: 20px;
     list-style: disc outside none;
+	float:left;
 }
 
 .products_gal ul.names li:first-child {
