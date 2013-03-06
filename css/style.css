@@ -46,28 +46,6 @@ ul {
 }
 
 @font-face {
-	font-family:"GE SS Two Bold";
-	src:url("GE_SS_Two_Bold.eot?") format("eot"),url("GE_SS_Two_Bold.woff") format("woff"),url("GE_SS_Two_Bold.ttf") format("truetype"),url("GE_SS_Two_Bold.svg#GESSTwoBold-Bold") format("svg");
-	font-weight:normal;
-	font-style:normal;
-}
-
-
- @font-face {
-	 font-family:"GE SS Two Light";
-	 src:url("../fontGE_SS_Two_Light.eot?") format("eot"),url("../fontGE_SS_Two_Light.woff") format("woff"),url("../fontGE_SS_Two_Light.ttf") format("truetype"),url("../fontGE_SS_Two_Light.svg#GESSTwoLight-Light") format("svg");
-	 font-weight:normal;
-	 font-style:normal;
-}
-
-@font-face {
-	font-family:"GE SS Two Medium";
-	src:url("../font/GE_SS_Two_Medium.eot?") format("eot"),url("../font/GE_SS_Two_Medium.woff") format("woff"),url("../font/GE_SS_Two_Medium.ttf") format("truetype"),url("../font/GE_SS_Two_Medium.svg#GESSTwoMedium-Medium") format("svg");
-	font-weight:normal;
-	font-style:normal;
-}
-
-@font-face {
     font-family: 'axtfashkoulregular';
     src: url('../font/axtfashkoul.eot');
     src: url('../font/axtfashkoul.eot?#iefix') format('embedded-opentype'),
@@ -78,11 +56,28 @@ ul {
     font-style: normal;
 }
 
+
+@font-face {
+	font-family: 'Conv_GE_SS_Two_Light';
+	src: url('fonts/GE_SS_Two_Light.eot');
+	src: local('☺'), url('fonts/GE_SS_Two_Light.woff') format('woff'), url('fonts/GE_SS_Two_Light.ttf') format('truetype'), url('fonts/GE_SS_Two_Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Conv_GE_SS_Two_Medium';
+	src: url('fonts/GE_SS_Two_Medium.eot');
+	src: local('☺'), url('fonts/GE_SS_Two_Medium.woff') format('woff'), url('fonts/GE_SS_Two_Medium.ttf') format('truetype'), url('fonts/GE_SS_Two_Medium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 @font-face {
 	font-family: 'VAGRoundedStd-Light';
 	src: url('../font/vagroundedstdlight.eot');
 	src: url('../font/vagroundedstdlight.eot?#iefix') format('embedded-opentype'),
-			 url('../font/vagroundedstdlight.woff') format('woff'),
 			 url('../font/vagroundedstdlight.ttf') format('truetype'),
 			 url('../font/vagroundedstdlight.svg#vagroundedstdlight') format('svg');
 	font-weight: normal;
@@ -127,11 +122,11 @@ ul {
 }
 .header_left_top ul li{
 	float:right;
-	margin:0 14px;
+	margin:0 9px;
 }
 .header_left_top ul li a{
 	color:#FFF;
-	font-family: 'GE SS Two Light';
+	font-family: 'Conv_GE_SS_Two_Light',Sans-Serif;;
 	font-size:12px;
 }
 .header_left_top ul li a:hover, .header_left_top ul li a.active{
@@ -154,7 +149,7 @@ ul {
 	border:0;
 	margin-right:12px;
 	color:#86b2c2;
-	font-family: 'GE SS Two Light';
+	font-family: 'Conv_GE_SS_Two_Light';
 	font-size:13px;
 }
 .header_left_top .search_wrap input[type="submit"]{
@@ -180,9 +175,9 @@ ul {
 }
 .nav ul li a{
 	color:#FFF;
-	font-family: 'GE SS Two Medium';
-	font-size:14px;
-	padding:10px 16px 20px 16px;
+	font-family: 'Conv_GE_SS_Two_Medium';
+	font-size:12px;
+	padding:10px 12px 20px 12px;
 	margin-right:2px;
 } 
 
@@ -226,7 +221,7 @@ ul {
 	margin-left:20px;
 }
 .footer_boxes .footboxes h3{
-	font-family: 'GE SS Two Light';
+	font-family: 'Conv_GE_SS_Two_Light';
 	font-size:13px;
 	width:146px;
 	padding:8px 15px;
@@ -369,8 +364,8 @@ ul {
     background: url("../images/info_btn.png") no-repeat scroll 0 0 transparent;
     color: #FFFFFF;
     display: block;
-	font-family: 'GE SS Two Medium';
-	font-size:13px;
+	font-family: 'Conv_GE_SS_Two_Medium';
+	font-size:10px;
     font-weight: bold;
     height: 35px;
     line-height: 34px;
@@ -437,8 +432,8 @@ ul {
 
 .infants_boxes .boxes h5 {
     float: right;
-    font-family: 'GE SS Two Light';
-    font-size: 15px;
+    font-family: 'Conv_GE_SS_Two_Light';
+    font-size: 12px;
 	line-height:16px;
     font-weight: normal;
     margin: 0 20px 0 0;
@@ -513,7 +508,7 @@ ul {
 
 .home_content .cont_boxes h3 {
     color: #CC3333;
-    font-family: 'GE SS Two Light';
+    font-family: 'Conv_GE_SS_Two_Light';
     font-size: 22px;
     font-weight: normal;
     margin-bottom: 10px;
@@ -635,7 +630,7 @@ p.red_btn a {
 .products_gal h3 {
     color: #006699;
     float: right;
-    font-family: 'GE SS Two Light';
+    font-family: 'Conv_GE_SS_Two_Light';
     font-size: 22px;
     font-weight: normal;
     width: 300px;
@@ -707,8 +702,8 @@ p.red_btn a {
 
 .inner_content h2 {
     color: #CC3333;
-    font-family: 'GE SS Two Medium';
-    font-size: 20px;
+    font-family: 'Conv_GE_SS_Two_Medium';
+    font-size: 17px;
     font-weight: normal;
     margin-bottom: 10px;
 }
@@ -806,14 +801,14 @@ p.red_btn a {
 
 .bottom_box .pregna_box h3 {
     color: #F73389;
-    font-family: 'GE SS Two Light';
+    font-family: 'Conv_GE_SS_Two_Light';
     font-size: 18px;
     font-weight: normal;
 }
 
 .bottom_box .pregna_box h5 {
     color: #8E8E8E;
-    font-family: 'GE SS Two Light';
+    font-family: 'Conv_GE_SS_Two_Light';
     font-size: 16px;
     font-weight: normal;
     margin: 5px 0;
@@ -943,7 +938,7 @@ p.red_btn a {
 
 .lp_middle h3 {
     color: #607C93;
-    font-family: 'VAGRoundedStd-Thin';
+    font-family: 'Conv_GE_SS_Two_Light';
     font-size: 22px;
     font-weight: normal;
 }
@@ -1034,7 +1029,7 @@ p.red_btn a {
 .six-mon-txt, .seven-mon-txt, .eight-mon-txt {
     border-left: 1px dashed #8CA8CF;
     color: #1D6099;
-    font-family: 'VAGRoundedStd-Thin';
+    font-family: 'Conv_GE_SS_Two_Light';
     height: 200px;
     margin: 0;
     padding: 0 0 0 50px;
@@ -1047,7 +1042,7 @@ p.red_btn a {
 
 .six-mon-txt h2 {
     color: #1D6099;
-    font-family: 'VAGRoundedStd-Thin';
+    font-family: 'Conv_GE_SS_Two_Light';
     font-size: 22px;
     font-weight: normal;
     margin: 0;
@@ -1057,7 +1052,7 @@ p.red_btn a {
 
 .seven-mon-txt h2 {
     color: #1D6099;
-    font-family: 'VAGRoundedStd-Thin';
+    font-family: 'Conv_GE_SS_Two_Light';
     font-size: 22px;
     font-weight: normal;
     margin: 0;
@@ -1067,7 +1062,7 @@ p.red_btn a {
 
 .eight-mon-txt h2 {
     color: #1D6099;
-    font-family: 'VAGRoundedStd-Thin';
+    font-family: 'Conv_GE_SS_Two_Light';
     font-size: 22px;
     font-weight: normal;
     margin: 0;
@@ -1188,7 +1183,7 @@ p.red_btn a {
 .lp-cont-box2 h3 {
     color: #7CAED7;
     float: right;
-    font-family: 'VAGRoundedStd-Thin';
+    font-family: 'Conv_GE_SS_Two_Light';
     font-size: 22px;
     font-weight: normal;
 }
@@ -1227,7 +1222,7 @@ p.red_btn a {
 .lp-cont-box1 h3 {
     color: #7CAED7;
     float: right;
-    font-family: 'VAGRoundedStd-Thin';
+    font-family: 'Conv_GE_SS_Two_Light';
     font-size: 22px;
     font-weight: normal;
 }
@@ -1298,13 +1293,13 @@ p.red_btn a {
 }
 .bottom_box .pregna_box h3{
 	color:#f73389;
-	font-family: 'VAGRoundedStd-Thin';
+	font-family: 'Conv_GE_SS_Two_Light';
 	font-weight:normal;
 	font-size:18px;
 }
 .bottom_box .pregna_box h5{
 	color:#8e8e8e;
-	font-family: 'VAGRoundedStd-Thin';
+	font-family: 'Conv_GE_SS_Two_Light';
 	font-weight:normal;
 	font-size:16px;
 	margin:5px 0;
@@ -1359,19 +1354,19 @@ p.red_btn a {
 
 .bottom_box .infantbox h3{
 	color:#f7d672;
-	font-family: 'VAGRoundedStd-Thin';
+	font-family: 'Conv_GE_SS_Two_Light';
 	font-weight:normal;
 	font-size:20px;
 }
 .bottom_box .feeding h5{
 	color:#f9b757;
-	font-family: 'VAGRoundedStd-Thin';
+	font-family: 'Conv_GE_SS_Two_Light';
 	font-weight:normal;
 	font-size:20px;
 }
 .bottom_box .stars h5{
 	color:#eca889;
-	font-family: 'VAGRoundedStd-Thin';
+	font-family: 'Conv_GE_SS_Two_Light';
 	font-weight:normal;
 	font-size:20px;
 }
@@ -1469,26 +1464,26 @@ p.red_btn a {
 }
 .preganany_cont_bottom .pregna_box h3{
 	color:#f73389;
-	font-family: 'VAGRoundedStd-Thin';
+	font-family: 'Conv_GE_SS_Two_Light';
 	font-weight:normal;
 	font-size:18px;
 }
 .preganany_cont_bottom .pregna_box h5{
 	color:#8e8e8e;
-	font-family: 'VAGRoundedStd-Thin';
+	font-family: 'Conv_GE_SS_Two_Light';
 	font-weight:normal;
 	font-size:16px;
 	margin:5px 0;
 }
 .preganany_cont_bottom .infantbox h3{
 	color:#fcc82e;
-	font-family: 'VAGRoundedStd-Thin';
+	font-family: 'Conv_GE_SS_Two_Light';
 	font-weight:normal;
 	font-size:20px;
 }
 .preganany_cont_bottom .infantbox h5{
 	color:#fcc82e;
-	font-family: 'VAGRoundedStd-Thin';
+	font-family: 'Conv_GE_SS_Two_Light';
 	font-weight:normal;
 	font-size:16px;
 	margin:5px 0;
@@ -1585,7 +1580,7 @@ p.red_btn a {
 	border-radius:6px;
 }
 .feeding_left h4{
-	font-family: 'VAGRoundedStd-Thin';
+	font-family: 'Conv_GE_SS_Two_Light';
 	color:#FFF;
 	font-size:16px;	
 	font-weight:normal;margin-right:15px;
@@ -1643,19 +1638,19 @@ p.red_btn a {
 	margin-top:70px;
 }
 .faq_right .quest p{
-	font-family: 'VAGRoundedStd-Light';
+	font-family: 'Conv_GE_SS_Two_Light';
 	font-size:15px;
 	color:#f73389;
 	margin-top:10px;
 }
 .faq_right_pre .quest p{
-	font-family: 'VAGRoundedStd-Light';
+	font-family: 'Conv_GE_SS_Two_Light';
 	font-size:15px;
 	color:#9bbc86;
 	margin-top:10px;
 }
  .quest p{
-	font-family: 'VAGRoundedStd-Light';
+	font-family: 'Conv_GE_SS_Two_Light';
 	font-size:15px;
 	color:#f73389;
 	margin-top:10px;
@@ -2003,7 +1998,7 @@ li.quest p{
 	border-radius:6px;
 }
 .infant_left_0_6 h4{
-	font-family: 'VAGRoundedStd-Thin';
+	font-family: 'Conv_GE_SS_Two_Light';
 	color:#d0a235;
 	font-size:16px;	
 	/*font-weight:bold;*/
@@ -2075,7 +2070,7 @@ li.quest p{
 	background:url(../images/minus_small_black.png) 2% center no-repeat !important;
 }
 .infantfaq_right .quest p{
-	font-family: 'VAGRoundedStd-Light';
+	font-family: 'Conv_GE_SS_Two_Light';
 	font-size:15px;
 	color:#d8a55c;
 	margin-top:10px;
@@ -2113,7 +2108,7 @@ li.quest p{
 }
 .bottom_box .toddlerbox h3{
 	color:#f9b755;
-	font-family: 'VAGRoundedStd-Thin';
+	font-family: 'Conv_GE_SS_Two_Light';
 	font-weight:normal;
 	font-size:20px;
 }
@@ -2121,7 +2116,7 @@ li.quest p{
 
 .bottom_box .fet_product h3{
 	color:#d07a24;
-	font-family: 'VAGRoundedStd-Thin';
+	font-family: 'Conv_GE_SS_Two_Light';
 	font-weight:normal;
 	font-size:20px;
 }
@@ -2209,7 +2204,7 @@ li.quest p{
 	border-radius:6px;
 }
 .toddler_1_3 h4{
-	font-family: 'VAGRoundedStd-Thin';
+	font-family: 'Conv_GE_SS_Two_Light';
 	color:#7291ab;
 	font-size:16px;	
 	font-weight:bold;margin-right:15px;
@@ -2338,7 +2333,7 @@ li.quest p{
 	border-radius:6px;
 }
 .toddler_1_3_feeding h4{
-	font-family: 'VAGRoundedStd-Thin';
+	font-family: 'Conv_GE_SS_Two_Light';
 	color:#fce2e2;
 	font-size:16px;	
 	font-weight:bold;margin-right:15px;
@@ -2472,7 +2467,7 @@ li.quest p{
 	color:#f69683;
 }
 .toddlerfaq_right .quest p{
-	font-family: 'VAGRoundedStd-Light';
+	font-family: 'Conv_GE_SS_Two_Light';
 	font-size:15px;
 	color:#f78c76;
 	margin-top:10px;
@@ -2495,7 +2490,7 @@ li.quest p{
 	border-radius:6px;
 }
 .preschooler_3_5 h4{
-	font-family: 'VAGRoundedStd-Thin';
+	font-family: 'Conv_GE_SS_Two_Light';
 	color:#889f43;
 	font-size:16px;	
 	font-weight:bold;margin-right:15px;
@@ -2681,7 +2676,7 @@ li.quest p{
 	border-radius:6px;
 }
 .preschooler_3_5_feeding h4{
-	font-family: 'VAGRoundedStd-Thin';
+	font-family: 'Conv_GE_SS_Two_Light';
 	color:#768c35;
 	font-size:16px;	
 	font-weight:bold;margin-right:15px;
@@ -2815,7 +2810,7 @@ li.quest p{
 	color:#f69683;
 }
 .preschoolerfaq_right .quest p{
-	font-family: 'VAGRoundedStd-Light';
+	font-family: 'Conv_GE_SS_Two_Light';
 	font-size:15px;
 	color:#f78c76;
 	margin-top:10px;
@@ -2887,19 +2882,19 @@ preschool_main{
 	margin-right:250px;
 }
 #preschool_main p{
-	font-family: 'VAGRoundedStd-Light';
+	font-family: 'Conv_GE_SS_Two_Light';
 	font-size:14px;
 	color:#999;
 }
 .bottom_box .preschoolbox h3{
 	color:#b8d269;
-	font-family: 'VAGRoundedStd-Thin';
+	font-family: 'Conv_GE_SS_Two_Light';
 	font-weight:normal;
 	font-size:18px;
 }
 .bottom_box .preschoolbox h5{
 	color:#8e8e8e;
-	font-family: 'VAGRoundedStd-Thin';
+	font-family: 'Conv_GE_SS_Two_Light';
 	font-weight:normal;
 	font-size:16px;
 	margin:5px 0;
@@ -2913,7 +2908,7 @@ preschool_main{
 }
 .bottom_box .preschool_product h3{
 	color:#d07a24;
-	font-family: 'VAGRoundedStd-Thin';
+	font-family: 'Conv_GE_SS_Two_Light';
 	font-weight:normal;
 	font-size:20px;
 }
@@ -3003,13 +2998,13 @@ preschool_main{
 }	
 .preschooler_pdcts_banner .pre_right h1{
 	color:#899db0;
-	font-family: 'VAGRoundedStd-Thin';
+	font-family: 'Conv_GE_SS_Two_Light';
 	font-weight:normal;
 	font-size:30px;
 	font-weight:bold;
 }
 .preschooler_pdcts_banner .pre_right p{
-	font-family: 'VAGRoundedStd-Light';
+	font-family: 'Conv_GE_SS_Two_Light';
 	font-size:13px;
 	padding-top:10px;
 	color:#999;
@@ -3039,13 +3034,13 @@ preschool_main{
 }	
 .preschooler_pdcts_banner .pdcts_toddler_right h1{
 	color:#899db0;
-	font-family: 'VAGRoundedStd-Thin';
+	font-family: 'Conv_GE_SS_Two_Light';
 	font-weight:normal;
 	font-size:20px;
 	font-weight:bold;
 }
 .preschooler_pdcts_banner .pdcts_toddler_right p{
-	font-family: 'VAGRoundedStd-Light';
+	font-family: 'Conv_GE_SS_Two_Light';
 	font-size:12px;
 	padding-top:10px;
 	color:#999;
@@ -3066,7 +3061,7 @@ preschool_main{
 	margin-right:550px;
 }
 .lp_middle h3{
-	font-family: 'VAGRoundedStd-Thin';
+	font-family: 'Conv_GE_SS_Two_Light';
     font-size: 22px;
     font-weight: normal;
 	color: #607c93;
@@ -3202,7 +3197,7 @@ preschool_main{
 .lp-cont-box1 h3 {
 	float: right;
 	color:#7caed7;	
-	font-family: 'VAGRoundedStd-Thin';
+	font-family: 'Conv_GE_SS_Two_Light';
 	font-size:22px;
 	font-weight:normal;
 	
@@ -3210,7 +3205,7 @@ preschool_main{
 .lp-cont-box1 h4 {
 	float: right;
 	color:#8e8e8e;	
-	font-family: 'VAGRoundedStd-Thin';
+	font-family: 'Conv_GE_SS_Two_Light';
 	font-size:16px;
 	font-weight:bold;
 	margin-top:10px;
@@ -3227,7 +3222,7 @@ preschool_main{
 .lp-cont-box2 h3 {
 	float: right;
 	color:#7caed7;	
-	font-family: 'VAGRoundedStd-Thin';
+	font-family: 'Conv_GE_SS_Two_Light';
 	font-size:22px;
 	font-weight:normal;
 	
@@ -3236,7 +3231,7 @@ preschool_main{
 .lp-cont-box3 h3 {
 	float: right;
 	color:#7caed7;	
-	font-family: 'VAGRoundedStd-Thin';
+	font-family: 'Conv_GE_SS_Two_Light';
 	font-size:22px;
 	font-weight:normal;
 	
@@ -3312,7 +3307,7 @@ preschool_main{
 .six-mon-txt {
 	margin: 0px;
 	width: 250px;
-	font-family: 'VAGRoundedStd-Thin';
+	font-family: 'Conv_GE_SS_Two_Light';
 	color: #1d6099;
 	border-left-width: 1px;
 	border-left-style: dashed;
@@ -3338,7 +3333,7 @@ preschool_main{
 	margin: 0px;
 	padding: 0px;
 	width: 324px;
-	font-family: 'VAGRoundedStd-Thin';
+	font-family: 'Conv_GE_SS_Two_Light';
 	font-size: 22px;
 	font-weight: normal;
 	color: #1d6099;
@@ -3378,7 +3373,7 @@ preschool_main{
 .seven-mon-txt {
 	margin: 0px;
 	width: 250px;
-	font-family: 'VAGRoundedStd-Thin';
+	font-family: 'Conv_GE_SS_Two_Light';
 	color: #1d6099;
 	border-left-width: 1px;
 	border-left-style: dashed;
@@ -3404,7 +3399,7 @@ preschool_main{
 	margin: 0px;
 	padding: 0px;
 	width: 299px;
-	font-family: 'VAGRoundedStd-Thin';
+	font-family: 'Conv_GE_SS_Two_Light';
 	font-size: 22px;
 	font-weight: normal;
 	color: #1d6099;
@@ -3441,7 +3436,7 @@ preschool_main{
 .eight-mon-txt {
 	margin: 0px;
 	width: 250px;
-	font-family: 'VAGRoundedStd-Thin';
+	font-family: 'Conv_GE_SS_Two_Light';
 	color: #1d6099;
 	height: 200px;
 	padding-top: 0px;
@@ -3464,7 +3459,7 @@ preschool_main{
 	margin: 0px;
 	padding: 0px;
 	width: 299px;
-	font-family: 'VAGRoundedStd-Thin';
+	font-family: 'Conv_GE_SS_Two_Light';
 	font-size: 22px;
 	font-weight: normal;
 	color: #1d6099;
@@ -3623,14 +3618,14 @@ preschool_main{
 	background:#8dc1eb url(../images/minus.png) 1% center no-repeat !important;
 }
 .infant_6_12_faq_right .quest p{
-	font-family: 'VAGRoundedStd-Light';
+	font-family: 'Conv_GE_SS_Two_Light';
 	font-size:15px;
 	color:#829eb9;
 	margin-top:10px;
 }
 .popstyle h1{
 	color:#9db7cb !important;
-	font-family: 'VAGRoundedStd-Thin';
+	font-family: 'Conv_GE_SS_Two_Light';
 	border:none !important;
 	padding-top:10px;
 	font-weight:normal;
@@ -3638,14 +3633,14 @@ preschool_main{
 	font-weight:bold;
 }
 .popstyle p{
-	font-family: 'VAGRoundedStd-Light';
+	font-family: 'Conv_GE_SS_Two_Light';
 	font-size:13px;
 	padding-top:10px;
 	color:#999;
 }
 .tab h2{
 	color:#869eb3 !important;
-	font-family: 'VAGRoundedStd-Thin';
+	font-family: 'Conv_GE_SS_Two_Light';
 	border:none !important;
 	padding-top:10px;
 	font-weight:normal;
@@ -3654,7 +3649,7 @@ preschool_main{
 }
 .tab table tr td{
 	color:#869eb3 !important;
-	font-family: 'VAGRoundedStd-Thin';
+	font-family: 'Conv_GE_SS_Two_Light';
 	border:none !important;
 	padding-top:10px;
 	font-weight:normal;
@@ -3678,7 +3673,7 @@ preschool_main{
 	border-radius:6px;
 }
 .parenting h4{
-	font-family: 'VAGRoundedStd-Thin';
+	font-family: 'Conv_GE_SS_Two_Light';
 	color:#7291ab;
 	font-size:16px;	
 	font-weight:bold;margin-right:15px;
@@ -3750,13 +3745,13 @@ preschool_main{
 	border-radius:6px;
 }
 .policy h4{
-	font-family: 'VAGRoundedStd-Thin';
+	font-family: 'Conv_GE_SS_Two_Light';
 	color:#bdcbda;
 	font-size:16px;	
 	font-weight:bold;margin-right:15px;
 }
 .policy h2{
-	font-family: 'VAGRoundedStd-Thin';
+	font-family: 'Conv_GE_SS_Two_Light';
 	color:#b3c4d5;
 	font-size:14px;	
 	font-weight:bold;
