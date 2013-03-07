@@ -211,7 +211,7 @@ Nutrition & Feeding</a>
 }
 .tabbackground{
 	background:#f6f7f9 !important;
-	margin:-1px 20px 20px 0;
+	margin:-1px 0px 20px 20px;
 }
 .ui-state-default,
 .ui-widget-content .ui-state-default,
@@ -259,19 +259,19 @@ display:block;
             	<img src="images/nido_03.png" style="z-index:2000" />
             </div>
             <div class="pre_right">
-            	<div style="float:left; width:100%">
+            	<div style="float:right; width:100%">
             	
             		<h1>NIDO Three plus</h1>
 	                <p>NIDO THREE PLUS is the right specialized growing-up milk for your 3 year-old child</p>
                 </div>
-            	<div style="float:left; width:100%; margin-top:50px">
+            	<div style="float:right; width:100%; margin-top:50px">
                 
-                	<div style="float:left; vertical-align:text-bottom; margin-top:30px; width:50%">
-                   		<img src="images/table.png" style="padding-left:25px" />
+                	<div style="float:right; vertical-align:text-bottom; margin-top:30px; width:50%">
+                   		<img src="images/table.png" style="padding-right:25px" />
     					<span class="pdcts_brown_btn" onclick="show_nutrition_info_1()"><a id="button0_0" href="JavaScript:void(0);">Nutritional info</a></span>
 					</div>
-                	<div style="float:right; width:50%">
-                    <img src="images/sizes.png" style="padding-left:25px" />
+                	<div style="float:left; width:50%">
+                    <img src="images/sizes.png" style="padding-right:25px" />
     					<span class="pdcts_brown_btn"><a id="button0" href="JavaScript:void(0);">Sizes & Availability</a></span>
 					</div>
 				</div>                
@@ -294,11 +294,11 @@ display:block;
 
 			<div id="contactArea0" class="contactArea" style="height:auto;">
 			<table><tr><td style="width:35%;">
-			  <div style="float:left; padding-top:120px;">
+			  <div style="float:right; padding-top:120px;">
 	                <img src="images/map.png" />
 				</div>
 				</td><td style="width:60%;">
-                <div style="float:right; text-align:left;" class="popstyle">
+                <div style="float:left; text-align:right;" class="popstyle">
                 	<h1>Sizes & Availability</h1>
                     
  <!--??????//////////////////////////////////////////////JQUERY TAB////////////////////////////////////////////////////////////////////////-->
@@ -376,14 +376,14 @@ display:block;
 			<a id="popupContactClose0_0" class="popupContactClose"><img src="images/esc.png" alt="" align="right"/></a>
 
 			<div id="contactArea0_0" class="contactArea" style="height:auto;">
-			  <div style="float:left; padding-top:120px; width:35%;">
-	                <h2  style="padding:110px 0 0 30px; color:#7b91a4">المعلومات الغذائية</h2>
+			  <div style="float:right; padding-top:120px; width:35%;">
+	                <h2  style="padding:110px 30px 0 0; color:#7b91a4">المعلومات الغذائية</h2>
 				</div>
-                <div style="float:right; text-align:left; width:60%; " class="popstyle">
+                <div style="float:left; text-align:right; width:60%; " class="popstyle">
                 	<h1>Nutritional Info</h1>
                     <h3 style="font-size:12px ; color:#8096a9">NIDO THREE PLUS provides:</h3>
 						
-                      
+                      <ul style="width:400px">
                         <li style="line-height:25px; font-size:13px; color:#707070;">الحديد necessary for cognitive development in children</li>
                         <li style="line-height:25px; font-size:13px; color:#707070;">الزنك Contributes to a normal brain function </li>
                         <li style="line-height:25px; font-size:13px; color:#707070;">الكربوهيدرات as main source of energy for the brain </li>
@@ -392,6 +392,7 @@ display:block;
                         <li style="line-height:25px; font-size:13px; color:#707070;">Calcium: for normal growing bones and teeth </li>
                         <li style="line-height:25px; font-size:13px; color:#707070;">PROBIOTICS: Lactobacillus Protectus and Bifidobacteriun Longum probiotic cultures </li>
                         <li style="line-height:25px; font-size:13px; color:#707070;">PREBIOTICS: Prebio 1, a natural prebiotic-fibre blend that encourages a healthy digestive system and essentially serves as food for the good bacteria in the gut.</li>
+                        </ul>
                                           
                     
                </div>                    
@@ -431,7 +432,7 @@ function disablePopup0(){//disables popup only if it is enabled
 function centerPopup0(){	//request data for centering
 	var windowWidth = document.documentElement.clientWidth;	var windowHeight = document.documentElement.clientHeight;	var popupHeight = $("#popupContact0").height();	var popupWidth = $("#popupContact0").width();
 	//centering
-	document.getElementById('popupContact0').style.margin = "8px 0px 0px -12px";
+	document.getElementById('popupContact0').style.margin = "8px -12px 0px 0px";
 	$("#popupContact0").css({	"position": "absolute",
 //		"top": (windowHeight/2-popupHeight/2) * 2,
 //		"left": windowWidth/2-popupWidth/2
@@ -477,7 +478,7 @@ function disablePopup0_0(){//disables popup only if it is enabled
 function centerPopup0_0(){	//request data for centering
 	var windowWidth = document.documentElement.clientWidth;	var windowHeight = document.documentElement.clientHeight;	var popupHeight = $("#popupContact0_0").height();	var popupWidth = $("#popupContact0_0").width();
 	//centering
-	document.getElementById('popupContact0_0').style.margin = "8px 0px 0px -12px";
+	document.getElementById('popupContact0_0').style.margin = "8px -12px 0px 0px";
 	$("#popupContact0_0").css({	"position": "absolute",
 //		"top": (windowHeight/2-popupHeight/2) * 2,
 //		"left": windowWidth/2-popupWidth/2

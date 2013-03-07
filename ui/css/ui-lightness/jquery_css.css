@@ -761,10 +761,10 @@ button.ui-button::-moz-focus-inner {
 }
 .ui-tabs .ui-tabs-nav li {
 	list-style: none;
-	float: left;
+	float: right;
 	position: relative;
 	top: 0;
-	margin: 1px .2em 0 0;
+	margin: 1px 0 0 .2em;
 	border-bottom: 0;
 	padding: 0;
 	white-space: nowrap;
