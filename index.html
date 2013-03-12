@@ -7,12 +7,7 @@
 <script type="text/javascript" language="javascript" src="js/jquery-1.8.2.min.js"></script>
 <script type="text/javascript" language="javascript" src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
 <script type="text/javascript">
-$(function(){
-	init_carousel();
-});
-
-function init_carousel(){
-	$('#foo2').carouFredSel({
+var carousel_options = {
 		circular: false,
 		infinite: false,
 		auto: false,
@@ -24,8 +19,11 @@ function init_carousel(){
 			onMouse: true,
 			onTouch: true
 		}
-	});
-}
+	}
+$(function(){	
+	$('#foo2').carouFredSel(carousel_options);
+});
+
 $(document).ready(function(){
 	$(".plus_btn").toggle(function(){
 		$(this).children("img").attr('src', 'images/minus_pl.png');
@@ -421,11 +419,12 @@ function showCarousel(ftag){
 switch(ftag){
 case 'i':
 var data = '<li><a href="products_infant_6-12.html"><img src="images/tin_6-12_1.png" width="78" height="100" alt="pro" /></a></li><li><a href="products_infant_6-12.html"><img src="images/tin_6-12_2.png" width="78" height="100" alt="pro" /></a></li><li><a href="products_infant_6-12.html"><img src="images/tin_6-12_3.png" width="78" height="100" alt="pro" /></a></li><li><a href="products_infant_6-12.html"><img src="images/tin_6-12_4.png" width="78" height="100" alt="pro" /></a></li><li><a href="products_infant_6-12.html"><img src="images/tin_6-12_5.png" width="78" height="100" alt="pro" /></a></li><li><a href="products_infant_6-12.html"><img src="images/tin_6-12_6.png" width="78" height="100" alt="pro" /></a></li><li><a href="products_infant_6-12.html"><img src="images/tin_6-12_7.png" width="78" height="100" alt="pro" /></a></li>';
-$('#foo2').html(data);
+$('#foo2').html(data)
+$("#foo2").trigger("destroy").carouFredSel(carousel_options);
 $('#prev2').show();
 $('#next2').show();
 $('#foo2').css('left','0px');
-init_carousel();
+
 break;
 case 't':
 var data = '<li><a href="products_toddler.html"><img src="images/carousel/t1.png" width="86" height="100" alt="pro" /></a></li><li><a href="products_toddler.html"><img src="images/carousel/t2.png" width="86" height="100" alt="pro" /></a></li><li><a href="products_toddler.html"><img src="images/carousel/t3.png" width="86" height="100" alt="pro" /></a></li>';
@@ -443,6 +442,7 @@ $('#foo2').css('left','330px');
 break;
 
 }
+
 }
 
             $(document).ready(function () {
