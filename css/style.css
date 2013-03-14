@@ -688,7 +688,7 @@ p.red_btn a {
     width: 120px;
 }
 
-.prev {
+.next {
     height: 33px;
     left: -2px;
     position: absolute;
@@ -696,7 +696,7 @@ p.red_btn a {
     width: 43px;
 }
 
-.next {
+.prev {
     height: 33px;
     position: absolute;
     right: -2px;
